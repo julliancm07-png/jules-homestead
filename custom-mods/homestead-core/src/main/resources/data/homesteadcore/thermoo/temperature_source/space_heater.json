@@ -1,0 +1,6 @@
+{
+  "description": {
+    "translate": "homesteadcore.temperature_source.space_heater"
+  },
+  "tick_interval": 20
+}

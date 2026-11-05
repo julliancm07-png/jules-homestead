@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "homesteadcore:block/electric_range_top",
+    "front": "homesteadcore:block/electric_range_front",
+    "side": "homesteadcore:block/electric_range_side",
+    "particle": "homesteadcore:block/electric_range_side"
+  }
+}

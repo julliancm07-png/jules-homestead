@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "energizedpower"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "LPL",
+    "PWP",
+    "LPL"
+  ],
+  "key": {
+    "L": "#minecraft:logs",
+    "P": "#minecraft:planks",
+    "W": "energizedpower:copper_wire"
+  },
+  "result": {
+    "id": "homesteadcore:water_wheel",
+    "count": 1
+  }
+}

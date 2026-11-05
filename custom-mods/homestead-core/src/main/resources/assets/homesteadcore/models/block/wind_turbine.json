@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "homesteadcore:block/wind_turbine_top",
+    "front": "homesteadcore:block/wind_turbine_front",
+    "side": "homesteadcore:block/wind_turbine_side",
+    "particle": "homesteadcore:block/wind_turbine_side"
+  }
+}

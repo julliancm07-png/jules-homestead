@@ -1,0 +1,22 @@
+{
+  "values": [
+    "minecraft:farmland",
+    "minecraft:dirt_path",
+    "#minecraft:crops",
+    "#minecraft:rails",
+    "minecraft:hay_block",
+    "#minecraft:wool_carpets",
+    {
+      "id": "#farmersdelight:tray_heat_sources",
+      "required": false
+    },
+    "#minecraft:campfires",
+    "#minecraft:beds",
+    "#minecraft:fences",
+    "#minecraft:walls",
+    "#minecraft:slabs",
+    "#minecraft:stairs",
+    "minecraft:glass",
+    "#minecraft:trapdoors"
+  ]
+}

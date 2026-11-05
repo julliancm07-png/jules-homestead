@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "homesteadcore:block/barometer_top",
+    "front": "homesteadcore:block/barometer_front",
+    "side": "homesteadcore:block/barometer_side",
+    "particle": "homesteadcore:block/barometer_side"
+  }
+}

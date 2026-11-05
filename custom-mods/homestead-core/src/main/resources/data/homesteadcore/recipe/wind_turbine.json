@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "energizedpower"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "P P",
+    " M ",
+    "WCW"
+  ],
+  "key": {
+    "P": "energizedpower:iron_plate",
+    "M": "energizedpower:basic_machine_frame",
+    "W": "energizedpower:copper_wire",
+    "C": "energizedpower:basic_circuit"
+  },
+  "result": {
+    "id": "homesteadcore:wind_turbine",
+    "count": 1
+  }
+}
