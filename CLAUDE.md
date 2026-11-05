@@ -48,7 +48,8 @@ python3 -I tools/client_smoke_test.py --scenario showcase|title  # dev harness s
 - FTB Quests 26.1.2.9 uses JSON5 + lang files; `advancement` tasks REQUIRE `criterion` (may be ""). Validate by booting the server and reading "Loaded ... quests".
 - `canSeeSky` = sky light (lags block changes, passes through glass). Use heightmaps for shelter.
 - GameTest areas are encased in barriers (use `skyAccess = true`; keep rays inside the area).
-- Upstream bugs patched in homestead-core: Serene Seasons client recursion (singleplayer crash), Spoiled server recipe cache.
+- Upstream bugs patched in homestead-core: Serene Seasons client recursion (singleplayer crash), Spoiled server recipe cache,
+  Immersive Storms night sky (its TAIL biome layer clobbers the day/night timeline; `ImmersiveStormsNightSkyFixMixin`).
 - Visual work: verify with the showcase/title scenarios and READ the screenshots (docs/screenshots/).
 - Dev harness: -Dhomesteadcore.dev.script=<file> (tools/showcase.script, tools/title.script); inert otherwise.
 - Wilder Wild removed (FrozenLib CME during parallel registry load with Terralith).

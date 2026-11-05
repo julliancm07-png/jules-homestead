@@ -24,6 +24,9 @@ public final class CompatMixinPlugin implements IMixinConfigPlugin {
 		if (mixinClassName.endsWith("SereneSeasonsRecursionFixMixin")) {
 			return FabricLoader.getInstance().isModLoaded("sereneseasons");
 		}
+		if (mixinClassName.endsWith("ImmersiveStormsNightSkyFixMixin")) {
+			return FabricLoader.getInstance().isModLoaded("immersive_storms");
+		}
 		return true;
 	}
 

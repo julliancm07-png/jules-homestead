@@ -39,6 +39,12 @@ Stated plainly. "Awaiting local verification" means it was not possible to test 
 * Serene Seasons 26.1.2.0.7: infinite recursion in its client `Biome#hasPrecipitation` mixin crashes singleplayer. Fixed by a one-call-site redirect in homestead-core (`SereneSeasonsRecursionFixMixin`).
 * Spoiled 12.1.0: the spoil-recipe cache is filled only on the client. Fixed in homestead-core (`SpoiledCompat`).
 * Wilder Wild 4.2.9: intermittent registry-load crash alongside Terralith. Removed from the pack.
+* Immersive Storms 2.0.0-beta (bundled in Scorchful 0.18.3): its weather layer re-applies each biome's daytime sky and
+  fog colour after the day/night timeline, so the sky stayed bright blue at night (also in 1.0.0). Fixed in
+  homestead-core 1.1.0 (`ImmersiveStormsNightSkyFixMixin`, which skips only that duplicate step). Remove the fix once
+  Immersive Storms ships its own.
+* LightspeedRE and ModernFix-mVUS: both crashed the integrated server on world load ("Registry is not frozen yet!").
+  Not in the pack.
 
 ## Visuals
 * Dramatic Skys on Modrinth is the free "Demo" edition. It loads and renders, but the full sky set is a paid Patreon edition. Shaders replace its sky.

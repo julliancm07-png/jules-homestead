@@ -4,7 +4,8 @@
 	"plugin": "dev.jules.homestead.mixin.CompatMixinPlugin",
 	"compatibilityLevel": "JAVA_25",
 	"mixins": [
-		"SereneSeasonsRecursionFixMixin"
+		"SereneSeasonsRecursionFixMixin",
+		"ImmersiveStormsNightSkyFixMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
