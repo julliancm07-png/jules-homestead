@@ -57,3 +57,11 @@ Legend: **R** researched · **I** implemented · **C** compiled · **T** runtime
 ## Removed / blocked
 * Wilder Wild: removed (registry-load race with Terralith). See docs/compatibility.md.
 * CurseForge API and site are blocked by this environment's egress proxy (HTTP 403). CurseForge facts came from WebFetch and the CFWidget mirror (marked secondary).
+
+## Finish-up plan (next session, in order)
+1. **Spacial GUI** (Jules likes its look): identify the Modrinth project, check its 26.1.2 build, licence and requirements, compare it with Recolourful Containers (pick one or order them), add it, then check the `showcase` inventory screenshot.
+2. Re-run the `showcase` scenario: confirm the IPN slot icons are gone and Camera Overhaul's tuned config applies.
+3. Close the I/C gaps: GameTests for slowdown, snow build-up and the weather advancements.
+4. Optional quest: town power via FTB's `tech_reborn_energy` task.
+5. Release pass: bump to 1.0.0, run the full pipeline (resolve → validate → build_local → quests → check_content → package → mrpack_install → server_test → client normal/blizzard/showcase/title), make counts consistent across README/STATUS (mods, files), and finish test-checklist entries for visuals and shaders.
+6. Delivery: get the `.mrpack` to Jules (a GitHub release asset or a committed `dist/` file; ask first).
