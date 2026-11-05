@@ -7,7 +7,7 @@
   "loader_version": "0.20.1",
   "summary": "A grounded homestead-to-town survival pack: seasons, storms and blizzards, renewable power for real appliances, residents and a hand-written quest book."
  },
- "resolved_at": "2026-11-05T03:37:48+00:00",
+ "resolved_at": "2026-11-05T04:00:26+00:00",
  "sources": [
   "https://api.modrinth.com/v2",
   "https://maven.ftb.dev/releases"
@@ -58,6 +58,51 @@
    ],
    "group": "visual",
    "purpose": "3D skin layers.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "ambient-environment",
+   "title": "Ambient Environment",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "DyTvM1dv",
+   "version_id": "ZhJAYDw4",
+   "version_number": "26.1.2.1",
+   "version_type": "release",
+   "date_published": "2026-04-11T19:02:50.938899Z",
+   "game_versions": [
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "AmbientEnvironment-fabric-26.1.2-26.1.2.1.jar",
+   "url": "https://cdn.modrinth.com/data/DyTvM1dv/versions/ZhJAYDw4/AmbientEnvironment-fabric-26.1.2-26.1.2.1.jar",
+   "size": 51750,
+   "hashes": {
+    "sha1": "e49bc4999fc70075a226d7f50f3bd7661c1644e9",
+    "sha512": "d1ffc7c6b68e26f9780e555fd9e4493dc038e77a93ce0bf71c44621a378b6288d6787dcbde5c0c6b15bfacfc0493e6ff26e81e216a515e0edfa3aa9d0350bd6e"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "MIT",
+   "license_url": null,
+   "source_url": "https://github.com/jaredlll08/Ambiance",
+   "issues_url": "https://github.com/jaredlll08/Ambiance/issues",
+   "page": "https://modrinth.com/mod/ambient-environment",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "visual",
+   "purpose": "Subtle colour variation in grass, leaves and water (Bedrock-style), so landscapes feel less flat.",
    "optional": false,
    "side_override": null,
    "explicit": true,
@@ -286,6 +331,60 @@
    "required_by": []
   },
   {
+   "slug": "cameraoverhaul",
+   "title": "Camera Overhaul",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "m0oRwcZx",
+   "version_id": "RVjlBM9t",
+   "version_number": "2.1.2-fabric+mc.26.1-26.1.2",
+   "version_type": "release",
+   "date_published": "2026-09-26T09:42:37.082304Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric",
+    "quilt"
+   ],
+   "filename": "CameraOverhaul-v2.1.2-fabric+mc[26.1-26.1.2].jar",
+   "url": "https://cdn.modrinth.com/data/m0oRwcZx/versions/RVjlBM9t/CameraOverhaul-v2.1.2-fabric%2Bmc%5B26.1-26.1.2%5D.jar",
+   "size": 137226,
+   "hashes": {
+    "sha1": "efc9c9a0692e0a94312c03cb1996ebc7a7e23295",
+    "sha512": "3d74a800609f409ef7e1e52369a027a40cd9c811e359443ead6fe6c6caaef345159ba082b9f92e96cda9617dc96154407853b17f9f616b13f0a9d3d582888542"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "GPL-3.0-or-later",
+   "license_url": "https://github.com/Mirsario/Minecraft-CameraOverhaul/blob/dev/LICENSE.md",
+   "source_url": "https://github.com/Mirsario/Minecraft-CameraOverhaul",
+   "issues_url": "https://github.com/Mirsario/Minecraft-CameraOverhaul/issues",
+   "page": "https://modrinth.com/mod/cameraoverhaul",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "9s6osm5g",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "mOgUt4GM",
+     "file_name": null,
+     "dependency_type": "optional"
+    }
+   ],
+   "group": "visual",
+   "purpose": "Gentle camera roll/sway for first-person immersion (tuned down in configs; can be disabled).",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
    "slug": "cardinal-components-api",
    "title": "Cardinal Components API",
    "kind": "mod",
@@ -417,7 +516,7 @@
     "yungs-better-dungeons",
     "yungs-better-strongholds",
     "fallingleaves",
-    "visuality"
+    "cameraoverhaul"
    ]
   },
   {
@@ -940,12 +1039,6 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "2RKFTmiB",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
      "project_id": "ngLoLP1P",
      "file_name": null,
      "dependency_type": "optional"
@@ -955,6 +1048,12 @@
      "project_id": "uTGjf7vA",
      "file_name": null,
      "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "2RKFTmiB",
+     "file_name": null,
+     "dependency_type": "optional"
     },
     {
      "version_id": null,
@@ -1004,15 +1103,15 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "Epm6R3P2",
-     "file_name": null,
-     "dependency_type": "required"
-    },
-    {
-     "version_id": null,
      "project_id": "ngLoLP1P",
      "file_name": null,
      "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "Epm6R3P2",
+     "file_name": null,
+     "dependency_type": "required"
     }
    ],
    "group": "library",
@@ -1058,13 +1157,13 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "2RKFTmiB",
+     "project_id": "ngLoLP1P",
      "file_name": null,
      "dependency_type": "optional"
     },
     {
      "version_id": null,
-     "project_id": "ngLoLP1P",
+     "project_id": "2RKFTmiB",
      "file_name": null,
      "dependency_type": "optional"
     }
@@ -1394,6 +1493,68 @@
    ]
   },
   {
+   "slug": "explorify",
+   "title": "Explorify",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "HSfsxuTo",
+   "version_id": "CuBdAr31",
+   "version_number": "v1.6.5",
+   "version_type": "release",
+   "date_published": "2026-05-13T14:00:26.385835Z",
+   "game_versions": [
+    "1.20",
+    "1.20.1",
+    "1.20.2",
+    "1.20.3",
+    "1.20.4",
+    "1.20.5",
+    "1.20.6",
+    "1.21",
+    "1.21.1",
+    "1.21.10",
+    "1.21.11",
+    "1.21.2",
+    "1.21.3",
+    "1.21.4",
+    "1.21.5",
+    "1.21.6",
+    "1.21.7",
+    "1.21.8",
+    "1.21.9",
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2"
+   ],
+   "loaders": [
+    "fabric",
+    "forge",
+    "neoforge"
+   ],
+   "filename": "Explorify v1.6.5.mod.jar",
+   "url": "https://cdn.modrinth.com/data/HSfsxuTo/versions/CuBdAr31/Explorify%20v1.6.5.mod.jar",
+   "size": 767884,
+   "hashes": {
+    "sha1": "5fb28be29200a41b034e423d87823eb19ad651cd",
+    "sha512": "9b22adeb1952ec25856e160b93aaa41934fd41e8d1aef985317cb2c9d64aae1012e134e23f52ba39fac3a98b3309b60f0b55b98a4db4de1731960b998117c83e"
+   },
+   "client_side": "optional",
+   "server_side": "required",
+   "license": "LicenseRef-All-Rights-Reserved",
+   "license_url": null,
+   "source_url": null,
+   "issues_url": "https://github.com/everloste/my-mc-projects/issues",
+   "page": "https://modrinth.com/mod/explorify",
+   "dependencies": [],
+   "group": "world",
+   "purpose": "Vanilla-friendly small structures (camps, ruins, houses) that make travel interesting.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
    "slug": "fabric-api",
    "title": "Fabric API",
    "kind": "mod",
@@ -1451,8 +1612,8 @@
     "rustic-delight",
     "balm",
     "farming-for-blockheads",
-    "jamlib",
     "rightclickharvest",
+    "jamlib",
     "appleskin",
     "macaws-furniture",
     "macaws-doors",
@@ -1462,9 +1623,9 @@
     "macaws-paths-and-pavings",
     "macaws-paintings",
     "fusion-connected-textures",
-    "rechiseled",
     "supermartijn642s-config-lib",
     "supermartijn642s-core-lib",
+    "rechiseled",
     "energized-power",
     "minecraft-comes-alive-reborn",
     "lithostitched",
@@ -1474,6 +1635,7 @@
     "yungs-better-mineshafts",
     "yungs-better-dungeons",
     "yungs-better-strongholds",
+    "snow-under-trees",
     "friends-and-foes",
     "resourceful-lib",
     "mezzconfig",
@@ -1496,7 +1658,16 @@
     "creativecore",
     "presence-footsteps",
     "fallingleaves",
-    "visuality",
+    "subtle-effects",
+    "fzzy-config",
+    "ambient-environment",
+    "wakes",
+    "iceberg",
+    "legendary-tooltips",
+    "prism-lib",
+    "overflowing-bars",
+    "puzzles-lib",
+    "nuit",
     "lambdynamiclights",
     "first-person-model",
     "not-enough-animations",
@@ -1590,7 +1761,8 @@
    "required_by": [
     "libipn",
     "inventory-profiles-next",
-    "zoomify"
+    "zoomify",
+    "fzzy-config"
    ]
   },
   {
@@ -1753,13 +1925,13 @@
     },
     {
      "version_id": null,
-     "project_id": "5VolwT6c",
+     "project_id": "u6dRKJwZ",
      "file_name": null,
      "dependency_type": "optional"
     },
     {
      "version_id": null,
-     "project_id": "u6dRKJwZ",
+     "project_id": "5VolwT6c",
      "file_name": null,
      "dependency_type": "optional"
     }
@@ -1770,8 +1942,8 @@
    "side_override": null,
    "explicit": true,
    "required_by": [
-    "more-delight",
     "delight-lib",
+    "more-delight",
     "ubes-delight",
     "rustic-delight"
    ]
@@ -1977,7 +2149,10 @@
     "seasonhud-fabric",
     "spoiled",
     "crops-love-rain",
-    "travelersbackpack"
+    "snow-under-trees",
+    "travelersbackpack",
+    "overflowing-bars",
+    "puzzles-lib"
    ]
   },
   {
@@ -2082,25 +2257,19 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "SZQ5qcdn",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
-     "project_id": "TYRF9nUy",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
      "project_id": "1eAoo2KR",
      "file_name": null,
      "dependency_type": "required"
     },
     {
      "version_id": null,
-     "project_id": "K01OU20C",
+     "project_id": "SZQ5qcdn",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
     },
@@ -2112,9 +2281,15 @@
     },
     {
      "version_id": null,
-     "project_id": "P7dR8mSH",
+     "project_id": "K01OU20C",
      "file_name": null,
      "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "TYRF9nUy",
+     "file_name": null,
+     "dependency_type": "optional"
     },
     {
      "version_id": null,
@@ -2311,6 +2486,107 @@
    ]
   },
   {
+   "slug": "fzzy-config",
+   "title": "Fzzy Config",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "hYykXjDp",
+   "version_id": "Ugxie86a",
+   "version_number": "0.7.7+26.1",
+   "version_type": "release",
+   "date_published": "2026-09-15T02:40:22.501691Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "fzzy_config-0.7.7+26.1.jar",
+   "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/Ugxie86a/fzzy_config-0.7.7%2B26.1.jar",
+   "size": 2395002,
+   "hashes": {
+    "sha1": "876dd6396cb7da6c544ddac58ecce9cdaf7d555e",
+    "sha512": "c5655807d1c80dd3cdd899435f7938ef9875c5cf5e86bae2313a5e0b2751ed33edeb6b2dce4a8ac4178fda90622008047524b92533466e44920dca4191fe4006"
+   },
+   "client_side": "required",
+   "server_side": "required",
+   "license": "LicenseRef-TDL-M",
+   "license_url": "https://github.com/fzzyhmstrs/Timefall-Development-Licence-Modified",
+   "source_url": "https://github.com/fzzyhmstrs/fconfig",
+   "issues_url": "https://github.com/fzzyhmstrs/fconfig/issues",
+   "page": "https://modrinth.com/mod/fzzy-config",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "Ha28R6CL",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "library",
+   "purpose": "Dependency.",
+   "optional": false,
+   "side_override": null,
+   "explicit": false,
+   "required_by": [
+    "subtle-effects"
+   ]
+  },
+  {
+   "slug": "gardeners-dream",
+   "title": "Gardener's Dream",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "cPfmk5E3",
+   "version_id": "jCeXp97b",
+   "version_number": "2.6+mod",
+   "version_type": "release",
+   "date_published": "2026-09-18T18:08:10.518958Z",
+   "game_versions": [
+    "1.21.10",
+    "1.21.11",
+    "1.21.9",
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric",
+    "forge",
+    "neoforge",
+    "quilt"
+   ],
+   "filename": "gardeners-dream-2.6.jar",
+   "url": "https://cdn.modrinth.com/data/cPfmk5E3/versions/jCeXp97b/gardeners-dream-2.6.jar",
+   "size": 256762,
+   "hashes": {
+    "sha1": "167fa0ef2fe973864b56d87891cf0dbb8a04eb41",
+    "sha512": "9fbcd5ce83a57d4aa6eccbf16821db929f6304c180d1cfb9a7a07f1c00bb16329903af332dcf5ad8945a68aa79b8a727256e6561a101b16cdf06e869a82e34cc"
+   },
+   "client_side": "optional",
+   "server_side": "required",
+   "license": "LicenseRef-All-Rights-Reserved",
+   "license_url": null,
+   "source_url": null,
+   "issues_url": "https://discord.gg/ZuUSPSP5uN",
+   "page": "https://modrinth.com/mod/gardeners-dream",
+   "dependencies": [],
+   "group": "build",
+   "purpose": "Place any plant in flower pots and decorated pots (cozy decorating).",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
    "slug": "glitchcore",
    "title": "GlitchCore",
    "kind": "mod",
@@ -2400,6 +2676,55 @@
    "required_by": [],
    "dependencies": [],
    "path": "datapacks/homestead-pack-data"
+  },
+  {
+   "slug": "iceberg",
+   "title": "Iceberg",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "5faXoLqX",
+   "version_id": "UujfCDsB",
+   "version_number": "1.4.1.2",
+   "version_type": "release",
+   "date_published": "2026-09-23T12:11:23.865210Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "Iceberg-26.1.2-fabric-1.4.1.2.jar",
+   "url": "https://cdn.modrinth.com/data/5faXoLqX/versions/UujfCDsB/Iceberg-26.1.2-fabric-1.4.1.2.jar",
+   "size": 374234,
+   "hashes": {
+    "sha1": "128592f4a1464fcecba4f434e8f8fa7685048a7a",
+    "sha512": "6e5b4c9d5ee2b2a372709a2cd233206f792fb51fc5c6aa138da03f0f955185c2e227c58284fe6115ee8085ab37066532e52eff66a2b8a6b2ef1fbf57cf217a4a"
+   },
+   "client_side": "required",
+   "server_side": "required",
+   "license": "CC-BY-NC-ND-4.0",
+   "license_url": null,
+   "source_url": "https://github.com/AHilyard/Iceberg/",
+   "issues_url": "https://discord.gg/UCKjnamDaW",
+   "page": "https://modrinth.com/mod/iceberg",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "library",
+   "purpose": "Dependency.",
+   "optional": false,
+   "side_override": null,
+   "explicit": false,
+   "required_by": [
+    "legendary-tooltips"
+   ]
   },
   {
    "slug": "immediatelyfast",
@@ -2807,6 +3132,65 @@
    ],
    "group": "visual",
    "purpose": "Held-torch dynamic light.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "legendary-tooltips",
+   "title": "Legendary Tooltips",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "atHH8NyV",
+   "version_id": "f02TIUcN",
+   "version_number": "1.6.1.1",
+   "version_type": "release",
+   "date_published": "2026-08-18T12:54:32.782069Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "LegendaryTooltips-26.1.2-fabric-1.6.1.1.jar",
+   "url": "https://cdn.modrinth.com/data/atHH8NyV/versions/f02TIUcN/LegendaryTooltips-26.1.2-fabric-1.6.1.1.jar",
+   "size": 67986,
+   "hashes": {
+    "sha1": "4082ec0dca097ece9310983843b4f59bbff2555f",
+    "sha512": "620d2f2cd458a1d50c47da64ca8977542325b875366630c5e7514b3045ee0a90faf5a3bb2373c75dee2f8679f65c078393e64eda4439908c18dfa6148c36e8b8"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "CC-BY-NC-ND-4.0",
+   "license_url": null,
+   "source_url": "https://github.com/AHilyard/LegendaryTooltips/",
+   "issues_url": "https://discord.gg/UCKjnamDaW",
+   "page": "https://modrinth.com/mod/legendary-tooltips",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "5faXoLqX",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "1OE8wbN0",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "visual",
+   "purpose": "Framed, readable item tooltips with item previews (pleasant screens).",
    "optional": false,
    "side_override": null,
    "explicit": true,
@@ -3628,13 +4012,13 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "7vxePowz",
+     "project_id": "rmDY6fYt",
      "file_name": null,
      "dependency_type": "required"
     },
     {
      "version_id": null,
-     "project_id": "rmDY6fYt",
+     "project_id": "7vxePowz",
      "file_name": null,
      "dependency_type": "required"
     }
@@ -3837,6 +4221,112 @@
    ]
   },
   {
+   "slug": "nuit",
+   "title": "Nuit",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "YBz7DOs8",
+   "version_id": "i1Y5SmCe",
+   "version_number": "mc26.1.2-1.0.0-beta.3+fabric",
+   "version_type": "release",
+   "date_published": "2026-06-20T19:57:34.830149Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "nuit-fabric-1.0.0-beta.3+mc26.1.2.jar",
+   "url": "https://cdn.modrinth.com/data/YBz7DOs8/versions/i1Y5SmCe/nuit-fabric-1.0.0-beta.3%2Bmc26.1.2.jar",
+   "size": 749474,
+   "hashes": {
+    "sha1": "e2350999157687f89df581fe83dd9b1137225c68",
+    "sha512": "2192e03ded7e872b4b6b6f48d2b729c122b54069440df862a5533555d354eca0820b38a9c22e5fbc187566d711b09b3cf782bd4894d9b5657ad443cc3acc0492"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "MIT",
+   "license_url": null,
+   "source_url": "https://github.com/FlashyReese/nuit",
+   "issues_url": "https://github.com/FlashyReese/nuit/issues",
+   "page": "https://modrinth.com/mod/nuit",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "visual",
+   "purpose": "Custom skybox support (formerly FabricSkyboxes) for the Dramatic Skys resource pack.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "overflowing-bars",
+   "title": "Overflowing Bars",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "XD7XOrAF",
+   "version_id": "IxKzb0Hv",
+   "version_number": "26.1.0",
+   "version_type": "release",
+   "date_published": "2026-04-28T10:51:56.763882Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "OverflowingBars-v26.1.0-mc26.1.x-Fabric.jar",
+   "url": "https://cdn.modrinth.com/data/XD7XOrAF/versions/IxKzb0Hv/OverflowingBars-v26.1.0-mc26.1.x-Fabric.jar",
+   "size": 87411,
+   "hashes": {
+    "sha1": "4468d1027a667218cbd0dab14b3d681afe33ff88",
+    "sha512": "255743a0c8cf829e4a1f844de37ea2025aae61e10b0af463751d95c9934b41b852affe55e626ae2ad2c9d57f5db60fdd87ada6090b1b9271f9c527c7e9c03b43"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "MPL-2.0",
+   "license_url": null,
+   "source_url": "https://github.com/Fuzss/overflowingbars",
+   "issues_url": "https://github.com/Fuzss/overflowingbars/issues",
+   "page": "https://modrinth.com/mod/overflowing-bars",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "ohNO6lps",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "QAGBst4M",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "visual",
+   "purpose": "Compact health/armour rows (thermoo-patches ships a compatibility patch for it).",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
    "slug": "particle-rain",
    "title": "Particle Rain",
    "kind": "mod",
@@ -3871,6 +4361,12 @@
    "dependencies": [
     {
      "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
      "project_id": "9ZhzxPJ0",
      "file_name": null,
      "dependency_type": "optional"
@@ -3880,12 +4376,6 @@
      "project_id": "mOgUt4GM",
      "file_name": null,
      "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
-     "project_id": "P7dR8mSH",
-     "file_name": null,
-     "dependency_type": "required"
     }
    ],
    "group": "visual",
@@ -4050,6 +4540,110 @@
    ]
   },
   {
+   "slug": "prism-lib",
+   "title": "Prism",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "1OE8wbN0",
+   "version_id": "uxupbyjR",
+   "version_number": "1.1.1",
+   "version_type": "release",
+   "date_published": "2026-06-23T19:48:47.759044Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "Prism-26.1.2-fabric-1.1.1.jar",
+   "url": "https://cdn.modrinth.com/data/1OE8wbN0/versions/uxupbyjR/Prism-26.1.2-fabric-1.1.1.jar",
+   "size": 60428,
+   "hashes": {
+    "sha1": "6d088eb3d9687841a71e87f99aff0b57ddfe045e",
+    "sha512": "5126585b729b48d8657d44228bb45d21ce1bd2dd9f661aee600706a18b07767cfcb02f26617db962db43da1eead8d0da518f2e3641d69700c84ca652d24a5dc9"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "CC-BY-NC-ND-4.0",
+   "license_url": null,
+   "source_url": "https://github.com/AHilyard/Prism/",
+   "issues_url": "https://discord.gg/UCKjnamDaW",
+   "page": "https://modrinth.com/mod/prism-lib",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "library",
+   "purpose": "Dependency.",
+   "optional": false,
+   "side_override": null,
+   "explicit": false,
+   "required_by": [
+    "legendary-tooltips"
+   ]
+  },
+  {
+   "slug": "puzzles-lib",
+   "title": "Puzzles Lib",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "QAGBst4M",
+   "version_id": "cPeqCZKe",
+   "version_number": "26.1.16",
+   "version_type": "release",
+   "date_published": "2026-10-11T13:41:36.783624Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "puzzleslib-v26.1.16-mc26.1.x+fabric.jar",
+   "url": "https://cdn.modrinth.com/data/QAGBst4M/versions/cPeqCZKe/puzzleslib-v26.1.16-mc26.1.x%2Bfabric.jar",
+   "size": 1157390,
+   "hashes": {
+    "sha1": "f0c40b38e955c5b077092fe7617ee3c76b78c1cb",
+    "sha512": "ddd5b110eea5d3682c37997c8b2eb45502de4be6255882b44966a1af4ea5ede59ecbae1b9154659046e9c429994af6e7aa558ada1b79678217791301568517c4"
+   },
+   "client_side": "optional",
+   "server_side": "optional",
+   "license": "MPL-2.0",
+   "license_url": null,
+   "source_url": "https://github.com/Fuzss/puzzleslib",
+   "issues_url": "https://github.com/Fuzss/puzzleslib/issues",
+   "page": "https://modrinth.com/mod/puzzles-lib",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "ohNO6lps",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "library",
+   "purpose": "Dependency.",
+   "optional": false,
+   "side_override": null,
+   "explicit": false,
+   "required_by": [
+    "overflowing-bars"
+   ]
+  },
+  {
    "slug": "rechiseled",
    "title": "Rechiseled",
    "kind": "mod",
@@ -4091,12 +4685,6 @@
     },
     {
      "version_id": null,
-     "project_id": "P7dR8mSH",
-     "file_name": null,
-     "dependency_type": "required"
-    },
-    {
-     "version_id": null,
      "project_id": "LN9BxssP",
      "file_name": null,
      "dependency_type": "required"
@@ -4104,6 +4692,12 @@
     {
      "version_id": null,
      "project_id": "rOUBggPv",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
     }
@@ -4167,6 +4761,75 @@
    ],
    "group": "performance",
    "purpose": "Readable tabbed video settings.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "remove-terralith-intro-message",
+   "title": "Remove Stardust Labs Intro Message",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "sk4iFZGy",
+   "version_id": "BHr8OLOk",
+   "version_number": "1.2.2",
+   "version_type": "release",
+   "date_published": "2026-03-29T14:12:58.501816Z",
+   "game_versions": [
+    "1.19",
+    "1.19.1",
+    "1.19.2",
+    "1.19.3",
+    "1.19.4",
+    "1.20",
+    "1.20.1",
+    "1.20.2",
+    "1.20.3",
+    "1.20.4",
+    "1.20.5",
+    "1.20.6",
+    "1.21",
+    "1.21.1",
+    "1.21.10",
+    "1.21.11",
+    "1.21.2",
+    "1.21.3",
+    "1.21.4",
+    "1.21.5",
+    "1.21.6",
+    "1.21.7",
+    "1.21.8",
+    "1.21.9",
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "loaders": [
+    "fabric",
+    "forge",
+    "neoforge",
+    "quilt"
+   ],
+   "filename": "zRemove_SDL_Intro_v1.2.2.jar",
+   "url": "https://cdn.modrinth.com/data/sk4iFZGy/versions/BHr8OLOk/zRemove_SDL_Intro_v1.2.2.jar",
+   "size": 12238,
+   "hashes": {
+    "sha1": "c1c3067dc507b045eac4b07995e70b32172ee844",
+    "sha512": "2a5b1f3a074d567c6134b918cd711ad64015cf3db0c1dfaf083f66af56004ae2ecda80e63593e1c20dae99f7237b718efde851e1e85f6e1ba604ba87469f60ff"
+   },
+   "client_side": "optional",
+   "server_side": "required",
+   "license": "MIT",
+   "license_url": null,
+   "source_url": "https://github.com/catter1/Stardust_Remove_Intro_Message",
+   "issues_url": "https://github.com/catter1/Stardust_Remove_Intro_Message/issues",
+   "page": "https://modrinth.com/mod/remove-terralith-intro-message",
+   "dependencies": [],
+   "group": "world",
+   "purpose": "Removes the Stardust Labs intro chat message on world join (cleaner first impression).",
    "optional": false,
    "side_override": null,
    "explicit": true,
@@ -4257,19 +4920,67 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "IYY9Siz8",
+     "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
     },
     {
      "version_id": null,
-     "project_id": "P7dR8mSH",
+     "project_id": "IYY9Siz8",
      "file_name": null,
      "dependency_type": "required"
     }
    ],
    "group": "food",
    "purpose": "Right-click to harvest and replant crops.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "rrls",
+   "title": "Remove Reloading Screen",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "ZP7xHXtw",
+   "version_id": "J8aRjeWe",
+   "version_number": "5.2.6+mc26.1",
+   "version_type": "beta",
+   "date_published": "2026-06-18T09:13:54.417376Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric",
+    "neoforge"
+   ],
+   "filename": "rrls-5.2.6+mc.26.1.jar",
+   "url": "https://cdn.modrinth.com/data/ZP7xHXtw/versions/J8aRjeWe/rrls-5.2.6%2Bmc.26.1.jar",
+   "size": 119453,
+   "hashes": {
+    "sha1": "585a22c7adc137dd1c5891c6bcb04641b73edf06",
+    "sha512": "8653d86e71eefbd31e941c0c0d3de40a1c472ee11c02dcdf07b2a0e163dad50779fe69ce8a7705a77a094f634225e99bd21b6fbb4026f20161935fcdc22273c0"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "OSL-3.0",
+   "license_url": "https://github.com/dima-dencep/rrls/blob/HEAD/LICENSE",
+   "source_url": "https://github.com/dima-dencep/rrls",
+   "issues_url": "https://github.com/dima-dencep/rrls/issues",
+   "page": "https://modrinth.com/mod/rrls",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "ohNO6lps",
+     "file_name": null,
+     "dependency_type": "optional"
+    }
+   ],
+   "group": "visual",
+   "purpose": "Resource reloads happen in the background instead of a blocking full-screen overlay.",
    "optional": false,
    "side_override": null,
    "explicit": true,
@@ -4376,6 +5087,18 @@
     },
     {
      "version_id": null,
+     "project_id": "1eAoo2KR",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "K01OU20C",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
      "project_id": "TYRF9nUy",
      "file_name": null,
      "dependency_type": "optional"
@@ -4400,12 +5123,6 @@
     },
     {
      "version_id": null,
-     "project_id": "1eAoo2KR",
-     "file_name": null,
-     "dependency_type": "required"
-    },
-    {
-     "version_id": null,
      "project_id": "mOgUt4GM",
      "file_name": null,
      "dependency_type": "optional"
@@ -4413,12 +5130,6 @@
     {
      "version_id": null,
      "project_id": "P7dR8mSH",
-     "file_name": null,
-     "dependency_type": "required"
-    },
-    {
-     "version_id": null,
-     "project_id": "K01OU20C",
      "file_name": null,
      "dependency_type": "required"
     }
@@ -4710,6 +5421,61 @@
    "dependencies": [],
    "group": "qol",
    "purpose": "Container previews.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "snow-under-trees",
+   "title": "Snow Under Trees",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "Q3vyMuj2",
+   "version_id": "ubJYO77l",
+   "version_number": "v1.6.1",
+   "version_type": "release",
+   "date_published": "2026-06-14T20:15:18.847616Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2"
+   ],
+   "loaders": [
+    "fabric",
+    "quilt"
+   ],
+   "filename": "snowundertrees-fabric-26.1.2-1.6.1.jar",
+   "url": "https://cdn.modrinth.com/data/Q3vyMuj2/versions/ubJYO77l/snowundertrees-fabric-26.1.2-1.6.1.jar",
+   "size": 251934,
+   "hashes": {
+    "sha1": "78d3b1c7252eadc01a3e58e5710252f6653ed510",
+    "sha512": "88b3ebd17b1844dc7586921bf1b9fc09e6d904f4f35bee3cc4690a42696207c665a7a4e8a2db2609a5a717f1807dee85c3d0443b03b0acaa9318a31c75d0066c"
+   },
+   "client_side": "unsupported",
+   "server_side": "required",
+   "license": "MIT",
+   "license_url": null,
+   "source_url": "https://github.com/bl4ckscor3/SnowUnderTrees",
+   "issues_url": "https://github.com/bl4ckscor3/SnowUnderTrees/issues",
+   "page": "https://modrinth.com/mod/snow-under-trees",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "ohNO6lps",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "weather",
+   "purpose": "Snow settles under trees in snowy biomes / winter (supports Serene Seasons and Terralith).",
    "optional": false,
    "side_override": null,
    "explicit": true,
@@ -5025,6 +5791,169 @@
    ],
    "group": "qol",
    "purpose": "Pantry/workshop drawers.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "structory",
+   "title": "Structory",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "aKCwCJlY",
+   "version_id": "TUbwu7eG",
+   "version_number": "1.3.17",
+   "version_type": "release",
+   "date_published": "2026-07-08T22:09:05.844755Z",
+   "game_versions": [
+    "1.21",
+    "1.21.1",
+    "1.21.10",
+    "1.21.11",
+    "1.21.2",
+    "1.21.3",
+    "1.21.4",
+    "1.21.5",
+    "1.21.6",
+    "1.21.7",
+    "1.21.8",
+    "1.21.9",
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2"
+   ],
+   "loaders": [
+    "fabric",
+    "forge",
+    "neoforge",
+    "quilt"
+   ],
+   "filename": "Structory_26.2_v1.3.7.jar",
+   "url": "https://cdn.modrinth.com/data/aKCwCJlY/versions/TUbwu7eG/Structory_26.2_v1.3.7.jar",
+   "size": 1261346,
+   "hashes": {
+    "sha1": "8a9a1a1b3f74398310420b6fbe2c26ef142bed42",
+    "sha512": "4178a15f32f6ed3d59a7eb2222a8e3f539efd7b54d8ffb790cbf1dfe5c54c6ce6ec33220e148424109c6360c4c6f081b9fbebfe74745fe3c8f05619a06ccb9ec"
+   },
+   "client_side": "optional",
+   "server_side": "required",
+   "license": "LicenseRef-Stardust-Labs-License",
+   "license_url": "https://github.com/Stardust-Labs-MC/license/blob/main/license.txt",
+   "source_url": "https://github.com/Stardust-Labs-MC/Structory",
+   "issues_url": "https://github.com/Stardust-Labs-MC/Structory/issues",
+   "page": "https://modrinth.com/mod/structory",
+   "dependencies": [],
+   "group": "world",
+   "purpose": "Atmospheric ruins and small structures with light lore (Stardust Labs, designed alongside Terralith).",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "structory-towers",
+   "title": "Structory: Towers",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "j3FONRYr",
+   "version_id": "ziO4YIv1",
+   "version_number": "1.0.17",
+   "version_type": "release",
+   "date_published": "2026-07-08T22:10:33.882442Z",
+   "game_versions": [
+    "1.21",
+    "1.21.1",
+    "1.21.10",
+    "1.21.11",
+    "1.21.2",
+    "1.21.3",
+    "1.21.4",
+    "1.21.5",
+    "1.21.6",
+    "1.21.7",
+    "1.21.8",
+    "1.21.9",
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2"
+   ],
+   "loaders": [
+    "fabric",
+    "forge",
+    "neoforge",
+    "quilt"
+   ],
+   "filename": "Structory_Towers_26.2_v1.0.17.jar",
+   "url": "https://cdn.modrinth.com/data/j3FONRYr/versions/ziO4YIv1/Structory_Towers_26.2_v1.0.17.jar",
+   "size": 491515,
+   "hashes": {
+    "sha1": "fa40253068726262f9db9fa048c41b96750fd4b7",
+    "sha512": "74b1f29439e2946ef9b3f9d8d7915bc112239d5009587c7817c4f45bee7e7a48906ffcddab67f0078fe82e996093657ab874a5a0498ccc045dda4bd562bc7702"
+   },
+   "client_side": "optional",
+   "server_side": "required",
+   "license": "LicenseRef-Stardust-Labs-License",
+   "license_url": "https://github.com/Stardust-Labs-MC/license/blob/main/license.txt",
+   "source_url": "https://github.com/Stardust-Labs-MC/Structory-Towers",
+   "issues_url": "https://github.com/Stardust-Labs-MC/Structory-Towers/issues",
+   "page": "https://modrinth.com/mod/structory-towers",
+   "dependencies": [],
+   "group": "world",
+   "purpose": "Biome-themed towers to discover (Structory add-on).",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "subtle-effects",
+   "title": "Subtle Effects",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "4q8UOK1d",
+   "version_id": "SaXeAq2M",
+   "version_number": "1.15.1",
+   "version_type": "release",
+   "date_published": "2026-10-12T21:08:01.873614Z",
+   "game_versions": [
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "SubtleEffects-fabric-26.1.2-1.15.1.jar",
+   "url": "https://cdn.modrinth.com/data/4q8UOK1d/versions/SaXeAq2M/SubtleEffects-fabric-26.1.2-1.15.1.jar",
+   "size": 3533735,
+   "hashes": {
+    "sha1": "fb10d1384a3793570207a4b7dd4db94f5769a47b",
+    "sha512": "b588d633d01724ac7db492067a27e8cc2c02afbe1d6e32f312bfd9c129d3d405ec7521b8915e354e4fb43c6bea85ac8217ebaf51cd7f2be34153a5f2b8e84def"
+   },
+   "client_side": "required",
+   "server_side": "optional",
+   "license": "LicenseRef-All-Rights-Reserved",
+   "license_url": null,
+   "source_url": "https://github.com/MincraftEinstein/SubtleEffects",
+   "issues_url": "https://github.com/MincraftEinstein/SubtleEffects/issues",
+   "page": "https://modrinth.com/mod/subtle-effects",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "hYykXjDp",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "visual",
+   "purpose": "Ambient detail: fire sparks, better smoke, snoring Z's, dust clouds, glowing dust; every effect toggleable. Replaces Visuality.",
    "optional": false,
    "side_override": null,
    "explicit": true,
@@ -5425,25 +6354,25 @@
    "dependencies": [
     {
      "version_id": null,
+     "project_id": "5aaWibi9",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
      "project_id": "9s6osm5g",
      "file_name": null,
      "dependency_type": "embedded"
     },
     {
      "version_id": null,
+     "project_id": "Orvt0mRa",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
      "project_id": "u6dRKJwZ",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
-     "project_id": "tagwiZkJ",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
-     "project_id": "5aaWibi9",
      "file_name": null,
      "dependency_type": "optional"
     },
@@ -5455,7 +6384,7 @@
     },
     {
      "version_id": null,
-     "project_id": "Orvt0mRa",
+     "project_id": "tagwiZkJ",
      "file_name": null,
      "dependency_type": "optional"
     },
@@ -5682,6 +6611,12 @@
    "dependencies": [
     {
      "version_id": null,
+     "project_id": "7vxePowz",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
      "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
@@ -5706,12 +6641,6 @@
     },
     {
      "version_id": null,
-     "project_id": "7vxePowz",
-     "file_name": null,
-     "dependency_type": "required"
-    },
-    {
-     "version_id": null,
      "project_id": "mOgUt4GM",
      "file_name": null,
      "dependency_type": "optional"
@@ -5725,15 +6654,15 @@
    "required_by": []
   },
   {
-   "slug": "visuality",
-   "title": "Visuality",
+   "slug": "wakes",
+   "title": "Wakes",
    "kind": "mod",
    "source": "modrinth",
-   "project_id": "rI0hvYcd",
-   "version_id": "rjaBaaYV",
-   "version_number": "0.7.13+26.1",
+   "project_id": "dlNu0RQY",
+   "version_id": "p2RaO0z1",
+   "version_number": "0.6.0+26.1",
    "version_type": "beta",
-   "date_published": "2026-03-27T08:44:34.302825Z",
+   "date_published": "2026-06-21T15:51:31.670943Z",
    "game_versions": [
     "26.1",
     "26.1.1",
@@ -5742,36 +6671,48 @@
    "loaders": [
     "fabric"
    ],
-   "filename": "visuality-0.7.13+26.1.jar",
-   "url": "https://cdn.modrinth.com/data/rI0hvYcd/versions/rjaBaaYV/visuality-0.7.13%2B26.1.jar",
-   "size": 82146,
+   "filename": "wakes-0.6.0+26.1.jar",
+   "url": "https://cdn.modrinth.com/data/dlNu0RQY/versions/p2RaO0z1/wakes-0.6.0%2B26.1.jar",
+   "size": 282726,
    "hashes": {
-    "sha1": "ff350d5d1253285f9a19f05f8e44d2403215b61d",
-    "sha512": "7483a87d8fd20b1be82dc339d1b7155ae354c736b55d8a6ce4966d2e5167e2a3f01cb135121001e86880bc999ca32f46fac8825bc1da686e0b208a01b50d80a9"
+    "sha1": "51ecff3e04f98ce7268773116f5d258986b2e561",
+    "sha512": "8e7e68e0c84c092cd4fdc149f5f27828cce6febaee4cff915c6808bb375b3507fd8897bcd4b96343e94aa41ed9f32171e0f6d0895b15d7e6a36f2db6bfea6244"
    },
    "client_side": "required",
    "server_side": "unsupported",
-   "license": "MIT",
+   "license": "GPL-3.0-only",
    "license_url": null,
-   "source_url": "https://github.com/PinkGoosik/visuality",
-   "issues_url": "https://github.com/PinkGoosik/visuality/issues",
-   "page": "https://modrinth.com/mod/visuality",
+   "source_url": "https://github.com/Goby56/wakes",
+   "issues_url": "https://github.com/Goby56/wakes/issues",
+   "page": "https://modrinth.com/mod/wakes",
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "9s6osm5g",
+     "project_id": "YL57xq9U",
      "file_name": null,
-     "dependency_type": "required"
+     "dependency_type": "optional"
     },
     {
      "version_id": null,
      "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "codAaoxh",
+     "file_name": null,
+     "dependency_type": "embedded"
+    },
+    {
+     "version_id": null,
+     "project_id": "mOgUt4GM",
+     "file_name": null,
+     "dependency_type": "optional"
     }
    ],
    "group": "visual",
-   "purpose": "Small ambient particles.",
+   "purpose": "Boat and swimming wakes/splashes on water.",
    "optional": false,
    "side_override": null,
    "explicit": true,
@@ -6078,12 +7019,6 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "P7dR8mSH",
-     "file_name": null,
-     "dependency_type": "required"
-    },
-    {
-     "version_id": null,
      "project_id": "mOgUt4GM",
      "file_name": null,
      "dependency_type": "optional"
@@ -6097,6 +7032,12 @@
     {
      "version_id": null,
      "project_id": "Ua7DFN59",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
     }
@@ -6154,15 +7095,15 @@
     },
     {
      "version_id": null,
-     "project_id": "P7dR8mSH",
-     "file_name": null,
-     "dependency_type": "required"
-    },
-    {
-     "version_id": null,
      "project_id": "mOgUt4GM",
      "file_name": null,
      "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
     }
    ],
    "group": "world",
@@ -6206,25 +7147,25 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "mOgUt4GM",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
      "project_id": "9s6osm5g",
      "file_name": null,
      "dependency_type": "required"
     },
     {
      "version_id": null,
-     "project_id": "P7dR8mSH",
+     "project_id": "Ua7DFN59",
      "file_name": null,
      "dependency_type": "required"
     },
     {
      "version_id": null,
-     "project_id": "Ua7DFN59",
+     "project_id": "mOgUt4GM",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
     }
@@ -6309,6 +7250,102 @@
    "required_by": []
   },
   {
+   "slug": "animated-items",
+   "title": "Animated Items",
+   "kind": "resourcepack",
+   "source": "modrinth",
+   "project_id": "uBBepXuH",
+   "version_id": "OwMX7WV9",
+   "version_number": "1.6.3",
+   "version_type": "release",
+   "date_published": "2026-09-20T20:21:45.370514Z",
+   "game_versions": [
+    "1.21",
+    "1.21.1",
+    "1.21.10",
+    "1.21.11",
+    "1.21.2",
+    "1.21.2-pre1",
+    "1.21.2-pre2",
+    "1.21.3",
+    "1.21.4",
+    "1.21.5",
+    "1.21.6",
+    "1.21.7",
+    "1.21.8",
+    "1.21.9",
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "loaders": [
+    "minecraft"
+   ],
+   "filename": "animated-items 1.21.x-26.3 - v1.6.3.zip",
+   "url": "https://cdn.modrinth.com/data/uBBepXuH/versions/OwMX7WV9/animated-items%201.21.x-26.3%20-%20v1.6.3.zip",
+   "size": 1783851,
+   "hashes": {
+    "sha1": "e1932eda40baedcab207975679ac161bd0168b9d",
+    "sha512": "6fd0a227786e357a96a4d0d7098fa5bead7e562d0d44920d5193d21c64e8ebe90f4d902b11106d2e9ac040c6fb411c776d84129904754063355a1828f584d676"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "CC-BY-NC-4.0",
+   "license_url": null,
+   "source_url": "https://github.com/palettemc/animated-items",
+   "issues_url": "https://github.com/palettemc/animated-items/issues",
+   "page": "https://modrinth.com/resourcepack/animated-items",
+   "dependencies": [],
+   "group": "library",
+   "purpose": "Subtle item texture animations.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "better-lanterns",
+   "title": "Better Lanterns",
+   "kind": "resourcepack",
+   "source": "modrinth",
+   "project_id": "PGGrfcvL",
+   "version_id": "wfM00H4G",
+   "version_number": "1.3.2-mc26.1",
+   "version_type": "release",
+   "date_published": "2026-03-24T19:45:32.976167Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "minecraft"
+   ],
+   "filename": "Better Lanterns v1.3.2 - 26.1.zip",
+   "url": "https://cdn.modrinth.com/data/PGGrfcvL/versions/wfM00H4G/Better%20Lanterns%20v1.3.2%20-%2026.1.zip",
+   "size": 72588,
+   "hashes": {
+    "sha1": "5632f9322216ef691d64d54a9f319b0187a53a6e",
+    "sha512": "794734ee10e965b73797d085c788408e076c52819072de89e42a702580e768bb513ea116c06af9c4b742e04e2cc85b34338664e9f9acb340aa57022dba9da6a0"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "LicenseRef-All-Rights-Reserved",
+   "license_url": null,
+   "source_url": null,
+   "issues_url": null,
+   "page": "https://modrinth.com/resourcepack/better-lanterns",
+   "dependencies": [],
+   "group": "library",
+   "purpose": "3D lanterns and chains.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
    "slug": "better-leaves",
    "title": "Motschen's Better Leaves",
    "kind": "resourcepack",
@@ -6369,7 +7406,334 @@
     }
    ],
    "group": "library",
-   "purpose": "Bushier vanilla leaves (enabled by default).",
+   "purpose": "Bushier vanilla leaves.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "clean-connected-glass",
+   "title": "Clean Connected Glass",
+   "kind": "resourcepack",
+   "source": "modrinth",
+   "project_id": "dIyWZMgP",
+   "version_id": "gN2DnGei",
+   "version_number": "0.0.2",
+   "version_type": "release",
+   "date_published": "2026-06-29T16:00:33.502130Z",
+   "game_versions": [
+    "1.20",
+    "1.20.1",
+    "1.20.2",
+    "1.20.3",
+    "1.20.4",
+    "1.20.5",
+    "1.20.6",
+    "1.21",
+    "1.21.1",
+    "1.21.10",
+    "1.21.11",
+    "1.21.2",
+    "1.21.3",
+    "1.21.4",
+    "1.21.5",
+    "1.21.6",
+    "1.21.7",
+    "1.21.8",
+    "1.21.9",
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2"
+   ],
+   "loaders": [
+    "minecraft"
+   ],
+   "filename": "Clean Connected Glass [1.20-26.x].zip",
+   "url": "https://cdn.modrinth.com/data/dIyWZMgP/versions/gN2DnGei/Clean%20Connected%20Glass%20%5B1.20-26.x%5D.zip",
+   "size": 343093,
+   "hashes": {
+    "sha1": "31e6d9c9bb51b371ae3c122d1bea6726df378d02",
+    "sha512": "858a9a138b5272682c3684fc69f6cda84b92f40a8d6abd823da91dc94e1f423d5f06af4ad72682a3ba8bec132fe6a7bd996799a542c723cf0bdd5b3c67c05064"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "CC-BY-NC-SA-4.0",
+   "license_url": null,
+   "source_url": null,
+   "issues_url": null,
+   "page": "https://modrinth.com/resourcepack/clean-connected-glass",
+   "dependencies": [],
+   "group": "library",
+   "purpose": "Connected glass without streaks (via Continuity) — windows and greenhouses.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "dramatic-skys",
+   "title": "Dramatic Skys",
+   "kind": "resourcepack",
+   "source": "modrinth",
+   "project_id": "2YyNMled",
+   "version_id": "4MZQy9nc",
+   "version_number": "1.5.3.36.6",
+   "version_type": "release",
+   "date_published": "2026-09-18T21:55:41.304937Z",
+   "game_versions": [
+    "1.10",
+    "1.10.1",
+    "1.10.2",
+    "1.11",
+    "1.11.1",
+    "1.11.2",
+    "1.12",
+    "1.12.1",
+    "1.12.2",
+    "1.13",
+    "1.13.1",
+    "1.13.2",
+    "1.14",
+    "1.14.1",
+    "1.14.2",
+    "1.14.3",
+    "1.14.4",
+    "1.15",
+    "1.15.1",
+    "1.15.2",
+    "1.16",
+    "1.16.1",
+    "1.16.2",
+    "1.16.3",
+    "1.16.4",
+    "1.16.5",
+    "1.17",
+    "1.17.1",
+    "1.18",
+    "1.18.1",
+    "1.18.2",
+    "1.19",
+    "1.19.1",
+    "1.19.2",
+    "1.19.3",
+    "1.19.4",
+    "1.20",
+    "1.20.1",
+    "1.20.2",
+    "1.20.2-pre1",
+    "1.20.3",
+    "1.20.4",
+    "1.20.5",
+    "1.20.5-pre1",
+    "1.20.5-pre2",
+    "1.20.5-pre3",
+    "1.20.6",
+    "1.21",
+    "1.21.1",
+    "1.21.10",
+    "1.21.11",
+    "1.21.2",
+    "1.21.2-pre1",
+    "1.21.2-pre2",
+    "1.21.3",
+    "1.21.4",
+    "1.21.5",
+    "1.21.6",
+    "1.21.7",
+    "1.21.8",
+    "1.21.9",
+    "1.8",
+    "1.8.1",
+    "1.8.2",
+    "1.8.3",
+    "1.8.4",
+    "1.8.5",
+    "1.8.6",
+    "1.8.7",
+    "1.8.8",
+    "1.8.9",
+    "1.9",
+    "1.9.1",
+    "1.9.2",
+    "1.9.3",
+    "1.9.4",
+    "23w31a",
+    "23w32a",
+    "23w33a",
+    "23w35a",
+    "23w42a",
+    "23w43a",
+    "23w43b",
+    "23w44a",
+    "23w45a",
+    "23w46a",
+    "24w03a",
+    "24w03b",
+    "24w04a",
+    "24w05a",
+    "24w05b",
+    "24w06a",
+    "24w07a",
+    "24w09a",
+    "24w10a",
+    "24w11a",
+    "24w12a",
+    "24w13a",
+    "24w14a",
+    "24w14potato",
+    "24w18a",
+    "24w19a",
+    "24w19b",
+    "24w20a",
+    "24w33a",
+    "24w34a",
+    "24w35a",
+    "24w36a",
+    "24w37a",
+    "24w38a",
+    "24w39a",
+    "24w40a",
+    "24w44a",
+    "24w45a",
+    "24w46a",
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "loaders": [
+    "minecraft"
+   ],
+   "filename": "Dramatic Skys Demo 1.5.3.36.6.zip",
+   "url": "https://cdn.modrinth.com/data/2YyNMled/versions/4MZQy9nc/Dramatic%20Skys%20Demo%201.5.3.36.6.zip",
+   "size": 13912171,
+   "hashes": {
+    "sha1": "8953223ba4d04261917b2e29bdcc1841297a5efa",
+    "sha512": "e08521691c67a2a3b34846e58ea6b4fd7badf3d7efc28b56d26fe18822b607fe22b71aa3f48ba725fd857efb9ab310e8d286d05946db01c92cf40937c87177b4"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "LicenseRef-All-Rights-Reserved",
+   "license_url": null,
+   "source_url": null,
+   "issues_url": "https://www.discord.gg/thebaum64",
+   "page": "https://modrinth.com/resourcepack/dramatic-skys",
+   "dependencies": [],
+   "group": "library",
+   "purpose": "HD skies with realistic clouds (needs Nuit). Baseline without shaders.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "even-better-enchants",
+   "title": "Even Better Enchants",
+   "kind": "resourcepack",
+   "source": "modrinth",
+   "project_id": "6udpuGCH",
+   "version_id": "scd0ojNG",
+   "version_number": "3-1.21.5",
+   "version_type": "release",
+   "date_published": "2025-12-21T06:46:47.174702Z",
+   "game_versions": [
+    "1.21.10",
+    "1.21.11",
+    "1.21.5",
+    "1.21.6",
+    "1.21.7",
+    "1.21.8",
+    "1.21.9",
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "loaders": [
+    "minecraft"
+   ],
+   "filename": "EvenBetterEnchants_v3_1.21.5+.zip",
+   "url": "https://cdn.modrinth.com/data/6udpuGCH/versions/scd0ojNG/EvenBetterEnchants_v3_1.21.5%2B.zip",
+   "size": 175397,
+   "hashes": {
+    "sha1": "903411efb598ede74f390d175ac012eb2f3d908f",
+    "sha512": "b54395af7f4194bf4517e97b5d6e7e8bece1683ea4d0405dd810432da6b0046978d32e3e4dafe502c8c59d9a88a5a63792bfdbaea4a6068173d58fdc9325dd7e"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "Apache-2.0",
+   "license_url": null,
+   "source_url": null,
+   "issues_url": null,
+   "page": "https://modrinth.com/resourcepack/even-better-enchants",
+   "dependencies": [],
+   "group": "library",
+   "purpose": "Distinct enchanted book textures (vanilla item models, no CIT mod needed on 26.1).",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "fancy-crops",
+   "title": "(Bee's) Fancy Crops",
+   "kind": "resourcepack",
+   "source": "modrinth",
+   "project_id": "UGEVQ6t9",
+   "version_id": "ZJEBZjg6",
+   "version_number": "1.3",
+   "version_type": "release",
+   "date_published": "2025-10-11T09:59:20.169602Z",
+   "game_versions": [
+    "1.20",
+    "1.20.1",
+    "1.20.2",
+    "1.20.3",
+    "1.20.4",
+    "1.20.5",
+    "1.20.6",
+    "1.21",
+    "1.21.1",
+    "1.21.10",
+    "1.21.11",
+    "1.21.2",
+    "1.21.3",
+    "1.21.4",
+    "1.21.5",
+    "1.21.6",
+    "1.21.7",
+    "1.21.8",
+    "1.21.9",
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "loaders": [
+    "minecraft"
+   ],
+   "filename": "Fancy Crops v1.3.zip",
+   "url": "https://cdn.modrinth.com/data/UGEVQ6t9/versions/ZJEBZjg6/Fancy%20Crops%20v1.3.zip",
+   "size": 92779,
+   "hashes": {
+    "sha1": "788e5169eb064b696b2e20d4c5d998cceb387a2e",
+    "sha512": "ce8e34ce76f5368169722f9949edf372af5d9e1d3c262395006a5a1561ed7bae1259b9d69e4838914d637817f611283bfaf8be07c7b45b317fd2bdb22f32b7e3"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "LicenseRef-All-Rights-Reserved",
+   "license_url": null,
+   "source_url": null,
+   "issues_url": null,
+   "page": "https://modrinth.com/resourcepack/fancy-crops",
+   "dependencies": [],
+   "group": "library",
+   "purpose": "Prettier crops; built to work with Farmer's Delight.",
    "optional": false,
    "side_override": null,
    "explicit": true,
@@ -6411,7 +7775,646 @@
    "page": "https://modrinth.com/resourcepack/fresh-animations",
    "dependencies": [],
    "group": "library",
-   "purpose": "Vanilla-style mob animations (enabled by default).",
+   "purpose": "Vanilla-style mob animations.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "fresh-animations-details",
+   "title": "Fresh Animations: Details",
+   "kind": "resourcepack",
+   "source": "modrinth",
+   "project_id": "lctgpCsu",
+   "version_id": "XM8VyQLk",
+   "version_number": "2.4.0",
+   "version_type": "release",
+   "date_published": "2026-10-31T08:33:46.383019Z",
+   "game_versions": [
+    "1.20",
+    "1.20.1",
+    "1.20.2",
+    "1.20.3",
+    "1.20.4",
+    "1.20.5",
+    "1.20.6",
+    "1.21",
+    "1.21.1",
+    "1.21.10",
+    "1.21.11",
+    "1.21.2",
+    "1.21.3",
+    "1.21.4",
+    "1.21.5",
+    "1.21.6",
+    "1.21.7",
+    "1.21.8",
+    "1.21.9",
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "loaders": [
+    "minecraft"
+   ],
+   "filename": "FA+Details-v2.4.zip",
+   "url": "https://cdn.modrinth.com/data/lctgpCsu/versions/XM8VyQLk/FA%2BDetails-v2.4.zip",
+   "size": 400883,
+   "hashes": {
+    "sha1": "b98a11e783b79851e6f3c72e4b1eaf9b401d7599",
+    "sha512": "d8a6c2e0ac272e2f4773ed962301ece0cda73136d89a9788eff4dae74979471d29b7dee4073e8169644c4c2017f7b3286dab538171f9e8e2c19e708aa7df8d3d"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "LicenseRef-All-Rights-Reserved",
+   "license_url": null,
+   "source_url": null,
+   "issues_url": null,
+   "page": "https://modrinth.com/resourcepack/fresh-animations-details",
+   "dependencies": [],
+   "group": "library",
+   "purpose": "Official Fresh Animations extension: extra mob details.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "fresh-animations-objects",
+   "title": "Fresh Animations: Objects",
+   "kind": "resourcepack",
+   "source": "modrinth",
+   "project_id": "23O9JVMV",
+   "version_id": "AIGgXNdl",
+   "version_number": "2.1.2",
+   "version_type": "release",
+   "date_published": "2026-06-23T05:06:16.119408Z",
+   "game_versions": [
+    "1.20",
+    "1.20.1",
+    "1.20.2",
+    "1.20.3",
+    "1.20.4",
+    "1.20.5",
+    "1.20.6",
+    "1.21",
+    "1.21.1",
+    "1.21.10",
+    "1.21.11",
+    "1.21.2",
+    "1.21.3",
+    "1.21.4",
+    "1.21.5",
+    "1.21.6",
+    "1.21.7",
+    "1.21.8",
+    "1.21.9",
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "loaders": [
+    "minecraft"
+   ],
+   "filename": "FA+Objects-v2.1.2.zip",
+   "url": "https://cdn.modrinth.com/data/23O9JVMV/versions/AIGgXNdl/FA%2BObjects-v2.1.2.zip",
+   "size": 142277,
+   "hashes": {
+    "sha1": "bea6b91e4234b7223010d7ac248123d0398e7aa2",
+    "sha512": "61b76ed37e5ecfc4b5d25c545b011bb5bb59c49c97733d0f8b3afa725c886ed82e787d177df068f7e2fb3d5bb6fc253c5822d833658ff3ba48bd53b5c6c1ed21"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "LicenseRef-All-Rights-Reserved",
+   "license_url": null,
+   "source_url": null,
+   "issues_url": null,
+   "page": "https://modrinth.com/resourcepack/fresh-animations-objects",
+   "dependencies": [],
+   "group": "library",
+   "purpose": "Official Fresh Animations extension: animates non-mob entities.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "fresh-flower-pots",
+   "title": "Fresh Flower Pots",
+   "kind": "resourcepack",
+   "source": "modrinth",
+   "project_id": "CmEN0T1m",
+   "version_id": "YEM2pUsf",
+   "version_number": "1.5.4",
+   "version_type": "release",
+   "date_published": "2026-09-19T18:02:25.683949Z",
+   "game_versions": [
+    "1.20",
+    "1.20.1",
+    "1.20.2",
+    "1.20.3",
+    "1.20.4",
+    "1.20.5",
+    "1.20.6",
+    "1.21",
+    "1.21.1",
+    "1.21.10",
+    "1.21.11",
+    "1.21.2",
+    "1.21.3",
+    "1.21.4",
+    "1.21.5",
+    "1.21.6",
+    "1.21.7",
+    "1.21.8",
+    "1.21.9",
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "loaders": [
+    "minecraft"
+   ],
+   "filename": "§3Fresh §bFlower Pots.zip",
+   "url": "https://cdn.modrinth.com/data/CmEN0T1m/versions/YEM2pUsf/%C2%A73Fresh%20%C2%A7bFlower%20Pots.zip",
+   "size": 43374,
+   "hashes": {
+    "sha1": "c441c973438f41dc5ba2493a211d1e40baf6c8c5",
+    "sha512": "20f6b1d45f824fd5218bb9ab0798170de158e9d58f71b0ddf3fad1e7a22c90aca8d1f08c8d9a1f1e932754d619c0f9480d81ad4ba2c1746b7c832c241cd2e817"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "LicenseRef-All-Rights-Reserved",
+   "license_url": null,
+   "source_url": null,
+   "issues_url": null,
+   "page": "https://modrinth.com/resourcepack/fresh-flower-pots",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "BrcYkHFu",
+     "file_name": null,
+     "dependency_type": "optional"
+    }
+   ],
+   "group": "library",
+   "purpose": "Detailed flower pots (pairs with Gardener's Dream).",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "low-on-fire",
+   "title": "Low On Fire",
+   "kind": "resourcepack",
+   "source": "modrinth",
+   "project_id": "RRxvWKNC",
+   "version_id": "yQdcUfnr",
+   "version_number": "26.3",
+   "version_type": "release",
+   "date_published": "2026-06-19T12:38:41.458666Z",
+   "game_versions": [
+    "1.20",
+    "1.20.1",
+    "1.20.2",
+    "1.20.2-pre1",
+    "1.20.3",
+    "1.20.4",
+    "1.20.5",
+    "1.20.5-pre1",
+    "1.20.5-pre2",
+    "1.20.5-pre3",
+    "1.20.6",
+    "1.21",
+    "1.21.1",
+    "1.21.10",
+    "1.21.11",
+    "1.21.2",
+    "1.21.2-pre1",
+    "1.21.2-pre2",
+    "1.21.3",
+    "1.21.4",
+    "1.21.5",
+    "1.21.6",
+    "1.21.7",
+    "1.21.8",
+    "1.21.9",
+    "23w31a",
+    "23w32a",
+    "23w33a",
+    "23w35a",
+    "23w42a",
+    "23w43a",
+    "23w43b",
+    "23w44a",
+    "23w45a",
+    "23w46a",
+    "24w03a",
+    "24w03b",
+    "24w04a",
+    "24w05a",
+    "24w05b",
+    "24w06a",
+    "24w07a",
+    "24w09a",
+    "24w10a",
+    "24w11a",
+    "24w12a",
+    "24w13a",
+    "24w14a",
+    "24w14potato",
+    "24w18a",
+    "24w19a",
+    "24w19b",
+    "24w20a",
+    "24w33a",
+    "24w34a",
+    "24w35a",
+    "24w36a",
+    "24w37a",
+    "24w38a",
+    "24w39a",
+    "24w40a",
+    "24w44a",
+    "24w45a",
+    "24w46a",
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2",
+    "26.2-pre-1",
+    "26.2-pre-2",
+    "26.2-pre-3",
+    "26.2-pre-4",
+    "26.2-pre-5",
+    "26.2-pre-6",
+    "26.2-rc-1",
+    "26.2-rc-2",
+    "26.2-snapshot-2",
+    "26.2-snapshot-3",
+    "26.2-snapshot-4",
+    "26.2-snapshot-5",
+    "26.2-snapshot-6",
+    "26.2-snapshot-7",
+    "26.2-snapshot-8",
+    "26.3",
+    "26.3-pre-1",
+    "26.3-pre-2",
+    "26.3-pre-3",
+    "26.3-rc-1",
+    "26.3-rc-2",
+    "26.3-rc-3",
+    "26.3-snapshot-1",
+    "26.3-snapshot-10",
+    "26.3-snapshot-2",
+    "26.3-snapshot-3",
+    "26.3-snapshot-4",
+    "26.3-snapshot-5",
+    "26.3-snapshot-6",
+    "26.3-snapshot-7",
+    "26.3-snapshot-8",
+    "26.3-snapshot-9"
+   ],
+   "loaders": [
+    "minecraft"
+   ],
+   "filename": "LowOnFire v26.2§8.zip",
+   "url": "https://cdn.modrinth.com/data/RRxvWKNC/versions/yQdcUfnr/LowOnFire%20v26.2%C2%A78.zip",
+   "size": 42760,
+   "hashes": {
+    "sha1": "96932a034fff4cd0cad08ba12db730450c4772da",
+    "sha512": "713a20a8171c8249c30d9eb72342162754c627c7a86dc0971cb555faf43c322c181fd5546e0c770fc9ae922161ee846a7af951267c1d9a8a75af466a17e19d5e"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "LicenseRef-All-Rights-Reserved",
+   "license_url": null,
+   "source_url": null,
+   "issues_url": null,
+   "page": "https://modrinth.com/resourcepack/low-on-fire",
+   "dependencies": [],
+   "group": "library",
+   "purpose": "Lower first-person fire overlay.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "new-glowing-ores",
+   "title": "New Glowing Ores",
+   "kind": "resourcepack",
+   "source": "modrinth",
+   "project_id": "oL18adaQ",
+   "version_id": "BG46xXmQ",
+   "version_number": "2.0-1.21-border",
+   "version_type": "release",
+   "date_published": "2024-10-23T07:12:55.280569Z",
+   "game_versions": [
+    "1.21",
+    "1.21.1",
+    "1.21.10",
+    "1.21.11",
+    "1.21.2",
+    "1.21.3",
+    "1.21.4",
+    "1.21.5",
+    "1.21.6",
+    "1.21.7",
+    "1.21.8",
+    "1.21.9",
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "loaders": [
+    "minecraft"
+   ],
+   "filename": "NewGlowingOres-§6[Border]§r.zip",
+   "url": "https://cdn.modrinth.com/data/oL18adaQ/versions/BG46xXmQ/NewGlowingOres-%C2%A76%5BBorder%5D%C2%A7r.zip",
+   "size": 344937,
+   "hashes": {
+    "sha1": "40d8c6748585e4585c8d1e54a28b8ea51cad080d",
+    "sha512": "29b9e71e9bc6473070ce2e73a3a9960170a6f1ef089459ffc93254067bc55d2ef4a65357848b433dca3a9a622909f9fd734c1f9dab3da68ae3448cddbf982a3c"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "CC-BY-NC-SA-4.0",
+   "license_url": null,
+   "source_url": null,
+   "issues_url": null,
+   "page": "https://modrinth.com/resourcepack/new-glowing-ores",
+   "dependencies": [],
+   "group": "library",
+   "purpose": "Optional: glowing ore outlines (accessibility); shipped but off.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "recolourful-containers-gui",
+   "title": "Recolourful Containers GUI + HUD",
+   "kind": "resourcepack",
+   "source": "modrinth",
+   "project_id": "lewweaHO",
+   "version_id": "aQ7jLjk8",
+   "version_number": "3.1.4",
+   "version_type": "release",
+   "date_published": "2026-10-01T20:42:37.080755Z",
+   "game_versions": [
+    "1.19.4",
+    "1.20",
+    "1.20.1",
+    "1.20.2",
+    "1.20.3",
+    "1.20.4",
+    "1.20.5",
+    "1.20.6",
+    "1.21",
+    "1.21.1",
+    "1.21.10",
+    "1.21.11",
+    "1.21.2",
+    "1.21.3",
+    "1.21.4",
+    "1.21.5",
+    "1.21.6",
+    "1.21.7",
+    "1.21.8",
+    "1.21.9",
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.3"
+   ],
+   "loaders": [
+    "minecraft"
+   ],
+   "filename": "Recolourful Containers 3.1.4 (1.19.4+).zip",
+   "url": "https://cdn.modrinth.com/data/lewweaHO/versions/aQ7jLjk8/Recolourful%20Containers%203.1.4%20%281.19.4%2B%29.zip",
+   "size": 2011177,
+   "hashes": {
+    "sha1": "802ca58c93fedc5ecbf83ba93df2dc50b6e79c41",
+    "sha512": "e0c57831d2f9ba461c6dbdd886a9908e354a4a3c03fc2252482680ace6833c6d2228611aaca90c03a3ec0e96edc4a8b0457375769057f22e35d3b1e4bf806fd8"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "LicenseRef-All-Rights-Reserved",
+   "license_url": null,
+   "source_url": null,
+   "issues_url": "https://discord.gg/zTYjykBHkJ",
+   "page": "https://modrinth.com/resourcepack/recolourful-containers-gui",
+   "dependencies": [],
+   "group": "library",
+   "purpose": "Warm, themed container screens (wooden crafting table, stone anvil, …); vanilla+ mode without OptiGUI.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "simple-grass-flowers",
+   "title": "Simple Grass Flowers",
+   "kind": "resourcepack",
+   "source": "modrinth",
+   "project_id": "ti9KkMHm",
+   "version_id": "Cd4Xa7Sr",
+   "version_number": "2.0.0",
+   "version_type": "release",
+   "date_published": "2026-07-26T16:03:35.432817Z",
+   "game_versions": [
+    "1.20",
+    "1.20.1",
+    "1.20.2",
+    "1.20.2-pre1",
+    "1.20.3",
+    "1.20.4",
+    "1.20.5",
+    "1.20.5-pre1",
+    "1.20.5-pre2",
+    "1.20.5-pre3",
+    "1.20.6",
+    "1.21",
+    "1.21.1",
+    "1.21.10",
+    "1.21.11",
+    "1.21.2",
+    "1.21.2-pre1",
+    "1.21.2-pre2",
+    "1.21.3",
+    "1.21.4",
+    "1.21.5",
+    "1.21.6",
+    "1.21.7",
+    "1.21.8",
+    "1.21.9",
+    "23w31a",
+    "23w32a",
+    "23w33a",
+    "23w35a",
+    "23w42a",
+    "23w43a",
+    "23w43b",
+    "23w44a",
+    "23w45a",
+    "23w46a",
+    "24w03a",
+    "24w03b",
+    "24w04a",
+    "24w05a",
+    "24w05b",
+    "24w06a",
+    "24w07a",
+    "24w09a",
+    "24w10a",
+    "24w11a",
+    "24w12a",
+    "24w13a",
+    "24w14a",
+    "24w14potato",
+    "24w18a",
+    "24w19a",
+    "24w19b",
+    "24w20a",
+    "24w33a",
+    "24w34a",
+    "24w35a",
+    "24w36a",
+    "24w37a",
+    "24w38a",
+    "24w39a",
+    "24w40a",
+    "24w44a",
+    "24w45a",
+    "24w46a",
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2"
+   ],
+   "loaders": [
+    "minecraft"
+   ],
+   "filename": "Simple Grass Flowers v2.0.0.zip",
+   "url": "https://cdn.modrinth.com/data/ti9KkMHm/versions/Cd4Xa7Sr/Simple%20Grass%20Flowers%20v2.0.0.zip",
+   "size": 208597,
+   "hashes": {
+    "sha1": "afb56cfc90e663526352f7bd75a3c733178fca45",
+    "sha512": "9ad752e71feb8fea4ccf2ecb23eecb85d48285e95744f28902bf505423a849a2ff74da6273982e7d38f7ea74385c67a9c188beaff38dae6e23473fbbd8bc11b5"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "LicenseRef-All-Rights-Reserved",
+   "license_url": null,
+   "source_url": null,
+   "issues_url": null,
+   "page": "https://modrinth.com/resourcepack/simple-grass-flowers",
+   "dependencies": [],
+   "group": "library",
+   "purpose": "Vanilla-friendly flowers, clovers and pebbles on grass.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "theones-eating-animation-pack",
+   "title": "Theone's Eating Animation Pack",
+   "kind": "resourcepack",
+   "source": "modrinth",
+   "project_id": "OhzX8kDf",
+   "version_id": "laDCvp3K",
+   "version_number": "1.0",
+   "version_type": "release",
+   "date_published": "2026-09-25T07:34:12.693250Z",
+   "game_versions": [
+    "1.21.10",
+    "1.21.11",
+    "1.21.4",
+    "1.21.5",
+    "1.21.6",
+    "1.21.7",
+    "1.21.8",
+    "1.21.9",
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "loaders": [
+    "minecraft"
+   ],
+   "filename": "Theone's Eating Animation Pack v1.0.zip",
+   "url": "https://cdn.modrinth.com/data/OhzX8kDf/versions/laDCvp3K/Theone%27s%20Eating%20Animation%20Pack%20v1.0.zip",
+   "size": 133949,
+   "hashes": {
+    "sha1": "dcfee884979fa4b9a7d539dd594d38a76a4657c1",
+    "sha512": "cc88acfe3136caa38a8ec44e1912e9534bf9c1b0d904f90fd796f46be4647750a378b5a2c1738b3db95397bd25d1aec98e959c85976c5aa47579ede9a2f1d268"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "LicenseRef-All-Rights-Reserved",
+   "license_url": null,
+   "source_url": null,
+   "issues_url": null,
+   "page": "https://modrinth.com/resourcepack/theones-eating-animation-pack",
+   "dependencies": [],
+   "group": "library",
+   "purpose": "Eating/drinking animations for food (no mod needed).",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "visual-armor-trims",
+   "title": "Visual: Armor Trims",
+   "kind": "resourcepack",
+   "source": "modrinth",
+   "project_id": "tPtjib62",
+   "version_id": "Qt949MJE",
+   "version_number": "4.2",
+   "version_type": "release",
+   "date_published": "2026-04-25T12:25:02.210953Z",
+   "game_versions": [
+    "1.21.11",
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2"
+   ],
+   "loaders": [
+    "minecraft"
+   ],
+   "filename": "visual_armor_trims_4.2.zip",
+   "url": "https://cdn.modrinth.com/data/tPtjib62/versions/Qt949MJE/visual_armor_trims_4.2.zip",
+   "size": 2880456,
+   "hashes": {
+    "sha1": "2569a102ba64243c6aa7ee1195386dfe3410b5f9",
+    "sha512": "55417b3475f5bde4751f2f5b97979a8db8c3676b904bc01632312ce1d25f86f3f88fec014cdf6ec8e485c6dc6f65f9150955b0a805b0ef6837dfed63563d79d3"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "CC-BY-SA-4.0",
+   "license_url": null,
+   "source_url": "https://github.com/Thanos1716/visuals",
+   "issues_url": "https://github.com/Thanos1716/visuals/issues",
+   "page": "https://modrinth.com/resourcepack/visual-armor-trims",
+   "dependencies": [],
+   "group": "library",
+   "purpose": "Armour trims visible on inventory icons.",
    "optional": false,
    "side_override": null,
    "explicit": true,
@@ -6616,6 +8619,192 @@
    "dependencies": [],
    "group": "library",
    "purpose": "Optional lightweight shader for lower-end GPUs.",
+   "optional": true,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "mellow",
+   "title": "Mellow",
+   "kind": "shader",
+   "source": "modrinth",
+   "project_id": "BUxf36AP",
+   "version_id": "DmXr7SxM",
+   "version_number": "3.5",
+   "version_type": "release",
+   "date_published": "2026-10-31T08:27:23.196745Z",
+   "game_versions": [
+    "1.10",
+    "1.10.1",
+    "1.10.2",
+    "1.11",
+    "1.11.1",
+    "1.11.2",
+    "1.12",
+    "1.12.1",
+    "1.12.2",
+    "1.13",
+    "1.13.1",
+    "1.13.2",
+    "1.14",
+    "1.14.1",
+    "1.14.2",
+    "1.14.3",
+    "1.14.4",
+    "1.15",
+    "1.15.1",
+    "1.15.2",
+    "1.16",
+    "1.16.1",
+    "1.16.2",
+    "1.16.3",
+    "1.16.4",
+    "1.16.5",
+    "1.17",
+    "1.17.1",
+    "1.18",
+    "1.18.1",
+    "1.18.2",
+    "1.19",
+    "1.19.1",
+    "1.19.2",
+    "1.19.3",
+    "1.19.4",
+    "1.20",
+    "1.20.1",
+    "1.20.2",
+    "1.20.3",
+    "1.20.4",
+    "1.20.5",
+    "1.20.6",
+    "1.21",
+    "1.21.1",
+    "1.21.10",
+    "1.21.11",
+    "1.21.2",
+    "1.21.3",
+    "1.21.4",
+    "1.21.5",
+    "1.21.6",
+    "1.21.7",
+    "1.21.8",
+    "1.21.9",
+    "1.8",
+    "1.8.1",
+    "1.8.2",
+    "1.8.3",
+    "1.8.4",
+    "1.8.5",
+    "1.8.6",
+    "1.8.7",
+    "1.8.8",
+    "1.8.9",
+    "1.9",
+    "1.9.1",
+    "1.9.2",
+    "1.9.3",
+    "1.9.4",
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "loaders": [
+    "iris",
+    "optifine"
+   ],
+   "filename": "Mellow v3.5.zip",
+   "url": "https://cdn.modrinth.com/data/BUxf36AP/versions/DmXr7SxM/Mellow%20v3.5.zip",
+   "size": 1955122,
+   "hashes": {
+    "sha1": "9c309a5170ae555990cf2adfde71c7ac755f560c",
+    "sha512": "5828a84bec5c307a574e08e72e4aace4c59d2b0ad34a55e95c0922de3b67a29a27b834407e3aa5fb8c501a72e57ab37067e481f7c5da9ae25652624d4e776d3d"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "MIT",
+   "license_url": null,
+   "source_url": "https://codeberg.org/TheCMK/mellow-shader",
+   "issues_url": "https://codeberg.org/TheCMK/mellow-shader/issues",
+   "page": "https://modrinth.com/shader/mellow",
+   "dependencies": [],
+   "group": "library",
+   "purpose": "Optional painterly, cozy and light shader (MIT).",
+   "optional": true,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "photon-shader",
+   "title": "Photon Shaders",
+   "kind": "shader",
+   "source": "modrinth",
+   "project_id": "lLqFfGNs",
+   "version_id": "BnGklH5y",
+   "version_number": "v1.4",
+   "version_type": "release",
+   "date_published": "2026-10-19T12:27:40.842387Z",
+   "game_versions": [
+    "1.16.5",
+    "1.17",
+    "1.17.1",
+    "1.18",
+    "1.18.1",
+    "1.18.2",
+    "1.19",
+    "1.19.1",
+    "1.19.2",
+    "1.19.3",
+    "1.19.4",
+    "1.20",
+    "1.20.1",
+    "1.20.2",
+    "1.20.3",
+    "1.20.4",
+    "1.20.5",
+    "1.20.6",
+    "1.21",
+    "1.21.1",
+    "1.21.10",
+    "1.21.11",
+    "1.21.2",
+    "1.21.3",
+    "1.21.4",
+    "1.21.5",
+    "1.21.6",
+    "1.21.7",
+    "1.21.8",
+    "1.21.9",
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "loaders": [
+    "iris",
+    "optifine"
+   ],
+   "filename": "photon_v1.4.zip",
+   "url": "https://cdn.modrinth.com/data/lLqFfGNs/versions/BnGklH5y/photon_v1.4.zip",
+   "size": 3857333,
+   "hashes": {
+    "sha1": "96c7730f5891a42e39bbf1f0f5a98fa99628a7fe",
+    "sha512": "2dec87084dccf91a72a06235ecbfb3627f066699b5f70583f06077cba61433aedbfa6af28eb68bf1cdc726149cc3d9a587517cfab59e6a24e9d6a40b6874d655"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "LicenseRef-",
+   "license_url": "https://github.com/sixthsurge/photon/blob/main/LICENSE",
+   "source_url": "https://github.com/sixthsurge/photon",
+   "issues_url": "https://github.com/sixthsurge/photon/issues",
+   "page": "https://modrinth.com/shader/photon-shader",
+   "dependencies": [],
+   "group": "library",
+   "purpose": "Optional high-end semi-realistic shader (cinematic, strong GPU).",
    "optional": true,
    "side_override": null,
    "explicit": true,

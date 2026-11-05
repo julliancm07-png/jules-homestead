@@ -311,6 +311,30 @@ slug = "yungs-better-strongholds"
 group = "world"
 purpose = "Exploration."
 [[mod]]
+slug = "structory"
+group = "world"
+purpose = "Atmospheric ruins and small structures with light lore (Stardust Labs, designed alongside Terralith)."
+[[mod]]
+slug = "structory-towers"
+group = "world"
+purpose = "Biome-themed towers to discover (Structory add-on)."
+[[mod]]
+slug = "explorify"
+group = "world"
+purpose = "Vanilla-friendly small structures (camps, ruins, houses) that make travel interesting."
+[[mod]]
+slug = "remove-terralith-intro-message"
+group = "world"
+purpose = "Removes the Stardust Labs intro chat message on world join (cleaner first impression)."
+[[mod]]
+slug = "gardeners-dream"
+group = "build"
+purpose = "Place any plant in flower pots and decorated pots (cozy decorating)."
+[[mod]]
+slug = "snow-under-trees"
+group = "weather"
+purpose = "Snow settles under trees in snowy biomes / winter (supports Serene Seasons and Terralith)."
+[[mod]]
 slug = "friends-and-foes"
 group = "world"
 purpose = "Vanilla-style mobs (moobloom, beekeeper villagers, copper golem helpers)."
@@ -403,9 +427,37 @@ slug = "fallingleaves"
 group = "visual"
 purpose = "Leaf particles."
 [[mod]]
-slug = "visuality"
+slug = "subtle-effects"
 group = "visual"
-purpose = "Small ambient particles."
+purpose = "Ambient detail: fire sparks, better smoke, snoring Z's, dust clouds, glowing dust; every effect toggleable. Replaces Visuality."
+[[mod]]
+slug = "ambient-environment"
+group = "visual"
+purpose = "Subtle colour variation in grass, leaves and water (Bedrock-style), so landscapes feel less flat."
+[[mod]]
+slug = "wakes"
+group = "visual"
+purpose = "Boat and swimming wakes/splashes on water."
+[[mod]]
+slug = "cameraoverhaul"
+group = "visual"
+purpose = "Gentle camera roll/sway for first-person immersion (tuned down in configs; can be disabled)."
+[[mod]]
+slug = "legendary-tooltips"
+group = "visual"
+purpose = "Framed, readable item tooltips with item previews (pleasant screens)."
+[[mod]]
+slug = "rrls"
+group = "visual"
+purpose = "Resource reloads happen in the background instead of a blocking full-screen overlay."
+[[mod]]
+slug = "overflowing-bars"
+group = "visual"
+purpose = "Compact health/armour rows (thermoo-patches ships a compatibility patch for it)."
+[[mod]]
+slug = "nuit"
+group = "visual"
+purpose = "Custom skybox support (formerly FabricSkyboxes) for the Dramatic Skys resource pack."
 [[mod]]
 slug = "lambdynamiclights"
 group = "visual"
@@ -437,16 +489,70 @@ purpose = "Required by Fresh Animations."
 
 # ---------------------------------------------------------------- resource packs & shaders (client, optional)
 [[resourcepack]]
-slug = "fresh-animations"
-purpose = "Vanilla-style mob animations (enabled by default)."
-[[resourcepack]]
 slug = "better-leaves"
-purpose = "Bushier vanilla leaves (enabled by default)."
+purpose = "Bushier vanilla leaves."
+[[resourcepack]]
+slug = "fresh-animations"
+purpose = "Vanilla-style mob animations."
+[[resourcepack]]
+slug = "fresh-animations-details"
+purpose = "Official Fresh Animations extension: extra mob details."
+[[resourcepack]]
+slug = "fresh-animations-objects"
+purpose = "Official Fresh Animations extension: animates non-mob entities."
+[[resourcepack]]
+slug = "fancy-crops"
+purpose = "Prettier crops; built to work with Farmer's Delight."
+[[resourcepack]]
+slug = "simple-grass-flowers"
+purpose = "Vanilla-friendly flowers, clovers and pebbles on grass."
+[[resourcepack]]
+slug = "better-lanterns"
+purpose = "3D lanterns and chains."
+[[resourcepack]]
+slug = "fresh-flower-pots"
+purpose = "Detailed flower pots (pairs with Gardener's Dream)."
+[[resourcepack]]
+slug = "clean-connected-glass"
+purpose = "Connected glass without streaks (via Continuity) — windows and greenhouses."
+[[resourcepack]]
+slug = "animated-items"
+purpose = "Subtle item texture animations."
+[[resourcepack]]
+slug = "theones-eating-animation-pack"
+purpose = "Eating/drinking animations for food (no mod needed)."
+[[resourcepack]]
+slug = "even-better-enchants"
+purpose = "Distinct enchanted book textures (vanilla item models, no CIT mod needed on 26.1)."
+[[resourcepack]]
+slug = "visual-armor-trims"
+purpose = "Armour trims visible on inventory icons."
+[[resourcepack]]
+slug = "low-on-fire"
+purpose = "Lower first-person fire overlay."
+[[resourcepack]]
+slug = "recolourful-containers-gui"
+purpose = "Warm, themed container screens (wooden crafting table, stone anvil, …); vanilla+ mode without OptiGUI."
+[[resourcepack]]
+slug = "dramatic-skys"
+purpose = "HD skies with realistic clouds (needs Nuit). Baseline without shaders."
+[[resourcepack]]
+slug = "new-glowing-ores"
+enabled = false
+purpose = "Optional: glowing ore outlines (accessibility); shipped but off."
 
 [[shader]]
 slug = "complementary-reimagined"
 optional = true
 purpose = "Optional 'Cinematic' preset shader (vanilla-faithful). Off by default."
+[[shader]]
+slug = "photon-shader"
+optional = true
+purpose = "Optional high-end semi-realistic shader (cinematic, strong GPU)."
+[[shader]]
+slug = "mellow"
+optional = true
+purpose = "Optional painterly, cozy and light shader (MIT)."
 [[shader]]
 slug = "makeup-ultra-fast-shaders"
 optional = true

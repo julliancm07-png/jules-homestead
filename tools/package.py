@@ -29,7 +29,7 @@ DIST = ROOT / "build" / "dist"
 ALLOWED_HOSTS = ("https://cdn.modrinth.com/", "https://maven.ftb.dev/")
 FIXED_DATE = (2026, 1, 1, 0, 0, 0)
 
-OPTIONS_TXT = """version:4671
+OPTIONS_BASE = """version:4671
 renderDistance:10
 simulationDistance:8
 guiScale:3
@@ -39,12 +39,35 @@ graphicsMode:1
 particles:0
 entityShadows:true
 biomeBlendRadius:2
-resourcePacks:["vanilla","fabric","file/FreshAnimations_v1.11.2_26.1+.zip","file/Better-Leaves-9.6.zip"]
+darkMojangStudiosBackground:true
 narrator:0
 tutorialStep:none
 skipMultiplayerWarning:true
 onboardAccessibility:false
 """
+HOMESTEAD_RP = "HomesteadResources.zip"
+
+
+def resource_pack_order(man, lock):
+    """options.txt resourcePacks: vanilla first, then manifest order (enabled only), our pack last (highest)."""
+    by_slug = {e["slug"]: e for e in lock["files"] if e["kind"] == "resourcepack"}
+    ids = ["vanilla"] + [f"file/{by_slug[r['slug']]['filename']}" for r in man.get("resourcepack", []) if r.get("enabled", True)]
+    return ids + [f"file/{HOMESTEAD_RP}"]
+
+
+def homestead_rp_zip():
+    import io
+    import subprocess
+    import sys
+    # Always regenerate: the generated pack is not committed (only its sources are).
+    subprocess.run([sys.executable, "-I", str(ROOT / "tools" / "gen_resources.py")], check=True)
+    src = ROOT / "resourcepacks" / "homestead-resources"
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, "w") as rz:
+        for f in sorted(src.rglob("*")):
+            if f.is_file():
+                rz.writestr(zinfo(f.relative_to(src).as_posix()), f.read_bytes())
+    return buf.getvalue()
 
 
 def zinfo(name):
@@ -99,7 +122,9 @@ def main():
         for f in sorted((ROOT / "configs").rglob("*")):
             if f.is_file():
                 z.writestr(zinfo("overrides/config/" + f.relative_to(ROOT / "configs").as_posix()), f.read_bytes())
-        z.writestr(zinfo("overrides/options.txt"), OPTIONS_TXT)
+        packs = resource_pack_order(man, lock)
+        z.writestr(zinfo("overrides/options.txt"), OPTIONS_BASE + "resourcePacks:" + json.dumps(packs) + "\n")
+        z.writestr(zinfo(f"overrides/resourcepacks/{HOMESTEAD_RP}"), homestead_rp_zip())
         for doc in ("README.md", "docs/INSTALL.md", "CHANGELOG.md"):
             p = ROOT / doc
             if p.exists():

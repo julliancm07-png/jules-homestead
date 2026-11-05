@@ -42,6 +42,18 @@ Legend: **R** researched · **I** implemented · **C** compiled · **T** runtime
 | Residents (MCA), market, requests | T (load) / L | |
 | Create (optional, Create Fly) | R · L | dependency-checked only; excluded from the cloud boots |
 
+## Screens & immersion (user request 2026-11-05) — see docs/visuals-and-immersion.md
+| Item | State | Evidence |
+|---|---|---|
+| Homestead Resources pack (panorama of our world, Homestead Edition banner, splashes) | T | `docs/screenshots/title-screen.png` (client title scenario PASS) |
+| Walnut FTB Quests theme (+ frost/ember chapter variants) | T (renders) / L (readability at your GUI scale) | `docs/screenshots/showcase-questbook.png` |
+| Walnut Jade theme as default | T | `docs/screenshots/showcase-jade.png` |
+| 16 curated resource packs active (incl. Recolourful Containers, Dramatic Skys) | T (all loaded) / L (look on real GPU) | client log "Reloading ResourceManager" lists every pack |
+| Structure data packs (Structory, Towers, Explorify), Gardener's Dream, Snow Under Trees | T (load, server + client) / L (exploration feel) | server boot + client showcase |
+| Immersion mods (Subtle Effects, Ambient Environment, Wakes, Camera Overhaul tuned, Legendary Tooltips, RRLS, Overflowing Bars, Nuit) | T (load) / L (feel) | 259 mods loaded, showcase PASS |
+| Optional shaders: Complementary Reimagined, Photon, Mellow, MakeUp UF | R · L | need a real GPU |
+| IPN auto-refill icons removed from slots | I · L | config `AutoRefillSettings` (format verified in libIPN source) |
+
 ## Removed / blocked
 * Wilder Wild: removed (registry-load race with Terralith). See docs/compatibility.md.
 * CurseForge API and site are blocked by this environment's egress proxy (HTTP 403). CurseForge facts came from WebFetch and the CFWidget mirror (marked secondary).

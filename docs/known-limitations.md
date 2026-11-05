@@ -39,6 +39,12 @@ Stated plainly. "Awaiting local verification" means it was not possible to test 
 * Spoiled 12.1.0: the spoil-recipe cache is filled only on the client. Fixed in homestead-core (`SpoiledCompat`).
 * Wilder Wild 4.2.9: intermittent registry-load crash alongside Terralith. Removed from the pack.
 
+## Visuals
+* Dramatic Skys on Modrinth is the free "Demo" edition. It loads and renders, but the full sky set is a paid Patreon edition. Shaders replace its sky.
+* EMF logs that it ignores a few block-entity models (chest, bed, banner, shulker box) after repeated rebuilds, so Fresh Animations Objects won't animate those. Cosmetic only.
+* The title panorama is a morning village captured with software rendering. A golden-hour or winter capture could replace it later (`tools/client_smoke_test.py --scenario showcase`, then `tools/gen_resources.py`).
+* The walnut quest-book theme and Jade theme are new designs. I checked them in screenshots, not yet in long play.
+
 ## Not verified in the cloud (needs your PC)
 Real-GPU rendering, shaders, Distant Horizons, sound (ambience, Sound Physics), keybinding conflicts, mouse/keyboard feel, multiplayer, long-session memory use and performance, Physics Mod Pro, Create Fly.
 

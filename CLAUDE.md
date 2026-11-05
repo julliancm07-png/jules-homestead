@@ -37,6 +37,8 @@ python3 -I tools/package.py                                      # build/dist/Ju
 python3 -I tools/server_test.py [--cmd "homestead debug dump"]   # headless dedicated-server boot with server-side mods
 python3 -I tools/client_smoke_test.py [--scenario blizzard]      # full client: Xvfb + Mesa llvmpipe + portablemc
 python3 -I tools/inventory.py                                    # regenerate docs/mod-inventory.md
+python3 -I tools/gen_resources.py                                # resourcepacks/homestead-resources (title, splashes, themes)
+python3 -I tools/client_smoke_test.py --scenario showcase|title  # dev harness screenshots + title panorama capture
 ```
 
 ## Gotchas learned (2026-11-05)
@@ -47,6 +49,8 @@ python3 -I tools/inventory.py                                    # regenerate do
 - `canSeeSky` = sky light (lags block changes, passes through glass). Use heightmaps for shelter.
 - GameTest areas are encased in barriers (use `skyAccess = true`; keep rays inside the area).
 - Upstream bugs patched in homestead-core: Serene Seasons client recursion (singleplayer crash), Spoiled server recipe cache.
+- Visual work: verify with the showcase/title scenarios and READ the screenshots (docs/screenshots/).
+- Dev harness: -Dhomesteadcore.dev.script=<file> (tools/showcase.script, tools/title.script); inert otherwise.
 - Wilder Wild removed (FrozenLib CME during parallel registry load with Terralith).
 - Serene Seasons force-clears thunder in seasons with thunder range -1 -> winter thunder window set in configs.
 Keep STATUS.md and CHANGELOG.md current at the end of every work session.

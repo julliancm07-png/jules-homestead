@@ -18,5 +18,18 @@
 - Quest book: 9 chapters, 104 quests (85 auto-detected, 19 manual milestones).
 - Configs: Serene Seasons, Frostiful, Scorchful, Spoiled, MCA, homestead-core. Pack data module: seasonal crop tags, Energized Power weather/time controllers disabled.
 
+### Screens & immersion (same day, user request)
+- New original resource pack "Homestead Resources": in-game panorama of a pack village for the title screen,
+  "Homestead Edition" banner, homestead splash texts, walnut FTB Quests theme (frost/ember chapter variants),
+  matching walnut Jade theme; calm dark loading screen.
+- Resource packs: Fresh Animations Details/Objects, Fancy Crops, Simple Grass Flowers, Better Lanterns, Fresh Flower
+  Pots, Clean Connected Glass, Animated Items, TheOne's Eating Animation, Even Better Enchants, Visual Armor Trims,
+  Low On Fire, Recolourful Containers, Dramatic Skys; New Glowing Ores shipped off.
+- Data packs: Structory, Structory Towers, Explorify, Gardener's Dream, Remove Terralith Intro Message; Snow Under Trees.
+- Mods: Subtle Effects (replaces Visuality), Ambient Environment, Wakes, Camera Overhaul (tuned down), Legendary
+  Tooltips, RRLS, Overflowing Bars, Nuit. Optional shaders: Photon, Mellow.
+- homestead-core: dev-only showcase harness (-Dhomesteadcore.dev.script) for automated screenshots/panorama.
+- IPN auto-refill slot icons disabled; IPN first-run popup skipped.
+
 ### Removed during testing
 - Wilder Wild (intermittent registry-load crash with Terralith on 26.1 parallel loading).

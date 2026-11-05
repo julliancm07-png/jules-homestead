@@ -1,0 +1,32 @@
+# Dev showcase script for tools/client_smoke_test.py --scenario showcase (homestead-core DevShowcase harness).
+waitworld
+wait 300
+# floating spectator camera above the village for the title-screen panorama
+server gamemode spectator JulesTest
+server execute as JulesTest at @s run tp @s ~ ~9 ~ 225 0
+wait 400
+hud off
+screenshot showcase-village
+panorama
+wait 60
+hud on
+# back on the ground for UI screenshots
+server gamemode survival JulesTest
+server execute as JulesTest at @s run tp @s ~ ~-9 ~ 225 0
+wait 200
+screenshot showcase-hud
+look 225 75
+wait 60
+screenshot showcase-jade
+look 225 0
+screen inventory
+wait 40
+screenshot showcase-inventory
+screen close
+wait 20
+server execute as JulesTest run ftbquests open_book
+wait 120
+screenshot showcase-questbook
+screen close
+wait 20
+quit

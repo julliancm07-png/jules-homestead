@@ -118,7 +118,7 @@ CHAPTERS = [
            desc=["Your fields feed you now. Soon they will feed a town."]),
      ]},
     # ------------------------------------------------------------------ 3
-    {"key": "03_weather_wise", "title": "Weather Wise", "icon": "homesteadcore:barometer",
+    {"key": "03_weather_wise", "tags": ["weather"], "title": "Weather Wise", "icon": "homesteadcore:barometer",
      "subtitle": "Storms and blizzards: forecasts, clothing, shelter and warmth.",
      "quests": [
          Q("fronts", "About Severe Fronts", 0, 0, [Check("Got it")], [XP(20)], deps=["01_founding_camp/camp"], preset="info", icon="minecraft:lightning_rod",
@@ -176,7 +176,7 @@ CHAPTERS = [
            desc=["House, fields, barn, cellar, workshop. A place worth defending from the weather. Tick when it feels like a homestead."]),
      ]},
     # ------------------------------------------------------------------ 5
-    {"key": "05_workshop_and_power", "title": "Workshop & Power", "icon": "energizedpower:solar_panel_1",
+    {"key": "05_workshop_and_power", "tags": ["power"], "title": "Workshop & Power", "icon": "energizedpower:solar_panel_1",
      "subtitle": "Renewable electricity: solar, water and wind, batteries and hidden wiring.",
      "quests": [
          Q("power_info", "How Power Works Here", 0, 0, [Check("Got it")], [XP(20)], deps=["04_homes_and_services/workshop"], preset="info", icon="energizedpower:energy_analyzer",
@@ -215,7 +215,7 @@ CHAPTERS = [
                  "Mixing generators is the reliable answer: sun by day, wind in storms, water all year until it freezes."]),
      ]},
     # ------------------------------------------------------------------ 6
-    {"key": "06_modern_kitchen", "title": "The Modern Kitchen", "icon": "homesteadcore:electric_range",
+    {"key": "06_modern_kitchen", "tags": ["power"], "title": "The Modern Kitchen", "icon": "homesteadcore:electric_range",
      "subtitle": "Appliances that use electricity, and what happens when the power goes out.",
      "quests": [
          Q("lamps", "Electric Light", 0, 0, [Item("energizedpower:powered_lamp", 4)], [XP(30)], deps=["05_workshop_and_power/spark"],

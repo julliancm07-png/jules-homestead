@@ -6,3 +6,4 @@ custom-mods/*/.gradle/
 *.log
 __pycache__/
 .cache/
+resourcepacks/homestead-resources/

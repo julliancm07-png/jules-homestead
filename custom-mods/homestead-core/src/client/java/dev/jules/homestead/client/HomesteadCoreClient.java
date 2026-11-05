@@ -21,10 +21,12 @@ public final class HomesteadCoreClient implements ClientModInitializer {
 		ClientPlayConnectionEvents.DISCONNECT.register((handler, client) -> ClientWeather.reset());
 		ClientTickEvents.END_CLIENT_TICK.register(HomesteadCoreClient::tick);
 		MenuScreens.register(ModMenus.OVEN, OvenScreen::new);
+		DevShowcase.init(); // inert unless -Dhomesteadcore.dev.script is set
 	}
 
 	private static void tick(Minecraft mc) {
 		ClientWeather.tick();
+		DevShowcase.tick(mc);
 		if (mc.level == null || mc.player == null || mc.isPaused() || !HomesteadConfig.get().client.blizzardParticles) {
 			return;
 		}

@@ -113,6 +113,8 @@ def build():
         cj = {"id": cid, "group": "", "order_index": order, "filename": ch["key"], "icon": item(ch["icon"]),
               "default_quest_shape": ch.get("shape", ""), "default_hide_dependency_lines": False,
               "quests": [], "quest_links": [], "images": []}
+        if ch.get("tags"):
+            cj["tags"] = ch["tags"]  # FTB theme selectors [#tag] (resourcepacks/homestead-resources)
         clang = {f"chapter.{cid}.title": ch["title"]}
         if ch.get("subtitle"):
             clang[f"chapter.{cid}.chapter_subtitle"] = ch["subtitle"] if isinstance(ch["subtitle"], list) else [ch["subtitle"]]
