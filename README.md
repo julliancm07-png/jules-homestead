@@ -5,7 +5,7 @@ A Fabric modpack for **Minecraft 26.1.2**. Found a homestead, then grow it into 
 * **Platform:** Minecraft 26.1.2 · Fabric Loader 0.20.1 · Fabric API 0.155.3 · Java 25 ([why](research/version-decision.md))
 * **Mods:** 135 pinned third-party mods (108 chosen + 27 dependencies; `docs/mod-inventory.md`), plus the custom **homestead-core** mod and a pack data module; 17 resource packs and 4 optional shaders
 * **Quests:** 9 chapters, 104 quests (85 auto-detected, 19 labelled manual building milestones)
-* **Install:** [docs/INSTALL.md](docs/INSTALL.md) (Windows + Prism Launcher, `.mrpack`)
+* **Install:** download [`dist/JulesHomestead-1.0.0.mrpack`](dist/JulesHomestead-1.0.0.mrpack) and follow [docs/INSTALL.md](docs/INSTALL.md) (Windows + Prism Launcher)
 * **Status:** [STATUS.md](STATUS.md) · **Limitations:** [docs/known-limitations.md](docs/known-limitations.md) · **Local test plan:** [docs/test-checklist.md](docs/test-checklist.md)
 
 ## What makes it a homestead pack

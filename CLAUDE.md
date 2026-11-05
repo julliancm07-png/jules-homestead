@@ -16,7 +16,7 @@ Create is OPTIONAL via Create Fly (user decision). Never trade core systems for 
 - `quests/` — FTB Quests SNBT content (copied to `overrides/config/ftbquests/quests`).
 - `custom-mods/homestead-core/` — our Fabric mod (weather fronts, shelter, wind/hydro generators, appliances).
 - `tools/` — probe, resolver, validators, packager. `tools/ci/central-mirror.init.gradle` for cloud 429s only.
-- `build/` (gitignored) — packaged outputs.
+- `build/` (gitignored) — packaged outputs. `dist/` (committed) — the released `.mrpack` + server file list + SHA256SUMS; refresh it only after a full release pass.
 
 ## Ground rules
 - Every pinned mod must come from Modrinth API or an official maven (FTB → maven.ftb.dev). Record IDs, hashes, side, license.

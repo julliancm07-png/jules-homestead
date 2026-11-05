@@ -6,7 +6,7 @@
 * **Java 25.** Minecraft 26.1.2 requires it. Prism can download it for you (step 4).
 
 ## Steps
-1. Download `JulesHomestead-<version>.mrpack` from this repository's build output (or build it: see README → Building).
+1. Download **`dist/JulesHomestead-1.0.0.mrpack`** from this repository. On GitHub, open the file and click **Download raw file**. The work branch is `claude/exciting-planck-7nagkx` until it's merged. To check the file, compare its SHA-256 with `dist/SHA256SUMS`. You can also build it yourself: see README → Building.
 2. Prism → **Add Instance** → **Import** → choose the `.mrpack` file → **OK**.
 3. Prism shows two prompts:
    * **Optional mods**: tick what you want. **Create (Create Fly)** is optional; it is mechanical only, not electricity. **Distant Horizons** is off by default because of its performance cost. The four **shader packs** are optional too.

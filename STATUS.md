@@ -72,6 +72,8 @@ Pipeline run on the final build:
 7. `server_test`: booted in 39 s; FTB loaded 104 quests.
 8. Client scenarios **normal / blizzard / showcase / title: all PASS**, 260 mods. After the oven-screen restyle, the showcase was re-run and passed again.
 
+Delivered: `dist/JulesHomestead-1.0.0.mrpack` (committed; SHA-256 in `dist/SHA256SUMS`).
+
 ## Next (after Jules' local test)
 1. Run `docs/test-checklist.md` on the real PC and feed back the results.
 2. Balance pass (energy, spoilage, cold) from play-testing.
