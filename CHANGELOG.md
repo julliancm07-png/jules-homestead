@@ -8,6 +8,7 @@
   - the inventory
   - a crafting table
   - the Electric Oven
+- Electric Oven screen restyled in the pack's walnut and cream palette. The player inventory below stays vanilla.
 - Confirmed in the client: the IPN auto-refill slot icons are gone, and Camera Overhaul applies the tuned config.
 
 ### Quests
