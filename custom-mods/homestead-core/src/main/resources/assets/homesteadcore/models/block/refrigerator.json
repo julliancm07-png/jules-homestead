@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "homesteadcore:block/refrigerator_top",
+    "front": "homesteadcore:block/refrigerator_front",
+    "side": "homesteadcore:block/refrigerator_side",
+    "particle": "homesteadcore:block/refrigerator_side"
+  }
+}

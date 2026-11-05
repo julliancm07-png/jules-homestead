@@ -1,0 +1,509 @@
+{
+  "id": "5E1E206878D2BD92",
+  "group": "",
+  "order_index": 1,
+  "filename": "02_fields_and_kitchen",
+  "icon": {
+    "id": "farmersdelight:cooking_pot",
+    "count": 1
+  },
+  "default_quest_shape": "",
+  "default_hide_dependency_lines": false,
+  "quests": [
+    {
+      "id": "5D8955AA930587AD",
+      "x": 0.0,
+      "y": 0.0,
+      "dependencies": [
+        "07B1E75474678B7C"
+      ],
+      "tasks": [
+        {
+          "id": "175F092F1B141BFA",
+          "type": "advancement",
+          "advancement": "minecraft:husbandry/plant_seed",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "022FCF0DCFEEDB6F",
+          "type": "item",
+          "item": {
+            "id": "minecraft:bone_meal",
+            "count": 1
+          },
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": "33F517250B9A4477",
+      "x": 2.0,
+      "y": -1.0,
+      "dependencies": [
+        "5D8955AA930587AD"
+      ],
+      "tasks": [
+        {
+          "id": "0CD993CE758CC57A",
+          "type": "advancement",
+          "advancement": "farmersdelight:main/get_fd_seed",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "52FF676724591F5B",
+          "type": "xp",
+          "xp": 30
+        }
+      ]
+    },
+    {
+      "id": "5890C95AF1E7D2AF",
+      "x": 4.0,
+      "y": -2.0,
+      "dependencies": [
+        "33F517250B9A4477"
+      ],
+      "tasks": [
+        {
+          "id": "66478EF5B060C3CD",
+          "type": "item",
+          "item": {
+            "id": "farmersdelight:cabbage",
+            "count": 1
+          },
+          "count": 8
+        }
+      ],
+      "rewards": [
+        {
+          "id": "51823A6EF2395359",
+          "type": "item",
+          "item": {
+            "id": "farmersdelight:straw",
+            "count": 1
+          },
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": "026A64FD0A5C94FC",
+      "x": 4.0,
+      "y": -1.0,
+      "dependencies": [
+        "33F517250B9A4477"
+      ],
+      "tasks": [
+        {
+          "id": "40CFA0887282380D",
+          "type": "item",
+          "item": {
+            "id": "farmersdelight:tomato",
+            "count": 1
+          },
+          "count": 8
+        }
+      ],
+      "rewards": [
+        {
+          "id": "7DECD564F7178CFB",
+          "type": "item",
+          "item": {
+            "id": "farmersdelight:rope",
+            "count": 1
+          },
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": "7C5A6B29CB27B3D7",
+      "x": 4.0,
+      "y": 0.0,
+      "dependencies": [
+        "33F517250B9A4477"
+      ],
+      "tasks": [
+        {
+          "id": "1D179DE454096CB1",
+          "type": "item",
+          "item": {
+            "id": "farmersdelight:onion",
+            "count": 1
+          },
+          "count": 8
+        }
+      ],
+      "rewards": [
+        {
+          "id": "657BA431A71B839E",
+          "type": "xp",
+          "xp": 30
+        }
+      ]
+    },
+    {
+      "id": "4515C34CB5CAFB21",
+      "x": 4.0,
+      "y": 1.0,
+      "dependencies": [
+        "33F517250B9A4477"
+      ],
+      "tasks": [
+        {
+          "id": "3EED67597CBAF7DE",
+          "type": "advancement",
+          "advancement": "farmersdelight:main/plant_rice",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "746F30FC1FFE2129",
+          "type": "xp",
+          "xp": 30
+        }
+      ]
+    },
+    {
+      "id": "7E91807CF4308EF5",
+      "x": 6.0,
+      "y": -2.0,
+      "dependencies": [
+        "5890C95AF1E7D2AF"
+      ],
+      "tasks": [
+        {
+          "id": "3DE76EF170CE8BB6",
+          "type": "advancement",
+          "advancement": "farmersdelight:main/get_rich_soil",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "72EFDB120B8041B1",
+          "type": "item",
+          "item": {
+            "id": "minecraft:bone_meal",
+            "count": 1
+          },
+          "count": 16
+        }
+      ]
+    },
+    {
+      "id": "7DD84E66D64A2F80",
+      "x": 6.0,
+      "y": -1.0,
+      "dependencies": [
+        "026A64FD0A5C94FC"
+      ],
+      "tasks": [
+        {
+          "id": "5FE943D0D3782FD4",
+          "type": "advancement",
+          "advancement": "farmersdelight:main/use_cutting_board",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "11F1D5A92A438D07",
+          "type": "xp",
+          "xp": 30
+        }
+      ]
+    },
+    {
+      "id": "07BE6EFF7BFF155C",
+      "x": 6.0,
+      "y": 0.0,
+      "dependencies": [
+        "7C5A6B29CB27B3D7"
+      ],
+      "tasks": [
+        {
+          "id": "13EC48DA976556FE",
+          "type": "advancement",
+          "advancement": "farmersdelight:main/use_skillet",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "75DA2E3EA9F92833",
+          "type": "xp",
+          "xp": 30
+        }
+      ]
+    },
+    {
+      "id": "43C8CD6070D8495D",
+      "x": 6.0,
+      "y": 1.0,
+      "dependencies": [
+        "4515C34CB5CAFB21"
+      ],
+      "tasks": [
+        {
+          "id": "08F35769F6C5E14A",
+          "type": "advancement",
+          "advancement": "farmersdelight:main/place_cooking_pot",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "132444AFE7553039",
+          "type": "item",
+          "item": {
+            "id": "minecraft:bowl",
+            "count": 1
+          },
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": "3B60856E7F2D43C5",
+      "x": 8.0,
+      "y": 0.0,
+      "dependencies": [
+        "07BE6EFF7BFF155C",
+        "43C8CD6070D8495D",
+        "7DD84E66D64A2F80"
+      ],
+      "tasks": [
+        {
+          "id": "5728445D75E35E92",
+          "type": "item",
+          "item": {
+            "id": "farmersdelight:vegetable_soup",
+            "count": 1
+          },
+          "count": 1
+        },
+        {
+          "id": "4E91AAA0A2E03220",
+          "type": "item",
+          "item": {
+            "id": "farmersdelight:beef_stew",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "1B304B23EDDBD6B4",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "516B643207630D34",
+      "x": 2.0,
+      "y": 2.0,
+      "dependencies": [
+        "5D8955AA930587AD"
+      ],
+      "tasks": [
+        {
+          "id": "4BEE2B2211E6AED1",
+          "type": "advancement",
+          "advancement": "minecraft:husbandry/breed_an_animal",
+          "criterion": ""
+        },
+        {
+          "id": "49F2D909CA92E1BF",
+          "type": "item",
+          "item": {
+            "id": "animal_feeding_trough:feeding_trough",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "1E85ABBB28667469",
+          "type": "item",
+          "item": {
+            "id": "minecraft:wheat",
+            "count": 1
+          },
+          "count": 16
+        }
+      ]
+    },
+    {
+      "id": "22504420A4F94F16",
+      "x": 4.0,
+      "y": 3.0,
+      "optional": true,
+      "dependencies": [
+        "516B643207630D34"
+      ],
+      "tasks": [
+        {
+          "id": "07C55F09C6368419",
+          "type": "advancement",
+          "advancement": "minecraft:husbandry/safely_harvest_honey",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "69EF6BF460A741C1",
+          "type": "item",
+          "item": {
+            "id": "minecraft:glass_bottle",
+            "count": 1
+          },
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "26C656A2C6FCEF63",
+      "x": 6.0,
+      "y": 3.0,
+      "optional": true,
+      "dependencies": [
+        "516B643207630D34"
+      ],
+      "tasks": [
+        {
+          "id": "4A9ECED67CA47A38",
+          "type": "advancement",
+          "advancement": "minecraft:husbandry/fishy_business",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "147380A72C779174",
+          "type": "item",
+          "item": {
+            "id": "farmersdelight:rope",
+            "count": 1
+          },
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "6E38D215E98CF202",
+      "x": 8.0,
+      "y": 3.0,
+      "optional": true,
+      "dependencies": [
+        "26C656A2C6FCEF63"
+      ],
+      "tasks": [
+        {
+          "id": "0A4B29DB47ED3723",
+          "type": "item",
+          "item": {
+            "id": "fishofthieves:pondie",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "373CC19E71FADC8C",
+          "type": "item",
+          "item": {
+            "id": "fishofthieves:earthworms",
+            "count": 1
+          },
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": "12DC533FF066FAAA",
+      "x": 8.0,
+      "y": 2.0,
+      "optional": true,
+      "dependencies": [
+        "516B643207630D34"
+      ],
+      "tasks": [
+        {
+          "id": "16B432A3A04A173E",
+          "type": "advancement",
+          "advancement": "friendsandfoes:husbandry/shear_a_moobloom",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "67CBB6187915FAAC",
+          "type": "item",
+          "item": {
+            "id": "minecraft:bone_meal",
+            "count": 1
+          },
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": "7A21939ED9A517F8",
+      "x": 10.0,
+      "y": 0.0,
+      "icon": {
+        "id": "farmersdelight:shepherds_pie",
+        "count": 1
+      },
+      "preset": "goal",
+      "dependencies": [
+        "3B60856E7F2D43C5"
+      ],
+      "tasks": [
+        {
+          "id": "658B4D1BA0FF04FC",
+          "type": "advancement",
+          "advancement": "farmersdelight:main/eat_nourishing_food",
+          "criterion": ""
+        },
+        {
+          "id": "23144B3D37B3168D",
+          "type": "item",
+          "item": {
+            "id": "farmersdelight:shepherds_pie",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "7A107AD475EF7DB5",
+          "type": "item",
+          "item": {
+            "id": "minecraft:emerald",
+            "count": 1
+          },
+          "count": 4
+        },
+        {
+          "id": "5E4C72516F17F9CD",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    }
+  ],
+  "quest_links": [],
+  "images": []
+}

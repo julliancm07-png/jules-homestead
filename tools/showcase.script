@@ -1,0 +1,96 @@
+# Dev showcase script for tools/client_smoke_test.py --scenario showcase (homestead-core DevShowcase harness).
+waitworld
+wait 300
+# floating spectator camera above the village for the title-screen panorama
+server gamemode spectator JulesTest
+server execute as JulesTest at @s run tp @s ~ ~9 ~ 225 0
+wait 400
+hud off
+wait 5
+screenshot showcase-village
+panorama
+wait 60
+# the same view at night (Dramatic Skys night sky, lit windows and lanterns), then back to morning
+server time set 18000
+wait 200
+screenshot showcase-village-night
+server time set 1000
+wait 40
+hud on
+# back on the ground for UI screenshots
+server gamemode survival JulesTest
+server execute as JulesTest at @s run tp @s ~ ~-9 ~ 225 0
+wait 200
+screenshot showcase-hud
+look 225 75
+wait 60
+screenshot showcase-jade
+look 225 0
+screen inventory
+wait 60
+screenshot showcase-inventory
+screen close
+wait 40
+# a real container (crafting table) and our own appliance screen (electric range), opened like a right-click
+server execute as JulesTest at @s run tp @s ~ ~ ~ 0 0
+server execute as JulesTest at @s run setblock ~ ~ ~2 minecraft:crafting_table
+wait 10
+look 0 30
+wait 10
+use
+wait 60
+screenshot showcase-crafting
+screen close
+wait 20
+server execute as JulesTest at @s run setblock ~ ~ ~2 homesteadcore:electric_range
+wait 10
+use
+wait 60
+screenshot showcase-range
+screen close
+wait 20
+server execute as JulesTest at @s run setblock ~ ~ ~2 minecraft:air
+# polish 1.1 cozy room at night: a hollow spruce cabin around the player with an Adorn kitchen and our appliances,
+# sofa, hearth, Macaw's Holidays tree, hanging lanterns and a window onto the night sky.
+server time set 18000
+server execute as JulesTest at @s run tp @s ~ ~ ~ 0 0
+server execute as JulesTest at @s run fill ~-4 ~-1 ~-2 ~4 ~4 ~8 minecraft:spruce_planks hollow
+server execute as JulesTest at @s run fill ~-3 ~-1 ~-1 ~3 ~-1 ~7 minecraft:dark_oak_planks
+server execute as JulesTest at @s run fill ~-1 ~2 ~8 ~1 ~3 ~8 minecraft:glass_pane
+server execute as JulesTest at @s run fill ~-1 ~ ~3 ~1 ~ ~5 minecraft:red_carpet
+server execute as JulesTest at @s run setblock ~3 ~ ~2 adorn:oak_kitchen_counter[facing=west]
+server execute as JulesTest at @s run setblock ~3 ~ ~3 adorn:oak_kitchen_sink[facing=west]
+server execute as JulesTest at @s run setblock ~3 ~ ~4 homesteadcore:electric_range[facing=west]
+server execute as JulesTest at @s run setblock ~3 ~ ~5 adorn:oak_kitchen_counter[facing=west]
+server execute as JulesTest at @s run setblock ~3 ~ ~6 homesteadcore:refrigerator[facing=west]
+server execute as JulesTest at @s run setblock ~3 ~1 ~2 minecraft:potted_poppy
+server execute as JulesTest at @s run setblock ~3 ~1 ~5 minecraft:candle[candles=3,lit=true]
+server execute as JulesTest at @s run setblock ~-3 ~ ~3 adorn:white_sofa[facing=east]
+server execute as JulesTest at @s run setblock ~-3 ~ ~4 adorn:white_sofa[facing=east]
+server execute as JulesTest at @s run setblock ~-3 ~ ~5 adorn:white_sofa[facing=east]
+server execute as JulesTest at @s run fill ~-3 ~ ~1 ~-3 ~1 ~1 minecraft:bookshelf
+server execute as JulesTest at @s run fill ~-1 ~ ~7 ~1 ~1 ~7 minecraft:bricks
+server execute as JulesTest at @s run setblock ~ ~ ~7 minecraft:campfire[lit=true]
+server execute as JulesTest at @s run setblock ~-3 ~ ~7 mcwholidays:christmas_tree_base
+server execute as JulesTest at @s run setblock ~-3 ~1 ~7 mcwholidays:christmas_tree_bottom
+server execute as JulesTest at @s run setblock ~-3 ~2 ~7 mcwholidays:christmas_tree_middle
+server execute as JulesTest at @s run setblock ~-3 ~3 ~7 mcwholidays:christmas_tree_top
+server execute as JulesTest at @s run setblock ~-2 ~3 ~2 minecraft:lantern[hanging=true]
+server execute as JulesTest at @s run setblock ~2 ~3 ~2 minecraft:lantern[hanging=true]
+server execute as JulesTest at @s run setblock ~ ~3 ~5 minecraft:lantern[hanging=true]
+wait 60
+look 0 14
+wait 60
+hud off
+wait 5
+screenshot showcase-decor
+hud on
+server time set 1000
+look 225 0
+wait 20
+server execute as JulesTest run ftbquests open_book
+wait 120
+screenshot showcase-questbook
+screen close
+wait 20
+quit

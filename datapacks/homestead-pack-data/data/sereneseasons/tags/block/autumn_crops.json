@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "farmersdelight:cabbages",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:onions",
+      "required": false
+    },
+    {
+      "id": "ubesdelight:garlic_crop",
+      "required": false
+    },
+    {
+      "id": "ubesdelight:ginger_crop",
+      "required": false
+    },
+    {
+      "id": "ubesdelight:ube_crop",
+      "required": false
+    },
+    {
+      "id": "rusticdelight:cotton",
+      "required": false
+    }
+  ]
+}

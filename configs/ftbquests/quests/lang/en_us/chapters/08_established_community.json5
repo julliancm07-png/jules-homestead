@@ -1,0 +1,57 @@
+{
+  "chapter.4300F665BAF88D9D.title": "Established Community",
+  "chapter.4300F665BAF88D9D.chapter_subtitle": [
+    "Town projects and a place that runs itself."
+  ],
+  "quest.5B7B9B554B147430.title": "Noble",
+  "task.1B4EDA16603C7CB3.title": "Reach the Noble rank",
+  "quest.3AF76736989EBDE8.title": "[Manual] Town Bakery",
+  "quest.3AF76736989EBDE8.quest_desc": [
+    "A bakery building with ovens and storage. An electric range makes a fine bakery oven.",
+    "",
+    "This is a building milestone. FTB Quests cannot reliably judge architecture, so tick the checkbox yourself when you are happy with it."
+  ],
+  "quest.018E93FD0CED6DBB.title": "[Manual] The Inn",
+  "quest.018E93FD0CED6DBB.quest_desc": [
+    "A recognised inn brings visitors and new residents.",
+    "",
+    "This is a building milestone. FTB Quests cannot reliably judge architecture, so tick the checkbox yourself when you are happy with it."
+  ],
+  "quest.4E5023048A98B9BD.title": "[Manual] Town Hall",
+  "quest.4E5023048A98B9BD.quest_desc": [
+    "A place to gather. Put a barometer outside so everyone sees the forecast.",
+    "",
+    "This is a building milestone. FTB Quests cannot reliably judge architecture, so tick the checkbox yourself when you are happy with it."
+  ],
+  "quest.22DD49996432D6F7.title": "Wedding Bells",
+  "task.20BA67AD1C326DA3.title": "Get married",
+  "quest.0EADCD0C7D602722.title": "Mayor",
+  "task.5EC4B9DDE1C71B00.title": "Become Mayor",
+  "quest.0899720CE0A49AA9.title": "Power for the Town",
+  "quest.0899720CE0A49AA9.quest_desc": [
+    "An Advanced Battery Box stores 8.4 million E, enough for a street of homes. Wire the whole town and every winter night stays lit.",
+    "",
+    "Prove the grid can carry the load: place a Task Screen, right-click it and choose this quest's energy task, then run a cable from your batteries into it. The screen uses up the energy as it fills (up to 2,000 E per tick)."
+  ],
+  "task.34C359C36A83B4B1.title": "Craft a Task Screen (stone around a book)",
+  "task.3A14841F813C35A4.title": "Feed 500,000 E from the town grid into the Task Screen",
+  "quest.274826221A96EE94.title": "Winter Stockpile",
+  "quest.274826221A96EE94.quest_desc": [
+    "Full crates in the cellar before the first snow. The town eats well all winter."
+  ],
+  "quest.4D30C24B294F0748.title": "Festive Season",
+  "quest.4D30C24B294F0748.quest_desc": [
+    "When the first snow falls, string up lights and put a star on the town tree. Macaw's Holidays also has autumn and Halloween decorations."
+  ],
+  "quest.004D98D8AAFF65E8.title": "[Manual] Roads Between Towns",
+  "quest.004D98D8AAFF65E8.quest_desc": [
+    "",
+    "This is a building milestone. FTB Quests cannot reliably judge architecture, so tick the checkbox yourself when you are happy with it."
+  ],
+  "task.104436532D3E3994.title": "Tick when three settlements are linked by waystones",
+  "quest.619A430C14C66B19.title": "A Town Worth Keeping",
+  "quest.619A430C14C66B19.quest_desc": [
+    "What started as a campfire is now a town. Its residents have homes, work, power and a full larder for winter."
+  ],
+  "task.2A7C393EAFD0D4E3.title": "Reach the highest rank"
+}

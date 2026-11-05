@@ -1,0 +1,9 @@
+{
+	"schemaVersion": 1,
+	"id": "homesteadcore-gametest",
+	"version": "0.0.0",
+	"name": "Homestead Core GameTests",
+	"environment": "*",
+	"entrypoints": { "fabric-gametest": ["dev.jules.homestead.test.HomesteadGameTests"] },
+	"depends": { "homesteadcore": "*" }
+}

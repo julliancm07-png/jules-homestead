@@ -1,0 +1,1750 @@
+{
+ "queried_at": "2026-11-05T02:14:03.023230+00:00",
+ "source": "https://api.modrinth.com/v2",
+ "targets": [
+  "26.3",
+  "26.2",
+  "26.1.2",
+  "26.1.1",
+  "26.1",
+  "1.21.11",
+  "1.21.10",
+  "1.21.8",
+  "1.21.5",
+  "1.21.4",
+  "1.21.1",
+  "1.20.1"
+ ],
+ "projects": [
+  {
+   "slug": "spoiled",
+   "id": "FsHyEZFS",
+   "title": "Spoiled",
+   "loaders": [
+    "fabric",
+    "forge",
+    "neoforge"
+   ],
+   "client_side": "required",
+   "server_side": "required",
+   "license": "MIT",
+   "updated": "2026-10-08",
+   "downloads": 49285,
+   "project_type": "mod",
+   "fabric_support": {
+    "26.1.2": {
+     "version": "12.1.0",
+     "id": "bEOjyZyc",
+     "date": "2026-06-10",
+     "type": "alpha"
+    },
+    "26.1": {
+     "version": "12.0.0",
+     "id": "WKGorkYN",
+     "date": "2026-03-24",
+     "type": "alpha"
+    },
+    "1.21.11": {
+     "version": "11.0.0",
+     "id": "OcBmt9fg",
+     "date": "2025-12-20",
+     "type": "alpha"
+    },
+    "1.21.10": {
+     "version": "10.0.0",
+     "id": "1hzhLQoY",
+     "date": "2025-12-16",
+     "type": "alpha"
+    },
+    "1.21.8": {
+     "version": "9.0.0",
+     "id": "qdvlwCXC",
+     "date": "2025-08-23",
+     "type": "alpha"
+    },
+    "1.21.5": {
+     "version": "8.0.0",
+     "id": "bzzbNeL1",
+     "date": "2025-08-23",
+     "type": "alpha"
+    },
+    "1.21.4": {
+     "version": "7.0.1",
+     "id": "dAb4zRln",
+     "date": "2025-08-23",
+     "type": "alpha"
+    },
+    "1.21.1": {
+     "version": "6.3.0",
+     "id": "UJXXId5R",
+     "date": "2026-10-08",
+     "type": "alpha"
+    },
+    "1.20.1": {
+     "version": "2.2.2",
+     "id": "Asr3S5TX",
+     "date": "2026-08-16",
+     "type": "alpha"
+    }
+   },
+   "newest_fabric_gv": [
+    "1.21.11",
+    "26.1",
+    "26.1.2"
+   ],
+   "category": "a"
+  },
+  {
+   "slug": "fffoodspoilageandpreservation",
+   "id": "pJMBPwbX",
+   "title": "FFFoodSpoilageAndPreservation",
+   "loaders": [
+    "fabric",
+    "neoforge"
+   ],
+   "client_side": "required",
+   "server_side": "required",
+   "license": "LicenseRef-All-Rights-Reserved",
+   "updated": "2026-11-02",
+   "downloads": 1810,
+   "project_type": "mod",
+   "fabric_support": {
+    "26.3": {
+     "version": "0.13.2+26.3-fabric",
+     "id": "lFEsMX5h",
+     "date": "2026-11-02",
+     "type": "release"
+    },
+    "26.2": {
+     "version": "0.13.2+26.2-fabric",
+     "id": "X75GQv70",
+     "date": "2026-11-02",
+     "type": "release"
+    },
+    "26.1.2": {
+     "version": "0.13.2+26.1.2-fabric",
+     "id": "wrnEDsY6",
+     "date": "2026-11-02",
+     "type": "release"
+    },
+    "26.1.1": {
+     "version": "0.13.2+26.1.1-fabric",
+     "id": "bwWimS7u",
+     "date": "2026-11-02",
+     "type": "release"
+    },
+    "26.1": {
+     "version": "0.13.2+26.1-fabric",
+     "id": "wm1byG2r",
+     "date": "2026-11-02",
+     "type": "release"
+    },
+    "1.21.11": {
+     "version": "0.13.2+1.21.11-fabric",
+     "id": "N88o7tSO",
+     "date": "2026-11-02",
+     "type": "release"
+    },
+    "1.21.1": {
+     "version": "0.13.2+1.21.1-fabric",
+     "id": "ONccKNh5",
+     "date": "2026-11-02",
+     "type": "release"
+    }
+   },
+   "newest_fabric_gv": [
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "category": "a"
+  },
+  {
+   "slug": "homeostatic",
+   "id": "oDobngty",
+   "title": "Homeostatic",
+   "loaders": [
+    "fabric",
+    "forge",
+    "neoforge"
+   ],
+   "client_side": "required",
+   "server_side": "required",
+   "license": "MIT",
+   "updated": "2026-10-19",
+   "downloads": 324360,
+   "project_type": "mod",
+   "fabric_support": {
+    "26.3": {
+     "version": "26.3-2.13.1.0",
+     "id": "xKLum0h4",
+     "date": "2026-10-19",
+     "type": "release"
+    },
+    "26.2": {
+     "version": "26.2-2.13.0.1",
+     "id": "IQrivzqu",
+     "date": "2026-06-28",
+     "type": "release"
+    },
+    "26.1.2": {
+     "version": "26.1.2-2.13.0.2",
+     "id": "7NDY9TiZ",
+     "date": "2026-06-28",
+     "type": "release"
+    },
+    "26.1.1": {
+     "version": "26.1.2-2.13.0.2",
+     "id": "7NDY9TiZ",
+     "date": "2026-06-28",
+     "type": "release"
+    },
+    "26.1": {
+     "version": "26.1.2-2.13.0.2",
+     "id": "7NDY9TiZ",
+     "date": "2026-06-28",
+     "type": "release"
+    },
+    "1.21.11": {
+     "version": "1.21.11-2.11.0.3",
+     "id": "PyHCLM05",
+     "date": "2025-12-14",
+     "type": "release"
+    },
+    "1.21.10": {
+     "version": "1.21.10-2.11.2.0",
+     "id": "CnBHRchf",
+     "date": "2025-12-14",
+     "type": "release"
+    },
+    "1.21.8": {
+     "version": "1.21.8-2.9.17.4-FABRIC",
+     "id": "U9h8BCFo",
+     "date": "2025-10-01",
+     "type": "release"
+    },
+    "1.21.1": {
+     "version": "1.21.1-2.12.1.0",
+     "id": "VNGWDoPz",
+     "date": "2026-10-19",
+     "type": "release"
+    },
+    "1.20.1": {
+     "version": "1.20.1-2.9.16.2-FABRIC",
+     "id": "pzJh0p9r",
+     "date": "2025-11-16",
+     "type": "release"
+    }
+   },
+   "newest_fabric_gv": [
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "category": "a"
+  },
+  {
+   "slug": "homeostatic-seasons",
+   "id": "j3xSC4PA",
+   "title": "Homeostatic Seasons",
+   "loaders": [
+    "fabric",
+    "neoforge"
+   ],
+   "client_side": "required",
+   "server_side": "required",
+   "license": "MIT",
+   "updated": "2026-10-22",
+   "downloads": 41572,
+   "project_type": "mod",
+   "fabric_support": {
+    "26.3": {
+     "version": "26.3-1.2.1.0",
+     "id": "OgQF7TzU",
+     "date": "2026-10-22",
+     "type": "release"
+    },
+    "26.2": {
+     "version": "26.2-1.2.0.3",
+     "id": "1bSif4Rz",
+     "date": "2026-06-30",
+     "type": "release"
+    },
+    "26.1.2": {
+     "version": "26.1.2-1.2.0.3",
+     "id": "GONqsphu",
+     "date": "2026-06-30",
+     "type": "release"
+    },
+    "26.1.1": {
+     "version": "26.1.2-1.2.0.3",
+     "id": "GONqsphu",
+     "date": "2026-06-30",
+     "type": "release"
+    },
+    "26.1": {
+     "version": "26.1.2-1.2.0.3",
+     "id": "GONqsphu",
+     "date": "2026-06-30",
+     "type": "release"
+    },
+    "1.21.11": {
+     "version": "1.21.11-1.1.0.5",
+     "id": "Ymi392ny",
+     "date": "2026-01-19",
+     "type": "release"
+    },
+    "1.21.10": {
+     "version": "1.21.10-1.1.0.5",
+     "id": "8n07z082",
+     "date": "2026-01-19",
+     "type": "release"
+    },
+    "1.21.1": {
+     "version": "1.21.1-1.2.1.0",
+     "id": "t5mN7RDG",
+     "date": "2026-10-22",
+     "type": "release"
+    }
+   },
+   "newest_fabric_gv": [
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "category": "a"
+  },
+  {
+   "slug": "serene-seasons",
+   "id": "e0bNACJD",
+   "title": "Serene Seasons",
+   "loaders": [
+    "fabric",
+    "forge",
+    "neoforge"
+   ],
+   "client_side": "required",
+   "server_side": "required",
+   "license": "LicenseRef-All-Rights-Reserved",
+   "updated": "2026-09-21",
+   "downloads": 7595217,
+   "project_type": "mod",
+   "fabric_support": {
+    "26.3": {
+     "version": "26.1.2.0.7",
+     "id": "V9PxJPuw",
+     "date": "2026-09-21",
+     "type": "beta"
+    },
+    "26.2": {
+     "version": "26.1.2.0.6",
+     "id": "q5mzi8wy",
+     "date": "2026-09-21",
+     "type": "beta"
+    },
+    "26.1.2": {
+     "version": "26.1.2.0.7",
+     "id": "kxB8vG5W",
+     "date": "2026-08-31",
+     "type": "beta"
+    },
+    "26.1.1": {
+     "version": "26.1.1.0.1",
+     "id": "6vz3W8ar",
+     "date": "2026-04-13",
+     "type": "beta"
+    },
+    "1.21.11": {
+     "version": "21.11.0.4",
+     "id": "6GpaVF7N",
+     "date": "2026-03-18",
+     "type": "beta"
+    },
+    "1.21.10": {
+     "version": "21.10.0.0",
+     "id": "Y0zdqWGx",
+     "date": "2025-10-19",
+     "type": "beta"
+    },
+    "1.21.8": {
+     "version": "21.8.0.0",
+     "id": "30NJ0mrz",
+     "date": "2025-07-26",
+     "type": "beta"
+    },
+    "1.21.5": {
+     "version": "10.5.0.5",
+     "id": "kf9KmhKn",
+     "date": "2025-07-09",
+     "type": "beta"
+    },
+    "1.21.4": {
+     "version": "10.4.0.6",
+     "id": "qanVNGyt",
+     "date": "2025-03-13",
+     "type": "beta"
+    },
+    "1.21.1": {
+     "version": "10.1.0.9",
+     "id": "q34wStJM",
+     "date": "2026-09-05",
+     "type": "beta"
+    },
+    "1.20.1": {
+     "version": "9.1.0.3",
+     "id": "GICZwCsE",
+     "date": "2026-06-14",
+     "type": "beta"
+    }
+   },
+   "newest_fabric_gv": [
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "category": "a"
+  },
+  {
+   "slug": "glitchcore",
+   "id": "s3dmwKy5",
+   "title": "GlitchCore",
+   "loaders": [
+    "fabric",
+    "forge",
+    "neoforge"
+   ],
+   "client_side": "required",
+   "server_side": "required",
+   "license": "LicenseRef-All-Rights-Reserved",
+   "updated": "2026-10-11",
+   "downloads": 24767936,
+   "project_type": "mod",
+   "fabric_support": {
+    "26.3": {
+     "version": "26.3.0.0.5",
+     "id": "kfFeDnrp",
+     "date": "2026-10-11",
+     "type": "beta"
+    },
+    "26.2": {
+     "version": "26.2.0.0.0",
+     "id": "SDUCBYRU",
+     "date": "2026-06-28",
+     "type": "beta"
+    },
+    "26.1.2": {
+     "version": "26.1.2.0.2",
+     "id": "WNtSATXw",
+     "date": "2026-05-18",
+     "type": "beta"
+    },
+    "26.1.1": {
+     "version": "26.1.1.0.7",
+     "id": "iO7e7eNb",
+     "date": "2026-05-18",
+     "type": "beta"
+    },
+    "26.1": {
+     "version": "26.1.0.4",
+     "id": "qrM40AlT",
+     "date": "2026-05-18",
+     "type": "beta"
+    },
+    "1.21.11": {
+     "version": "21.11.0.4",
+     "id": "CO7NeLTt",
+     "date": "2026-03-06",
+     "type": "release"
+    },
+    "1.21.10": {
+     "version": "21.10.0.4",
+     "id": "f5GdOk9W",
+     "date": "2025-11-19",
+     "type": "beta"
+    },
+    "1.21.8": {
+     "version": "21.8.0.0",
+     "id": "UF5OQvYS",
+     "date": "2025-07-26",
+     "type": "beta"
+    },
+    "1.21.5": {
+     "version": "2.5.0.1",
+     "id": "u82FWCHx",
+     "date": "2025-04-08",
+     "type": "beta"
+    },
+    "1.21.4": {
+     "version": "2.3.0.4",
+     "id": "gBxcKjMS",
+     "date": "2025-01-04",
+     "type": "beta"
+    },
+    "1.21.1": {
+     "version": "2.1.0.2",
+     "id": "sux8kYHe",
+     "date": "2026-05-18",
+     "type": "beta"
+    },
+    "1.20.1": {
+     "version": "0.0.1.1",
+     "id": "25HLOiOl",
+     "date": "2024-10-06",
+     "type": "beta"
+    }
+   },
+   "newest_fabric_gv": [
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "category": "a"
+  },
+  {
+   "slug": "frostiful",
+   "id": "Ae6qoBj3",
+   "title": "Frostiful",
+   "loaders": [
+    "fabric",
+    "neoforge",
+    "quilt"
+   ],
+   "client_side": "required",
+   "server_side": "required",
+   "license": "LGPL-3.0-only",
+   "updated": "2026-09-02",
+   "downloads": 4673420,
+   "project_type": "mod",
+   "fabric_support": {
+    "26.1.2": {
+     "version": "3.1.0+26.1.x-beta.3",
+     "id": "SsIH8Nbw",
+     "date": "2026-09-02",
+     "type": "beta"
+    },
+    "26.1.1": {
+     "version": "3.1.0+26.1.x-beta.3",
+     "id": "SsIH8Nbw",
+     "date": "2026-09-02",
+     "type": "beta"
+    },
+    "26.1": {
+     "version": "3.1.0+26.1.x-beta.3",
+     "id": "SsIH8Nbw",
+     "date": "2026-09-02",
+     "type": "beta"
+    },
+    "1.21.11": {
+     "version": "2.4.0+1.21.11",
+     "id": "NNfGXP1O",
+     "date": "2026-03-17",
+     "type": "beta"
+    },
+    "1.21.10": {
+     "version": "2.2.13+1.21.10",
+     "id": "x3jbmzaa",
+     "date": "2025-12-29",
+     "type": "beta"
+    },
+    "1.21.8": {
+     "version": "2.2.8+1.21.8",
+     "id": "I4UbpRqO",
+     "date": "2025-09-30",
+     "type": "beta"
+    },
+    "1.21.5": {
+     "version": "2.2.3+1.21.5",
+     "id": "Q6lsqAPN",
+     "date": "2025-05-24",
+     "type": "beta"
+    },
+    "1.21.4": {
+     "version": "2.2.1+1.21.4",
+     "id": "UPqBB1I8",
+     "date": "2025-05-14",
+     "type": "release"
+    },
+    "1.21.1": {
+     "version": "2.3.2+1.21.1",
+     "id": "C3SQgts5",
+     "date": "2026-06-08",
+     "type": "release"
+    },
+    "1.20.1": {
+     "version": "1.0.11",
+     "id": "G35Yb3qU",
+     "date": "2024-09-06",
+     "type": "release"
+    }
+   },
+   "newest_fabric_gv": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "category": "a"
+  },
+  {
+   "slug": "thermoo",
+   "id": "9TbXlAut",
+   "title": "Thermoo",
+   "loaders": [
+    "fabric",
+    "neoforge",
+    "quilt"
+   ],
+   "client_side": "optional",
+   "server_side": "required",
+   "license": "LGPL-3.0-only",
+   "updated": "2026-07-31",
+   "downloads": 4743338,
+   "project_type": "mod",
+   "fabric_support": {
+    "26.1.2": {
+     "version": "10.1.5",
+     "id": "BeNHdIXt",
+     "date": "2026-07-31",
+     "type": "release"
+    },
+    "26.1.1": {
+     "version": "10.1.5",
+     "id": "BeNHdIXt",
+     "date": "2026-07-31",
+     "type": "release"
+    },
+    "26.1": {
+     "version": "10.1.5",
+     "id": "BeNHdIXt",
+     "date": "2026-07-31",
+     "type": "release"
+    },
+    "1.21.11": {
+     "version": "9.1.0",
+     "id": "JXIL16Ku",
+     "date": "2026-02-21",
+     "type": "release"
+    },
+    "1.21.10": {
+     "version": "8.1.1",
+     "id": "uNsEi8tq",
+     "date": "2025-11-22",
+     "type": "beta"
+    },
+    "1.21.8": {
+     "version": "7.1.1",
+     "id": "WE9hyHQZ",
+     "date": "2025-09-30",
+     "type": "release"
+    },
+    "1.21.5": {
+     "version": "6.0.4",
+     "id": "W2DEItc0",
+     "date": "2025-06-19",
+     "type": "release"
+    },
+    "1.21.4": {
+     "version": "5.3.3",
+     "id": "oJAqx70P",
+     "date": "2025-05-05",
+     "type": "release"
+    },
+    "1.21.1": {
+     "version": "4.8.0",
+     "id": "mdiwqAsQ",
+     "date": "2026-03-03",
+     "type": "release"
+    },
+    "1.20.1": {
+     "version": "2.3.3",
+     "id": "ameSyBNI",
+     "date": "2024-10-22",
+     "type": "release"
+    }
+   },
+   "newest_fabric_gv": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "category": "a"
+  },
+  {
+   "slug": "thermoo-patches",
+   "id": "TYRF9nUy",
+   "title": "Thermoo Patches",
+   "loaders": [
+    "fabric",
+    "neoforge",
+    "quilt"
+   ],
+   "client_side": "optional",
+   "server_side": "optional",
+   "license": "LGPL-3.0-only",
+   "updated": "2026-06-08",
+   "downloads": 2524891,
+   "project_type": "mod",
+   "fabric_support": {
+    "26.1.2": {
+     "version": "5.0.0",
+     "id": "HG3aPqWx",
+     "date": "2026-05-28",
+     "type": "release"
+    },
+    "26.1.1": {
+     "version": "5.0.0",
+     "id": "HG3aPqWx",
+     "date": "2026-05-28",
+     "type": "release"
+    },
+    "26.1": {
+     "version": "5.0.0",
+     "id": "HG3aPqWx",
+     "date": "2026-05-28",
+     "type": "release"
+    },
+    "1.21.11": {
+     "version": "4.0.0",
+     "id": "ZC8wP0Gl",
+     "date": "2026-01-31",
+     "type": "release"
+    },
+    "1.21.10": {
+     "version": "3.8.1",
+     "id": "fX4uPUfk",
+     "date": "2025-10-25",
+     "type": "release"
+    },
+    "1.21.8": {
+     "version": "3.8.1",
+     "id": "fX4uPUfk",
+     "date": "2025-10-25",
+     "type": "release"
+    },
+    "1.21.1": {
+     "version": "3.7.2",
+     "id": "KpMLEP9e",
+     "date": "2026-03-04",
+     "type": "release"
+    },
+    "1.20.1": {
+     "version": "1.1",
+     "id": "Q0Br0TGv",
+     "date": "2025-03-03",
+     "type": "release"
+    }
+   },
+   "newest_fabric_gv": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "category": "a"
+  },
+  {
+   "slug": "immersive-storms",
+   "id": "SdJDElEu",
+   "title": "Immersive Storms",
+   "loaders": [
+    "fabric",
+    "neoforge",
+    "quilt"
+   ],
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "LGPL-3.0-or-later",
+   "updated": "2026-10-22",
+   "downloads": 161677,
+   "project_type": "mod",
+   "fabric_support": {
+    "26.3": {
+     "version": "1.8.0+26.3",
+     "id": "iArYgr87",
+     "date": "2026-09-26",
+     "type": "release"
+    },
+    "26.2": {
+     "version": "1.8.0+26.2",
+     "id": "H52O6tyT",
+     "date": "2026-09-26",
+     "type": "release"
+    },
+    "26.1.2": {
+     "version": "2.0.0+26.1.x-beta.3",
+     "id": "iRQgQpgH",
+     "date": "2026-10-22",
+     "type": "beta"
+    },
+    "26.1.1": {
+     "version": "2.0.0+26.1.x-beta.3",
+     "id": "iRQgQpgH",
+     "date": "2026-10-22",
+     "type": "beta"
+    },
+    "26.1": {
+     "version": "2.0.0+26.1.x-beta.3",
+     "id": "iRQgQpgH",
+     "date": "2026-10-22",
+     "type": "beta"
+    },
+    "1.21.11": {
+     "version": "1.6.1",
+     "id": "x2JFd9xZ",
+     "date": "2026-03-27",
+     "type": "release"
+    },
+    "1.21.10": {
+     "version": "1.3.0",
+     "id": "FrbWed93",
+     "date": "2025-10-03",
+     "type": "release"
+    },
+    "1.21.8": {
+     "version": "1.2.1",
+     "id": "7ER9eIwK",
+     "date": "2025-07-24",
+     "type": "release"
+    },
+    "1.21.5": {
+     "version": "1.0.0",
+     "id": "VKsOam42",
+     "date": "2025-06-17",
+     "type": "release"
+    }
+   },
+   "newest_fabric_gv": [
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "category": "a"
+  },
+  {
+   "slug": "global-wind",
+   "id": "3NA5oO44",
+   "title": "Global Wind",
+   "loaders": [
+    "fabric"
+   ],
+   "client_side": "required",
+   "server_side": "required",
+   "license": "MIT",
+   "updated": "2026-10-19",
+   "downloads": 68202,
+   "project_type": "mod",
+   "fabric_support": {
+    "26.3": {
+     "version": "1.2.4+26.1-",
+     "id": "xtpTW9kD",
+     "date": "2026-10-19",
+     "type": "release"
+    },
+    "26.2": {
+     "version": "1.2.4+26.1-",
+     "id": "xtpTW9kD",
+     "date": "2026-10-19",
+     "type": "release"
+    },
+    "26.1.2": {
+     "version": "1.2.4+26.1-",
+     "id": "xtpTW9kD",
+     "date": "2026-10-19",
+     "type": "release"
+    },
+    "26.1.1": {
+     "version": "1.2.4+26.1-",
+     "id": "xtpTW9kD",
+     "date": "2026-10-19",
+     "type": "release"
+    },
+    "26.1": {
+     "version": "1.2.4+26.1-",
+     "id": "xtpTW9kD",
+     "date": "2026-10-19",
+     "type": "release"
+    },
+    "1.21.11": {
+     "version": "1.2.4+1.21.11",
+     "id": "hxAESDhn",
+     "date": "2026-10-19",
+     "type": "release"
+    },
+    "1.21.10": {
+     "version": "1.2.4+1.21.9-1.21.10",
+     "id": "NBpoWDj0",
+     "date": "2026-10-19",
+     "type": "release"
+    },
+    "1.21.8": {
+     "version": "1.2.4+1.21.5-1.21.8",
+     "id": "EkConzDB",
+     "date": "2026-10-19",
+     "type": "release"
+    },
+    "1.21.5": {
+     "version": "1.2.4+1.21.5-1.21.8",
+     "id": "EkConzDB",
+     "date": "2026-10-19",
+     "type": "release"
+    },
+    "1.21.4": {
+     "version": "1.2.4+1.21-1.21.4",
+     "id": "m4tfrfXa",
+     "date": "2026-10-19",
+     "type": "release"
+    },
+    "1.21.1": {
+     "version": "1.2.4+1.21-1.21.4",
+     "id": "m4tfrfXa",
+     "date": "2026-10-19",
+     "type": "release"
+    },
+    "1.20.1": {
+     "version": "1.3.0-1.20.1-beta-2",
+     "id": "SnhYtIIx",
+     "date": "2025-02-18",
+     "type": "beta"
+    }
+   },
+   "newest_fabric_gv": [
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "category": "a"
+  },
+  {
+   "slug": "galesandstorms",
+   "id": "vis82fEZ",
+   "title": "Gales&Storms",
+   "loaders": [
+    "fabric"
+   ],
+   "client_side": "required",
+   "server_side": "required",
+   "license": "MIT",
+   "updated": "2026-07-04",
+   "downloads": 2795,
+   "project_type": "mod",
+   "fabric_support": {
+    "26.2": {
+     "version": "1.0.1",
+     "id": "u4YeBpAD",
+     "date": "2026-07-04",
+     "type": "release"
+    },
+    "26.1.2": {
+     "version": "1.0.0",
+     "id": "LCLTe6kt",
+     "date": "2026-06-12",
+     "type": "release"
+    },
+    "26.1.1": {
+     "version": "1.0.0",
+     "id": "LCLTe6kt",
+     "date": "2026-06-12",
+     "type": "release"
+    },
+    "26.1": {
+     "version": "1.0.0",
+     "id": "LCLTe6kt",
+     "date": "2026-06-12",
+     "type": "release"
+    }
+   },
+   "newest_fabric_gv": [
+    "26.1.1",
+    "26.1.2",
+    "26.2"
+   ],
+   "category": "a"
+  },
+  {
+   "slug": "seasonhud-fabric",
+   "id": "iDiIfZLX",
+   "title": "SeasonHud-Fabric",
+   "loaders": [
+    "fabric"
+   ],
+   "client_side": "required",
+   "server_side": "optional",
+   "license": "MIT",
+   "updated": "2026-10-20",
+   "downloads": 4015331,
+   "project_type": "mod",
+   "fabric_support": {
+    "26.3": {
+     "version": "26.3-2.0.11",
+     "id": "5tG0GFZL",
+     "date": "2026-10-20",
+     "type": "release"
+    },
+    "26.2": {
+     "version": "26.2-2.0.11",
+     "id": "eKYwwSdV",
+     "date": "2026-10-20",
+     "type": "release"
+    },
+    "26.1.2": {
+     "version": "26.1.2-2.0.11",
+     "id": "dtsgTLCg",
+     "date": "2026-10-20",
+     "type": "release"
+    },
+    "26.1.1": {
+     "version": "26.1.2-2.0.11",
+     "id": "dtsgTLCg",
+     "date": "2026-10-20",
+     "type": "release"
+    },
+    "26.1": {
+     "version": "26.1.2-2.0.11",
+     "id": "dtsgTLCg",
+     "date": "2026-10-20",
+     "type": "release"
+    },
+    "1.21.11": {
+     "version": "1.21.11-2.0.4",
+     "id": "LhMnwLLb",
+     "date": "2026-04-06",
+     "type": "release"
+    },
+    "1.21.10": {
+     "version": "1.21.10-2.0.4",
+     "id": "jgskYFPz",
+     "date": "2026-04-06",
+     "type": "release"
+    },
+    "1.21.8": {
+     "version": "1.21.8-2.0.4",
+     "id": "Surx9yp7",
+     "date": "2026-04-06",
+     "type": "release"
+    },
+    "1.21.5": {
+     "version": "1.21.5-2.0.4",
+     "id": "bRqZMODX",
+     "date": "2026-04-06",
+     "type": "release"
+    },
+    "1.21.4": {
+     "version": "1.21.5-2.0.4",
+     "id": "bRqZMODX",
+     "date": "2026-04-06",
+     "type": "release"
+    },
+    "1.21.1": {
+     "version": "1.21.1-2.0.11",
+     "id": "922iIUPx",
+     "date": "2026-10-20",
+     "type": "release"
+    },
+    "1.20.1": {
+     "version": "1.20.1-2.0.11",
+     "id": "ULRIJwqX",
+     "date": "2026-10-20",
+     "type": "release"
+    }
+   },
+   "newest_fabric_gv": [
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "category": "a"
+  },
+  {
+   "slug": "farmers-delight-refabricated",
+   "id": "7vxePowz",
+   "title": "Farmer's Delight Refabricated",
+   "loaders": [
+    "fabric"
+   ],
+   "client_side": "required",
+   "server_side": "required",
+   "license": "MIT",
+   "updated": "2026-10-24",
+   "downloads": 16844159,
+   "project_type": "mod",
+   "fabric_support": {
+    "26.3": {
+     "version": "26.3-3.6.30",
+     "id": "dRScyUeE",
+     "date": "2026-10-24",
+     "type": "release"
+    },
+    "26.2": {
+     "version": "26.2-3.6.30",
+     "id": "J6sAZl6u",
+     "date": "2026-10-24",
+     "type": "release"
+    },
+    "26.1.2": {
+     "version": "26.1-3.6.30",
+     "id": "3s3vr72P",
+     "date": "2026-10-24",
+     "type": "release"
+    },
+    "26.1.1": {
+     "version": "26.1-3.6.30",
+     "id": "3s3vr72P",
+     "date": "2026-10-24",
+     "type": "release"
+    },
+    "26.1": {
+     "version": "26.1-3.6.30",
+     "id": "3s3vr72P",
+     "date": "2026-10-24",
+     "type": "release"
+    },
+    "1.21.11": {
+     "version": "1.21.11-3.6.16",
+     "id": "z70iEKnH",
+     "date": "2026-08-18",
+     "type": "release"
+    },
+    "1.21.10": {
+     "version": "1.21.10-3.4.2",
+     "id": "KPW4qVOo",
+     "date": "2025-12-10",
+     "type": "release"
+    },
+    "1.21.8": {
+     "version": "1.21.8-3.3.3",
+     "id": "YJ79rjkO",
+     "date": "2025-11-08",
+     "type": "release"
+    },
+    "1.21.5": {
+     "version": "1.21.5-3.2.5",
+     "id": "GG0AoJ3d",
+     "date": "2025-11-08",
+     "type": "release"
+    },
+    "1.21.1": {
+     "version": "1.21.1-3.3.6",
+     "id": "wbVXT4Ua",
+     "date": "2026-08-31",
+     "type": "release"
+    },
+    "1.20.1": {
+     "version": "1.20.1-2.5.7",
+     "id": "7H1g1o5h",
+     "date": "2026-08-31",
+     "type": "release"
+    }
+   },
+   "newest_fabric_gv": [
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "category": "a"
+  },
+  {
+   "slug": "cooking-for-blockheads",
+   "id": "vJnhuDde",
+   "title": "Cooking for Blockheads",
+   "loaders": [
+    "fabric",
+    "forge",
+    "neoforge"
+   ],
+   "client_side": "required",
+   "server_side": "required",
+   "license": "LicenseRef-All-Rights-Reserved",
+   "updated": "2026-10-02",
+   "downloads": 1212180,
+   "project_type": "mod",
+   "fabric_support": {
+    "26.3": {
+     "version": "26.3.0.2+fabric-26.3",
+     "id": "3vl3upGM",
+     "date": "2026-10-02",
+     "type": "release"
+    },
+    "26.2": {
+     "version": "26.2.0.5+fabric-26.2",
+     "id": "UIUtcUgS",
+     "date": "2026-10-02",
+     "type": "release"
+    },
+    "26.1.2": {
+     "version": "26.1.2.6+fabric-26.1.2",
+     "id": "AaH0yQsO",
+     "date": "2026-10-02",
+     "type": "release"
+    },
+    "26.1.1": {
+     "version": "26.1.1.2+fabric-26.1.1",
+     "id": "N6xKbNE7",
+     "date": "2026-04-03",
+     "type": "release"
+    },
+    "1.21.11": {
+     "version": "21.11.6+fabric-1.21.11",
+     "id": "5Ykn1jsb",
+     "date": "2026-03-17",
+     "type": "release"
+    },
+    "1.21.10": {
+     "version": "21.10.2+fabric-1.21.10",
+     "id": "STMwFWIj",
+     "date": "2025-10-28",
+     "type": "release"
+    },
+    "1.21.8": {
+     "version": "21.8.3+fabric-1.21.8",
+     "id": "az1U2pjU",
+     "date": "2025-09-20",
+     "type": "release"
+    },
+    "1.21.5": {
+     "version": "21.5.7+fabric-1.21.5",
+     "id": "gwvdba3a",
+     "date": "2025-09-08",
+     "type": "release"
+    },
+    "1.21.4": {
+     "version": "21.4.13+fabric-1.21.4",
+     "id": "r1jRZ5xt",
+     "date": "2025-09-08",
+     "type": "release"
+    },
+    "1.21.1": {
+     "version": "21.1.24+fabric-1.21.1",
+     "id": "tOG59W8V",
+     "date": "2026-07-10",
+     "type": "release"
+    },
+    "1.20.1": {
+     "version": "16.0.15+fabric-1.20.1",
+     "id": "jsA2CgIO",
+     "date": "2026-01-13",
+     "type": "release"
+    }
+   },
+   "newest_fabric_gv": [
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "category": "a"
+  },
+  {
+   "slug": "energized-power",
+   "id": "6pku8gW1",
+   "title": "Energized Power",
+   "loaders": [
+    "fabric",
+    "forge",
+    "neoforge"
+   ],
+   "client_side": "required",
+   "server_side": "required",
+   "license": "MIT",
+   "updated": "2026-11-04",
+   "downloads": 150026,
+   "project_type": "mod",
+   "fabric_support": {
+    "26.3": {
+     "version": "3.0.7+26.3.x-fabric",
+     "id": "os9iGeZc",
+     "date": "2026-11-04",
+     "type": "release"
+    },
+    "26.2": {
+     "version": "3.0.7+26.2.x-fabric",
+     "id": "dyRtYNO3",
+     "date": "2026-11-04",
+     "type": "release"
+    },
+    "26.1.2": {
+     "version": "3.0.7+26.1.x-fabric",
+     "id": "8athtrg0",
+     "date": "2026-11-04",
+     "type": "release"
+    },
+    "26.1.1": {
+     "version": "3.0.7+26.1.x-fabric",
+     "id": "8athtrg0",
+     "date": "2026-11-04",
+     "type": "release"
+    },
+    "26.1": {
+     "version": "3.0.7+26.1.x-fabric",
+     "id": "8athtrg0",
+     "date": "2026-11-04",
+     "type": "release"
+    },
+    "1.21.11": {
+     "version": "1.21.11-2.15.12-fabric",
+     "id": "3YoFwVm2",
+     "date": "2026-01-20",
+     "type": "release"
+    },
+    "1.21.10": {
+     "version": "1.21.10-2.15.9-fabric",
+     "id": "EGs11xOV",
+     "date": "2025-11-10",
+     "type": "release"
+    },
+    "1.21.8": {
+     "version": "1.21.8-2.15.4-fabric",
+     "id": "4JquDBXH",
+     "date": "2025-09-29",
+     "type": "release"
+    },
+    "1.21.5": {
+     "version": "1.21.5-2.14.0-fabric",
+     "id": "kAxkwDh1",
+     "date": "2025-06-14",
+     "type": "release"
+    },
+    "1.21.4": {
+     "version": "1.21.4-2.13.0-fabric",
+     "id": "NsFvVzq2",
+     "date": "2025-03-24",
+     "type": "release"
+    },
+    "1.21.1": {
+     "version": "3.0.7+1.21.1-fabric",
+     "id": "xnhE9e7w",
+     "date": "2026-11-04",
+     "type": "release"
+    },
+    "1.20.1": {
+     "version": "1.20.1-2.15.22-fabric",
+     "id": "KODH6DmQ",
+     "date": "2026-05-18",
+     "type": "release"
+    }
+   },
+   "newest_fabric_gv": [
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "category": "a"
+  },
+  {
+   "slug": "minecraft-comes-alive-reborn",
+   "id": "1W98a849",
+   "title": "MCA Reborn",
+   "loaders": [
+    "fabric",
+    "forge",
+    "neoforge",
+    "quilt"
+   ],
+   "client_side": "required",
+   "server_side": "required",
+   "license": "GPL-3.0-only",
+   "updated": "2026-10-18",
+   "downloads": 4209627,
+   "project_type": "mod",
+   "fabric_support": {
+    "26.2": {
+     "version": "8.1.11+26.2",
+     "id": "4Wyg5fOK",
+     "date": "2026-08-29",
+     "type": "release"
+    },
+    "26.1.2": {
+     "version": "8.1.11+26.1.2",
+     "id": "Kzv4GU7X",
+     "date": "2026-08-29",
+     "type": "release"
+    },
+    "1.21.1": {
+     "version": "7.7.36+1.21.1",
+     "id": "eUYBilCG",
+     "date": "2026-08-16",
+     "type": "release"
+    },
+    "1.20.1": {
+     "version": "7.7.1-beta.5+1.20.1",
+     "id": "KJixRMB5",
+     "date": "2026-10-18",
+     "type": "beta"
+    }
+   },
+   "newest_fabric_gv": [
+    "1.21.1",
+    "26.1.2",
+    "26.2"
+   ],
+   "category": "a"
+  },
+  {
+   "slug": "easy-npc",
+   "id": "CgGEe1h3",
+   "title": "Easy NPC",
+   "loaders": [
+    "fabric",
+    "forge",
+    "neoforge",
+    "quilt"
+   ],
+   "client_side": "required",
+   "server_side": "required",
+   "license": "MIT",
+   "updated": "2026-11-03",
+   "downloads": 1256247,
+   "project_type": "mod",
+   "fabric_support": {
+    "26.3": {
+     "version": "7.18.0",
+     "id": "11Gz5SGC",
+     "date": "2026-11-03",
+     "type": "release"
+    },
+    "26.2": {
+     "version": "7.18.0",
+     "id": "CvDdtOL5",
+     "date": "2026-11-02",
+     "type": "release"
+    },
+    "26.1.2": {
+     "version": "7.18.0",
+     "id": "ykWif2B1",
+     "date": "2026-11-02",
+     "type": "release"
+    },
+    "26.1.1": {
+     "version": "6.13.0",
+     "id": "AnIbOJsW",
+     "date": "2026-05-09",
+     "type": "release"
+    },
+    "1.21.11": {
+     "version": "7.18.0",
+     "id": "cNxyRWVo",
+     "date": "2026-11-02",
+     "type": "release"
+    },
+    "1.21.10": {
+     "version": "6.5.2",
+     "id": "7iVQ0qay",
+     "date": "2026-01-01",
+     "type": "beta"
+    },
+    "1.21.8": {
+     "version": "6.5.2",
+     "id": "MyYgdtXR",
+     "date": "2026-01-01",
+     "type": "beta"
+    },
+    "1.21.5": {
+     "version": "6.5.2",
+     "id": "KcMPwJNl",
+     "date": "2026-01-01",
+     "type": "beta"
+    },
+    "1.21.4": {
+     "version": "6.5.2",
+     "id": "ZcUuJ6aG",
+     "date": "2026-01-01",
+     "type": "beta"
+    },
+    "1.21.1": {
+     "version": "7.18.0",
+     "id": "lIBHhGBR",
+     "date": "2026-11-02",
+     "type": "release"
+    },
+    "1.20.1": {
+     "version": "7.18.0",
+     "id": "19qggyjU",
+     "date": "2026-11-02",
+     "type": "release"
+    }
+   },
+   "newest_fabric_gv": [
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "category": "a"
+  },
+  {
+   "slug": "create-fly",
+   "id": "dKvj0eNn",
+   "title": "Create Fly",
+   "loaders": [
+    "fabric",
+    "quilt"
+   ],
+   "client_side": "required",
+   "server_side": "required",
+   "license": "CC0-1.0",
+   "updated": "2026-10-13",
+   "downloads": 627588,
+   "project_type": "mod",
+   "fabric_support": {
+    "26.2": {
+     "version": "26.2-6.0.9-2",
+     "id": "FV8OvjTb",
+     "date": "2026-10-13",
+     "type": "beta"
+    },
+    "26.1.2": {
+     "version": "26.1.2-6.0.9-4",
+     "id": "wV5IQLKg",
+     "date": "2026-06-15",
+     "type": "release"
+    },
+    "1.21.11": {
+     "version": "1.21.11-6.0.9-5",
+     "id": "fn0H9rSj",
+     "date": "2026-02-21",
+     "type": "release"
+    },
+    "1.21.10": {
+     "version": "1.21.10-6.0.9-2",
+     "id": "oYhbStma",
+     "date": "2026-02-07",
+     "type": "release"
+    },
+    "1.21.8": {
+     "version": "1.21.8-6.0.9-2",
+     "id": "v37IUNm0",
+     "date": "2026-02-10",
+     "type": "release"
+    }
+   },
+   "newest_fabric_gv": [
+    "1.21.11",
+    "26.1.2",
+    "26.2"
+   ],
+   "category": "a"
+  },
+  {
+   "slug": "jei",
+   "id": "u6dRKJwZ",
+   "title": "Just Enough Items (JEI)",
+   "loaders": [
+    "fabric",
+    "forge",
+    "neoforge"
+   ],
+   "client_side": "optional",
+   "server_side": "optional",
+   "license": "MIT",
+   "updated": "2026-11-02",
+   "downloads": 84548475,
+   "project_type": "mod",
+   "fabric_support": {
+    "26.3": {
+     "version": "31.17.0.108",
+     "id": "1Uzmw8Mr",
+     "date": "2026-10-31",
+     "type": "beta"
+    },
+    "26.2": {
+     "version": "30.48.0.244",
+     "id": "j62WSkzi",
+     "date": "2026-10-28",
+     "type": "beta"
+    },
+    "26.1.2": {
+     "version": "29.53.0.115",
+     "id": "j5HrJ8M2",
+     "date": "2026-10-31",
+     "type": "beta"
+    },
+    "26.1.1": {
+     "version": "29.53.0.115",
+     "id": "j5HrJ8M2",
+     "date": "2026-10-31",
+     "type": "beta"
+    },
+    "26.1": {
+     "version": "29.53.0.115",
+     "id": "j5HrJ8M2",
+     "date": "2026-10-31",
+     "type": "beta"
+    },
+    "1.21.11": {
+     "version": "27.54.0.116",
+     "id": "e56U66Sq",
+     "date": "2026-10-31",
+     "type": "beta"
+    },
+    "1.21.10": {
+     "version": "26.3.0.31",
+     "id": "8yGN172x",
+     "date": "2026-07-11",
+     "type": "beta"
+    },
+    "1.21.1": {
+     "version": "19.70.0.469",
+     "id": "WkRLMWAY",
+     "date": "2026-11-01",
+     "type": "beta"
+    },
+    "1.20.1": {
+     "version": "15.74.0.234",
+     "id": "bTwbXhIB",
+     "date": "2026-11-01",
+     "type": "beta"
+    }
+   },
+   "newest_fabric_gv": [
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "category": "a"
+  },
+  {
+   "slug": "rei",
+   "id": "nfn13YXA",
+   "title": "Roughly Enough Items (REI)",
+   "loaders": [
+    "fabric",
+    "forge",
+    "neoforge",
+    "rift"
+   ],
+   "client_side": "optional",
+   "server_side": "optional",
+   "license": "MIT",
+   "updated": "2026-10-07",
+   "downloads": 27221503,
+   "project_type": "mod",
+   "fabric_support": {
+    "26.3": {
+     "version": "26.3.824+fabric",
+     "id": "rKsAE6bX",
+     "date": "2026-10-07",
+     "type": "release"
+    },
+    "26.2": {
+     "version": "26.2.820+fabric",
+     "id": "4o0NSIMj",
+     "date": "2026-06-18",
+     "type": "release"
+    },
+    "26.1.2": {
+     "version": "26.1.819+fabric",
+     "id": "EAlqUmgQ",
+     "date": "2026-06-18",
+     "type": "release"
+    },
+    "26.1.1": {
+     "version": "26.1.819+fabric",
+     "id": "EAlqUmgQ",
+     "date": "2026-06-18",
+     "type": "release"
+    },
+    "26.1": {
+     "version": "26.1.819+fabric",
+     "id": "EAlqUmgQ",
+     "date": "2026-06-18",
+     "type": "release"
+    },
+    "1.21.11": {
+     "version": "21.11.816+fabric",
+     "id": "QEiKPzyl",
+     "date": "2026-06-14",
+     "type": "release"
+    },
+    "1.21.10": {
+     "version": "21.9.813+fabric",
+     "id": "UqNkL18H",
+     "date": "2026-01-16",
+     "type": "release"
+    },
+    "1.21.8": {
+     "version": "20.0.811+fabric",
+     "id": "hoEFy7aF",
+     "date": "2025-07-31",
+     "type": "release"
+    },
+    "1.21.5": {
+     "version": "19.0.809+fabric",
+     "id": "WAWJTRYA",
+     "date": "2025-06-29",
+     "type": "release"
+    },
+    "1.21.4": {
+     "version": "18.0.815+fabric",
+     "id": "rZEvtmwe",
+     "date": "2026-06-14",
+     "type": "release"
+    },
+    "1.21.1": {
+     "version": "16.0.799+fabric",
+     "id": "aWzTESNC",
+     "date": "2025-02-16",
+     "type": "release"
+    },
+    "1.20.1": {
+     "version": "12.1.785+fabric",
+     "id": "nYcMSS03",
+     "date": "2024-10-26",
+     "type": "release"
+    }
+   },
+   "newest_fabric_gv": [
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "category": "a"
+  },
+  {
+   "slug": "ecliptic-seasons-fabricated",
+   "id": "WXA03JUt",
+   "title": "Ecliptic Seasons: Fabricated",
+   "loaders": [
+    "fabric"
+   ],
+   "client_side": "required",
+   "server_side": "required",
+   "license": "LicenseRef-All-Rights-Reserved",
+   "updated": "2026-11-02",
+   "downloads": 16775,
+   "project_type": "mod",
+   "fabric_support": {
+    "26.3": {
+     "version": "26.3-fabric-0.15.5.1",
+     "id": "U1rlu4gC",
+     "date": "2026-11-02",
+     "type": "beta"
+    },
+    "26.2": {
+     "version": "26.2-fabric-0.15.5.1",
+     "id": "R3dW9E3B",
+     "date": "2026-11-02",
+     "type": "beta"
+    },
+    "26.1.2": {
+     "version": "26.1.2-fabric-0.15.5.1",
+     "id": "vDROeCIH",
+     "date": "2026-11-02",
+     "type": "beta"
+    },
+    "26.1.1": {
+     "version": "26.1.2-fabric-0.15.5.1",
+     "id": "vDROeCIH",
+     "date": "2026-11-02",
+     "type": "beta"
+    },
+    "26.1": {
+     "version": "26.1.2-fabric-0.15.5.1",
+     "id": "vDROeCIH",
+     "date": "2026-11-02",
+     "type": "beta"
+    }
+   },
+   "newest_fabric_gv": [
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "category": "a"
+  }
+ ]
+}

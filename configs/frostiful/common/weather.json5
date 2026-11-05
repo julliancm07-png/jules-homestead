@@ -1,0 +1,10 @@
+{
+	// Sets how freezing winds should spawn. Points create small one-off explosions of wind, entity creates an entity that rolls across the landscape, and none disables the feature entirely.
+	freezingWindSpawningMethod: "POINT",
+	// When enabled, allows freezing winds to appear high up in the air.
+	enableWindInTheAir: true,
+	// When enabled, freezing winds will destroy exposed fire blocks (includes torches!).
+	freezingWindDestroysExposedFire: false,
+	// When enabled, icicles will form on the underside of full-face blocks near the surface of the world during weather.
+	iciclesFormInWeather: true
+}

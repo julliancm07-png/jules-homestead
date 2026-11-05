@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "homesteadcore",
+	"version": "${version}",
+	"name": "Homestead Core",
+	"description": "Severe weather fronts (storms, blizzards) with shelter, exposure and forecasts; weather-driven wind and water generators; powered household appliances (refrigerator, electric range, space heater) on Team Reborn Energy. Built for the Jules' Homestead modpack.",
+	"authors": ["Jules' Homestead contributors"],
+	"contact": { "sources": "https://github.com/julliancm07-png/jules-homestead" },
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": ["dev.jules.homestead.HomesteadCore"],
+		"client": ["dev.jules.homestead.client.HomesteadCoreClient"]
+	},
+	"mixins": [
+		"homesteadcore.compat.mixins.json",
+		{ "config": "homesteadcore.client.mixins.json", "environment": "client" }
+	],
+	"accessWidener": "homesteadcore.accesswidener",
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": ">=0.155.0"
+	},
+	"recommends": {
+		"thermoo": ">=10.1.5",
+		"energizedpower": "*",
+		"farmersdelight": "*",
+		"spoiled": "*",
+		"sereneseasons": "*"
+	}
+}

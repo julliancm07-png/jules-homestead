@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PGP",
+    "CMC",
+    "PPP"
+  ],
+  "key": {
+    "P": "#minecraft:planks",
+    "G": "minecraft:glass_pane",
+    "C": "minecraft:copper_ingot",
+    "M": "minecraft:compass"
+  },
+  "result": {
+    "id": "homesteadcore:barometer",
+    "count": 1
+  }
+}

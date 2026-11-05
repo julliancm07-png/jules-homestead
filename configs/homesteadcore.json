@@ -1,0 +1,28 @@
+{
+  "weather": {
+    "enableSevereWeather": true,
+    "minGapTicks": 48000,
+    "maxGapTicks": 120000,
+    "firstFrontDelayTicks": 72000,
+    "minDurationTicks": 6000,
+    "maxDurationTicks": 14000,
+    "blizzardChanceSpring": 0.15,
+    "blizzardChanceSummer": 0.0,
+    "blizzardChanceAutumn": 0.3,
+    "blizzardChanceWinter": 0.85,
+    "blizzardChanceNoSeasons": 0.35,
+    "severityWeights": [0.5, 0.35, 0.15],
+    "warningLeadTicks": [24000, 2400],
+    "broadcastWarnings": true,
+    "blizzardColdPerTick": [1, 2, 3],
+    "blizzardSlowdown": 0.25,
+    "stormSlowdown": 0.1,
+    "shelterWindCheckBlocks": 8,
+    "blizzardSnowAccumulation": true,
+    "snowAccumulationMaxLayers": 2,
+    "snowAccumulationRadius": 24,
+    "snowAccumulationAttemptsPerSecond": 6,
+    "stormBreaksBlocks": false,
+    "stormDamagesCrops": false
+  }
+}

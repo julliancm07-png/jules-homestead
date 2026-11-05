@@ -1,0 +1,52 @@
+{
+  "chapter.2F1D17F4FD835718.title": "The Modern Kitchen",
+  "chapter.2F1D17F4FD835718.chapter_subtitle": [
+    "Appliances that use electricity, and what happens when the power goes out."
+  ],
+  "quest.70B9A1AA67955A79.title": "Electric Light",
+  "quest.70B9A1AA67955A79.quest_desc": [
+    "Powered lamps draw 1 E/t each. Candles, lanterns and Macaw's lamps keep working without power."
+  ],
+  "quest.1FE041A17F7C452C.title": "Refrigerator",
+  "quest.1FE041A17F7C452C.quest_desc": [
+    "Draws 1 E/t. While powered, food inside does not spoil at all.",
+    "During an outage it stays cold for 5 minutes, then the food starts spoiling at the normal rate. Nothing vanishes; food only turns rotten the usual way.",
+    "Sneak-use it to check whether it's cold, still holding the cold, or warm."
+  ],
+  "quest.4D83090F951BF47A.title": "Electric Range",
+  "quest.4D83090F951BF47A.quest_desc": [
+    "The cooktop heats a Farmer's Delight pot or skillet placed on top. The oven cooks up to four foods at twice smoker speed. It draws 6 E/t while working.",
+    "Outage: oven progress pauses and resumes when power returns. The cooktop holds heat for 5 seconds; after that a cooking pot's progress slowly drops back, but its ingredients are never lost."
+  ],
+  "quest.562FEEB138FF0CFC.title": "Dinner on Electric",
+  "quest.562FEEB138FF0CFC.quest_desc": [
+    "Cook a meal in a pot on the electric range. No fuel, no smoke."
+  ],
+  "quest.5BA0C4E8ECB559C1.title": "Space Heater",
+  "quest.5BA0C4E8ECB559C1.quest_desc": [
+    "Draws 8 E/t while it runs. It switches on when a player is within 7 blocks, or whenever it gets a redstone signal; a barometer works well for that.",
+    "It lights the room and warms everyone nearby back towards comfortable, but never makes you overheat. It's the biggest power user in the house, so size your batteries for winter nights."
+  ],
+  "quest.2FCCC68D122EDC0C.title": "Powered Furnace",
+  "quest.683BEA029F5FBBF2.title": "Fitted Kitchen",
+  "quest.683BEA029F5FBBF2.quest_desc": [
+    "Counters, cupboards and a sink around your range and fridge. Adorn's come in every wood and colour; Macaw's and Storage Delight cabinets go well with them.",
+    "Hide the wiring behind the cabinets."
+  ],
+  "task.15CC432C1096DCBC.title": "Get any kitchen counter",
+  "task.30F2CB3F481D7326.title": "Get any kitchen sink",
+  "quest.07B7B004BC29DB4E.title": "Outage Drill",
+  "quest.07B7B004BC29DB4E.quest_desc": [
+    "What a blackout looks like:",
+    "Fridge: cold for 5 more minutes, then food spoils normally.",
+    "Range: oven pauses; cooktop cools after 5 seconds.",
+    "Heater and lamps: off.",
+    "Machines: they stop and keep their contents.",
+    "Keep a campfire, a smoker and a barrel cellar as backups."
+  ],
+  "task.753F25802BC8188F.title": "Tick after you've let the batteries run flat once and recovered",
+  "quest.3C0513DC45A8B421.title": "Sunday Dinner",
+  "quest.3C0513DC45A8B421.quest_desc": [
+    "Three feasts, placed on the table, from a kitchen that runs on sun, wind and water."
+  ]
+}

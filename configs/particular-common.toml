@@ -1,0 +1,5 @@
+# Jules' Homestead: Particular. Only the values the pack changes; Particular fills in the rest on first start.
+[general]
+	[general.enabledEffects]
+		# Falling Leaves already owns leaf particles (one owner per effect).
+		fallingLeaves = false

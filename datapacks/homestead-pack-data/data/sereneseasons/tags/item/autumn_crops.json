@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "farmersdelight:cabbage_seeds",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:onion",
+      "required": false
+    },
+    {
+      "id": "ubesdelight:garlic",
+      "required": false
+    },
+    {
+      "id": "ubesdelight:ginger",
+      "required": false
+    },
+    {
+      "id": "ubesdelight:ube",
+      "required": false
+    },
+    {
+      "id": "rusticdelight:cotton_seeds",
+      "required": false
+    }
+  ]
+}

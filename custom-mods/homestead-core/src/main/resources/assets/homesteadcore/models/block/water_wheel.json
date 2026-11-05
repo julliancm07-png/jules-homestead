@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "homesteadcore:block/water_wheel_top",
+    "front": "homesteadcore:block/water_wheel_front",
+    "side": "homesteadcore:block/water_wheel_side",
+    "particle": "homesteadcore:block/water_wheel_side"
+  }
+}

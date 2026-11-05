@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "energizedpower"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PWP",
+    "PSP",
+    "PCP"
+  ],
+  "key": {
+    "P": "energizedpower:iron_plate",
+    "W": "energizedpower:copper_wire",
+    "S": "minecraft:smoker",
+    "C": "energizedpower:basic_circuit"
+  },
+  "result": {
+    "id": "homesteadcore:electric_range",
+    "count": 1
+  }
+}

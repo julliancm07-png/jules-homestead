@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "energizedpower"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "PHP",
+    "PCP"
+  ],
+  "key": {
+    "P": "energizedpower:iron_plate",
+    "H": "#c:chests/wooden",
+    "C": "energizedpower:basic_circuit"
+  },
+  "result": {
+    "id": "homesteadcore:refrigerator",
+    "count": 1
+  }
+}

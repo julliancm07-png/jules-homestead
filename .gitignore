@@ -1,0 +1,9 @@
+build/
+.gradle/
+custom-mods/*/build/
+custom-mods/*/run/
+custom-mods/*/.gradle/
+*.log
+__pycache__/
+.cache/
+resourcepacks/homestead-resources/

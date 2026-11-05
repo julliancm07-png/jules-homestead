@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "homesteadcore:block/space_heater_top",
+    "front": "homesteadcore:block/space_heater_front_on",
+    "side": "homesteadcore:block/space_heater_side",
+    "particle": "homesteadcore:block/space_heater_side"
+  }
+}

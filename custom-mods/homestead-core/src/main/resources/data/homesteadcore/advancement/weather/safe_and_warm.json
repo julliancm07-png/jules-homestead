@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:campfire"
+    },
+    "title": {
+      "translate": "advancements.homesteadcore.safe_and_warm.title"
+    },
+    "description": {
+      "translate": "advancements.homesteadcore.safe_and_warm.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "award": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "homesteadcore:weather/witness_front"
+}

@@ -1,0 +1,92 @@
+plugins {
+	id 'net.fabricmc.fabric-loom' version "${loom_version}"
+}
+
+base { archivesName = 'homestead-core' }
+
+repositories {
+	// Official Modrinth maven: exact pack versions of integration targets (compile/test only, never shaded).
+	maven { name = 'Modrinth'; url = 'https://api.modrinth.com/maven'; content { includeGroup 'maven.modrinth' } }
+}
+
+loom {
+	accessWidenerPath = file("src/main/resources/homesteadcore.accesswidener")
+	splitEnvironmentSourceSets()
+	mods {
+		"homesteadcore" {
+			sourceSet sourceSets.main
+			sourceSet sourceSets.client
+		}
+	}
+}
+
+fabricApi {
+	configureTests {
+		createSourceSet = true
+		modId = "homesteadcore-gametest"
+		enableGameTests = true
+		enableClientGameTests = false
+		eula = true
+	}
+}
+
+configurations {
+	// Integration jars whose jar-in-jar libraries must be unpacked for the dev/test runtime
+	// (Loom does not unpack nested jars from plain maven dependencies).
+	devNested
+}
+
+def nestedDir = layout.buildDirectory.dir("dev-nested")
+tasks.register('unpackNestedJars', Sync) {
+	from(configurations.devNested.collect { zipTree(it) }) { include 'META-INF/jars/*.jar'; eachFile { path = name } }
+	into nestedDir
+	includeEmptyDirs = false
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+	// Team Reborn Energy: the pack's shared electricity API. Bundled (JiJ) so homestead-core works standalone;
+	// Fabric Loader de-duplicates against the copies inside Energized Power / FTB Quests.
+	implementation "teamreborn:energy:${project.tr_energy_version}"
+	include "teamreborn:energy:${project.tr_energy_version}"
+
+	// Optional integrations: compiled against, loaded only when present (see compat/*).
+	compileOnly "maven.modrinth:thermoo:${project.thermoo_version}"
+	compileOnly "maven.modrinth:spoiled:${project.spoiled_version}"
+	compileOnly "maven.modrinth:serene-seasons:${project.serene_seasons_version}"
+	compileOnly "maven.modrinth:glitchcore:${project.glitchcore_version}"
+
+	// GameTest runtime: real integration targets so tests exercise Thermoo and Spoiled behaviour.
+	gametestRuntimeOnly "maven.modrinth:thermoo:${project.thermoo_version}"
+	gametestRuntimeOnly "maven.modrinth:cardinal-components-api:${project.cca_version}"
+	gametestRuntimeOnly "maven.modrinth:spoiled:${project.spoiled_version}"
+	gametestRuntimeOnly "maven.modrinth:forge-config-api-port:${project.forgeconfigapiport_version}"
+	devNested "maven.modrinth:thermoo:${project.thermoo_version}"
+	devNested "maven.modrinth:cardinal-components-api:${project.cca_version}"
+	compileOnly files(nestedDir.map { it.asFileTree.matching { include 'yumi-*.jar' } }) { builtBy 'unpackNestedJars' }
+	gametestRuntimeOnly files(nestedDir.map { it.asFileTree.matching { include '*.jar' } }) { builtBy 'unpackNestedJars' }
+	gametestCompileOnly "maven.modrinth:thermoo:${project.thermoo_version}"
+	gametestCompileOnly "maven.modrinth:spoiled:${project.spoiled_version}"
+
+	testImplementation "org.junit.jupiter:junit-jupiter:5.11.4"
+	testRuntimeOnly "org.junit.platform:junit-platform-launcher:1.11.4"
+}
+
+test { useJUnitPlatform() }
+
+processResources {
+	def version = project.version
+	inputs.property "version", version
+	filesMatching("fabric.mod.json") { expand "version": version }
+}
+
+tasks.withType(JavaCompile).configureEach { it.options.release = 25; it.options.encoding = 'UTF-8' }
+java {
+	sourceCompatibility = JavaVersion.VERSION_25
+	targetCompatibility = JavaVersion.VERSION_25
+}
+
+jar { from("LICENSE") { rename { "${it}_homestead-core" } } }

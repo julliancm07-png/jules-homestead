@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "energizedpower"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "WWW",
+    "PCP"
+  ],
+  "key": {
+    "P": "energizedpower:iron_plate",
+    "W": "energizedpower:copper_wire",
+    "C": "energizedpower:basic_circuit"
+  },
+  "result": {
+    "id": "homesteadcore:space_heater",
+    "count": 1
+  }
+}
