@@ -46,7 +46,8 @@ def fetch(entry):
 
 def local_jar(entry):
     libs = ROOT / entry["path"] / "build" / "libs"
-    jars = sorted(j for j in libs.glob("*.jar") if not j.name.endswith("-sources.jar")) if libs.exists() else []
+    # newest build wins (a stale jar from an older version number must never be packaged)
+    jars = sorted((j for j in libs.glob("*.jar") if not j.name.endswith("-sources.jar")), key=lambda j: j.stat().st_mtime) if libs.exists() else []
     return jars[-1].read_bytes() if jars else None
 
 

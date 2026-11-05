@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "homesteadpack",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "Jules' Homestead Pack Data",
   "description": "Pack-level datapack content (seasonal crop tags, recipe removals, food tags) loaded as a built-in data pack.",
   "license": "MIT",

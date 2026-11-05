@@ -31,6 +31,7 @@ Stated plainly. "Awaiting local verification" means it was not possible to test 
 
 ## Quests
 * 19 of 104 quests are manual building milestones (FTB Quests can't judge architecture).
+* "Power for the Town" needs an FTB **Task Screen** fed by cable. The task type and the screen's energy input exist in the FTB Quests Fabric build (checked in its code), and the quest loads on the server. Actually filling it with energy is **awaiting local verification**.
 * The "Visit a Village" quest uses the `#minecraft:village` structure tag. The registry dump doesn't include tags, so it's verified only by FTB Quests loading without error.
 * Some item quests name one wood variant (oak drawers). The descriptions say so.
 
@@ -42,7 +43,11 @@ Stated plainly. "Awaiting local verification" means it was not possible to test 
 ## Visuals
 * Dramatic Skys on Modrinth is the free "Demo" edition. It loads and renders, but the full sky set is a paid Patreon edition. Shaders replace its sky.
 * EMF logs that it ignores a few block-entity models (chest, bed, banner, shulker box) after repeated rebuilds, so Fresh Animations Objects won't animate those. Cosmetic only.
-* The title panorama is a morning village captured with software rendering. A golden-hour or winter capture could replace it later (`tools/client_smoke_test.py --scenario showcase`, then `tools/gen_resources.py`).
+* The title panorama is a morning village captured with software rendering. A golden-hour or winter capture could replace it later (`tools/client_smoke_test.py --scenario showcase --update-panorama`, then `tools/gen_resources.py`).
+* **Spatial GUI** (3D inventory panels):
+  * JEI's item list and a few small mod buttons stay flat on screen around the panel.
+  * The mod is in early development (its author says so), so an unusual modded screen may misbehave: add it to *Disabled Screens* in its config.
+  * Not yet tried with shaders on a real GPU.
 * The walnut quest-book theme and Jade theme are new designs. I checked them in screenshots, not yet in long play.
 
 ## Not verified in the cloud (needs your PC)
@@ -52,5 +57,5 @@ Real-GPU rendering, shaders, Distant Horizons, sound (ambience, Sound Physics), 
 1. Run `docs/test-checklist.md` locally and feed back the results.
 2. Tune energy draw and generation, and spoilage times, from play-testing.
 3. Better appliance models (cabinet-style fridge and range), and a rotor renderer for the turbine.
-4. Possibly an energy task for town power using FTB's `tech_reborn_energy` task type.
+4. ~~Energy task for town power~~ — done in 1.0.0 ("Power for the Town": 500,000 E into a Task Screen).
 5. Re-evaluate Serene Seasons and Spoiled when newer 26.1.x builds ship; drop the workarounds if they're fixed upstream.

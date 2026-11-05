@@ -1,13 +1,13 @@
 {
  "pack": {
   "name": "Jules' Homestead",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "minecraft": "26.1.2",
   "loader": "fabric",
   "loader_version": "0.20.1",
   "summary": "A grounded homestead-to-town survival pack: seasons, storms and blizzards, renewable power for real appliances, residents and a hand-written quest book."
  },
- "resolved_at": "2026-11-05T04:25:13+00:00",
+ "resolved_at": "2026-11-05T04:43:33+00:00",
  "sources": [
   "https://api.modrinth.com/v2",
   "https://maven.ftb.dev/releases"

@@ -9,7 +9,7 @@
 1. Download `JulesHomestead-<version>.mrpack` from this repository's build output (or build it: see README → Building).
 2. Prism → **Add Instance** → **Import** → choose the `.mrpack` file → **OK**.
 3. Prism shows two prompts:
-   * **Optional mods**: tick what you want. **Create (Create Fly)** is optional; it is mechanical only, not electricity. **Distant Horizons** is off by default because of its performance cost. The two **shaders** are optional too.
+   * **Optional mods**: tick what you want. **Create (Create Fly)** is optional; it is mechanical only, not electricity. **Distant Horizons** is off by default because of its performance cost. The four **shader packs** are optional too.
    * **"Untrusted mods"**: four FTB files (FTB Quests, FTB Library, FTB Teams, FTB XMod Compat) download from FTB's official maven (`maven.ftb.dev`). Their licence doesn't let the pack re-host them, so the pack links to the official source. Accept.
 4. Select the instance → **Edit** → **Settings → Java**:
    * Tick **Java installation** and use **Auto-detect…** or **Download Java** to pick **Java 25** (e.g. Temurin 25).
@@ -18,7 +18,14 @@
 6. Create a new world (any world type works; terrain comes from Terralith + Tectonic). Open the quest book with the FTB Quests button in your inventory, or with the keybind under **Options → Controls**.
 
 ## Optional extras
-* **Shaders**: Options → Video Settings → Shader Packs → *Complementary Reimagined* (cinematic) or *MakeUp Ultra Fast* (light). See `docs/presets.md`.
+* **Shaders**: Options → Video Settings → Shader Packs:
+  * *Complementary Reimagined*: cinematic
+  * *Photon*: semi-realistic
+  * *Mellow*: soft, painterly
+  * *MakeUp Ultra Fast*: light
+
+  See `docs/presets.md` and `docs/visuals-and-immersion.md`.
+* **3D inventory panels (Spatial GUI)** are on by default: your inventory and containers open as a panel beside your character. To get flat screens back, or for a first-person panel, open *Mod Menu → Spatial GUI*.
 * **Physics Mod Pro** (your own file): copy your jar into the instance's `mods` folder. It isn't bundled and hasn't been tested with this pack; remove it first if you hit a crash.
 * **AI chat for residents** (MCA): off by default and not needed. If you want it, read MCA's wiki first, since it sends conversations to an external service.
 

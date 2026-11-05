@@ -29,8 +29,12 @@
   "task.5EC4B9DDE1C71B00.title": "Become Mayor",
   "quest.0899720CE0A49AA9.title": "Power for the Town",
   "quest.0899720CE0A49AA9.quest_desc": [
-    "An Advanced Battery Box stores 8.4 million E, enough for a street of homes. Wire the whole town and every winter night stays lit."
+    "An Advanced Battery Box stores 8.4 million E, enough for a street of homes. Wire the whole town and every winter night stays lit.",
+    "",
+    "Prove the grid can carry the load: place a Task Screen, right-click it and choose this quest's energy task, then run a cable from your batteries into it. The screen uses up the energy as it fills (up to 2,000 E per tick)."
   ],
+  "task.34C359C36A83B4B1.title": "Craft a Task Screen (stone around a book)",
+  "task.3A14841F813C35A4.title": "Feed 500,000 E from the town grid into the Task Screen",
   "quest.274826221A96EE94.title": "Winter Stockpile",
   "quest.274826221A96EE94.quest_desc": [
     "Full crates in the cellar before the first snow. The town eats well all winter."

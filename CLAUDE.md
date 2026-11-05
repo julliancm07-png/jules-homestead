@@ -38,7 +38,7 @@ python3 -I tools/server_test.py [--cmd "homestead debug dump"]   # headless dedi
 python3 -I tools/client_smoke_test.py [--scenario blizzard]      # full client: Xvfb + Mesa llvmpipe + portablemc
 python3 -I tools/inventory.py                                    # regenerate docs/mod-inventory.md
 python3 -I tools/gen_resources.py                                # resourcepacks/homestead-resources (title, splashes, themes)
-python3 -I tools/client_smoke_test.py --scenario showcase|title  # dev harness screenshots + title panorama capture
+python3 -I tools/client_smoke_test.py --scenario showcase|title  # dev harness screenshots (+ --update-panorama to replace the title panorama)
 ```
 
 ## Gotchas learned (2026-11-05)
@@ -53,4 +53,11 @@ python3 -I tools/client_smoke_test.py --scenario showcase|title  # dev harness s
 - Dev harness: -Dhomesteadcore.dev.script=<file> (tools/showcase.script, tools/title.script); inert otherwise.
 - Wilder Wild removed (FrozenLib CME during parallel registry load with Terralith).
 - Serene Seasons force-clears thunder in seasons with thunder range -1 -> winter thunder window set in configs.
+- GameTests that touch GLOBAL state (weather fronts) need their own test environment (`data/homesteadcore/test_environment/*.json`,
+  `@GameTest(environment=...)`): batches run sequentially, tests within a batch run concurrently.
+- `Level#getBiome` is fuzzed across 4-block biome cells: when a test uses /fillbiome, fill a one-cell margin around the area.
+- Vanilla `makeMockServerPlayerInLevel` is always CREATIVE; tests needing survival build their own ServerPlayer (see HomesteadGameTests).
+- Spatial GUI (3D inventory panels) is client-only and shipped with mod defaults; quest book/menus stay flat (allScreens=false).
+- Showcase runs no longer overwrite the committed title panorama unless `--update-panorama` is passed.
+- Local module jars: validate.local_jar picks the newest build in build/libs; bump versions in manifest, gradle.properties and pack-data fabric.mod.json together.
 Keep STATUS.md and CHANGELOG.md current at the end of every work session.

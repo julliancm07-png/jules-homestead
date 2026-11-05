@@ -49,6 +49,9 @@ def task_json(t, key):
     elif kind == "kill":
         j["entity"] = t["id"]
         j["value"] = t.get("count", 1)
+    elif kind == "tech_reborn_energy":  # FTB Quests Fabric: EnergyTask fields "value" / "max_input" (E, E/t)
+        j["value"] = int(t["value"])
+        j["max_input"] = int(t.get("max_input", 1000))
     elif kind == "checkmark":
         pass
     else:

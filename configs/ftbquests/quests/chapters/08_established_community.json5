@@ -198,6 +198,21 @@
             "count": 1
           },
           "count": 1
+        },
+        {
+          "id": "34C359C36A83B4B1",
+          "type": "item",
+          "item": {
+            "id": "ftbquests:screen_1",
+            "count": 1
+          },
+          "count": 1
+        },
+        {
+          "id": "3A14841F813C35A4",
+          "type": "tech_reborn_energy",
+          "value": 500000,
+          "max_input": 2000
         }
       ],
       "rewards": [
@@ -205,6 +220,15 @@
           "id": "494B146F4AF3B9C1",
           "type": "xp",
           "xp": 150
+        },
+        {
+          "id": "2DF856D935E58580",
+          "type": "item",
+          "item": {
+            "id": "energizedpower:copper_cable",
+            "count": 1
+          },
+          "count": 32
         }
       ]
     },

@@ -6,7 +6,7 @@
 
 [pack]
 name = "Jules' Homestead"
-version = "0.1.0"
+version = "1.0.0"
 minecraft = "26.1.2"
 loader = "fabric"
 loader_version = "0.20.1"

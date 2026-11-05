@@ -1,6 +1,6 @@
 # Jules' Homestead quest book — authored content (compiled by tools/build_quests.py).
 # Task kinds: item (auto, optional consume), advancement (auto), observation (auto: look at a block/tag),
-# biome / structure (auto: visit), kill (auto), checkmark (manual). Manual building milestones are labelled.
+# biome / structure (auto: visit), kill (auto), tech_reborn_energy (auto: cable into a Task Screen), checkmark (manual). Manual building milestones are labelled.
 # Rewards are deliberately modest and never hand out a machine from a later tier.
 
 BOOK_TITLE = "Jules' Homestead"
@@ -24,6 +24,11 @@ def Biome(id, title=None):
 
 def Structure(id, title=None):
     return {"kind": "structure", "id": id, "title": title}
+
+
+def Energy(value, max_input=2000, title=None):
+    """Tech Reborn Energy (E) fed by cable into an FTB Quests Task Screen bound to this task (consumed)."""
+    return {"kind": "tech_reborn_energy", "value": value, "max_input": max_input, "title": title}
 
 
 def Check(title=None):
@@ -292,8 +297,13 @@ CHAPTERS = [
            desc=["A place to gather. Put a barometer outside so everyone sees the forecast."]),
          Q("wedding", "Wedding Bells", 4, -2, [Adv("mca:marriage", "Get married")], [XP(100)], deps=["inn"], optional=True),
          Q("mayor", "Mayor", 4, 0, [Adv("mca:mayor", "Become Mayor")], [R("minecraft:emerald", 12), XP(200)], deps=["bakery", "inn", "hall"]),
-         Q("town_power", "Power for the Town", 6, -1, [Item("energizedpower:advanced_battery_box")], [XP(150)], deps=["mayor"],
-           desc=["An Advanced Battery Box stores 8.4 million E, enough for a street of homes. Wire the whole town and every winter night stays lit."]),
+         Q("town_power", "Power for the Town", 6, -1,
+           [Item("energizedpower:advanced_battery_box"), Item("ftbquests:screen_1", title="Craft a Task Screen (stone around a book)"),
+            Energy(500_000, 2000, "Feed 500,000 E from the town grid into the Task Screen")],
+           [XP(150), R("energizedpower:copper_cable", 32)], deps=["mayor"],
+           desc=["An Advanced Battery Box stores 8.4 million E, enough for a street of homes. Wire the whole town and every winter night stays lit.",
+                 "",
+                 "Prove the grid can carry the load: place a Task Screen, right-click it and choose this quest's energy task, then run a cable from your batteries into it. The screen uses up the energy as it fills (up to 2,000 E per tick)."]),
          Q("stockpile", "Winter Stockpile", 6, 1, [Item("farmersdelight:potato_crate", 4), Item("farmersdelight:carrot_crate", 4), Item("farmersdelight:rice_bale", 4), Item("farmersdelight:onion_crate", 4)],
            [R("minecraft:emerald", 8)], deps=["mayor"],
            desc=["Full crates in the cellar before the first snow. The town eats well all winter."]),
