@@ -290,6 +290,50 @@
       ]
     },
     {
+      "id": "4D30C24B294F0748",
+      "x": 6.0,
+      "y": 3.0,
+      "icon": {
+        "id": "mcwholidays:christmas_tree_top",
+        "count": 1
+      },
+      "optional": true,
+      "dependencies": [
+        "274826221A96EE94"
+      ],
+      "tasks": [
+        {
+          "id": "20610F8A5450BDF7",
+          "type": "item",
+          "item": {
+            "id": "mcwholidays:colorful_string_lights",
+            "count": 1
+          },
+          "count": 4
+        },
+        {
+          "id": "32A2395132084EBF",
+          "type": "item",
+          "item": {
+            "id": "mcwholidays:christmas_tree_top",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6E497F95AD417F60",
+          "type": "item",
+          "item": {
+            "id": "minecraft:emerald",
+            "count": 1
+          },
+          "count": 4
+        }
+      ]
+    },
+    {
       "id": "004D98D8AAFF65E8",
       "x": 8.0,
       "y": -1.0,

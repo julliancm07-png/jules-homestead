@@ -61,6 +61,17 @@
   "task.07C55F09C6368419.title": "Harvest honey safely",
   "quest.26C656A2C6FCEF63.title": "Fresh Catch",
   "task.4A9ECED67CA47A38.title": "Catch a fish",
+  "quest.6E38D215E98CF202.title": "Pond Life",
+  "quest.6E38D215E98CF202.quest_desc": [
+    "Pondies live in rivers and forest ponds. Fish of Thieves adds many kinds of fish, each with colour variants; some variants only turn up at certain times or in certain weather.",
+    "Earthworms, grubs and leeches are bait."
+  ],
+  "task.0A4B29DB47ED3723.title": "Catch a Pondie",
+  "quest.12DC533FF066FAAA.title": "Flower Cows",
+  "quest.12DC533FF066FAAA.quest_desc": [
+    "Mooblooms are flower-covered cows found in flowery places. Shear one for flowers."
+  ],
+  "task.16B432A3A04A173E.title": "Shear a moobloom",
   "quest.7A21939ED9A517F8.title": "A Balanced Table",
   "quest.7A21939ED9A517F8.quest_desc": [
     "Your fields feed you now. Soon they will feed a town."

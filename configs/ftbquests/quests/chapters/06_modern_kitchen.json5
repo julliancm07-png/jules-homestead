@@ -183,7 +183,7 @@
       "x": 6.0,
       "y": -2.0,
       "icon": {
-        "id": "mcwfurnitures:oak_kitchen_cabinet",
+        "id": "adorn:oak_kitchen_counter",
         "count": 1
       },
       "dependencies": [
@@ -192,7 +192,15 @@
       "tasks": [
         {
           "id": "15CC432C1096DCBC",
-          "type": "checkmark"
+          "type": "advancement",
+          "advancement": "adorn:kitchen_counter",
+          "criterion": ""
+        },
+        {
+          "id": "30F2CB3F481D7326",
+          "type": "advancement",
+          "advancement": "adorn:kitchen_sink",
+          "criterion": ""
         }
       ],
       "rewards": [

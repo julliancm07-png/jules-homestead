@@ -67,6 +67,36 @@
       ]
     },
     {
+      "id": "04A0036ADA9B10B9",
+      "x": 2.0,
+      "y": 3.0,
+      "dependencies": [
+        "58924D38BE06E191"
+      ],
+      "tasks": [
+        {
+          "id": "290C6DEE97937781",
+          "type": "item",
+          "item": {
+            "id": "explorerscompass:explorerscompass",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "3FD023AB4A012AE2",
+          "type": "item",
+          "item": {
+            "id": "minecraft:bread",
+            "count": 1
+          },
+          "count": 8
+        }
+      ]
+    },
+    {
       "id": "437AAE011D2C07B0",
       "x": 2.0,
       "y": 1.0,

@@ -5,7 +5,10 @@ wait 300
 server gamemode spectator JulesTest
 server execute as JulesTest at @s run tp @s ~ ~9 ~ 225 0
 wait 400
+# diagnostic (1.1): same view with the HUD on, to identify any mod overlay
+screenshot dbg-spectator-hud
 hud off
+wait 5
 screenshot showcase-village
 panorama
 wait 60
@@ -43,6 +46,25 @@ screenshot showcase-range
 screen close
 wait 20
 server execute as JulesTest at @s run setblock ~ ~ ~2 minecraft:air
+# polish 1.1 decor showroom: cleared space with a spruce floor, Adorn kitchen + sofa, Macaw's Holidays tree, This Rocks pebble
+server execute as JulesTest at @s run fill ~-3 ~ ~3 ~3 ~4 ~8 minecraft:air
+server execute as JulesTest at @s run fill ~-3 ~-1 ~3 ~3 ~-1 ~8 minecraft:spruce_planks
+server execute as JulesTest at @s run setblock ~-2 ~ ~6 adorn:white_sofa
+server execute as JulesTest at @s run setblock ~-1 ~ ~6 adorn:oak_kitchen_counter
+server execute as JulesTest at @s run setblock ~ ~ ~6 adorn:oak_kitchen_sink
+server execute as JulesTest at @s run setblock ~1 ~ ~6 adorn:oak_kitchen_counter
+server execute as JulesTest at @s run setblock ~2 ~ ~6 mcwholidays:christmas_tree_base
+server execute as JulesTest at @s run setblock ~2 ~1 ~6 mcwholidays:christmas_tree_bottom
+server execute as JulesTest at @s run setblock ~2 ~2 ~6 mcwholidays:christmas_tree_middle
+server execute as JulesTest at @s run setblock ~2 ~3 ~6 mcwholidays:christmas_tree_top
+server execute as JulesTest at @s run setblock ~ ~ ~4 rocks:granite_rock
+wait 40
+look 0 18
+wait 40
+hud off
+wait 5
+screenshot showcase-decor
+hud on
 look 225 0
 wait 20
 server execute as JulesTest run ftbquests open_book

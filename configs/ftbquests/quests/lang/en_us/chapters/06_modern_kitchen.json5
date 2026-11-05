@@ -28,12 +28,13 @@
     "It lights the room and warms everyone nearby back towards comfortable, but never makes you overheat. It's the biggest power user in the house, so size your batteries for winter nights."
   ],
   "quest.2FCCC68D122EDC0C.title": "Powered Furnace",
-  "quest.683BEA029F5FBBF2.title": "[Manual] Fitted Kitchen",
+  "quest.683BEA029F5FBBF2.title": "Fitted Kitchen",
   "quest.683BEA029F5FBBF2.quest_desc": [
-    "Counters, cabinets and a sink around your range and fridge. Hide the wiring behind the cabinets.",
-    "",
-    "This is a building milestone. FTB Quests cannot reliably judge architecture, so tick the checkbox yourself when you are happy with it."
+    "Counters, cupboards and a sink around your range and fridge. Adorn's come in every wood and colour; Macaw's and Storage Delight cabinets go well with them.",
+    "Hide the wiring behind the cabinets."
   ],
+  "task.15CC432C1096DCBC.title": "Get any kitchen counter",
+  "task.30F2CB3F481D7326.title": "Get any kitchen sink",
   "quest.07B7B004BC29DB4E.title": "Outage Drill",
   "quest.07B7B004BC29DB4E.quest_desc": [
     "What a blackout looks like:",

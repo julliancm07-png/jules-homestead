@@ -78,6 +78,47 @@
       ]
     },
     {
+      "id": "23C2DA9DBDF52695",
+      "x": 2.0,
+      "y": -3.0,
+      "icon": {
+        "id": "adorn:white_sofa",
+        "count": 1
+      },
+      "optional": true,
+      "dependencies": [
+        "2BB2CF47442FAB11"
+      ],
+      "tasks": [
+        {
+          "id": "5459123AF46DA690",
+          "type": "advancement",
+          "advancement": "adorn:sofa",
+          "criterion": ""
+        },
+        {
+          "id": "6D5672DAF8A7C0E6",
+          "type": "item",
+          "item": {
+            "id": "beautify:hanging_pot",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "66AEC078922B673A",
+          "type": "item",
+          "item": {
+            "id": "minecraft:white_wool",
+            "count": 1
+          },
+          "count": 4
+        }
+      ]
+    },
+    {
       "id": "7E8F3FAB4AED047A",
       "x": 2.0,
       "y": 1.0,

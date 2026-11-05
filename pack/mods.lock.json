@@ -7,7 +7,7 @@
   "loader_version": "0.20.1",
   "summary": "A grounded homestead-to-town survival pack: seasons, storms and blizzards, renewable power for real appliances, residents and a hand-written quest book."
  },
- "resolved_at": "2026-11-05T04:43:33+00:00",
+ "resolved_at": "2026-11-05T06:01:54+00:00",
  "sources": [
   "https://api.modrinth.com/v2",
   "https://maven.ftb.dev/releases"
@@ -58,6 +58,113 @@
    ],
    "group": "visual",
    "purpose": "3D skin layers.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "adorn",
+   "title": "Adorn",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "E6FUtRJh",
+   "version_id": "cnNQTddq",
+   "version_number": "8.0.0-fabric",
+   "version_type": "release",
+   "date_published": "2026-07-30T12:35:36.935174Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric",
+    "quilt"
+   ],
+   "filename": "Adorn-8.0.0+26.1.2-fabric.jar",
+   "url": "https://cdn.modrinth.com/data/E6FUtRJh/versions/cnNQTddq/Adorn-8.0.0%2B26.1.2-fabric.jar",
+   "size": 2784560,
+   "hashes": {
+    "sha1": "efd7ea3452cd1c2f0eb856a1ded9d1de28fe045f",
+    "sha512": "85d0f8db36e30f6573c205fb8299cefc4289e8ae0098923ed91c9cf8181e06636d7c4b437dac4d13db511679c861f150248fc63938da9b92c293d584ec5201e1"
+   },
+   "client_side": "required",
+   "server_side": "required",
+   "license": "MIT",
+   "license_url": null,
+   "source_url": "https://github.com/Juuxel/Adorn",
+   "issues_url": "https://github.com/Juuxel/Adorn/issues",
+   "page": "https://modrinth.com/mod/adorn",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "build",
+   "purpose": "Furniture: sofas, chairs, tables, shelves, kitchen counters and cupboards (modern kitchen decor).",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "advancement-plaques",
+   "title": "Advancement Plaques",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "9NM0dXub",
+   "version_id": "PrBPZ5eb",
+   "version_number": "1.7.1",
+   "version_type": "release",
+   "date_published": "2026-06-23T19:55:33.417352Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "AdvancementPlaques-26.1.2-fabric-1.7.1.jar",
+   "url": "https://cdn.modrinth.com/data/9NM0dXub/versions/PrBPZ5eb/AdvancementPlaques-26.1.2-fabric-1.7.1.jar",
+   "size": 195981,
+   "hashes": {
+    "sha1": "af2d102328ea8bc90c7334460e47d7023691e80a",
+    "sha512": "c26f35140c53d2cb0fc6865d1b695b7f05db062bed750a32687e76f11712e558ff277b886f0bc5294bd546cbaaa3bcc965a09f84147422f267d91be3e593e5dd"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "CC-BY-NC-ND-4.0",
+   "license_url": null,
+   "source_url": "https://github.com/AHilyard/AdvancementPlaques/",
+   "issues_url": "https://discord.gg/UCKjnamDaW",
+   "page": "https://modrinth.com/mod/advancement-plaques",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "1OE8wbN0",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "5faXoLqX",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "visual",
+   "purpose": "Nicer advancement and quest toasts.",
    "optional": false,
    "side_override": null,
    "explicit": true,
@@ -245,6 +352,99 @@
    "required_by": []
   },
   {
+   "slug": "badoptimizations",
+   "title": "BadOptimizations",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "g96Z4WVZ",
+   "version_id": "gjIvugXc",
+   "version_number": "2.4.1",
+   "version_type": "release",
+   "date_published": "2026-03-29T04:40:54.360575Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "BadOptimizations-2.4.1-26.1-fabric.jar",
+   "url": "https://cdn.modrinth.com/data/g96Z4WVZ/versions/gjIvugXc/BadOptimizations-2.4.1-26.1-fabric.jar",
+   "size": 61928,
+   "hashes": {
+    "sha1": "9636073ca8f378ea796b5d13bffac146a7f2f0f3",
+    "sha512": "efba144dec306767da3aceb4b179e093daa60bc4c0ba6295d64c166092b8f62e4a4cc63a5bae76fb4c608f1dffa8ecd70c6884e48c804915e1b37ef042e31a99"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "MIT",
+   "license_url": null,
+   "source_url": "https://github.com/ItsThosea/BadOpitmizations",
+   "issues_url": "https://github.com/ItsThosea/BadOpitmizations/issues",
+   "page": "https://modrinth.com/mod/badoptimizations",
+   "dependencies": [],
+   "group": "performance",
+   "purpose": "Client CPU optimisations (lightmap, sky, entity checks).",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "baguettelib",
+   "title": "BaguetteLib",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "OfKzpbRU",
+   "version_id": "FlpOguZ2",
+   "version_number": "2.0.7",
+   "version_type": "release",
+   "date_published": "2026-09-15T16:41:51.416101Z",
+   "game_versions": [
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "baguettelib-26.1.2-Fabric-2.0.7.jar",
+   "url": "https://cdn.modrinth.com/data/OfKzpbRU/versions/FlpOguZ2/baguettelib-26.1.2-Fabric-2.0.7.jar",
+   "size": 108554,
+   "hashes": {
+    "sha1": "85f66324d8afa0a0b58c423bb025ac59be097f06",
+    "sha512": "e850da1d0e4e62b10cc88bb415a669c553ae4178eb3aa969f1f4ad1479107e8313244f6ca6a0e43f3ac54aae6e1d8820316d7abacc1d7b50ef12527bfb8f2290"
+   },
+   "client_side": "unsupported",
+   "server_side": "required",
+   "license": "MIT",
+   "license_url": null,
+   "source_url": null,
+   "issues_url": null,
+   "page": "https://modrinth.com/mod/baguettelib",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "1eAoo2KR",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "mOgUt4GM",
+     "file_name": null,
+     "dependency_type": "optional"
+    }
+   ],
+   "group": "library",
+   "purpose": "Dependency.",
+   "optional": false,
+   "side_override": null,
+   "explicit": false,
+   "required_by": [
+    "particular-reforged"
+   ]
+  },
+  {
    "slug": "balm",
    "title": "Balm",
    "kind": "mod",
@@ -293,6 +493,57 @@
    ]
   },
   {
+   "slug": "beautify-refabricated",
+   "title": "Beautify: Refabricated",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "DhSSvaxs",
+   "version_id": "wztqJQjU",
+   "version_number": "3.6.5-fabric+26.1.2",
+   "version_type": "release",
+   "date_published": "2026-11-03T10:14:22.802833Z",
+   "game_versions": [
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "beautify-3.6.5-fabric+26.1.2.jar",
+   "url": "https://cdn.modrinth.com/data/DhSSvaxs/versions/wztqJQjU/beautify-3.6.5-fabric%2B26.1.2.jar",
+   "size": 976800,
+   "hashes": {
+    "sha1": "1bb1a9f8d34202bd209d61e5c94e9a12167f732b",
+    "sha512": "39083ca6e6de002d61a1ebb4cc00d0e3ed924b6944d2e53c158b998095b3b1a9afc2e6ff7213775ef21fe68809cfd9460c516471f965ba38f3fd7f104d0959cc"
+   },
+   "client_side": "required",
+   "server_side": "required",
+   "license": "MIT",
+   "license_url": null,
+   "source_url": "https://github.com/Suel-ki/beautify-stonecutter",
+   "issues_url": "https://github.com/Suel-ki/beautify-stonecutter/issues",
+   "page": "https://modrinth.com/mod/beautify-refabricated",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "9s6osm5g",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "build",
+   "purpose": "Decor: blinds, trellises, hanging pots, lamps, picture frames.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
    "slug": "better-advancements",
    "title": "Better Advancements",
    "kind": "mod",
@@ -329,6 +580,157 @@
    "side_override": null,
    "explicit": true,
    "required_by": []
+  },
+  {
+   "slug": "bl4cks-sit",
+   "title": "Sit",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "VKXzIykF",
+   "version_id": "vU0mXH0A",
+   "version_number": "v1.5.1",
+   "version_type": "release",
+   "date_published": "2026-04-06T20:04:53.602530Z",
+   "game_versions": [
+    "26.1.1",
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "loaders": [
+    "fabric",
+    "quilt"
+   ],
+   "filename": "sit-fabric-26.1.1-1.5.1.jar",
+   "url": "https://cdn.modrinth.com/data/VKXzIykF/versions/vU0mXH0A/sit-fabric-26.1.1-1.5.1.jar",
+   "size": 71100,
+   "hashes": {
+    "sha1": "9a60018b802781eadd45eb073328bfb8c2b3348f",
+    "sha512": "3a2816e750b02606c80c7ef9b44d7b19812e8e864802e0bbaf4550c5b84171efbb7ba0de936a627e68ddb4188c2d1df1fb57a9062f5a3777002d189daf5ecf09"
+   },
+   "client_side": "required",
+   "server_side": "required",
+   "license": "MIT",
+   "license_url": null,
+   "source_url": "https://github.com/bl4ckscor3/Sit",
+   "issues_url": "https://github.com/bl4ckscor3/Sit/issues",
+   "page": "https://modrinth.com/mod/bl4cks-sit",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "ohNO6lps",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "build",
+   "purpose": "Sit on stairs and slabs (porches, benches).",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "boids",
+   "title": "Boids",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "2OckSy74",
+   "version_id": "smefztgO",
+   "version_number": "2.0.0+26.1",
+   "version_type": "release",
+   "date_published": "2026-03-29T14:24:18.364843Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "boids-2.0.0+26.1.jar",
+   "url": "https://cdn.modrinth.com/data/2OckSy74/versions/smefztgO/boids-2.0.0%2B26.1.jar",
+   "size": 106066,
+   "hashes": {
+    "sha1": "e7db20b71c02709de65126e883319aec7731d21e",
+    "sha512": "17442319cef9c3dd1dcd6c969cf49608922e7755ba1f44a976af6aa64b87110602074fc049bdf7d8fb05e6da7140fe8638d34b74db7cf8be5f8c3a67a0d7c6f1"
+   },
+   "client_side": "unsupported",
+   "server_side": "required",
+   "license": "MIT",
+   "license_url": "https://github.com/Tomate0613/boids/blob/main/LICENSE",
+   "source_url": "https://github.com/Tomate0613/boids",
+   "issues_url": "https://github.com/Tomate0613/boids/issues",
+   "page": "https://modrinth.com/mod/boids",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "world",
+   "purpose": "Fish swim in flocking schools (server-side AI).",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "bookshelf-lib",
+   "title": "Bookshelf",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "uy4Cnpcm",
+   "version_id": "QW2ZBrR2",
+   "version_number": "26.1.2.15",
+   "version_type": "release",
+   "date_published": "2026-08-01T03:43:44.897545Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "Bookshelf-fabric-MC26.1.2-26.1.2.15.jar",
+   "url": "https://cdn.modrinth.com/data/uy4Cnpcm/versions/QW2ZBrR2/Bookshelf-fabric-MC26.1.2-26.1.2.15.jar",
+   "size": 313169,
+   "hashes": {
+    "sha1": "e51df387d513927b30b3a8ccbf673cb321c1812a",
+    "sha512": "c4a9ac025391e01d1cc148592025627eb150eb0afc0b86019c2a4ec3e48b8d1b5cda6d026d65f501f056ff025bff8453f6707515871d9195b2fd45e93e23374e"
+   },
+   "client_side": "required",
+   "server_side": "required",
+   "license": "LGPL-2.1-only",
+   "license_url": null,
+   "source_url": "https://github.com/Darkhax-Minecraft/Bookshelf",
+   "issues_url": "https://github.com/Darkhax-Minecraft/Bookshelf/issues",
+   "page": "https://modrinth.com/mod/bookshelf-lib",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "library",
+   "purpose": "Dependency.",
+   "optional": false,
+   "side_override": null,
+   "explicit": false,
+   "required_by": [
+    "trample-no-more"
+   ]
   },
   {
    "slug": "cameraoverhaul",
@@ -509,14 +911,167 @@
    "side_override": null,
    "explicit": false,
    "required_by": [
+    "beautify-refabricated",
     "cameraoverhaul",
     "cristel-lib",
+    "dripsounds",
     "fallingleaves",
+    "fastquit",
     "moreculling",
     "rustic-delight",
+    "travelers-titles",
+    "yungs-better-desert-temples",
     "yungs-better-dungeons",
+    "yungs-better-jungle-temples",
     "yungs-better-mineshafts",
-    "yungs-better-strongholds"
+    "yungs-better-nether-fortresses",
+    "yungs-better-ocean-monuments",
+    "yungs-better-strongholds",
+    "yungs-better-witch-huts",
+    "yungs-bridges",
+    "yungs-extras",
+    "yungs-menu-tweaks"
+   ]
+  },
+  {
+   "slug": "clumps",
+   "title": "Clumps",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "Wnxd13zP",
+   "version_id": "RXNrUIjA",
+   "version_number": "26.1.2.1",
+   "version_type": "release",
+   "date_published": "2026-04-11T19:05:08.691867Z",
+   "game_versions": [
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "Clumps-fabric-26.1.2-26.1.2.1.jar",
+   "url": "https://cdn.modrinth.com/data/Wnxd13zP/versions/RXNrUIjA/Clumps-fabric-26.1.2-26.1.2.1.jar",
+   "size": 19956,
+   "hashes": {
+    "sha1": "c1e9539fdadb3cba1c4b665a141e39a65e6ef674",
+    "sha512": "369c20d8887c36c9fd4569a7c8dac1ffc51be036bb58763605535034a5aebd9fbb35de43cc0cc8c774d8dd02b2ab1776f90be1657f3796b38107f779edb4a77a"
+   },
+   "client_side": "optional",
+   "server_side": "optional",
+   "license": "MIT",
+   "license_url": null,
+   "source_url": "https://github.com/jaredlll08/Clumps",
+   "issues_url": "https://github.com/jaredlll08/Clumps/issues",
+   "page": "https://modrinth.com/mod/clumps",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "performance",
+   "purpose": "Clumps XP orbs together.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "comforts",
+   "title": "Comforts",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "SaCpeal4",
+   "version_id": "51cteKda",
+   "version_number": "15.0.0+26.1.2",
+   "version_type": "release",
+   "date_published": "2026-06-22T01:57:38.204733Z",
+   "game_versions": [
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "comforts-fabric-15.0.0+26.1.2.jar",
+   "url": "https://cdn.modrinth.com/data/SaCpeal4/versions/51cteKda/comforts-fabric-15.0.0%2B26.1.2.jar",
+   "size": 961535,
+   "hashes": {
+    "sha1": "f9bd0875fede3cd84b4369d859647c6e299e1f6f",
+    "sha512": "c1988a7085b66ebc96fb19bd10b7906e769930efbcd1ae5d02a123653d7b4af20dd68121500db476cdc64d77944c54a96a2c43869df4422b6df6517108893ccf"
+   },
+   "client_side": "required",
+   "server_side": "required",
+   "license": "LGPL-3.0-or-later",
+   "license_url": null,
+   "source_url": "https://github.com/illusivesoulworks/comforts",
+   "issues_url": "https://github.com/illusivesoulworks/comforts/issues",
+   "page": "https://modrinth.com/mod/comforts",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "town",
+   "purpose": "Sleeping bags (don't move your spawn) and hammocks for the founding camp.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "configurable",
+   "title": "Configurable",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "lGffrQ3O",
+   "version_id": "y638mir1",
+   "version_number": "3.5.3",
+   "version_type": "release",
+   "date_published": "2026-10-15T13:12:25.835279Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "configurable-3.5.3+26.3-fabric.jar",
+   "url": "https://cdn.modrinth.com/data/lGffrQ3O/versions/y638mir1/configurable-3.5.3%2B26.3-fabric.jar",
+   "size": 543473,
+   "hashes": {
+    "sha1": "71ef18bf3125c32766ab3ee144f174ea24f06253",
+    "sha512": "f2a1ce585751632513e84784b3ec792f04db823ad2e36d6e1d6c0f35dcb847671e652c49ff9ae6225ff668efd52b857b94d39f1ed88887d85c493280091e15a5"
+   },
+   "client_side": "optional",
+   "server_side": "optional",
+   "license": "MIT",
+   "license_url": null,
+   "source_url": "https://github.com/Bawnorton/Configurable",
+   "issues_url": "https://github.com/Bawnorton/Configurable/issues",
+   "page": "https://modrinth.com/mod/configurable",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "library",
+   "purpose": "Dependency.",
+   "optional": false,
+   "side_override": null,
+   "explicit": false,
+   "required_by": [
+    "neruina"
    ]
   },
   {
@@ -565,7 +1120,9 @@
    "optional": false,
    "side_override": null,
    "explicit": true,
-   "required_by": []
+   "required_by": [
+    "connected-paths"
+   ]
   },
   {
    "slug": "controlling",
@@ -615,6 +1172,44 @@
    "purpose": "Searchable keybinds + conflict view.",
    "optional": false,
    "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "coolrain",
+   "title": "Cool Rain",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "iDyqnQLT",
+   "version_id": "KsLfEOWC",
+   "version_number": "1.4.0-26.1.2",
+   "version_type": "release",
+   "date_published": "2026-04-20T12:24:18.424464Z",
+   "game_versions": [
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "coolrain-1.4.0-26.1.2.jar",
+   "url": "https://cdn.modrinth.com/data/iDyqnQLT/versions/KsLfEOWC/coolrain-1.4.0-26.1.2.jar",
+   "size": 4142092,
+   "hashes": {
+    "sha1": "d605ab9d41df8251fd8c734883c0a677dab03083",
+    "sha512": "d37d509772af8f083fa605a2df0efd5d755ab1dd3d23d1250396118bd6742af2a9b2f2836a8b35551be3f74fb94dcb61ef5956aec34a26b7958d8f4b6fe23465"
+   },
+   "client_side": "required",
+   "server_side": "optional",
+   "license": "LicenseRef-All-Rights-Reserved",
+   "license_url": null,
+   "source_url": "https://github.com/Jaiz15/CoolRain",
+   "issues_url": null,
+   "page": "https://modrinth.com/mod/coolrain",
+   "dependencies": [],
+   "group": "visual",
+   "purpose": "Rain sounds on roofs, leaves and other blocks.",
+   "optional": false,
+   "side_override": "client",
    "explicit": true,
    "required_by": []
   },
@@ -856,6 +1451,63 @@
    "required_by": []
   },
   {
+   "slug": "debugify",
+   "title": "Debugify",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "QwxR6Gcd",
+   "version_id": "XhYY56c0",
+   "version_number": "26.1.2.3",
+   "version_type": "release",
+   "date_published": "2026-09-28T13:01:08.316783Z",
+   "game_versions": [
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "debugify-26.1.2.3.jar",
+   "url": "https://cdn.modrinth.com/data/QwxR6Gcd/versions/XhYY56c0/debugify-26.1.2.3.jar",
+   "size": 367957,
+   "hashes": {
+    "sha1": "ff796bbd70e0538debe80a2e013487b7fefbbf43",
+    "sha512": "14a451a3a14133f6211ed562426571f3f9a804b8b38da0ece0f8cfa513894b7467ec8640c3381e266920206fecc07ea1328d2b6d69237c0102aa45739108f2ca"
+   },
+   "client_side": "optional",
+   "server_side": "optional",
+   "license": "LGPL-3.0-only",
+   "license_url": null,
+   "source_url": "https://github.com/isXander/Debugify/",
+   "issues_url": "https://github.com/isXander/Debugify/issues",
+   "page": "https://modrinth.com/mod/debugify",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "1eAoo2KR",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "mOgUt4GM",
+     "file_name": null,
+     "dependency_type": "optional"
+    }
+   ],
+   "group": "performance",
+   "purpose": "Fixes vanilla bugs from the bug tracker.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
    "slug": "delight-lib",
    "title": "Delight Lib",
    "kind": "mod",
@@ -905,6 +1557,183 @@
    ]
   },
   {
+   "slug": "diagonal-fences",
+   "title": "Diagonal Fences",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "IKARgflD",
+   "version_id": "UUuyVvvj",
+   "version_number": "26.1.0",
+   "version_type": "release",
+   "date_published": "2026-04-30T11:40:01.595688Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "DiagonalFences-v26.1.0-mc26.1.x-Fabric.jar",
+   "url": "https://cdn.modrinth.com/data/IKARgflD/versions/UUuyVvvj/DiagonalFences-v26.1.0-mc26.1.x-Fabric.jar",
+   "size": 126183,
+   "hashes": {
+    "sha1": "8327833779f9ad90421fedf50cdd48003b038af2",
+    "sha512": "54e8a5104bbd577a9f2ed6e89616f545f81d7e0ab872e21c36d972a266d1aea4cbb8c8abc130cb2a68960d262bd33377df5a1f22b894c2b6f0dd7365553ea114"
+   },
+   "client_side": "required",
+   "server_side": "required",
+   "license": "MPL-2.0",
+   "license_url": null,
+   "source_url": "https://github.com/Fuzss/diagonalfences",
+   "issues_url": "https://github.com/Fuzss/diagonalfences/issues",
+   "page": "https://modrinth.com/mod/diagonal-fences",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "QAGBst4M",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "ohNO6lps",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "build",
+   "purpose": "Fences connect diagonally.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "diagonal-walls",
+   "title": "Diagonal Walls",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "FQgc8dib",
+   "version_id": "lLuopUKw",
+   "version_number": "26.1.0",
+   "version_type": "release",
+   "date_published": "2026-04-30T11:38:54.823064Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "DiagonalWalls-v26.1.0-mc26.1.x-Fabric.jar",
+   "url": "https://cdn.modrinth.com/data/FQgc8dib/versions/lLuopUKw/DiagonalWalls-v26.1.0-mc26.1.x-Fabric.jar",
+   "size": 126519,
+   "hashes": {
+    "sha1": "6cdc9471b03a921c872491abe8a57bdc149642e5",
+    "sha512": "5378392801f6b2a01cbfdd299bf7f67f4f26cd58a155f905228c17f140e3d182b22908a756f0f267aec70a866062c7ab45b34c34147745109af3fb5f41ae6db3"
+   },
+   "client_side": "required",
+   "server_side": "required",
+   "license": "MPL-2.0",
+   "license_url": null,
+   "source_url": "https://github.com/Fuzss/diagonalwalls",
+   "issues_url": "https://github.com/Fuzss/diagonalwalls/issues",
+   "page": "https://modrinth.com/mod/diagonal-walls",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "QAGBst4M",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "ohNO6lps",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "build",
+   "purpose": "Walls connect diagonally.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "diagonal-windows",
+   "title": "Diagonal Windows",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "oOi0CKes",
+   "version_id": "7nHKJfYC",
+   "version_number": "26.1.0",
+   "version_type": "release",
+   "date_published": "2026-04-30T11:39:10.759916Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "DiagonalWindows-v26.1.0-mc26.1.x-Fabric.jar",
+   "url": "https://cdn.modrinth.com/data/oOi0CKes/versions/7nHKJfYC/DiagonalWindows-v26.1.0-mc26.1.x-Fabric.jar",
+   "size": 126707,
+   "hashes": {
+    "sha1": "9fa55a6d59fb94626c9d8c67e329f6c13e552112",
+    "sha512": "5bb4c58847ab65896fafa3efc93c8f805b25dbffc347bb3093287117e8e05b744793f5cf57087ecdfe9fb8d746871d9c087e05495c8647df53ab0b8e86a1a98d"
+   },
+   "client_side": "required",
+   "server_side": "required",
+   "license": "MPL-2.0",
+   "license_url": null,
+   "source_url": "https://github.com/Fuzss/diagonalwindows",
+   "issues_url": "https://github.com/Fuzss/diagonalwindows/issues",
+   "page": "https://modrinth.com/mod/diagonal-windows",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "QAGBst4M",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "ohNO6lps",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "build",
+   "purpose": "Glass panes and bars connect diagonally.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
    "slug": "distanthorizons",
    "title": "Distant Horizons",
    "kind": "mod",
@@ -941,6 +1770,59 @@
    "group": "visual-optional",
    "purpose": "Optional long-distance terrain LOD. Off by default (performance cost).",
    "optional": true,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "dripsounds",
+   "title": "Drip Sounds",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "T8MMXTpr",
+   "version_id": "I9Zyv8tn",
+   "version_number": "0.6.3+26.1-fabric",
+   "version_type": "beta",
+   "date_published": "2026-10-12T05:36:29.058548Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "Drip Sounds-0.6.3+26.1-Fabric.jar",
+   "url": "https://cdn.modrinth.com/data/T8MMXTpr/versions/I9Zyv8tn/Drip%20Sounds-0.6.3%2B26.1-Fabric.jar",
+   "size": 70285,
+   "hashes": {
+    "sha1": "a87a2e965db48502974ae1e8d99aaa056998cf5c",
+    "sha512": "db58d56520e779123c1e82e11edd150ecee93cb163b9975fee121c8d0f38b3338559c895de31e733487728c25a201b0a14d27602f03e4a3d714bc097b2005914"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "LGPL-3.0-only",
+   "license_url": null,
+   "source_url": "https://github.com/PieKing1215/DripSounds-Fabric",
+   "issues_url": "https://github.com/PieKing1215/DripSounds-Fabric/issues",
+   "page": "https://modrinth.com/mod/dripsounds",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "9s6osm5g",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "mOgUt4GM",
+     "file_name": null,
+     "dependency_type": "optional"
+    }
+   ],
+   "group": "visual",
+   "purpose": "Sounds for water and lava drips in caves.",
+   "optional": false,
    "side_override": null,
    "explicit": true,
    "required_by": []
@@ -1493,6 +2375,46 @@
    ]
   },
   {
+   "slug": "explorers-compass",
+   "title": "Explorer's Compass",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "RV1qfVQ8",
+   "version_id": "FN4lCamU",
+   "version_number": "26.1-2.5.1-fabric",
+   "version_type": "release",
+   "date_published": "2026-04-09T21:17:39.778866Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "ExplorersCompass-26.1-2.5.1-fabric.jar",
+   "url": "https://cdn.modrinth.com/data/RV1qfVQ8/versions/FN4lCamU/ExplorersCompass-26.1-2.5.1-fabric.jar",
+   "size": 176799,
+   "hashes": {
+    "sha1": "06edeb6b8f91b8df27b1b55aeee170a7085c3a2f",
+    "sha512": "3a405b5f5304d4940baa4b4a3cb03c741c018f755d87cb53f1b030850b9c109dcd24758c8ce5e644305abf006c76c196ce2bf4e0eacdf6392bbe00bae5e522b5"
+   },
+   "client_side": "required",
+   "server_side": "required",
+   "license": "CC-BY-NC-SA-4.0",
+   "license_url": null,
+   "source_url": "https://github.com/MattCzyr/ExplorersCompass",
+   "issues_url": "https://github.com/MattCzyr/ExplorersCompass/issues",
+   "page": "https://modrinth.com/mod/explorers-compass",
+   "dependencies": [],
+   "group": "qol",
+   "purpose": "Structure-finding compass (pairs with Nature's Compass).",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
    "slug": "explorify",
    "title": "Explorify",
    "kind": "mod",
@@ -1594,15 +2516,28 @@
    "explicit": true,
    "required_by": [
     "3dskinlayers",
+    "adorn",
+    "advancement-plaques",
     "ambient-environment",
     "ambientsounds",
     "appleskin",
     "balm",
+    "beautify-refabricated",
+    "bl4cks-sit",
+    "boids",
+    "bookshelf-lib",
+    "clumps",
+    "comforts",
+    "configurable",
     "continuity",
     "controlling",
     "creativecore",
     "cristel-lib",
     "crops-love-rain",
+    "debugify",
+    "diagonal-fences",
+    "diagonal-walls",
+    "diagonal-windows",
     "dynamic-fps",
     "enchantment-descriptions",
     "energized-power",
@@ -1610,9 +2545,13 @@
     "fallingleaves",
     "farmers-delight-refabricated",
     "farming-for-blockheads",
+    "fastquit",
     "first-person-model",
+    "fish-of-thieves",
     "forge-config-api-port",
     "friends-and-foes",
+    "friends-and-foes-beekeeper-hut-fabric",
+    "friends-and-foes-flowery-mooblooms-fabric",
     "frostiful",
     "fusion-connected-textures",
     "fzzy-config",
@@ -1621,6 +2560,7 @@
     "inventory-profiles-next",
     "jade",
     "jamlib",
+    "justenoughbreeding",
     "lambdynamiclights",
     "legendary-tooltips",
     "libipn",
@@ -1633,18 +2573,22 @@
     "macaws-roofs",
     "macaws-windows",
     "mezzconfig",
+    "midnightlib",
     "minecraft-comes-alive-reborn",
     "modmenu",
     "mouse-tweaks",
+    "mru",
     "not-enough-animations",
     "nuit",
     "overflowing-bars",
     "particle-rain",
+    "particular-reforged",
     "presence-footsteps",
     "prickle",
     "prism-lib",
     "puzzles-lib",
     "rechiseled",
+    "reconnectible-chains",
     "resourceful-lib",
     "rightclickharvest",
     "rustic-delight",
@@ -1653,26 +2597,40 @@
     "serene-seasons",
     "shogi",
     "snow-under-trees",
+    "sound",
     "spatial-gui",
     "spoiled",
     "storagedrawers",
+    "structure-layout-optimizer",
     "subtle-effects",
     "supermartijn642s-config-lib",
     "supermartijn642s-core-lib",
     "tectonic",
     "thermoo",
     "thermoo-patches",
+    "this-rocks",
+    "trample-no-more",
+    "travelers-titles",
     "travelersbackpack",
     "ubes-delight",
+    "visual-workbench",
     "wakes",
     "waystones",
     "xaeros-minimap",
     "xaeros-world-map",
     "yacl",
     "yungs-api",
+    "yungs-better-desert-temples",
     "yungs-better-dungeons",
+    "yungs-better-jungle-temples",
     "yungs-better-mineshafts",
+    "yungs-better-nether-fortresses",
+    "yungs-better-ocean-monuments",
     "yungs-better-strongholds",
+    "yungs-better-witch-huts",
+    "yungs-bridges",
+    "yungs-extras",
+    "yungs-menu-tweaks",
     "zoomify"
    ]
   },
@@ -2001,6 +2959,65 @@
    "required_by": []
   },
   {
+   "slug": "fastquit",
+   "title": "FastQuit",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "x1hIzbuY",
+   "version_id": "ly8rADfr",
+   "version_number": "3.1.4+mc26.1.x",
+   "version_type": "release",
+   "date_published": "2026-05-24T06:06:59.815485Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "fastquit-3.1.4+mc26.1.x.jar",
+   "url": "https://cdn.modrinth.com/data/x1hIzbuY/versions/ly8rADfr/fastquit-3.1.4%2Bmc26.1.x.jar",
+   "size": 61514,
+   "hashes": {
+    "sha1": "51efa22cfe15e4068167cc96da430496afa3ab7e",
+    "sha512": "f56f4a1bd0bdd39ac62f731848d148f8b187da19e70e9b694783af69192b846754b9b3223dd32756f1b69483d573b2a8d3b07c6d6b23ca7d1f42d0411285fbb0"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "MIT",
+   "license_url": null,
+   "source_url": "https://github.com/contariaa/FastQuit",
+   "issues_url": "https://github.com/contariaa/FastQuit/issues",
+   "page": "https://modrinth.com/mod/fastquit",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "9s6osm5g",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "mOgUt4GM",
+     "file_name": null,
+     "dependency_type": "optional"
+    }
+   ],
+   "group": "qol",
+   "purpose": "Return to the title screen while the world saves in the background.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
    "slug": "ferrite-core",
    "title": "FerriteCore",
    "kind": "mod",
@@ -2096,6 +3113,81 @@
    "required_by": []
   },
   {
+   "slug": "fish-of-thieves",
+   "title": "Fish of Thieves",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "BzOTnuqM",
+   "version_id": "lqYnunD2",
+   "version_number": "26.1.2.3.0-fabric",
+   "version_type": "release",
+   "date_published": "2026-10-25T10:02:47.097732Z",
+   "game_versions": [
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "fish_of_thieves-mc26.1.2-v26.1.2.3.0-fabric.jar",
+   "url": "https://cdn.modrinth.com/data/BzOTnuqM/versions/lqYnunD2/fish_of_thieves-mc26.1.2-v26.1.2.3.0-fabric.jar",
+   "size": 1991181,
+   "hashes": {
+    "sha1": "7072abe3ca2822f7eeeaaf190e266acea0462cda",
+    "sha512": "50718af90de6ba0e8da012175332714c5e21203918b9085cdf3c348089569bf4df8d6f1ec3a9763c584b49b71dbfe1bc97cd2c33e41551c2908a3c5895b74f35"
+   },
+   "client_side": "required",
+   "server_side": "required",
+   "license": "MIT",
+   "license_url": null,
+   "source_url": "https://github.com/SteveKunG/FishOfThieves",
+   "issues_url": "https://github.com/SteveKunG/FishOfThieves/issues",
+   "page": "https://modrinth.com/mod/fish-of-thieves",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "1IjD5062",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "1eAoo2KR",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "MIdaKqt7",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "iGEl6Crx",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "mOgUt4GM",
+     "file_name": null,
+     "dependency_type": "optional"
+    }
+   ],
+   "group": "world",
+   "purpose": "Varied fish to catch and keep.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
    "slug": "forge-config-api-port",
    "title": "Forge Config API Port",
    "kind": "mod",
@@ -2147,13 +3239,19 @@
    "side_override": null,
    "explicit": false,
    "required_by": [
+    "bl4cks-sit",
     "crops-love-rain",
+    "diagonal-fences",
+    "diagonal-walls",
+    "diagonal-windows",
     "overflowing-bars",
+    "particular-reforged",
     "puzzles-lib",
     "seasonhud-fabric",
     "snow-under-trees",
     "spoiled",
-    "travelersbackpack"
+    "travelersbackpack",
+    "visual-workbench"
    ]
   },
   {
@@ -2217,6 +3315,117 @@
    ],
    "group": "world",
    "purpose": "Vanilla-style mobs (moobloom, beekeeper villagers, copper golem helpers).",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": [
+    "friends-and-foes-beekeeper-hut-fabric",
+    "friends-and-foes-flowery-mooblooms-fabric"
+   ]
+  },
+  {
+   "slug": "friends-and-foes-beekeeper-hut-fabric",
+   "title": "Friends&Foes - Beekeeper Hut (Fabric/Quilt)",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "Kt4RVKEd",
+   "version_id": "e1hxwKxl",
+   "version_number": "fabric-3.0.4+mc26.1.2",
+   "version_type": "release",
+   "date_published": "2026-10-09T11:56:50.889054Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric",
+    "quilt"
+   ],
+   "filename": "beekeeperhut-fabric-3.0.4+mc26.1.2.jar",
+   "url": "https://cdn.modrinth.com/data/Kt4RVKEd/versions/e1hxwKxl/beekeeperhut-fabric-3.0.4%2Bmc26.1.2.jar",
+   "size": 89288,
+   "hashes": {
+    "sha1": "3942d013e43b86e75e90f5b5777d4c3a2a07e21c",
+    "sha512": "9425d6a028be75bef1e74587581449605a904058f124da03e0844ce5c08073ff0f4a23a4c2ab972e9c5e97b8791cfeb0381967dcdf205f75ce991913b49a1870"
+   },
+   "client_side": "unsupported",
+   "server_side": "required",
+   "license": "CC-BY-NC-ND-4.0",
+   "license_url": null,
+   "source_url": "https://github.com/Faboslav/friends-and-foes-beekeeper-hut",
+   "issues_url": "https://github.com/Faboslav/friends-and-foes-beekeeper-hut/issues",
+   "page": "https://modrinth.com/mod/friends-and-foes-beekeeper-hut-fabric",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "POQ2i9zu",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "world",
+   "purpose": "Friends & Foes addon: beekeeper hut in villages.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "friends-and-foes-flowery-mooblooms-fabric",
+   "title": "Friends&Foes - Flowery Mooblooms (Fabric/Quilt)",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "ECOSu6pa",
+   "version_id": "s7aRc9dq",
+   "version_number": "fabric-3.0.3+mc26.1.2",
+   "version_type": "release",
+   "date_published": "2026-10-22T10:52:39.562357Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric",
+    "quilt"
+   ],
+   "filename": "flowerymooblooms-fabric-3.0.3+mc26.1.2.jar",
+   "url": "https://cdn.modrinth.com/data/ECOSu6pa/versions/s7aRc9dq/flowerymooblooms-fabric-3.0.3%2Bmc26.1.2.jar",
+   "size": 108847,
+   "hashes": {
+    "sha1": "81fa1ca7c4f7ea3ed9f1d0b7e580676727c46296",
+    "sha512": "327483efd54d5d38850b3efb4ed8574492ba72887b53488139609802bcf48ad25eb5b579621f86c202d2ad8ce686301a06bbca011308aae9498c851e0ea8f638"
+   },
+   "client_side": "required",
+   "server_side": "required",
+   "license": "CC-BY-NC-ND-4.0",
+   "license_url": null,
+   "source_url": "https://github.com/Faboslav/friends-and-foes-flowery-mooblooms",
+   "issues_url": "https://github.com/Faboslav/friends-and-foes-flowery-mooblooms/issues",
+   "page": "https://modrinth.com/mod/friends-and-foes-flowery-mooblooms-fabric",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "POQ2i9zu",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "world",
+   "purpose": "Friends & Foes addon: flower-covered moobloom cows.",
    "optional": false,
    "side_override": null,
    "explicit": true,
@@ -2724,6 +3933,7 @@
    "side_override": null,
    "explicit": false,
    "required_by": [
+    "advancement-plaques",
     "legendary-tooltips"
    ]
   },
@@ -2932,6 +4142,56 @@
    "optional": false,
    "side_override": null,
    "explicit": true,
+   "required_by": [
+    "jade-addons-fabric"
+   ]
+  },
+  {
+   "slug": "jade-addons-fabric",
+   "title": "Jade Addons (Fabric)",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "fThnVRli",
+   "version_id": "b7GmlOF7",
+   "version_number": "26.0.1+fabric",
+   "version_type": "release",
+   "date_published": "2026-08-31T13:33:57.678711Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric",
+    "quilt"
+   ],
+   "filename": "JadeAddons-26.1.2-Fabric-26.0.1.jar",
+   "url": "https://cdn.modrinth.com/data/fThnVRli/versions/b7GmlOF7/JadeAddons-26.1.2-Fabric-26.0.1.jar",
+   "size": 44072,
+   "hashes": {
+    "sha1": "3762c5921ea9ff1c182bbdd5886cb03a38429dcc",
+    "sha512": "0e3f91dc0d8a50df321209c1c378f3f85758990042b2a889d1abbe7b31be2fcaff11b94ffb1e7e59311988fd27d27037ef2f95633a5b70cec65e8b20bd0344ce"
+   },
+   "client_side": "optional",
+   "server_side": "optional",
+   "license": "LicenseRef-All-Rights-Reserved",
+   "license_url": null,
+   "source_url": "https://github.com/Snownee/JadeAddonsFabric",
+   "issues_url": "https://github.com/Snownee/JadeAddonsFabric/issues",
+   "page": "https://modrinth.com/mod/jade-addons-fabric",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "nvQzSEkH",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "qol",
+   "purpose": "Jade support for more mods.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
    "required_by": []
   },
   {
@@ -3032,6 +4292,179 @@
    ],
    "group": "qol",
    "purpose": "THE single recipe viewer.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "justenoughbreeding",
+   "title": "Just Enough Breeding (JEBr)",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "9Pk89J3g",
+   "version_id": "hcrz3mPk",
+   "version_number": "3.4.1",
+   "version_type": "release",
+   "date_published": "2026-10-10T07:01:00.541488Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "justenoughbreeding-fabric-26.1-3.4.1.jar",
+   "url": "https://cdn.modrinth.com/data/9Pk89J3g/versions/hcrz3mPk/justenoughbreeding-fabric-26.1-3.4.1.jar",
+   "size": 298912,
+   "hashes": {
+    "sha1": "c1df14a519c4a07de8b92bd8ae69cf536a5fdf6d",
+    "sha512": "f066c92e13f3e970840392b2c1ae8c72d0b2fc6237c0c7df364447b236c41c1ebbd851db73ba4063b2fe5198bbcc6555475f7a453ce0a64bcdbcda2d805eb2c0"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "MIT",
+   "license_url": null,
+   "source_url": "https://github.com/Christofmeg/JustEnoughBreeding",
+   "issues_url": "https://github.com/Christofmeg/JustEnoughBreeding/issues",
+   "page": "https://modrinth.com/mod/justenoughbreeding",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "1l7Rzc6k",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "4lShBFYg",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "7fThKQUz",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "BzOTnuqM",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "F8BQNPWX",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "FrkP72va",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "GuE5FpvB",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "HaIJSYr6",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "NCKpPR0Z",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "NIDdwWhd",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "POQ2i9zu",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "Yd4wb5wZ",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "bPTEaC7v",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "jG8Q2YwT",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "jkb861Ih",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "mLNfkt6W",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "mW7jD34A",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "nUsNRn4i",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "nfn13YXA",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "ra7o6Sl7",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "u6dRKJwZ",
+     "file_name": null,
+     "dependency_type": "optional"
+    }
+   ],
+   "group": "qol",
+   "purpose": "JEI: what each animal eats and breeds with.",
    "optional": false,
    "side_override": null,
    "explicit": true,
@@ -3250,6 +4683,53 @@
    "explicit": false,
    "required_by": [
     "inventory-profiles-next"
+   ]
+  },
+  {
+   "slug": "libjf",
+   "title": "LibJF",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "WKwQAwke",
+   "version_id": "X6T6G2ad",
+   "version_number": "26.1.4",
+   "version_type": "release",
+   "date_published": "2026-08-25T13:03:49.163971Z",
+   "game_versions": [
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "libjf-26.1.4.jar",
+   "url": "https://cdn.modrinth.com/data/WKwQAwke/versions/X6T6G2ad/libjf-26.1.4.jar",
+   "size": 1497478,
+   "hashes": {
+    "sha1": "6737964871d7d0acc2b351e8ac4c9a820ed3ba6a",
+    "sha512": "6b5458cd500db620afc7cf87ff778bf3b457fbc3327c3607b9ea77a1919d8f35055e3d1875c598a4dc4265e44d950682666876e15399b5f62d669792075b4fda"
+   },
+   "client_side": "optional",
+   "server_side": "optional",
+   "license": "LGPL-3.0-or-later",
+   "license_url": null,
+   "source_url": "https://git.frohnmeyer-wds.de/JfMods/LibJF",
+   "issues_url": "https://git.frohnmeyer-wds.de/JfMods/LibJF/issues",
+   "page": "https://modrinth.com/mod/libjf",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "optional"
+    }
+   ],
+   "group": "library",
+   "purpose": "Dependency.",
+   "optional": false,
+   "side_override": null,
+   "explicit": false,
+   "required_by": [
+    "respackopts"
    ]
   },
   {
@@ -3512,6 +4992,46 @@
    ],
    "group": "build",
    "purpose": "Primary furniture set (kitchens, bedrooms, offices).",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "macaws-holidays",
+   "title": "Macaw's Holidays",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "rH20L2Lp",
+   "version_id": "i9WdjxKf",
+   "version_number": "1.1.2",
+   "version_type": "release",
+   "date_published": "2026-03-26T20:38:15.770521Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "mcw-holidays-1.1.2-mc26.1fabric.jar",
+   "url": "https://cdn.modrinth.com/data/rH20L2Lp/versions/i9WdjxKf/mcw-holidays-1.1.2-mc26.1fabric.jar",
+   "size": 1070286,
+   "hashes": {
+    "sha1": "12421e7674d56acf0690ac806f7c17047cb0aa76",
+    "sha512": "15d9a53c90b5720beb8f5a16f1d5d2f99a48f3c92a800cd6aac1746e65005f913022ee7314e84fa38cef04110a38f5740e952ebabf2d715845fde7bc6fb02353"
+   },
+   "client_side": "required",
+   "server_side": "required",
+   "license": "LicenseRef-All-Rights-Reserved",
+   "license_url": null,
+   "source_url": null,
+   "issues_url": "https://github.com/sketchmacaw/MacawsModsIssues/issues",
+   "page": "https://modrinth.com/mod/macaws-holidays",
+   "dependencies": [],
+   "group": "build",
+   "purpose": "Seasonal decorations: Christmas tree, lights, garland, Halloween props.",
    "optional": false,
    "side_override": null,
    "explicit": true,
@@ -3880,6 +5400,56 @@
    ]
   },
   {
+   "slug": "midnightlib",
+   "title": "MidnightLib",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "codAaoxh",
+   "version_id": "B2yvJDvr",
+   "version_number": "1.10.0+26.1-fabric",
+   "version_type": "release",
+   "date_published": "2026-10-14T22:49:52.996664Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric",
+    "quilt"
+   ],
+   "filename": "midnightlib-fabric-1.10.0+26.1.jar",
+   "url": "https://cdn.modrinth.com/data/codAaoxh/versions/B2yvJDvr/midnightlib-fabric-1.10.0%2B26.1.jar",
+   "size": 65613,
+   "hashes": {
+    "sha1": "7c0b346af2e969c8b98a367f1c8ac4edf418a512",
+    "sha512": "b880c7d9396301d7135162a0bb40b5fd2aab9867bf02d87adf335e8e08bddeb4a4ade54581c26d078e50a55c94caeb199181c1965bfe14387c39942b4760c57e"
+   },
+   "client_side": "optional",
+   "server_side": "optional",
+   "license": "MIT",
+   "license_url": null,
+   "source_url": "https://github.com/TeamMidnightDust/MidnightLib",
+   "issues_url": "https://github.com/TeamMidnightDust/MidnightLib/issues/",
+   "page": "https://modrinth.com/mod/midnightlib",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "library",
+   "purpose": "Dependency.",
+   "optional": false,
+   "side_override": null,
+   "explicit": false,
+   "required_by": [
+    "this-rocks"
+   ]
+  },
+  {
    "slug": "minecraft-comes-alive-reborn",
    "title": "MCA Reborn",
    "kind": "mod",
@@ -4135,6 +5705,53 @@
    "required_by": []
   },
   {
+   "slug": "mru",
+   "title": "MRU",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "SNVQ2c0g",
+   "version_id": "jlpq6wlZ",
+   "version_number": "1.0.43+26.1.2-fabric",
+   "version_type": "release",
+   "date_published": "2026-10-04T22:50:57.033430Z",
+   "game_versions": [
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "mru-1.0.43+26.1.2-fabric.jar",
+   "url": "https://cdn.modrinth.com/data/SNVQ2c0g/versions/jlpq6wlZ/mru-1.0.43%2B26.1.2-fabric.jar",
+   "size": 159015,
+   "hashes": {
+    "sha1": "769ae6c8b31a4561c96c0f8ff495981f7a413f75",
+    "sha512": "052c0c966aac4f6f1cbe5eebcc8560aa205af03b835c87c4d4c8b20d7d8090ace49e589b42ceb9d870eb5acbc26e7985ecc986c8b038970d24c0df1314b5ea9b"
+   },
+   "client_side": "optional",
+   "server_side": "optional",
+   "license": "LicenseRef-All-Rights-Reserved",
+   "license_url": null,
+   "source_url": "https://github.com/IMB11-Mods/JavaEditionMods/tree/main/mru",
+   "issues_url": "https://github.com/IMB11-Mods/JavaEditionMods/issues/new/choose",
+   "page": "https://modrinth.com/mod/mru",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "library",
+   "purpose": "Dependency.",
+   "optional": false,
+   "side_override": null,
+   "explicit": false,
+   "required_by": [
+    "sound"
+   ]
+  },
+  {
    "slug": "natures-compass",
    "title": "Nature's Compass",
    "kind": "mod",
@@ -4169,6 +5786,53 @@
    "dependencies": [],
    "group": "world",
    "purpose": "Find biomes for specific crops/resources.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "neruina",
+   "title": "Neruina - Ticking Entity Fixer",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "1s5x833P",
+   "version_id": "QC95J4IF",
+   "version_number": "3.3.5",
+   "version_type": "release",
+   "date_published": "2026-10-17T09:02:35.213401Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "neruina-3.3.5+26.1.2-fabric.jar",
+   "url": "https://cdn.modrinth.com/data/1s5x833P/versions/QC95J4IF/neruina-3.3.5%2B26.1.2-fabric.jar",
+   "size": 1811393,
+   "hashes": {
+    "sha1": "ce8da31df2e412a7ad7f8866f25aee1343a5a17a",
+    "sha512": "44c146e367899c88559b1cc9556a71b09a03b5faef21b3bd3bf37a6f785846ca9b7f3be9d3d133f3ebb7334a9281475f8de5f8669eb38c7a0c542fff5db10504"
+   },
+   "client_side": "optional",
+   "server_side": "optional",
+   "license": "MIT",
+   "license_url": null,
+   "source_url": "https://github.com/Benjamin-Norton/Neruina",
+   "issues_url": "https://github.com/Benjamin-Norton/Neruina/issues",
+   "page": "https://modrinth.com/mod/neruina",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "lGffrQ3O",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "performance",
+   "purpose": "Prevents ticking-entity crashes from bricking a world.",
    "optional": false,
    "side_override": null,
    "explicit": true,
@@ -4389,6 +6053,77 @@
    "required_by": []
   },
   {
+   "slug": "particular-reforged",
+   "title": "Particular ✨ Reforged",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "pYFUU6cq",
+   "version_id": "DOl8vO5K",
+   "version_number": "1.5.7",
+   "version_type": "release",
+   "date_published": "2026-08-16T14:05:54.272493Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "particular-26.1.2-Fabric-1.5.7.jar",
+   "url": "https://cdn.modrinth.com/data/pYFUU6cq/versions/DOl8vO5K/particular-26.1.2-Fabric-1.5.7.jar",
+   "size": 289058,
+   "hashes": {
+    "sha1": "2cb7d9028e2f37f215a0e44d56e4a65686d1da4c",
+    "sha512": "bf33355ff90cd093f7b357cba413906387e64f69372062c44d64ddba5a8621a0555437c00d48c39d08ce40d0a7303db4cd472b3fb6969978ec3a1345a20edb35"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "LGPL-3.0-only",
+   "license_url": null,
+   "source_url": "https://github.com/Leclowndu93150/Particular",
+   "issues_url": "https://github.com/Leclowndu93150/Particular/issues",
+   "page": "https://modrinth.com/mod/particular-reforged",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "OfKzpbRU",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "YL57xq9U",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "mOgUt4GM",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "ohNO6lps",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "visual",
+   "purpose": "Fireflies, waterfall cascades, rain ripples, cave dust (falling leaves off: Falling Leaves owns that).",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
    "slug": "placeholder-api",
    "title": "Text Placeholder API",
    "kind": "mod",
@@ -4428,6 +6163,48 @@
    "explicit": false,
    "required_by": [
     "modmenu"
+   ]
+  },
+  {
+   "slug": "polymer",
+   "title": "Polymer",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "xGdtZczs",
+   "version_id": "tqJUyql2",
+   "version_number": "0.16.5+26.1.2",
+   "version_type": "release",
+   "date_published": "2026-05-14T15:57:47.913445Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "polymer-bundled-0.16.5+26.1.2.jar",
+   "url": "https://cdn.modrinth.com/data/xGdtZczs/versions/tqJUyql2/polymer-bundled-0.16.5%2B26.1.2.jar",
+   "size": 1384042,
+   "hashes": {
+    "sha1": "d8635f1f7a02bb7f3feadc4a85aa28d41f358678",
+    "sha512": "e9438712eecfd7560e9e4b67e8ff0907cddf024ecdea93fae7e8caab0a00a041a674040770bf7b25eef2220813baca1ee5b797f3b88de4b9f0f0449189d08642"
+   },
+   "client_side": "optional",
+   "server_side": "required",
+   "license": "LGPL-3.0-only",
+   "license_url": null,
+   "source_url": "https://github.com/Patbox/polymer",
+   "issues_url": "https://github.com/Patbox/polymer/issues",
+   "page": "https://modrinth.com/mod/polymer",
+   "dependencies": [],
+   "group": "library",
+   "purpose": "Dependency.",
+   "optional": false,
+   "side_override": null,
+   "explicit": false,
+   "required_by": [
+    "universal-graves"
    ]
   },
   {
@@ -4539,7 +6316,8 @@
    "side_override": null,
    "explicit": false,
    "required_by": [
-    "enchantment-descriptions"
+    "enchantment-descriptions",
+    "trample-no-more"
    ]
   },
   {
@@ -4643,7 +6421,11 @@
    "side_override": null,
    "explicit": false,
    "required_by": [
-    "overflowing-bars"
+    "diagonal-fences",
+    "diagonal-walls",
+    "diagonal-windows",
+    "overflowing-bars",
+    "visual-workbench"
    ]
   },
   {
@@ -4707,6 +6489,65 @@
    ],
    "group": "build",
    "purpose": "Chisel block variants (single chisel system).",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "reconnectible-chains",
+   "title": "Reconnectible Chains",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "5pzBXDS3",
+   "version_id": "4Y4u2BZQ",
+   "version_number": "2.5.0+26.1.2-fabric",
+   "version_type": "release",
+   "date_published": "2026-11-04T19:45:23.051754Z",
+   "game_versions": [
+    "26.1.2",
+    "26.1",
+    "26.1.1"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "connectiblechains-2.5.0+26.1.2-fabric.jar",
+   "url": "https://cdn.modrinth.com/data/5pzBXDS3/versions/4Y4u2BZQ/connectiblechains-2.5.0%2B26.1.2-fabric.jar",
+   "size": 271846,
+   "hashes": {
+    "sha1": "3f1426032e99e4e8af832a6d1d0539bed210fa1a",
+    "sha512": "c872183f4424346ca8bc66299691fd0fd56fde7e20c8da7e34e7398b152977146e9c7876bde66f9763736fef86583edac25144d716e54791fcf6ff4507994444"
+   },
+   "client_side": "required",
+   "server_side": "required",
+   "license": "LGPL-3.0-or-later",
+   "license_url": null,
+   "source_url": "https://github.com/evanbones/Reconnectible-Chains",
+   "issues_url": "https://github.com/evanbones/Reconnectible-Chains/issues",
+   "page": "https://modrinth.com/mod/reconnectible-chains",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "1eAoo2KR",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "mOgUt4GM",
+     "file_name": null,
+     "dependency_type": "optional"
+    }
+   ],
+   "group": "build",
+   "purpose": "Decorative chains between fences and walls.",
    "optional": false,
    "side_override": null,
    "explicit": true,
@@ -4839,6 +6680,49 @@
    "required_by": []
   },
   {
+   "slug": "resourceful-config",
+   "title": "Resourceful Config",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "M1953qlQ",
+   "version_id": "GMW14IUd",
+   "version_number": "4.0.1",
+   "version_type": "release",
+   "date_published": "2026-04-04T11:52:58.104190Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric",
+    "quilt"
+   ],
+   "filename": "ResourcefulConfig-4.0.1.jar",
+   "url": "https://cdn.modrinth.com/data/M1953qlQ/versions/GMW14IUd/ResourcefulConfig-4.0.1.jar",
+   "size": 439690,
+   "hashes": {
+    "sha1": "96c6afabeec4f7c0468bb17b3c29fb1bb6aa0125",
+    "sha512": "7d0dcd87b050c055dda100c0d1e4917479eca64c86e82c393383e5b04ee32a119126086fcf250d6393957adcb19243dcbfe6b4ae68ac56c943ac8acbe4c29164"
+   },
+   "client_side": "optional",
+   "server_side": "optional",
+   "license": "MIT",
+   "license_url": null,
+   "source_url": "https://github.com/Team-Resourceful/Resourceful-Config",
+   "issues_url": "https://github.com/Team-Resourceful/Resourceful-Config/issues",
+   "page": "https://modrinth.com/mod/resourceful-config",
+   "dependencies": [],
+   "group": "library",
+   "purpose": "Dependency.",
+   "optional": false,
+   "side_override": null,
+   "explicit": false,
+   "required_by": [
+    "structure-layout-optimizer"
+   ]
+  },
+  {
    "slug": "resourceful-lib",
    "title": "Resourceful Lib",
    "kind": "mod",
@@ -4885,6 +6769,60 @@
    "explicit": false,
    "required_by": [
     "friends-and-foes"
+   ]
+  },
+  {
+   "slug": "respackopts",
+   "title": "Respackopts",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "TiF5QWZY",
+   "version_id": "uxEEozNq",
+   "version_number": "26.1.3",
+   "version_type": "release",
+   "date_published": "2026-07-26T14:09:51.337566Z",
+   "game_versions": [
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric",
+    "neoforge"
+   ],
+   "filename": "respackopts-26.1.3.jar",
+   "url": "https://cdn.modrinth.com/data/TiF5QWZY/versions/uxEEozNq/respackopts-26.1.3.jar",
+   "size": 922677,
+   "hashes": {
+    "sha1": "881cd5500104ddaec713637a38d43fafd8716f89",
+    "sha512": "eb95049954cedbfff2013a4f72bd9da2a2dadc86238efa7939e5dc90932e09b17307ee992fa8ce55a5096d91a0c4d071572553a22508aa0c4428a6d024d3dba9"
+   },
+   "client_side": "optional",
+   "server_side": "optional",
+   "license": "MIT",
+   "license_url": null,
+   "source_url": "https://git.frohnmeyer-wds.de/JfMods/Respackopts",
+   "issues_url": "https://git.frohnmeyer-wds.de/JfMods/Respackopts/issues",
+   "page": "https://modrinth.com/mod/respackopts",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "WKwQAwke",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "mOgUt4GM",
+     "file_name": null,
+     "dependency_type": "optional"
+    }
+   ],
+   "group": "library",
+   "purpose": "Dependency.",
+   "optional": false,
+   "side_override": null,
+   "explicit": false,
+   "required_by": [
+    "connected-paths"
    ]
   },
   {
@@ -4990,6 +6928,47 @@
    "required_by": []
   },
   {
+   "slug": "rsls",
+   "title": "Raise Sound Limit Simplified",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "SKW62Pht",
+   "version_id": "sjeLtBce",
+   "version_number": "1.2.2",
+   "version_type": "release",
+   "date_published": "2026-07-16T14:50:12.844446Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "rsls-1.2.2.jar",
+   "url": "https://cdn.modrinth.com/data/SKW62Pht/versions/sjeLtBce/rsls-1.2.2.jar",
+   "size": 51268,
+   "hashes": {
+    "sha1": "f42ff41676fd1c091e6dbac6eb7a60f6c5c17a56",
+    "sha512": "1b415ebbc18d8ebd35563f85bc722b22ab5b7d46bc945fdb1d6e92d13944a5996ceafde2fe3344cd10c1fd72ec6bcd88776d589254a15246275c4814fc863e73"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "MIT",
+   "license_url": null,
+   "source_url": "https://github.com/ishland/raise-sound-limit-simplified",
+   "issues_url": "https://github.com/ishland/raise-sound-limit-simplified/issues",
+   "page": "https://modrinth.com/mod/rsls",
+   "dependencies": [],
+   "group": "performance",
+   "purpose": "More simultaneous sound channels (many ambience mods).",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
    "slug": "rustic-delight",
    "title": "Rustic Delight",
    "kind": "mod",
@@ -5043,6 +7022,48 @@
    ],
    "group": "food",
    "purpose": "Bell peppers, coffee, cotton; Farmer's Delight style dishes.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "scalablelux",
+   "title": "ScalableLux",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "Ps1zyz6x",
+   "version_id": "gYbHVCz8",
+   "version_number": "0.2.0+fabric.2b63825",
+   "version_type": "release",
+   "date_published": "2026-03-23T13:46:53.676597Z",
+   "game_versions": [
+    "26.1",
+    "26.1-rc-2",
+    "26.1-rc-3",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "ScalableLux-0.2.0+fabric.2b63825-all.jar",
+   "url": "https://cdn.modrinth.com/data/Ps1zyz6x/versions/gYbHVCz8/ScalableLux-0.2.0%2Bfabric.2b63825-all.jar",
+   "size": 183504,
+   "hashes": {
+    "sha1": "3875a697a9bb014c06aa3a62d72e8bec3de23160",
+    "sha512": "48565a4d8a1cbd623f0044086d971f2c0cf1c40e1d0b6636a61d41512f4c1c1ddff35879d9dba24b088a670ee254e2d5842d13a30b6d76df23706fa94ea4a58b"
+   },
+   "client_side": "optional",
+   "server_side": "optional",
+   "license": "LGPL-3.0-only",
+   "license_url": null,
+   "source_url": "https://github.com/RelativityMC/ScalableLux",
+   "issues_url": "https://github.com/RelativityMC/ScalableLux/issues",
+   "page": "https://modrinth.com/mod/scalablelux",
+   "dependencies": [],
+   "group": "performance",
+   "purpose": "Faster lighting engine (Starlight successor).",
    "optional": false,
    "side_override": null,
    "explicit": true,
@@ -5430,6 +7451,88 @@
    "required_by": []
   },
   {
+   "slug": "simple-snowy-fix-forge-fabric",
+   "title": "Simple Snowy Fix (Forge / Fabric)",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "3WP3HZRG",
+   "version_id": "UozDVv1N",
+   "version_number": "2.2.1",
+   "version_type": "release",
+   "date_published": "2026-06-18T17:51:31.290848Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2"
+   ],
+   "loaders": [
+    "fabric",
+    "quilt"
+   ],
+   "filename": "simple_snowy_fix-fabric-26.1-26.2-2.2.1.jar",
+   "url": "https://cdn.modrinth.com/data/3WP3HZRG/versions/UozDVv1N/simple_snowy_fix-fabric-26.1-26.2-2.2.1.jar",
+   "size": 119464,
+   "hashes": {
+    "sha1": "679e0ab79127ef0e972dd275cb1a98fdd5c8a0ea",
+    "sha512": "3b927c82ce049a1c67847502c07c4f223444780e71475fc2658261016d421f6baca36dd3176cf49a7a15fd226815deacc0e4a162ca416fc012af61bd8ba0c6cd"
+   },
+   "client_side": "unsupported",
+   "server_side": "required",
+   "license": "LGPL-3.0-only",
+   "license_url": null,
+   "source_url": "https://github.com/KostromDan/Simple-Snowy-Fix",
+   "issues_url": "https://github.com/KostromDan/Simple-Snowy-Fix/issues",
+   "page": "https://modrinth.com/mod/simple-snowy-fix-forge-fabric",
+   "dependencies": [],
+   "group": "world",
+   "purpose": "Fixes missing snow on leaves at world generation (MC-119599).",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "snow-imprints",
+   "title": "Soft Imprints",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "UhxJgB1o",
+   "version_id": "zQvQ94qD",
+   "version_number": "2.8.0",
+   "version_type": "release",
+   "date_published": "2026-07-07T15:07:44.856005Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "softimprints-fabric-26.1.X-2.8.0.jar",
+   "url": "https://cdn.modrinth.com/data/UhxJgB1o/versions/zQvQ94qD/softimprints-fabric-26.1.X-2.8.0.jar",
+   "size": 1027705,
+   "hashes": {
+    "sha1": "81bc3e249f7bdf3519734cf17b06ad75fc8a77ad",
+    "sha512": "f615c740ff425f424abd607359404e2f668e53e947f11a75d0d405e8e94e6a38ae520233ecf68cfb0052763aa76abdc4f1545ba58d09220229cdacce1328e62d"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "MIT",
+   "license_url": null,
+   "source_url": "https://github.com/0Templ/SoftImprints",
+   "issues_url": "https://github.com/0Templ/SoftImprints/issues",
+   "page": "https://modrinth.com/mod/snow-imprints",
+   "dependencies": [],
+   "group": "visual",
+   "purpose": "Soft Imprints: footprints and trails in snow and sand (client).",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
    "slug": "snow-under-trees",
    "title": "Snow Under Trees",
    "kind": "mod",
@@ -5590,6 +7693,63 @@
    "required_by": []
   },
   {
+   "slug": "sound",
+   "title": "Sounds",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "ZouiUX7t",
+   "version_id": "MapuhewT",
+   "version_number": "2.6.0+26.1.2-fabric",
+   "version_type": "release",
+   "date_published": "2026-10-04T15:47:14.330476Z",
+   "game_versions": [
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "sounds-2.6.0+26.1.2-fabric.jar",
+   "url": "https://cdn.modrinth.com/data/ZouiUX7t/versions/MapuhewT/sounds-2.6.0%2B26.1.2-fabric.jar",
+   "size": 8144560,
+   "hashes": {
+    "sha1": "0630290d14bd3c0b83878f1932075713ad8fa99f",
+    "sha512": "071f6396a8cc4dc618ddaf73ca904a7dddd2e0386ecef7850c22f1602d6b623cdfffe2fe94a33123387c9d0426e1e9ef4b5a9e1f24772c11848ca5e9373cc438"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "LicenseRef-All-Rights-Reserved",
+   "license_url": null,
+   "source_url": "https://github.com/IMB11-Mods/JavaEditionMods/tree/main/sounds",
+   "issues_url": "https://github.com/IMB11-Mods/JavaEditionMods/issues/new/choose",
+   "page": "https://modrinth.com/mod/sound",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "1eAoo2KR",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "SNVQ2c0g",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "visual",
+   "purpose": "Sounds: better UI, item and block sound effects.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
    "slug": "sound-physics-remastered",
    "title": "Sound Physics Remastered",
    "kind": "mod",
@@ -5644,6 +7804,48 @@
    ],
    "group": "visual",
    "purpose": "Reverb/occlusion — storms sound muffled indoors.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "spark",
+   "title": "spark",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "l6YH9Als",
+   "version_id": "e3hsPc1o",
+   "version_number": "1.10.187-fabric",
+   "version_type": "release",
+   "date_published": "2026-09-19T07:44:18.489950Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "spark-1.10.187-fabric.jar",
+   "url": "https://cdn.modrinth.com/data/l6YH9Als/versions/e3hsPc1o/spark-1.10.187-fabric.jar",
+   "size": 3838499,
+   "hashes": {
+    "sha1": "0940b4089affdfca37d6b6d0ea5ecae4dbd8fe98",
+    "sha512": "c74bf5d5a16b2445ec6ea717eac756412b272a8015e91f91a7bf5a27e6f2f99c4a11878d434510f941f37b0344b3a7d1ba0dd6c34e80642762c48fb6e9a93894"
+   },
+   "client_side": "optional",
+   "server_side": "optional",
+   "license": "GPL-3.0-only",
+   "license_url": "https://github.com/lucko/spark/blob/master/LICENSE.txt",
+   "source_url": "https://github.com/lucko/spark",
+   "issues_url": "https://github.com/lucko/spark/issues",
+   "page": "https://modrinth.com/mod/spark",
+   "dependencies": [],
+   "group": "qol",
+   "purpose": "Performance profiler (/spark) for diagnosing lag.",
    "optional": false,
    "side_override": null,
    "explicit": true,
@@ -5965,6 +8167,60 @@
    "dependencies": [],
    "group": "world",
    "purpose": "Biome-themed towers to discover (Structory add-on).",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "structure-layout-optimizer",
+   "title": "Structure Layout Optimizer",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "ayPU0OHc",
+   "version_id": "JwbecFqq",
+   "version_number": "1.1.4+26.1-fabric",
+   "version_type": "release",
+   "date_published": "2026-03-25T00:23:46.303256Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "structure_layout_optimizer-1.1.4+26.1-fabric.jar",
+   "url": "https://cdn.modrinth.com/data/ayPU0OHc/versions/JwbecFqq/structure_layout_optimizer-1.1.4%2B26.1-fabric.jar",
+   "size": 71476,
+   "hashes": {
+    "sha1": "4a0fc84879fe358bdfd395af9238e14950dca748",
+    "sha512": "d0a443e5a71dc6a40f6345b49b73aee5290d5726f68a5b05d3b31b9ff71262dd2986518df8a560f2097e7584b944ff462d621499f5dede10afa624a34359e8cc"
+   },
+   "client_side": "unsupported",
+   "server_side": "required",
+   "license": "MIT",
+   "license_url": null,
+   "source_url": "https://github.com/TelepathicGrunt/StructureLayoutOptimizer",
+   "issues_url": "https://github.com/TelepathicGrunt/StructureLayoutOptimizer/issues",
+   "page": "https://modrinth.com/mod/structure-layout-optimizer",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "M1953qlQ",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "performance",
+   "purpose": "Faster jigsaw structure generation (villages, YUNG's, Towns & Towers).",
    "optional": false,
    "side_override": null,
    "explicit": true,
@@ -6382,6 +8638,66 @@
    "required_by": []
   },
   {
+   "slug": "this-rocks",
+   "title": "This Rocks!",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "Sb5ypgDP",
+   "version_id": "89IWAX4o",
+   "version_number": "1.10.0+26.1-fabric",
+   "version_type": "release",
+   "date_published": "2026-11-01T21:08:28.533338Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric",
+    "quilt"
+   ],
+   "filename": "rocks-fabric-1.10.0+26.1.jar",
+   "url": "https://cdn.modrinth.com/data/Sb5ypgDP/versions/89IWAX4o/rocks-fabric-1.10.0%2B26.1.jar",
+   "size": 345322,
+   "hashes": {
+    "sha1": "d8e085498bd6b399bab5267d3159098c2cd49024",
+    "sha512": "f024f3d9cf6187d6464428241119330758af53841977370ac392fabcede76dcbcf048d55d9e924ef013fd0a6371c79beb50ae666478430682971ad0142e9dad5"
+   },
+   "client_side": "optional",
+   "server_side": "required",
+   "license": "MIT",
+   "license_url": null,
+   "source_url": "https://github.com/TeamMidnightDust/ThisRocks",
+   "issues_url": "https://github.com/TeamMidnightDust/ThisRocks/issues",
+   "page": "https://modrinth.com/mod/this-rocks",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "codAaoxh",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "xGdtZczs",
+     "file_name": null,
+     "dependency_type": "optional"
+    }
+   ],
+   "group": "world",
+   "purpose": "Pebbles, sticks, pinecones and shells on the ground.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
    "slug": "toms-storage",
    "title": "Tom's Simple Storage Mod",
    "kind": "mod",
@@ -6509,6 +8825,129 @@
    ],
    "group": "world",
    "purpose": "Varied villages/outposts worth exploring (not a finished town to move into).",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "trample-no-more",
+   "title": "Trample No More",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "Bc9bwujS",
+   "version_id": "qFDe6F9g",
+   "version_number": "26.1.2.5",
+   "version_type": "release",
+   "date_published": "2026-06-17T23:33:18.305686Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "TrampleNoMore-fabric-MC26.1.2-26.1.2.5.jar",
+   "url": "https://cdn.modrinth.com/data/Bc9bwujS/versions/qFDe6F9g/TrampleNoMore-fabric-MC26.1.2-26.1.2.5.jar",
+   "size": 18485,
+   "hashes": {
+    "sha1": "a47aa19c9905630085701c70f5e97bfdb510b2e8",
+    "sha512": "ba31cfb207984aa93a7cb8790c284e2ee7e69e5eea714fcb3883fecf046bd45cc4f6fc795a8c8546d4f9084a6aeb22bc7b1189d84adde9617784ceec149289d8"
+   },
+   "client_side": "required",
+   "server_side": "required",
+   "license": "LGPL-2.1-only",
+   "license_url": null,
+   "source_url": "https://github.com/Darkhax-Minecraft/Trample-No-More",
+   "issues_url": "https://github.com/Darkhax-Minecraft/Trample-No-More/issues",
+   "page": "https://modrinth.com/mod/trample-no-more",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "aaRl8GiW",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "uy4Cnpcm",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "food",
+   "purpose": "Feather Falling or leather boots keep farmland from being trampled.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "travelers-titles",
+   "title": "Traveler's Titles",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "JtifUr64",
+   "version_id": "lRpJBRMb",
+   "version_number": "26.1.2-Fabric-6.1.0",
+   "version_type": "release",
+   "date_published": "2026-06-24T18:14:31.048823Z",
+   "game_versions": [
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "TravelersTitles-26.1.2-Fabric-6.1.0.jar",
+   "url": "https://cdn.modrinth.com/data/JtifUr64/versions/lRpJBRMb/TravelersTitles-26.1.2-Fabric-6.1.0.jar",
+   "size": 351399,
+   "hashes": {
+    "sha1": "45750276e3da25b592d363d9a70dc3531af86ac7",
+    "sha512": "75deddcad3298cea44e1f4aabb0f59dd8a394251ea0b9409a608c942771dcac2cd3469dfcdff5d3cdc19730212af33b2c25cb808d765283445490c20ea9b5737"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "LGPL-3.0-only",
+   "license_url": null,
+   "source_url": "https://github.com/YUNG-GANG/Travelers-Titles",
+   "issues_url": "https://github.com/YUNG-GANG/Travelers-Titles/issues",
+   "page": "https://modrinth.com/mod/travelers-titles",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "9s6osm5g",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "Ua7DFN59",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "mOgUt4GM",
+     "file_name": null,
+     "dependency_type": "optional"
+    }
+   ],
+   "group": "visual",
+   "purpose": "Biome and dimension titles when exploring.",
    "optional": false,
    "side_override": null,
    "explicit": true,
@@ -6710,6 +9149,110 @@
    ],
    "group": "food",
    "purpose": "Additional crops (ube, garlic, ginger, lemongrass) and dishes using Farmer's Delight tags.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "universal-graves",
+   "title": "Universal Graves",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "yn9u3ypm",
+   "version_id": "hI8eYRJ3",
+   "version_number": "3.11.1+26.1.2",
+   "version_type": "release",
+   "date_published": "2026-05-14T15:49:02.737243Z",
+   "game_versions": [
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "graves-3.11.1+26.1.2.jar",
+   "url": "https://cdn.modrinth.com/data/yn9u3ypm/versions/hI8eYRJ3/graves-3.11.1%2B26.1.2.jar",
+   "size": 769403,
+   "hashes": {
+    "sha1": "44aec03b2315c4109d8e03d289500ea094c158aa",
+    "sha512": "3caa63bb7d8f4ae3623310d13149de950e87f3b9083fce8a7dfe3083eea92dd2ab9721fabf27ebb6121deffc6f48af8b85f3543980381d588e6dcd667a7bf5e4"
+   },
+   "client_side": "unsupported",
+   "server_side": "required",
+   "license": "LGPL-3.0-only",
+   "license_url": null,
+   "source_url": "https://github.com/Patbox/UniversalGraves",
+   "issues_url": "https://github.com/Patbox/UniversalGraves/issues",
+   "page": "https://modrinth.com/mod/universal-graves",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "xGdtZczs",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "qol",
+   "purpose": "Graves keep your items after death (server-side).",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "visual-workbench",
+   "title": "Visual Workbench",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "kfqD1JRw",
+   "version_id": "SI9NMZCE",
+   "version_number": "26.1.0",
+   "version_type": "release",
+   "date_published": "2026-04-28T11:35:45.107041Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "VisualWorkbench-v26.1.0-mc26.1.x-Fabric.jar",
+   "url": "https://cdn.modrinth.com/data/kfqD1JRw/versions/SI9NMZCE/VisualWorkbench-v26.1.0-mc26.1.x-Fabric.jar",
+   "size": 66611,
+   "hashes": {
+    "sha1": "c39656f2dc8876d2aa61b7a04652f6acc5b2f18c",
+    "sha512": "f9cfcce30ae1194a2816e4052e2bdf883d755f13a711a8f4b576556484d328e7fdf0532b60ce0d97defb0d1643c0ebda4ab92c509dca7a904e66fc7829d68b75"
+   },
+   "client_side": "required",
+   "server_side": "required",
+   "license": "MPL-2.0",
+   "license_url": null,
+   "source_url": "https://github.com/Fuzss/visualworkbench",
+   "issues_url": "https://github.com/Fuzss/visualworkbench/issues",
+   "page": "https://modrinth.com/mod/visual-workbench",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "QAGBst4M",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "ohNO6lps",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "qol",
+   "purpose": "Crafting tables keep their items and show them on top.",
    "optional": false,
    "side_override": null,
    "explicit": true,
@@ -6991,12 +9534,136 @@
    "side_override": null,
    "explicit": false,
    "required_by": [
+    "debugify",
+    "fish-of-thieves",
     "frostiful",
+    "reconnectible-chains",
     "scorchful",
+    "sound",
     "spatial-gui",
     "thermoo-patches",
     "zoomify"
    ]
+  },
+  {
+   "slug": "yosbr",
+   "title": "Your Options Shall Be Respected (YOSBR)",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "WwbubTsV",
+   "version_id": "KMOzdYko",
+   "version_number": "0.1.2",
+   "version_type": "release",
+   "date_published": "2023-06-12T08:06:07.649412Z",
+   "game_versions": [
+    "1.14",
+    "1.14.1",
+    "1.14.2",
+    "1.14.3",
+    "1.14.4",
+    "1.15",
+    "1.15.1",
+    "1.15.2",
+    "1.16",
+    "1.16.1",
+    "1.16.2",
+    "1.16.3",
+    "1.16.4",
+    "1.16.5",
+    "1.17",
+    "1.17.1",
+    "1.18",
+    "1.18.1",
+    "1.18.2",
+    "1.19",
+    "1.19.1",
+    "1.19.2",
+    "1.19.3",
+    "1.19.4",
+    "1.20",
+    "1.20.1",
+    "1.20.2",
+    "1.20.3",
+    "1.20.4",
+    "1.20.5",
+    "1.20.6",
+    "1.21",
+    "1.21.1",
+    "1.21.10",
+    "1.21.11",
+    "1.21.2",
+    "1.21.3",
+    "1.21.4",
+    "1.21.5",
+    "1.21.6",
+    "1.21.7",
+    "1.21.8",
+    "1.21.9",
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2",
+    "26.2-pre-1",
+    "26.2-pre-2",
+    "26.2-pre-3",
+    "26.2-pre-4",
+    "26.2-pre-5",
+    "26.2-pre-6",
+    "26.2-rc-1",
+    "26.2-rc-2",
+    "26.2-snapshot-1",
+    "26.2-snapshot-2",
+    "26.2-snapshot-3",
+    "26.2-snapshot-4",
+    "26.2-snapshot-5",
+    "26.2-snapshot-6",
+    "26.2-snapshot-7",
+    "26.2-snapshot-8",
+    "26.3",
+    "26.3-pre-1",
+    "26.3-pre-2",
+    "26.3-pre-3",
+    "26.3-rc-1",
+    "26.3-rc-2",
+    "26.3-rc-3",
+    "26.3-snapshot-1",
+    "26.3-snapshot-10",
+    "26.3-snapshot-2",
+    "26.3-snapshot-3",
+    "26.3-snapshot-4",
+    "26.3-snapshot-5",
+    "26.3-snapshot-6",
+    "26.3-snapshot-7",
+    "26.3-snapshot-8",
+    "26.3-snapshot-9",
+    "26.4-snapshot-1",
+    "26w14a"
+   ],
+   "loaders": [
+    "fabric",
+    "quilt"
+   ],
+   "filename": "yosbr-0.1.2.jar",
+   "url": "https://cdn.modrinth.com/data/WwbubTsV/versions/KMOzdYko/yosbr-0.1.2.jar",
+   "size": 17373,
+   "hashes": {
+    "sha1": "f0340e9c0bc95d67f3f3e9c1cd79b61054af11f9",
+    "sha512": "254f2225f6446523aa8c8274e83b31e27f3b2afc8fe4f490fb1b169dd518e10c7993acda5db0ab597474ddf9d69506b5e794242fada1e2f89ed7bf9d412a8f78"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "LGPL-3.0-only",
+   "license_url": null,
+   "source_url": "https://github.com/shedaniel/your-options-shall-be-respected",
+   "issues_url": "https://github.com/shedaniel/your-options-shall-be-respected/issues",
+   "page": "https://modrinth.com/mod/yosbr",
+   "dependencies": [],
+   "group": "core",
+   "purpose": "Default options without overwriting a player's own options.txt on update.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
   },
   {
    "slug": "yungs-api",
@@ -7043,10 +9710,83 @@
    "side_override": null,
    "explicit": false,
    "required_by": [
+    "travelers-titles",
+    "yungs-better-desert-temples",
     "yungs-better-dungeons",
+    "yungs-better-jungle-temples",
     "yungs-better-mineshafts",
-    "yungs-better-strongholds"
+    "yungs-better-nether-fortresses",
+    "yungs-better-ocean-monuments",
+    "yungs-better-strongholds",
+    "yungs-better-witch-huts",
+    "yungs-bridges",
+    "yungs-extras",
+    "yungs-menu-tweaks"
    ]
+  },
+  {
+   "slug": "yungs-better-desert-temples",
+   "title": "YUNG's Better Desert Temples",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "XNlO7sBv",
+   "version_id": "8MkDZkJA",
+   "version_number": "26.1.2-Fabric-5.1.1",
+   "version_type": "release",
+   "date_published": "2026-09-10T13:47:12.994538Z",
+   "game_versions": [
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "YungsBetterDesertTemples-26.1.2-Fabric-5.1.1.jar",
+   "url": "https://cdn.modrinth.com/data/XNlO7sBv/versions/8MkDZkJA/YungsBetterDesertTemples-26.1.2-Fabric-5.1.1.jar",
+   "size": 1028275,
+   "hashes": {
+    "sha1": "428ef2c95b334c145b26767f5c1a81d7951e5935",
+    "sha512": "898bf20f465192a00e1a4a4bf64eea0dfbccc75a7d096464952764f8083e6500a676c50817ea8c27273fe00d3e3145eb56e57bc075720f3a7ba0de754465e731"
+   },
+   "client_side": "unsupported",
+   "server_side": "required",
+   "license": "LGPL-3.0-only",
+   "license_url": null,
+   "source_url": "https://github.com/YUNG-GANG/YUNGs-Better-Desert-Temples",
+   "issues_url": "https://github.com/YUNG-GANG/YUNGs-Better-Desert-Temples/issues",
+   "page": "https://modrinth.com/mod/yungs-better-desert-temples",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "9s6osm5g",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "Ua7DFN59",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "mOgUt4GM",
+     "file_name": null,
+     "dependency_type": "optional"
+    }
+   ],
+   "group": "world",
+   "purpose": "Redesigned desert temples.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
   },
   {
    "slug": "yungs-better-dungeons",
@@ -7107,6 +9847,70 @@
    ],
    "group": "world",
    "purpose": "Exploration.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "yungs-better-jungle-temples",
+   "title": "YUNG's Better Jungle Temples",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "z9Ve58Ih",
+   "version_id": "h8i7nZ2w",
+   "version_number": "26.1.2-Fabric-4.1.1",
+   "version_type": "release",
+   "date_published": "2026-09-10T13:34:29.645015Z",
+   "game_versions": [
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "YungsBetterJungleTemples-26.1.2-Fabric-4.1.1.jar",
+   "url": "https://cdn.modrinth.com/data/z9Ve58Ih/versions/h8i7nZ2w/YungsBetterJungleTemples-26.1.2-Fabric-4.1.1.jar",
+   "size": 920333,
+   "hashes": {
+    "sha1": "d336cf71b466692ada74e7776e9bec124467c5b5",
+    "sha512": "8ec8917deceef86c2dc9b7b181ee1e0c80b911628db9083bfbed9985d8c75be599eda9a42d7e80ce1a7827cae0bd379a5234c3ff4718dd10598236dc8692fe68"
+   },
+   "client_side": "unsupported",
+   "server_side": "required",
+   "license": "LGPL-3.0-only",
+   "license_url": null,
+   "source_url": "https://github.com/YUNG-GANG/YUNGs-Better-Jungle-Temples",
+   "issues_url": "https://github.com/YUNG-GANG/YUNGs-Better-Jungle-Temples/issues",
+   "page": "https://modrinth.com/mod/yungs-better-jungle-temples",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "9s6osm5g",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "Ua7DFN59",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "mOgUt4GM",
+     "file_name": null,
+     "dependency_type": "optional"
+    }
+   ],
+   "group": "world",
+   "purpose": "Redesigned jungle temples.",
    "optional": false,
    "side_override": null,
    "explicit": true,
@@ -7177,6 +9981,134 @@
    "required_by": []
   },
   {
+   "slug": "yungs-better-nether-fortresses",
+   "title": "YUNG's Better Nether Fortresses",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "Z2mXHnxP",
+   "version_id": "itXNeE2A",
+   "version_number": "26.1.2-Fabric-4.1.1",
+   "version_type": "release",
+   "date_published": "2026-09-10T13:30:54.826063Z",
+   "game_versions": [
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "YungsBetterNetherFortresses-26.1.2-Fabric-4.1.1.jar",
+   "url": "https://cdn.modrinth.com/data/Z2mXHnxP/versions/itXNeE2A/YungsBetterNetherFortresses-26.1.2-Fabric-4.1.1.jar",
+   "size": 732774,
+   "hashes": {
+    "sha1": "0e71f1e1fe51b52c6b8a45a4669294f2d591f004",
+    "sha512": "0c77cfde867b5809bf70165a7c0e55d7d3d8de307b04395c9b02635f838cedae35b6f4a1362b1fb99bce501fed71754250dc6407dd0717893262aec1c8df5cdb"
+   },
+   "client_side": "unsupported",
+   "server_side": "required",
+   "license": "LGPL-3.0-only",
+   "license_url": null,
+   "source_url": "https://github.com/YUNG-GANG/YUNGs-Better-Fortresses",
+   "issues_url": "https://github.com/YUNG-GANG/YUNGs-Better-Fortresses/issues",
+   "page": "https://modrinth.com/mod/yungs-better-nether-fortresses",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "9s6osm5g",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "Ua7DFN59",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "mOgUt4GM",
+     "file_name": null,
+     "dependency_type": "optional"
+    }
+   ],
+   "group": "world",
+   "purpose": "Redesigned Nether fortresses.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "yungs-better-ocean-monuments",
+   "title": "YUNG's Better Ocean Monuments",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "3dT9sgt4",
+   "version_id": "8ZhDJBgB",
+   "version_number": "26.1.2-Fabric-5.1.1",
+   "version_type": "release",
+   "date_published": "2026-09-10T13:48:02.846966Z",
+   "game_versions": [
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "YungsBetterOceanMonuments-26.1.2-Fabric-5.1.1.jar",
+   "url": "https://cdn.modrinth.com/data/3dT9sgt4/versions/8ZhDJBgB/YungsBetterOceanMonuments-26.1.2-Fabric-5.1.1.jar",
+   "size": 1147955,
+   "hashes": {
+    "sha1": "c9fdf25e920f522eab18eb38a7354d32657d21aa",
+    "sha512": "7849ba6e2d696ce1fb1dbaa7c979f641712c6adef66f67e843c2b563962c760187689b6c954df8559fe8f59f78255602b2042ac5a6c3b0ee293516dd9e38f28c"
+   },
+   "client_side": "unsupported",
+   "server_side": "required",
+   "license": "LGPL-3.0-only",
+   "license_url": null,
+   "source_url": "https://github.com/YUNG-GANG/YUNGs-Better-Ocean-Monuments",
+   "issues_url": "https://github.com/YUNG-GANG/YUNGs-Better-Ocean-Monuments/issues",
+   "page": "https://modrinth.com/mod/yungs-better-ocean-monuments",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "9s6osm5g",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "Ua7DFN59",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "mOgUt4GM",
+     "file_name": null,
+     "dependency_type": "optional"
+    }
+   ],
+   "group": "world",
+   "purpose": "Redesigned ocean monuments.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
    "slug": "yungs-better-strongholds",
    "title": "YUNG's Better Strongholds",
    "kind": "mod",
@@ -7235,6 +10167,262 @@
    ],
    "group": "world",
    "purpose": "Exploration.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "yungs-better-witch-huts",
+   "title": "YUNG's Better Witch Huts",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "t5FRdP87",
+   "version_id": "HEnkLCGz",
+   "version_number": "26.1.2-Fabric-5.1.1",
+   "version_type": "release",
+   "date_published": "2026-09-10T13:48:56.476204Z",
+   "game_versions": [
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "YungsBetterWitchHuts-26.1.2-Fabric-5.1.1.jar",
+   "url": "https://cdn.modrinth.com/data/t5FRdP87/versions/HEnkLCGz/YungsBetterWitchHuts-26.1.2-Fabric-5.1.1.jar",
+   "size": 296766,
+   "hashes": {
+    "sha1": "ed29eda040c36e5f54ff4df1b31a9b78a379b8c9",
+    "sha512": "1614f63e6c50fd718b73eea07008d04f5b473c38761aa8abbee34f4f052f2802cb582d885eb3218d796c995d8b95273cc00530053e0122c4a9964a465c958fe5"
+   },
+   "client_side": "unsupported",
+   "server_side": "required",
+   "license": "LGPL-3.0-only",
+   "license_url": null,
+   "source_url": "https://github.com/YUNG-GANG/YUNGs-Better-Witch-Huts",
+   "issues_url": "https://github.com/YUNG-GANG/YUNGs-Better-Witch-Huts/issues",
+   "page": "https://modrinth.com/mod/yungs-better-witch-huts",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "9s6osm5g",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "Ua7DFN59",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "mOgUt4GM",
+     "file_name": null,
+     "dependency_type": "optional"
+    }
+   ],
+   "group": "world",
+   "purpose": "Redesigned witch huts.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "yungs-bridges",
+   "title": "YUNG's Bridges",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "Ht4BfYp6",
+   "version_id": "Emt3LgQS",
+   "version_number": "26.1.2-Fabric-6.1.0",
+   "version_type": "release",
+   "date_published": "2026-06-24T18:11:10.366369Z",
+   "game_versions": [
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "YungsBridges-26.1.2-Fabric-6.1.0.jar",
+   "url": "https://cdn.modrinth.com/data/Ht4BfYp6/versions/Emt3LgQS/YungsBridges-26.1.2-Fabric-6.1.0.jar",
+   "size": 264632,
+   "hashes": {
+    "sha1": "2f539192db79f1d13a4370f2fc766f0e5f3a3b8c",
+    "sha512": "1100b01c4135b92d79255639c0a82e80dafa26209b6c2473cdf6f3f0df0f09498f8a5a4b29fb6986c6f69e6f6cc8cfd392101376c69fe07252d7d1f017b117ca"
+   },
+   "client_side": "unsupported",
+   "server_side": "required",
+   "license": "LGPL-3.0-only",
+   "license_url": null,
+   "source_url": "https://github.com/YUNG-GANG/YUNGs-Bridges",
+   "issues_url": "https://github.com/YUNG-GANG/YUNGs-Bridges/issues",
+   "page": "https://modrinth.com/mod/yungs-bridges",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "9s6osm5g",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "Ua7DFN59",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "mOgUt4GM",
+     "file_name": null,
+     "dependency_type": "optional"
+    }
+   ],
+   "group": "world",
+   "purpose": "Natural bridges over rivers and ravines.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "yungs-extras",
+   "title": "YUNG's Extras",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "ZYgyPyfq",
+   "version_id": "LxlVkvKv",
+   "version_number": "26.1.2-Fabric-6.1.0",
+   "version_type": "release",
+   "date_published": "2026-06-24T18:09:53.389731Z",
+   "game_versions": [
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "YungsExtras-26.1.2-Fabric-6.1.0.jar",
+   "url": "https://cdn.modrinth.com/data/ZYgyPyfq/versions/LxlVkvKv/YungsExtras-26.1.2-Fabric-6.1.0.jar",
+   "size": 333130,
+   "hashes": {
+    "sha1": "8cb5e5f083fe65747e70cb7b0d8369305ba63047",
+    "sha512": "39f0668ae6639165485e7aa107c6fee570c9f574f8497b44def3efff40360464942f54bd931ecee82d080434dfae65fa4b106c1d33a391d6aff0369916f8bb14"
+   },
+   "client_side": "unsupported",
+   "server_side": "required",
+   "license": "LGPL-3.0-only",
+   "license_url": null,
+   "source_url": "https://github.com/YUNG-GANG/YUNGs-Extras",
+   "issues_url": "https://github.com/YUNG-GANG/YUNGs-Extras/issues",
+   "page": "https://modrinth.com/mod/yungs-extras",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "9s6osm5g",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "Ua7DFN59",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "mOgUt4GM",
+     "file_name": null,
+     "dependency_type": "optional"
+    }
+   ],
+   "group": "world",
+   "purpose": "Small vanilla+ structures and decorations.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "yungs-menu-tweaks",
+   "title": "YUNG's Menu Tweaks",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "Hcy2DFKF",
+   "version_id": "tFTq3QG2",
+   "version_number": "26.1.2-Fabric-3.1.0",
+   "version_type": "release",
+   "date_published": "2026-06-24T18:12:54.481107Z",
+   "game_versions": [
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "YungsMenuTweaks-26.1.2-Fabric-3.1.0.jar",
+   "url": "https://cdn.modrinth.com/data/Hcy2DFKF/versions/tFTq3QG2/YungsMenuTweaks-26.1.2-Fabric-3.1.0.jar",
+   "size": 281009,
+   "hashes": {
+    "sha1": "a4f53b5eb2a229be619e6c210bcf829753772de8",
+    "sha512": "2450a49cb3e4b0102f025abccc69070c9ee3b4c7804e47439bce963a18105a4143f1ba60df443c4a2e2acec05ad6c7d81847a595f55562922d9769bb765d6878"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "LGPL-3.0-only",
+   "license_url": null,
+   "source_url": "https://github.com/yungnickyoung/YUNGs-Menu-Tweaks",
+   "issues_url": "https://github.com/yungnickyoung/YUNGs-Menu-Tweaks/issues",
+   "page": "https://modrinth.com/mod/yungs-menu-tweaks",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "9s6osm5g",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "Ua7DFN59",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "mOgUt4GM",
+     "file_name": null,
+     "dependency_type": "optional"
+    }
+   ],
+   "group": "qol",
+   "purpose": "Nicer world, create-world and server menus.",
    "optional": false,
    "side_override": null,
    "explicit": true,
@@ -7363,6 +10551,125 @@
    "dependencies": [],
    "group": "library",
    "purpose": "Subtle item texture animations.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "better-flame-particles",
+   "title": "Better Flame Particles",
+   "kind": "resourcepack",
+   "source": "modrinth",
+   "project_id": "ivUZsvzp",
+   "version_id": "5zlKz15s",
+   "version_number": "3.1",
+   "version_type": "release",
+   "date_published": "2025-09-19T14:08:59.023317Z",
+   "game_versions": [
+    "1.21.10",
+    "1.21.10-rc1",
+    "1.21.11",
+    "1.21.11-pre1",
+    "1.21.11-pre2",
+    "1.21.11-pre3",
+    "1.21.11-pre4",
+    "1.21.11-pre5",
+    "1.21.11-rc1",
+    "1.21.11-rc2",
+    "1.21.11-rc3",
+    "1.21.9",
+    "1.21.9-pre1",
+    "1.21.9-pre2",
+    "1.21.9-pre3",
+    "1.21.9-pre4",
+    "1.21.9-rc1",
+    "25w36a",
+    "25w36b",
+    "25w37a",
+    "25w41a",
+    "25w42a",
+    "25w43a",
+    "25w44a",
+    "25w45a",
+    "25w46a",
+    "26.1",
+    "26.1-pre-1",
+    "26.1-pre-2",
+    "26.1-pre-3",
+    "26.1-rc-1",
+    "26.1-rc-2",
+    "26.1-rc-3",
+    "26.1-snapshot-1",
+    "26.1-snapshot-10",
+    "26.1-snapshot-11",
+    "26.1-snapshot-2",
+    "26.1-snapshot-3",
+    "26.1-snapshot-4",
+    "26.1-snapshot-5",
+    "26.1-snapshot-6",
+    "26.1-snapshot-7",
+    "26.1-snapshot-8",
+    "26.1-snapshot-9",
+    "26.1.1",
+    "26.1.1-rc-1",
+    "26.1.2",
+    "26.1.2-rc-1",
+    "26.2",
+    "26.2-pre-1",
+    "26.2-pre-2",
+    "26.2-pre-3",
+    "26.2-pre-4",
+    "26.2-pre-5",
+    "26.2-pre-6",
+    "26.2-rc-1",
+    "26.2-rc-2",
+    "26.2-snapshot-1",
+    "26.2-snapshot-2",
+    "26.2-snapshot-3",
+    "26.2-snapshot-4",
+    "26.2-snapshot-5",
+    "26.2-snapshot-6",
+    "26.2-snapshot-7",
+    "26.2-snapshot-8",
+    "26.3",
+    "26.3-pre-1",
+    "26.3-pre-2",
+    "26.3-pre-3",
+    "26.3-rc-1",
+    "26.3-rc-2",
+    "26.3-rc-3",
+    "26.3-snapshot-1",
+    "26.3-snapshot-10",
+    "26.3-snapshot-2",
+    "26.3-snapshot-3",
+    "26.3-snapshot-4",
+    "26.3-snapshot-5",
+    "26.3-snapshot-6",
+    "26.3-snapshot-7",
+    "26.3-snapshot-8",
+    "26.3-snapshot-9"
+   ],
+   "loaders": [
+    "minecraft"
+   ],
+   "filename": "better_flame_particles-v3.1-mc1.21.9+-resourcepack.zip",
+   "url": "https://cdn.modrinth.com/data/ivUZsvzp/versions/5zlKz15s/better_flame_particles-v3.1-mc1.21.9%2B-resourcepack.zip",
+   "size": 15618,
+   "hashes": {
+    "sha1": "e1d8ca5cd2d2227d4f7c6e31f81b6f5e42ddbf9c",
+    "sha512": "91f0df928424b198feb56beed651a153a6d177509175718bee15a493879e6309c47be0e5ce1806a2b2e5dcbf69aa669a80bb5ef13bb66413962c26e532bc23be"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "LicenseRef-Custom-License",
+   "license_url": "https://github.com/Tschipcraft/better_flame_particles/blob/master/LICENSE",
+   "source_url": "https://github.com/Tschipcraft/better_flame_particles",
+   "issues_url": "https://github.com/Tschipcraft/better_flame_particles/issues",
+   "page": "https://modrinth.com/resourcepack/better-flame-particles",
+   "dependencies": [],
+   "group": "library",
+   "purpose": "Nicer flame particles.",
    "optional": false,
    "side_override": null,
    "explicit": true,
@@ -7530,6 +10837,62 @@
    "dependencies": [],
    "group": "library",
    "purpose": "Connected glass without streaks (via Continuity) — windows and greenhouses.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "connected-paths",
+   "title": "Connected Paths",
+   "kind": "resourcepack",
+   "source": "modrinth",
+   "project_id": "Nyfj98b5",
+   "version_id": "ud0bd1T7",
+   "version_number": "3.1.1+mc1.21.9-26.1.2",
+   "version_type": "release",
+   "date_published": "2026-09-18T18:42:02.459199Z",
+   "game_versions": [
+    "1.21.10",
+    "1.21.11",
+    "1.21.9",
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "minecraft"
+   ],
+   "filename": "Connected-Paths 1.21.9-26.1.2 v3.1.1.zip",
+   "url": "https://cdn.modrinth.com/data/Nyfj98b5/versions/ud0bd1T7/Connected-Paths%201.21.9-26.1.2%20v3.1.1.zip",
+   "size": 588501,
+   "hashes": {
+    "sha1": "7ad4888259da4afd70649ac338b79f6390f8d01b",
+    "sha512": "1b92d55ae282b0274b83b703f6e95792b5b56e4d96fdabe5b31f6fb9cb8b4563e24cd746a07e437e277375a3d19912eb6caf36e03e669d7de1764eec6580e497"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "CC-BY-NC-SA-4.0",
+   "license_url": null,
+   "source_url": "https://github.com/Jacosvaldo/Connected-Paths",
+   "issues_url": "https://github.com/Jacosvaldo/Connected-Paths/issues",
+   "page": "https://modrinth.com/resourcepack/connected-paths",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "1IjD5062",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "TiF5QWZY",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "library",
+   "purpose": "Dirt paths join up seamlessly (Continuity).",
    "optional": false,
    "side_override": null,
    "explicit": true,
@@ -7742,6 +11105,98 @@
    "required_by": []
   },
   {
+   "slug": "fancy-beds",
+   "title": "Fancy Beds",
+   "kind": "resourcepack",
+   "source": "modrinth",
+   "project_id": "hFoOkEdk",
+   "version_id": "Zdz7XQhL",
+   "version_number": "4.2",
+   "version_type": "release",
+   "date_published": "2026-08-17T19:26:35.237991Z",
+   "game_versions": [
+    "1.14",
+    "1.14.1",
+    "1.14.2",
+    "1.14.3",
+    "1.14.4",
+    "1.15",
+    "1.15.1",
+    "1.15.2",
+    "1.16",
+    "1.16.1",
+    "1.16.2",
+    "1.16.3",
+    "1.16.4",
+    "1.16.5",
+    "1.17",
+    "1.17.1",
+    "1.18",
+    "1.18.1",
+    "1.18.2",
+    "1.19",
+    "1.19.1",
+    "1.19.2",
+    "1.19.3",
+    "1.19.4",
+    "1.20",
+    "1.20.1",
+    "1.20.2",
+    "1.20.3",
+    "1.20.4",
+    "1.20.5",
+    "1.20.6",
+    "1.21",
+    "1.21.1",
+    "1.21.10",
+    "1.21.11",
+    "1.21.2",
+    "1.21.3",
+    "1.21.4",
+    "1.21.5",
+    "1.21.6",
+    "1.21.7",
+    "1.21.8",
+    "1.21.9",
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "loaders": [
+    "minecraft"
+   ],
+   "filename": "Fancy_Beds-v4.2.zip",
+   "url": "https://cdn.modrinth.com/data/hFoOkEdk/versions/Zdz7XQhL/Fancy_Beds-v4.2.zip",
+   "size": 271419,
+   "hashes": {
+    "sha1": "40e5ffd45f5c2865ef86760b137ea308ff1a7203",
+    "sha512": "6a2016a67e4b81eab7ab5623513f496aedade6d7c674009a8f24f96e7768c8685f098b3d7cad0751fd06646afa995ce17ec17a5d3c59f9be3a7def2cb87340de"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "LicenseRef-All-Rights-Reserved",
+   "license_url": null,
+   "source_url": null,
+   "issues_url": null,
+   "page": "https://modrinth.com/resourcepack/fancy-beds",
+   "dependencies": [
+    {
+     "version_id": "GRJbaU96",
+     "project_id": "CBvbD9Yz",
+     "file_name": null,
+     "dependency_type": "optional"
+    }
+   ],
+   "group": "library",
+   "purpose": "Cosier bed textures.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
    "slug": "fancy-crops",
    "title": "(Bee's) Fancy Crops",
    "kind": "resourcepack",
@@ -7797,6 +11252,132 @@
    "dependencies": [],
    "group": "library",
    "purpose": "Prettier crops; built to work with Farmer's Delight.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "fast-better-grass",
+   "title": "Fast Better Grass",
+   "kind": "resourcepack",
+   "source": "modrinth",
+   "project_id": "dspVZXKP",
+   "version_id": "U9zNcnWW",
+   "version_number": "26.2",
+   "version_type": "release",
+   "date_published": "2026-06-16T18:10:48.865426Z",
+   "game_versions": [
+    "1.20",
+    "1.20.1",
+    "1.20.2",
+    "1.20.3",
+    "1.20.4",
+    "1.20.5",
+    "1.20.6",
+    "1.21",
+    "1.21.1",
+    "1.21.10",
+    "1.21.11",
+    "1.21.2",
+    "1.21.3",
+    "1.21.4",
+    "1.21.5",
+    "1.21.6",
+    "1.21.7",
+    "1.21.8",
+    "1.21.9",
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2"
+   ],
+   "loaders": [
+    "minecraft"
+   ],
+   "filename": "Fast Better Grass.zip",
+   "url": "https://cdn.modrinth.com/data/dspVZXKP/versions/U9zNcnWW/Fast%20Better%20Grass.zip",
+   "size": 10928,
+   "hashes": {
+    "sha1": "3a344f8e36a2e748f11dce1c246b5c6ce91141f1",
+    "sha512": "cc3641e82595f3e72f3075e7c5647fa4d65188c1d9e498be42e8169a03ccd71907fcb625d5ad51a9e8aabcd41e2ab56ec1e4f3be19dfdadff6c06c7736ae915c"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "MIT",
+   "license_url": null,
+   "source_url": "https://github.com/Fabulously-Optimized/fabulously-optimized/tree/main/Resource%20Packs/Fast%20Better%20Grass",
+   "issues_url": "https://github.com/Fabulously-Optimized/fabulously-optimized/issues",
+   "page": "https://modrinth.com/resourcepack/fast-better-grass",
+   "dependencies": [],
+   "group": "library",
+   "purpose": "Grass and snow continue down block sides.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "fluffy-carpets",
+   "title": "(Bee's) Fluffy Carpets and Wool",
+   "kind": "resourcepack",
+   "source": "modrinth",
+   "project_id": "YvVQg79k",
+   "version_id": "2q7GowmP",
+   "version_number": "1.1",
+   "version_type": "release",
+   "date_published": "2025-10-11T10:06:57.599654Z",
+   "game_versions": [
+    "1.19",
+    "1.19.1",
+    "1.19.2",
+    "1.19.3",
+    "1.19.4",
+    "1.20",
+    "1.20.1",
+    "1.20.2",
+    "1.20.3",
+    "1.20.4",
+    "1.20.5",
+    "1.20.6",
+    "1.21",
+    "1.21.1",
+    "1.21.10",
+    "1.21.11",
+    "1.21.2",
+    "1.21.3",
+    "1.21.4",
+    "1.21.5",
+    "1.21.6",
+    "1.21.7",
+    "1.21.8",
+    "1.21.9",
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "loaders": [
+    "minecraft"
+   ],
+   "filename": "Fluffy Carpets v1.1.zip",
+   "url": "https://cdn.modrinth.com/data/YvVQg79k/versions/2q7GowmP/Fluffy%20Carpets%20v1.1.zip",
+   "size": 62654,
+   "hashes": {
+    "sha1": "5914d8fe664f33b832b7181f84069e92f34dcf40",
+    "sha512": "dd4765456adb701cdfab0f543b63bb43c0b47fdcf1449fda018e7cc1fd5d3340596d8b23bfd7ae9ae6962541c039f2187ddd5daee0c09f425ec70839771d02fe"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "LicenseRef-All-Rights-Reserved",
+   "license_url": null,
+   "source_url": null,
+   "issues_url": null,
+   "page": "https://modrinth.com/resourcepack/fluffy-carpets",
+   "dependencies": [],
+   "group": "library",
+   "purpose": "Fluffier carpets and wool.",
    "optional": false,
    "side_override": null,
    "explicit": true,
@@ -8035,6 +11616,116 @@
    "required_by": []
   },
   {
+   "slug": "fresh-seeds",
+   "title": "Fresh Seeds",
+   "kind": "resourcepack",
+   "source": "modrinth",
+   "project_id": "koLlIzIB",
+   "version_id": "bLhPkmzZ",
+   "version_number": "1.3.2",
+   "version_type": "release",
+   "date_published": "2026-11-01T23:17:52.484243Z",
+   "game_versions": [
+    "1.21.10",
+    "1.21.11",
+    "1.21.5",
+    "1.21.6",
+    "1.21.7",
+    "1.21.8",
+    "1.21.9",
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "loaders": [
+    "minecraft"
+   ],
+   "filename": "Fresh Seeds 1.3.2.zip",
+   "url": "https://cdn.modrinth.com/data/koLlIzIB/versions/bLhPkmzZ/Fresh%20Seeds%201.3.2.zip",
+   "size": 355595,
+   "hashes": {
+    "sha1": "8fbc665c342777d81d228d67d57201e00e4d8e74",
+    "sha512": "93a6bec8dac90e2aaa38088dea67c7adb33ae478e0e81d9b907caff3eea84e5d33b73c443a56ff7fc719dc073f593df434582000424d75a66cb77f3c329d8064"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "LicenseRef-All-Rights-Reserved",
+   "license_url": null,
+   "source_url": null,
+   "issues_url": null,
+   "page": "https://modrinth.com/resourcepack/fresh-seeds",
+   "dependencies": [],
+   "group": "library",
+   "purpose": "Seed-bag item icons.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "just-expressions",
+   "title": "Just Expressions",
+   "kind": "resourcepack",
+   "source": "modrinth",
+   "project_id": "vPaHlT2U",
+   "version_id": "ZNXAMRW4",
+   "version_number": "1.2.1",
+   "version_type": "release",
+   "date_published": "2026-07-05T07:54:40.198049Z",
+   "game_versions": [
+    "1.20",
+    "1.20.1",
+    "1.20.2",
+    "1.20.3",
+    "1.20.4",
+    "1.20.5",
+    "1.20.6",
+    "1.21",
+    "1.21.1",
+    "1.21.10",
+    "1.21.11",
+    "1.21.2",
+    "1.21.3",
+    "1.21.4",
+    "1.21.5",
+    "1.21.6",
+    "1.21.7",
+    "1.21.8",
+    "1.21.9",
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "loaders": [
+    "minecraft"
+   ],
+   "filename": "JustExpressions_v1.2.1.zip",
+   "url": "https://cdn.modrinth.com/data/vPaHlT2U/versions/ZNXAMRW4/JustExpressions_v1.2.1.zip",
+   "size": 262755,
+   "hashes": {
+    "sha1": "4485a851140d337fa8ecca25939db3be50a3ba59",
+    "sha512": "f20f3960caf66863dc7fd99f2cb1a32d574c1861e2b5b7ebb8551b1072460d834c8d680359e2c231888fb324519f350eb7f22c5ae955b04831db87564696a42d"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "LicenseRef-Custom-license",
+   "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+   "source_url": null,
+   "issues_url": null,
+   "page": "https://modrinth.com/resourcepack/just-expressions",
+   "dependencies": [],
+   "group": "library",
+   "purpose": "Mobs blink and change expression (EMF, Fresh Animations style).",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
    "slug": "low-on-fire",
    "title": "Low On Fire",
    "kind": "resourcepack",
@@ -8226,6 +11917,209 @@
    "required_by": []
   },
   {
+   "slug": "rays-3d-ladders",
+   "title": "RAY's 3D Ladders",
+   "kind": "resourcepack",
+   "source": "modrinth",
+   "project_id": "Uupo7yGf",
+   "version_id": "lfVriRcD",
+   "version_number": "2.4",
+   "version_type": "release",
+   "date_published": "2026-09-23T11:17:41.266243Z",
+   "game_versions": [
+    "1.13",
+    "1.13.1",
+    "1.13.2",
+    "1.14",
+    "1.14.1",
+    "1.14.2",
+    "1.14.3",
+    "1.14.4",
+    "1.15",
+    "1.15.1",
+    "1.15.2",
+    "1.16",
+    "1.16.1",
+    "1.16.2",
+    "1.16.3",
+    "1.16.4",
+    "1.16.5",
+    "1.17",
+    "1.17.1",
+    "1.18",
+    "1.18.1",
+    "1.18.2",
+    "1.19",
+    "1.19.1",
+    "1.19.2",
+    "1.19.3",
+    "1.19.4",
+    "1.20",
+    "1.20.1",
+    "1.20.2",
+    "1.20.3",
+    "1.20.4",
+    "1.20.5",
+    "1.20.6",
+    "1.21",
+    "1.21.1",
+    "1.21.10",
+    "1.21.11",
+    "1.21.2",
+    "1.21.3",
+    "1.21.4",
+    "1.21.5",
+    "1.21.6",
+    "1.21.7",
+    "1.21.8",
+    "1.21.9",
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2",
+    "26.3"
+   ],
+   "loaders": [
+    "minecraft"
+   ],
+   "filename": "RAYs_3D_Ladders_v2.4.zip",
+   "url": "https://cdn.modrinth.com/data/Uupo7yGf/versions/lfVriRcD/RAYs_3D_Ladders_v2.4.zip",
+   "size": 1936943,
+   "hashes": {
+    "sha1": "12e023197352e919d776129330458d9f3b759706",
+    "sha512": "56f0f53da4647908a5204023470b9e81528025a4182c219482f9b32056157e4f97f00c1c92308de5d83cf71308cb738ea3f1dec3d59bd9b6884050e0480371ed"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "MIT",
+   "license_url": "https://github.com/xR4YM0ND/RAYs-3D-Ladders/blob/main/LICENSE",
+   "source_url": "https://github.com/xR4YM0ND/RAYs-3D-Ladders",
+   "issues_url": "https://github.com/xR4YM0ND/RAYs-3D-Ladders/issues",
+   "page": "https://modrinth.com/resourcepack/rays-3d-ladders",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "2vsx0HYf",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "5fsOIs5O",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "73MCa9Po",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "BAscRYKm",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "LNytGWDc",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "OSDpLd82",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "OqtiAZcV",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "U9sJOFmJ",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "WuwijfrW",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "Xbc0uyRg",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "aclfPzta",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "cRh6MJ6n",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "eiktJyw1",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "gTuTFFyz",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "qnQsVE2z",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "rv1sovni",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "sMvUb4Rb",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "tfjmPSbI",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "xUTkDmEv",
+     "file_name": null,
+     "dependency_type": "optional"
+    }
+   ],
+   "group": "library",
+   "purpose": "3D ladders.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
    "slug": "recolourful-containers-gui",
    "title": "Recolourful Containers GUI + HUD",
    "kind": "resourcepack",
@@ -8281,6 +12175,46 @@
    "dependencies": [],
    "group": "library",
    "purpose": "Warm, themed container screens (wooden crafting table, stone anvil, …); vanilla+ mode without OptiGUI.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "renewed-bookshelf",
+   "title": "Renewed Bookshelf",
+   "kind": "resourcepack",
+   "source": "modrinth",
+   "project_id": "N3fBsvtt",
+   "version_id": "ITp7PZPc",
+   "version_number": "1.0.1-mc26.1",
+   "version_type": "release",
+   "date_published": "2026-03-24T20:37:54.201632Z",
+   "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2"
+   ],
+   "loaders": [
+    "minecraft"
+   ],
+   "filename": "Renewed Bookshelf v1.0.1 - 26.1.zip",
+   "url": "https://cdn.modrinth.com/data/N3fBsvtt/versions/ITp7PZPc/Renewed%20Bookshelf%20v1.0.1%20-%2026.1.zip",
+   "size": 13262,
+   "hashes": {
+    "sha1": "9b3186d050367134edf04d42a751c2acd3cd8c86",
+    "sha512": "037a689ca6fcd473fa80e9511b2d32a98c5ab9f525e2d88d3a1934c022268d6a6d3c9aede7633e87f451565af950889c4c4c39239b7da631afb4adbfdf2e997d"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "LicenseRef-All-Rights-Reserved",
+   "license_url": null,
+   "source_url": null,
+   "issues_url": null,
+   "page": "https://modrinth.com/resourcepack/renewed-bookshelf",
+   "dependencies": [],
+   "group": "library",
+   "purpose": "A consistent, refreshed bookshelf look.",
    "optional": false,
    "side_override": null,
    "explicit": true,
@@ -8436,6 +12370,173 @@
    "dependencies": [],
    "group": "library",
    "purpose": "Eating/drinking animations for food (no mod needed).",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "torches-reimagined",
+   "title": "Torches Reimagined",
+   "kind": "resourcepack",
+   "source": "modrinth",
+   "project_id": "pfnQDIWs",
+   "version_id": "8LDDztpb",
+   "version_number": "v1.10",
+   "version_type": "release",
+   "date_published": "2026-10-22T18:46:12.366873Z",
+   "game_versions": [
+    "1.20",
+    "1.20.1",
+    "1.20.2",
+    "1.20.2-pre1",
+    "1.20.3",
+    "1.20.4",
+    "1.20.5",
+    "1.20.5-pre1",
+    "1.20.5-pre2",
+    "1.20.5-pre3",
+    "1.20.6",
+    "1.21",
+    "1.21.1",
+    "1.21.10",
+    "1.21.10-rc1",
+    "1.21.11",
+    "1.21.11-pre1",
+    "1.21.11-pre2",
+    "1.21.11-pre3",
+    "1.21.11-pre4",
+    "1.21.11-pre5",
+    "1.21.11-rc1",
+    "1.21.11-rc2",
+    "1.21.11-rc3",
+    "1.21.2",
+    "1.21.2-pre1",
+    "1.21.2-pre2",
+    "1.21.3",
+    "1.21.4",
+    "1.21.5",
+    "1.21.6",
+    "1.21.6-pre3",
+    "1.21.6-pre4",
+    "1.21.6-rc1",
+    "1.21.7",
+    "1.21.7-rc1",
+    "1.21.7-rc2",
+    "1.21.8",
+    "1.21.8-rc1",
+    "1.21.9",
+    "1.21.9-pre1",
+    "1.21.9-pre2",
+    "1.21.9-pre3",
+    "1.21.9-pre4",
+    "1.21.9-rc1",
+    "23w31a",
+    "23w32a",
+    "23w33a",
+    "23w35a",
+    "23w42a",
+    "23w43a",
+    "23w43b",
+    "23w44a",
+    "23w45a",
+    "23w46a",
+    "24w03a",
+    "24w03b",
+    "24w04a",
+    "24w05a",
+    "24w05b",
+    "24w06a",
+    "24w07a",
+    "24w09a",
+    "24w10a",
+    "24w11a",
+    "24w12a",
+    "24w13a",
+    "24w14a",
+    "24w14potato",
+    "24w18a",
+    "24w19a",
+    "24w19b",
+    "24w20a",
+    "24w33a",
+    "24w34a",
+    "24w35a",
+    "24w36a",
+    "24w37a",
+    "24w38a",
+    "24w39a",
+    "24w40a",
+    "24w44a",
+    "24w45a",
+    "24w46a",
+    "26.1",
+    "26.1-pre-1",
+    "26.1-pre-2",
+    "26.1-pre-3",
+    "26.1-rc-1",
+    "26.1-rc-2",
+    "26.1-rc-3",
+    "26.1-snapshot-1",
+    "26.1-snapshot-10",
+    "26.1-snapshot-11",
+    "26.1-snapshot-2",
+    "26.1-snapshot-3",
+    "26.1-snapshot-4",
+    "26.1-snapshot-5",
+    "26.1-snapshot-6",
+    "26.1-snapshot-7",
+    "26.1-snapshot-8",
+    "26.1-snapshot-9",
+    "26.1.1",
+    "26.1.1-rc-1",
+    "26.1.2",
+    "26.1.2-rc-1",
+    "26.2",
+    "26.2-rc-2",
+    "26.3",
+    "26.3-pre-1",
+    "26.3-pre-2",
+    "26.3-pre-3",
+    "26.3-rc-1",
+    "26.3-rc-2",
+    "26.3-rc-3",
+    "26.3-snapshot-1",
+    "26.3-snapshot-10",
+    "26.3-snapshot-2",
+    "26.3-snapshot-3",
+    "26.3-snapshot-4",
+    "26.3-snapshot-5",
+    "26.3-snapshot-6",
+    "26.3-snapshot-7",
+    "26.3-snapshot-8",
+    "26.3-snapshot-9",
+    "26.4-snapshot-1",
+    "26.4-snapshot-2",
+    "26.4-snapshot-3",
+    "26.4-snapshot-4",
+    "26.4-snapshot-5"
+   ],
+   "loaders": [
+    "minecraft"
+   ],
+   "filename": "§eTorches§8-§eReimagined§0_§8[v1.10]§0.zip",
+   "url": "https://cdn.modrinth.com/data/pfnQDIWs/versions/8LDDztpb/%C2%A7eTorches%C2%A78-%C2%A7eReimagined%C2%A70_%C2%A78%5Bv1.10%5D%C2%A70.zip",
+   "size": 191667,
+   "hashes": {
+    "sha1": "ad11f146736e4cbecb427e87edb7770393382fc4",
+    "sha512": "a65c9aba6151fda4e1637af96308156c8a5dba06790f9b501fb906026ba8b2dd50a31d874f0d9c37d14e9535f75388b0bb0b81595533952e2dd06634ae0cafa8"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "LicenseRef-All-Rights-Reserved",
+   "license_url": null,
+   "source_url": null,
+   "issues_url": null,
+   "page": "https://modrinth.com/resourcepack/torches-reimagined",
+   "dependencies": [],
+   "group": "library",
+   "purpose": "Refreshed torch look.",
    "optional": false,
    "side_override": null,
    "explicit": true,

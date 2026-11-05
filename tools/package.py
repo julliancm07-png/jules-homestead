@@ -123,7 +123,9 @@ def main():
             if f.is_file():
                 z.writestr(zinfo("overrides/config/" + f.relative_to(ROOT / "configs").as_posix()), f.read_bytes())
         packs = resource_pack_order(man, lock)
-        z.writestr(zinfo("overrides/options.txt"), OPTIONS_BASE + "resourcePacks:" + json.dumps(packs) + "\n")
+        # YOSBR copies config/yosbr/options.txt to options.txt only when the player has none, so updating the pack
+        # never overwrites a player's own settings (keybinds, GUI scale, packs they switched on or off).
+        z.writestr(zinfo("overrides/config/yosbr/options.txt"), OPTIONS_BASE + "resourcePacks:" + json.dumps(packs) + "\n")
         z.writestr(zinfo(f"overrides/resourcepacks/{HOMESTEAD_RP}"), homestead_rp_zip())
         for doc in ("README.md", "docs/INSTALL.md", "CHANGELOG.md"):
             p = ROOT / doc

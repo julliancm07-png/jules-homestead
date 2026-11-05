@@ -17,6 +17,13 @@
     "",
     "This is a building milestone. FTB Quests cannot reliably judge architecture, so tick the checkbox yourself when you are happy with it."
   ],
+  "quest.23C2DA9DBDF52695.title": "Put Your Feet Up",
+  "quest.23C2DA9DBDF52695.quest_desc": [
+    "Adorn adds sofas, chairs, tables, shelves and kitchen fittings in every wood and colour. Beautify adds blinds, trellises, lamps and hanging pots.",
+    "You can also sit on stairs and slabs: right-click the top of one with an empty hand, and sneak to stand up."
+  ],
+  "task.5459123AF46DA690.title": "Get any sofa",
+  "task.6D5672DAF8A7C0E6.title": "Make a hanging pot",
   "quest.7E8F3FAB4AED047A.title": "[Manual] Paths and Lamps",
   "quest.7E8F3FAB4AED047A.quest_desc": [
     "Link your buildings with paths (Macaw's Paths & Pavings) and light them so mobs don't spawn between your doors.",

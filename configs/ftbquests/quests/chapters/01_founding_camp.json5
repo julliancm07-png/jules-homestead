@@ -340,6 +340,37 @@
       ]
     },
     {
+      "id": "3A091BA62B335E0E",
+      "x": 4.0,
+      "y": 3.0,
+      "optional": true,
+      "dependencies": [
+        "43A7C8ED98737081"
+      ],
+      "tasks": [
+        {
+          "id": "57E16006D2252AFA",
+          "type": "item",
+          "item": {
+            "id": "comforts:sleeping_bag_white",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "5906208BDB5CED65",
+          "type": "item",
+          "item": {
+            "id": "minecraft:string",
+            "count": 1
+          },
+          "count": 4
+        }
+      ]
+    },
+    {
       "id": "07B1E75474678B7C",
       "x": 10.0,
       "y": 0.0,

@@ -399,6 +399,65 @@
       ]
     },
     {
+      "id": "6E38D215E98CF202",
+      "x": 8.0,
+      "y": 3.0,
+      "optional": true,
+      "dependencies": [
+        "26C656A2C6FCEF63"
+      ],
+      "tasks": [
+        {
+          "id": "0A4B29DB47ED3723",
+          "type": "item",
+          "item": {
+            "id": "fishofthieves:pondie",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "373CC19E71FADC8C",
+          "type": "item",
+          "item": {
+            "id": "fishofthieves:earthworms",
+            "count": 1
+          },
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": "12DC533FF066FAAA",
+      "x": 8.0,
+      "y": 2.0,
+      "optional": true,
+      "dependencies": [
+        "516B643207630D34"
+      ],
+      "tasks": [
+        {
+          "id": "16B432A3A04A173E",
+          "type": "advancement",
+          "advancement": "friendsandfoes:husbandry/shear_a_moobloom",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "67CBB6187915FAAC",
+          "type": "item",
+          "item": {
+            "id": "minecraft:bone_meal",
+            "count": 1
+          },
+          "count": 8
+        }
+      ]
+    },
+    {
       "id": "7A21939ED9A517F8",
       "x": 10.0,
       "y": 0.0,

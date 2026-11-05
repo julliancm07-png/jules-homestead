@@ -30,6 +30,47 @@ UA = {"User-Agent": "jules-homestead-modpack-validator/0.1"}
 BUILTINS = {"minecraft": "26.1.2", "java": "25", "fabricloader": "0.20.1", "fabric-loader": "0.20.1", "mixinextras": "0.5.0"}
 
 
+RESOURCE_PACK_FORMAT = 84  # Minecraft 26.1.2 (see tools/gen_resources.py PACK_FORMAT)
+
+
+def _fmt_major(v):
+    return v[0] if isinstance(v, list) else int(v)
+
+
+def pack_format_range(zip_bytes):
+    """(min, max) major resource-pack format a zip declares in pack.mcmeta, or None."""
+    import io
+    import zipfile
+    try:
+        with zipfile.ZipFile(io.BytesIO(zip_bytes)) as z:
+            name = next((n for n in z.namelist() if n.rstrip("/").split("/")[-1] == "pack.mcmeta" and n.count("/") <= 1), None)
+            if name is None:
+                return None
+            pack = json.loads(z.read(name).decode("utf-8-sig"))["pack"]
+    except Exception:
+        return None
+    if "min_format" in pack or "max_format" in pack:
+        lo = _fmt_major(pack.get("min_format", pack.get("pack_format", 0)))
+        hi = _fmt_major(pack.get("max_format", pack.get("pack_format", 10**6)))
+        return lo, hi
+    # Legacy fields only (no min_format/max_format): 26.1 ignores a legacy range above format 64, so such packs are
+    # "no longer compatible" (seen in the client log: Shelviety, pack_format 15 + supported_formats 1..99, was removed).
+    LEGACY_MAX = 64
+    sf = pack.get("supported_formats")
+    if isinstance(sf, int):
+        lo, hi = sf, sf
+    elif isinstance(sf, list) and len(sf) == 2:
+        lo, hi = int(sf[0]), int(sf[1])
+    elif isinstance(sf, dict):
+        lo, hi = int(sf.get("min_inclusive", 0)), int(sf.get("max_inclusive", 10**6))
+    else:
+        pf = pack.get("pack_format")
+        if pf is None:
+            return None
+        lo, hi = int(pf), int(pf)
+    return lo, min(hi, LEGACY_MAX)
+
+
 def fetch(entry):
     CACHE.mkdir(parents=True, exist_ok=True)
     p = CACHE / f"{entry['hashes']['sha1']}-{entry['filename']}"
@@ -115,7 +156,14 @@ def main():
             errors.append(f"{e['slug']}: no fabric.mod.json in jar")
     for e in lock["files"]:
         if e["kind"] != "mod" and e["source"] == "modrinth":
-            fetch(e)
+            data = fetch(e)
+            if e["kind"] == "resourcepack":
+                rng = pack_format_range(data)
+                if rng is None:
+                    warnings.append(f"{e['slug']}: no readable pack.mcmeta")
+                elif not (rng[0] <= RESOURCE_PACK_FORMAT <= rng[1]):
+                    warnings.append(f"{e['slug']}: declares resource pack formats {rng[0]}..{rng[1]}, game uses {RESOURCE_PACK_FORMAT}"
+                                    " — 26.1 treats it as incompatible and drops it from the enabled packs")
     # Optional mods (e.g. Create Fly, Distant Horizons) must not be required by anything else.
     core = [e for e in mods if not e.get("optional")]
     for setname, entries in (("client-all", mods), ("client-core", core),

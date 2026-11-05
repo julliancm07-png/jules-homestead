@@ -57,6 +57,13 @@
   "quest.7BBF127AFC8C0B35.quest_desc": [
     "In hot places you sweat and need to drink. A water skin carries several drinks. Rain or a swim also cools you down."
   ],
+  "quest.3A091BA62B335E0E.title": "Bedroll",
+  "quest.3A091BA62B335E0E.quest_desc": [
+    "Three white wool in a row. A sleeping bag skips the night like a bed, but your spawn stays at home, which is perfect for trips.",
+    "Every colour works the same; this quest only checks for a white one.",
+    "A hammock does the opposite: rest through the day until night."
+  ],
+  "task.57E16006D2252AFA.title": "Craft a white sleeping bag",
   "quest.07B1E75474678B7C.title": "The Camp Is Made",
   "quest.07B1E75474678B7C.quest_desc": [
     "You have fire, food, iron and a bed. Next, a home with fields around it."
