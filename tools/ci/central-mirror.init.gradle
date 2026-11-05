@@ -1,0 +1,13 @@
+// Opt-in Gradle init script for cloud/CI environments where repo.maven.apache.org
+// rate-limits (HTTP 429). Rewrites Maven Central to Google's official mirror.
+// Usage: ./gradlew --init-script ../../tools/ci/central-mirror.init.gradle build
+def MIRROR = 'https://maven-central.storage-download.googleapis.com/maven2/'
+def rewrite = { RepositoryHandler repos ->
+    repos.configureEach { r ->
+        if (r instanceof MavenArtifactRepository && r.url.toString().startsWith('https://repo.maven.apache.org/maven2')) {
+            r.url = MIRROR
+        }
+    }
+}
+beforeSettings { settings -> rewrite(settings.pluginManagement.repositories) }
+allprojects { project -> rewrite(project.buildscript.repositories); rewrite(project.repositories) }

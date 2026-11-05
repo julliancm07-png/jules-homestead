@@ -1,0 +1,20 @@
+{
+	"schemaVersion": 1,
+	"id": "homesteadcore",
+	"version": "${version}",
+	"name": "Homestead Core",
+	"description": "Weather events, shelter/exposure and powered household appliances for the Jules' Homestead modpack.",
+	"authors": ["Jules' Homestead project"],
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": ["dev.jules.homestead.HomesteadCore"],
+		"client": ["dev.jules.homestead.client.HomesteadCoreClient"]
+	},
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
