@@ -48,11 +48,40 @@ onboardAccessibility:false
 HOMESTEAD_RP = "HomesteadResources.zip"
 
 
+# Built-in packs that mods register as "enabled by default". An explicit resourcePacks list (our shipped options.txt)
+# drops them, so they are listed here. Checked by scanning every jar for resourcepacks/<name>/ and its activation type
+# (2026-11-05: only A Good Place uses DEFAULT_ENABLED; Continuity, Subtle Effects, Fish of Thieves, Soft Imprints are opt-in).
+BUILTIN_DEFAULT_PACKS = {"a-good-place": "a_good_place:default_animations"}
+
+# Iris shader-pack settings, seeded through YOSBR (copied only when the player has no settings file for that pack yet).
+# Option names verified against each pack's shaders/lib/common.glsl or shaders/settings.glsl (2026-11-05).
+SHADER_PRESETS = {
+    # Complementary Reimagined: northern lights on full-moon nights or in snowy biomes, galaxy nebulae,
+    # moon-phase night lighting (new moon darkest).
+    "complementary-reimagined": {"AURORA_STYLE_DEFINE": "1", "AURORA_CONDITION": "4", "NIGHT_NEBULAE": "1",
+                                 "MOON_PHASE_INF_LIGHT": "true", "MOON_PHASE_INF_ATMOSPHERE": "true"},
+    # Photon: occasional aurora anywhere, more often in snowy biomes; Milky Way galaxy. Moon-phase lighting is its default.
+    "photon-shader": {"AURORA_NORMAL": "AURORA_RARELY", "AURORA_SNOW": "AURORA_ALWAYS", "GALAXY": "true"},
+}
+
+
 def resource_pack_order(man, lock):
-    """options.txt resourcePacks: vanilla first, then manifest order (enabled only), our pack last (highest)."""
+    """options.txt resourcePacks: vanilla, default-enabled mod built-ins, manifest order (enabled only), our pack last (highest)."""
     by_slug = {e["slug"]: e for e in lock["files"] if e["kind"] == "resourcepack"}
-    ids = ["vanilla"] + [f"file/{by_slug[r['slug']]['filename']}" for r in man.get("resourcepack", []) if r.get("enabled", True)]
+    mods = {e["slug"] for e in lock["files"] if e["kind"] == "mod"}
+    ids = ["vanilla"] + [pid for slug, pid in BUILTIN_DEFAULT_PACKS.items() if slug in mods]
+    ids += [f"file/{by_slug[r['slug']]['filename']}" for r in man.get("resourcepack", []) if r.get("enabled", True)]
     return ids + [f"file/{HOMESTEAD_RP}"]
+
+
+def shader_preset_files(lock):
+    """(path, text) for config/yosbr/shaderpacks/<zip>.txt, one per pinned shader pack with a preset."""
+    out = []
+    for e in lock["files"]:
+        if e["kind"] == "shader" and e["slug"] in SHADER_PRESETS:
+            body = "".join(f"{k}={v}\n" for k, v in sorted(SHADER_PRESETS[e["slug"]].items()))
+            out.append((f"overrides/config/yosbr/shaderpacks/{e['filename']}.txt", body))
+    return out
 
 
 def homestead_rp_zip():
@@ -126,6 +155,8 @@ def main():
         # YOSBR copies config/yosbr/options.txt to options.txt only when the player has none, so updating the pack
         # never overwrites a player's own settings (keybinds, GUI scale, packs they switched on or off).
         z.writestr(zinfo("overrides/config/yosbr/options.txt"), OPTIONS_BASE + "resourcePacks:" + json.dumps(packs) + "\n")
+        for path, body in shader_preset_files(lock):
+            z.writestr(zinfo(path), body)
         z.writestr(zinfo(f"overrides/resourcepacks/{HOMESTEAD_RP}"), homestead_rp_zip())
         for doc in ("README.md", "docs/INSTALL.md", "CHANGELOG.md"):
             p = ROOT / doc

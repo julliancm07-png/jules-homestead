@@ -1,5 +1,58 @@
 # Changelog
 
+## 1.1.0 — 2026-11-05 (polish release for Jules' local testing)
+Requests: more mods and resource packs that improve the experience, optimization, nicer themed menus, smooth
+animations and immersive nights. Research: `research/2026-11-05-polish-1.1-candidates.md`.
+
+### Home, farm and world (+45 mods, +10 resource packs)
+- **Home and decor:** Adorn (sofas, chairs, tables, kitchen counters and cupboards), Beautify (blinds, trellises,
+  hanging pots, lamps), Macaw's Holidays (winter and Halloween decorations), Reconnectible Chains, diagonal fences,
+  walls and windows, Bl4cks Sit (sit on stairs and slabs), Visual Workbench, Comforts (sleeping bags and hammocks).
+- **Living world:** This Rocks (pebbles, sticks, pinecones, shells), Fish of Thieves, Boids, Friends & Foes beekeeper
+  hut and flower cows, Simple Snowy Fix (snow on leaves), Trample No More.
+- **Exploration:** the rest of the YUNG's set (bridges, extras, temples, witch huts, monuments, fortresses) and
+  Explorer's Compass.
+- **Ambience:** Particular (fireflies, waterfall mist), Soft Imprints (footprints in snow), Cool Rain, Drip Sounds,
+  Sounds, Traveler's Titles, Advancement Plaques.
+- **Info and QoL:** Jade Addons, Just Enough Breeding, Universal Graves, YUNG's Menu Tweaks, FastQuit, spark.
+- **Resource packs:** Fast Better Grass, Connected Paths, Fancy Beds, Fluffy Carpets, Ray's 3D Ladders, Just
+  Expressions, Fresh Seeds, Better Flame Particles, Torches Reimagined, Renewed Bookshelf.
+
+### Optimization
+- C2ME, Ksyxis, Let Me Despawn and Particle Core, plus BadOptimizations, ScalableLux, Clumps, Structure
+  Layout Optimizer, Neruina, Debugify and RSLS. Dedicated-server boot in the cloud test: spawn preparation
+  **20.9 s → 10.0 s**, whole boot 70 s → 58 s.
+- `docs/INSTALL.md`: new "If the game runs slowly" section (settings to try, spark profiler, optional ZGC flag).
+- ModernFix-mVUS and LightspeedRE were tried and removed: both disturbed start-up and crashed the integrated server
+  ("Registry is not frozen yet!").
+
+### Smooth animations
+- Fancy World Animations (doors, gates, trapdoors, levers, lecterns and chests move; lanterns and chains sway),
+  Smooth Swapping (items glide between slots), Smooth Scroll, Chunks Fade In, A Good Place (placed blocks settle),
+  ItemPhysic Lite (dropped items lie flat), Countered's Smooth Steps, NEA EMF Compat.
+
+### Immersive nights
+- Spawn Animations (hostile mobs dig out of the ground), Fresh Animations Emissive (glowing mob eyes).
+- Shader night presets, seeded only if you have no settings for that shader yet: Complementary aurora (full moon or
+  snowy biomes), night nebulae and moon-phase lighting; Photon aurora and Milky Way galaxy.
+
+### Menus
+- Homestead GUI: oak-plank buttons, a stone hotbar, slate-and-gold toasts and advancement frames. Recolourful
+  Containers still draws every container screen.
+
+### Quests (110, +6)
+- New: Bedroll, Pond Life, Flower Cows, Put Your Feet Up, Festive Season, Lost Places. Fitted Kitchen is now detected
+  automatically (Adorn advancements). 92 quests complete automatically, 18 are tick-boxes.
+
+### Packaging and tooling
+- **YOSBR:** default options ship as `config/yosbr/options.txt` and are copied only when you have no `options.txt`, so
+  updating never overwrites your settings.
+- Built-in packs that a mod enables by default are now kept in the shipped resource-pack list (A Good Place).
+- `validate.py` checks every resource pack's declared format against 26.1.2 (84). It caught Shelviety (replaced by
+  Renewed Bookshelf) and New Glowing Ores (replaced by Emissive Glowing Ores, still shipped off).
+- Showcase screenshots: a lantern-lit evening room (`showcase-decor.png`) and the village at night
+  (`showcase-village-night.png`).
+
 ## 1.0.0 — 2026-11-05 (release candidate for Jules' local testing)
 ### Screens
 - **Spatial GUI** 1.10.1 (client-only, MIT; Jules' pick): inventory and container screens open as a 3D panel beside the

@@ -6,7 +6,7 @@
 
 [pack]
 name = "Jules' Homestead"
-version = "1.0.0"
+version = "1.1.0"
 minecraft = "26.1.2"
 loader = "fabric"
 loader_version = "0.20.1"
@@ -679,6 +679,61 @@ slug = "yosbr"
 group = "core"
 purpose = "Default options without overwriting a player's own options.txt on update."
 
+# ---------------------------------------------------------------- polish 1.1b: optimization, smooth animations, nights
+# (research/2026-11-05-polish-1.1-candidates.md, section "1.1b")
+[[mod]]
+slug = "c2me-fabric"
+group = "performance"
+purpose = "Multi-threaded chunk generation, loading and saving (measured against the spawn-prepare baseline)."
+[[mod]]
+slug = "ksyxis"
+group = "performance"
+purpose = "Skips loading the unused spawn area when a world opens (faster world load)."
+[[mod]]
+slug = "lmd"
+group = "performance"
+purpose = "Let Me Despawn: mobs that picked up items can still despawn (fewer lingering mobs)."
+[[mod]]
+slug = "particle-core"
+group = "performance"
+purpose = "Particle culling and render optimizations (many ambience/weather particle mods)."
+[[mod]]
+slug = "smooth-swapping"
+group = "visual"
+purpose = "Items glide between inventory slots instead of teleporting."
+[[mod]]
+slug = "smooth-scroll"
+group = "visual"
+purpose = "Smooth scrolling in lists, chat, creative tabs and the hotbar."
+[[mod]]
+slug = "chunks-fade-in"
+group = "visual"
+purpose = "New chunks fade in instead of popping into view."
+[[mod]]
+slug = "fwa"
+group = "visual"
+purpose = "Fancy World Animations: doors, gates, trapdoors, levers, lecterns and chests move smoothly; lanterns and chains sway."
+[[mod]]
+slug = "a-good-place"
+group = "visual"
+purpose = "Placed blocks settle into place with a short animation."
+[[mod]]
+slug = "itemphysic-lite"
+group = "visual"
+purpose = "Dropped items lie flat and tumble (visual only)."
+[[mod]]
+slug = "countereds-smooth-steps"
+group = "visual"
+purpose = "Camera glides up stairs and slabs instead of snapping."
+[[mod]]
+slug = "not-enough-animations-emf-compat"
+group = "visual"
+purpose = "Keeps Not Enough Animations working with the EMF player model from Just Expressions."
+[[mod]]
+slug = "spawn-animations"
+group = "visual"
+purpose = "Hostile mobs dig out of the ground or appear in a puff instead of popping in (night-time immersion). Licence: modpack use allowed with a link back to Modrinth."
+
 [[resourcepack]]
 slug = "better-leaves"
 purpose = "Bushier vanilla leaves."
@@ -691,6 +746,9 @@ purpose = "Official Fresh Animations extension: extra mob details."
 [[resourcepack]]
 slug = "fresh-animations-objects"
 purpose = "Official Fresh Animations extension: animates non-mob entities."
+[[resourcepack]]
+slug = "fresh-animations-emissive"
+purpose = "Official Fresh Animations extension: eyes and glowing parts of mobs shine in the dark (night-time immersion)."
 [[resourcepack]]
 slug = "fancy-crops"
 purpose = "Prettier crops; built to work with Farmer's Delight."
@@ -752,15 +810,18 @@ purpose = "Refreshed torch look."
 slug = "renewed-bookshelf"
 purpose = "A consistent, refreshed bookshelf look."
 [[resourcepack]]
+slug = "homestead-gui"
+purpose = "Cozy wood-and-stone menus: oak-plank buttons, stone hotbar, slate toasts and tooltips. Below Recolourful so container screens stay Recolourful."
+[[resourcepack]]
 slug = "recolourful-containers-gui"
 purpose = "Warm, themed container screens (wooden crafting table, stone anvil, …); vanilla+ mode without OptiGUI."
 [[resourcepack]]
 slug = "dramatic-skys"
 purpose = "HD skies with realistic clouds (needs Nuit). Baseline without shaders."
 [[resourcepack]]
-slug = "new-glowing-ores"
+slug = "emissive-glowing-ores"
 enabled = false
-purpose = "Optional: glowing ore outlines (accessibility); shipped but off."
+purpose = "Optional: ores glow faintly (accessibility; via Continuity); shipped but off. Replaces New Glowing Ores, which 26.1 rejects (legacy pack format)."
 
 [[shader]]
 slug = "complementary-reimagined"

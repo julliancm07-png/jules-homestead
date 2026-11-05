@@ -60,4 +60,11 @@ python3 -I tools/client_smoke_test.py --scenario showcase|title  # dev harness s
 - Spatial GUI (3D inventory panels) is client-only and shipped with mod defaults; quest book/menus stay flat (allScreens=false).
 - Showcase runs no longer overwrite the committed title panorama unless `--update-panorama` is passed.
 - Local module jars: validate.local_jar picks the newest build in build/libs; bump versions in manifest, gradle.properties and pack-data fabric.mod.json together.
+- Shipped options.txt lists resource packs explicitly, which drops mods' DEFAULT_ENABLED built-in packs: add them to
+  `package.BUILTIN_DEFAULT_PACKS` (scan jars for `resourcepacks/<name>/` + activation type when adding mods).
+- YOSBR copies ANY file under `config/yosbr/` to the game dir if missing: options.txt and the shader presets
+  (`shaderpacks/<zip>.txt`, `package.SHADER_PRESETS`; option names must match the shader's `#define`s).
+- 26.1 drops resource packs that only declare legacy formats (`pack_format`/`supported_formats` ≤ 64): validate.py warns.
+- One sky owner: Dramatic Skys (Nuit) draws stars/moon; don't add star/sky mods. Shaders draw their own sky.
+- `client_smoke_test.py --skip-install` reuses the old instance: never use it after changing the mod set.
 Keep STATUS.md and CHANGELOG.md current at the end of every work session.

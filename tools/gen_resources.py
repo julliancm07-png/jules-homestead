@@ -229,6 +229,8 @@ def main():
     write(sp / "homestead_frame.png.mcmeta", {"gui": {"scaling": {"type": "nine_slice", "width": 100, "height": 100, "border": 10, "stretch_inner": True}}})
     write(OUT / f"assets/{NS}/jade_themes/homestead.json", {"version": 200, "tooltipStyle": {"sprite": f"{NS}:homestead", "tooltip": True}})
     write(OUT / f"assets/{NS}/lang/en_us.json", {"jade.theme.homesteadres.homestead": "Homestead (walnut)"})
+    # Homestead GUI (below us) blanks the "Inventory" label on container screens; Recolourful's screens are drawn with it.
+    write(OUT / "assets/minecraft/lang/en_us.json", {"container.inventory": "Inventory"})
     pano = sorted(PANORAMA_SRC.glob("panorama_*.png")) if PANORAMA_SRC.exists() else []
     if len(pano) == 6:
         dest = OUT / "assets/minecraft/textures/gui/title/background"

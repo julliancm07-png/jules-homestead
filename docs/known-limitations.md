@@ -49,6 +49,16 @@ Stated plainly. "Awaiting local verification" means it was not possible to test 
   * The mod is in early development (its author says so), so an unusual modded screen may misbehave: add it to *Disabled Screens* in its config.
   * Not yet tried with shaders on a real GPU.
 * The walnut quest-book theme and Jade theme are new designs. I checked them in screenshots, not yet in long play.
+* **1.1 menus:** Homestead GUI is a public alpha. Its tooltip sprites use file names 26.1 rejects, so item tooltips
+  keep Legendary Tooltips' look. Its own container screens are unfinished, so Recolourful Containers stays on top for
+  every container. It also logs a harmless error about an optional "Wynncraft" hotbar variant.
+* **1.1 animations** are judged from mod pages and a crash-free client run; a screenshot can't show motion. Check
+  them in play (`docs/test-checklist.md` §7). Fancy World Animations and A Good Place mostly cover vanilla blocks;
+  modded doors (Macaw's) may still snap open.
+* **Spawn Animations** covers vanilla hostile mobs. Its optional compatibility data pack for modded mobs isn't
+  included (unclear licence), so modded mobs still appear normally.
+* **C2ME** for 26.1.2 is a beta build. If you ever see world-generation errors or a corrupted chunk, remove it first
+  (and tell me).
 
 ## Not verified in the cloud (needs your PC)
 Real-GPU rendering, shaders, Distant Horizons, sound (ambience, Sound Physics), keybinding conflicts, mouse/keyboard feel, multiplayer, long-session memory use and performance, Physics Mod Pro, Create Fly.

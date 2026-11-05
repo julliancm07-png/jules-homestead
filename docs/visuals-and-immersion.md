@@ -31,9 +31,45 @@ Goal (Jules, 2026-11-05): pleasant, immersive screens and a carefully chosen set
 * Screenshots: `showcase-inventory.png`, `showcase-crafting.png` (Recolourful's wooden crafting area on the panel), `showcase-range.png` (our Electric Oven).
 
 ## Resource packs (enabled by default, bottom → top)
-Better Leaves · Fresh Animations + Details + Objects (official extensions) · Fancy Crops (built for Farmer's Delight) · Simple Grass Flowers · Better Lanterns · Fresh Flower Pots · Clean Connected Glass (Continuity) · Animated Items · TheOne's Eating Animation · Even Better Enchants · Visual Armor Trims · Low On Fire · Recolourful Containers · Dramatic Skys (via Nuit) · **Homestead Resources** (top).
-Shipped but off: **New Glowing Ores** (an accessibility option).
-Deliberately not used: the Fresh Animations *player* extension (overlaps Not Enough Animations), CozyUI+ (its HD pastel style clashes with 16× blocks), full texture overhauls (to keep the vanilla look).
+A Good Place default animations (built into the mod) · Better Leaves · Fresh Animations + Details + Objects + Emissive (official extensions) · Fancy Crops (built for Farmer's Delight) · Simple Grass Flowers · Better Lanterns · Fresh Flower Pots · Clean Connected Glass (Continuity) · Animated Items · TheOne's Eating Animation · Even Better Enchants · Visual Armor Trims · Low On Fire · Fast Better Grass · Connected Paths · Fancy Beds · Fluffy Carpets · Ray's 3D Ladders · Just Expressions · Fresh Seeds · Better Flame Particles · Torches Reimagined · Renewed Bookshelf · Homestead GUI · Recolourful Containers · Dramatic Skys (via Nuit) · **Homestead Resources** (top).
+Shipped but off: **Emissive Glowing Ores** (an accessibility option; replaced New Glowing Ores in 1.1, which 26.1 rejects as an old-format pack).
+Deliberately not used: the Fresh Animations *player* extension (overlaps Not Enough Animations), CozyUI+ (its HD modern style clashes with 16× blocks), full texture overhauls (to keep the vanilla look).
+
+## Menus (1.1)
+**Homestead GUI** (resource pack by kindabland, public alpha) themes the menus in wood and stone:
+* oak-plank buttons (lighter when highlighted, dark walnut when disabled);
+* a dark stone hotbar;
+* slate-and-gold toasts and advancement frames (item tooltips stay with Legendary Tooltips);
+* the recipe book, statistics and world and server lists.
+
+It sits **below Recolourful Containers**, which keeps drawing every container screen: Homestead GUI's own container
+textures are unfinished (the inventory and chest are themed, the crafting table and furnace are still grey). The walnut
+quest book, the Jade theme and the Electric Oven screen already use the matching wood palette.
+
+## Smooth animations (1.1)
+| What moves | Mod | Settings |
+|---|---|---|
+| Doors, gates, trapdoors, levers, buttons, lecterns, chests, cauldrons, composters; lanterns and chains sway | Fancy World Animations | `/fwaConfig` or Mod Menu |
+| Items glide between inventory slots (also when sorting) | Smooth Swapping | Mod Menu |
+| Scrolling in lists, chat, creative tabs and the hotbar | Smooth Scroll | Mod Menu |
+| New chunks fade in instead of popping up | Chunks Fade In | Mod Menu |
+| Placed blocks settle into place | A Good Place | switch off its built-in resource pack to disable |
+| Dropped items lie flat and tumble | ItemPhysic Lite | its config file (`config/itemphysic*`) |
+| The camera glides up stairs and slabs | Countered's Smooth Steps | Mod Menu |
+| Mobs and objects (Fresh Animations), first-person animations in third person (Not Enough Animations), eating, falling leaves, wakes | already in 1.0 | — |
+
+## Immersive nights (1.1)
+* **Without shaders:** Dramatic Skys' night sky and stars; lanterns and chains sway (FWA); fireflies over grass and
+  water (Particular); torches and lanterns light up around you when held (LambDynamicLights); mob eyes and glowing parts
+  shine in the dark (Fresh Animations Emissive); hostile mobs dig out of the ground or appear in a puff of smoke (Spawn
+  Animations); night-time ambience such as crickets and owls (AmbientSounds).
+* **With shaders**, the pack seeds night settings the first time you pick a shader (your own shader settings are never
+  overwritten, because YOSBR only copies a file that doesn't exist yet):
+  * *Complementary Reimagined*: northern lights on full-moon nights or in snowy biomes, galaxy nebulae, and moon-phase
+    lighting (a new moon is the darkest night).
+  * *Photon*: occasional northern lights anywhere, often in snowy biomes, and the Milky Way. Its night lighting already
+    follows the moon phase.
+* Not added on purpose: "true darkness" mods. They are built for horror and lock the brightness slider.
 
 ## Data packs (installed as Fabric mods so they apply to every world)
 Structory + Structory Towers (atmospheric ruins and towers by Terralith's authors) · Explorify (vanilla-friendly small structures) · Gardener's Dream (any plant in pots) · Remove Terralith Intro Message (no chat spam on join) · Snow Under Trees (winter snow under canopies; supports Serene Seasons).

@@ -29,6 +29,20 @@
 * **Physics Mod Pro** (your own file): copy your jar into the instance's `mods` folder. It isn't bundled and hasn't been tested with this pack; remove it first if you hit a crash.
 * **AI chat for residents** (MCA): off by default and not needed. If you want it, read MCA's wiki first, since it sends conversations to an external service.
 
+## If the game runs slowly
+The pack already ships the usual performance mods (Sodium, Lithium, C2ME, FerriteCore, ImmediatelyFast, Entity Culling,
+Particle Core and others), so try these in order:
+1. **Options → Video Settings**: lower *Render Distance* first (8–10 is plenty without Distant Horizons), then
+   *Simulation Distance*. Sodium's extra pages (Reese's Sodium Options) hold more switches.
+2. **Turn off what you added**: shaders and Distant Horizons cost the most.
+3. **Animations** can be toned down or switched off one by one in *Mod Menu*: Chunks Fade In, Fancy World
+   Animations (`/fwaConfig`), Smooth Swapping, A Good Place, Particular.
+4. **Find the cause**: run `/sparkc profiler start`, play for a minute, then `/sparkc profiler stop`. spark prints a link
+   to a report showing what is using the time.
+5. **Optional Java setting** (not tested on your PC): in Prism, open *Edit → Settings → Java → JVM arguments* and add
+   `-XX:+UseZGC`. On Java 25 this is the low-pause garbage collector, which can smooth out stutters. It uses a little more
+   memory, so set the maximum memory to 8192 MB with it. If anything gets worse, delete the line again.
+
 ## Updating
 Import the new `.mrpack` as a **new instance** and copy your world from `saves/` across. Back up first.
 

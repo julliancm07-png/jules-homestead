@@ -67,9 +67,20 @@ Use a **separate test world**. Tick each box; if something fails, note what you 
   - [ ] Spatial GUI panels are still readable;
   - [ ] note the FPS.
 - [ ] Without shaders, Dramatic Skys shows clouds and a sunset.
+- [ ] **Menus (1.1)**: title screen, Options and the pause menu show oak-plank buttons; the hotbar is dark stone; an
+  advancement toast is slate with a gold frame. Chests and the crafting table still use Recolourful's themed screens.
+- [ ] **Smooth animations (1.1)**:
+  - [ ] a door, a fence gate and a trapdoor swing open instead of snapping; a hanging lantern sways;
+  - [ ] items glide when you shift-click or sort an inventory;
+  - [ ] newly loaded chunks fade in while you fly or ride; placed blocks settle into place;
+  - [ ] dropped items lie flat on the ground; walking up stairs feels smooth.
+- [ ] **Nights (1.1)**: at night, look for fireflies by grass or water, glowing spider and enderman eyes, and zombies
+  digging out of the ground. With Complementary Reimagined, check for northern lights on a full moon or in a snowy biome.
 
 ## 8. Performance
 - [ ] Baseline preset (`docs/presets.md`): record FPS at the homestead during clear weather and in a severity-3 blizzard.
 - [ ] Memory: F3 shows heap use under about 80% of the allocation after 10 minutes.
+- [ ] World loading (1.1, C2ME + Ksyxis): note how long a new world takes from *Create* to standing in it, and that
+  exploring new land on foot or by boat does not stutter.
 - [ ] Optional: Complementary Reimagined (cinematic) and Distant Horizons: record FPS and stability.
 - [ ] Optional: Physics Mod Pro (your file). Start-up, a blizzard and breaking blocks all still work.
