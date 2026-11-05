@@ -37,6 +37,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.LightLayer;
+import net.minecraft.world.level.gamerules.GameRules;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ChestBlock;
@@ -144,7 +145,7 @@ public class HomesteadGameTests {
 	 * Establishes (with real Spoiled loaded): a vanilla chest's food starts spoiling (control); a powered fridge's
 	 * food does not; an unpowered fridge stays cold for the retention window, then its food starts spoiling.
 	 */
-	@GameTest(maxTicks = 600)
+	@GameTest(maxTicks = 1200) // Spoiled starts spoiling a container on its own schedule; leave headroom
 	public void refrigeratorPreservesOnlyWhilePowered(GameTestHelper h) {
 		HomesteadConfig.get().appliances.refrigeratorColdRetentionTicks = 60;
 		floor(h, 6);
@@ -371,7 +372,7 @@ public class HomesteadGameTests {
 
 	/**
 	 * Establishes (own batch): snow build-up rules (open natural ground gains layers up to the cap; no snow under a
-	 * roof or on no_snow_accumulation blocks such as farmland), live blizzard accumulation around an exposed player,
+	 * roof or on no_snow_accumulation blocks such as farmland and hay), live blizzard accumulation around an exposed player,
 	 * blizzard slowdown = blizzardSlowdown × intensity, the caught_in_blizzard advancement, and safe_and_warm after
 	 * 60 s sheltered during the blizzard.
 	 */
@@ -382,6 +383,11 @@ public class HomesteadGameTests {
 		HomesteadConfig.Weather cfg = HomesteadConfig.get().weather;
 		int oldRadius = cfg.snowAccumulationRadius;
 		int oldAttempts = cfg.snowAccumulationAttemptsPerSecond;
+		// Vanilla snowfall also lays single snow layers (on full blocks such as hay). Switch it off for this test so every
+		// layer observed below comes from homestead-core's build-up.
+		var rules = level.getGameRules();
+		int oldVanillaSnow = rules.get(GameRules.MAX_SNOW_ACCUMULATION_HEIGHT);
+		rules.set(GameRules.MAX_SNOW_ACCUMULATION_HEIGHT, 0, server);
 		floor(h, 7);
 		String oldBiome = fillBiome(h, 7, "minecraft:snowy_plains");
 		h.assertValueEqual(Exposure.precipitationAt(level, h.absolutePos(new BlockPos(3, 1, 3))), Biome.Precipitation.SNOW, "precondition: it snows here");
@@ -403,9 +409,10 @@ public class HomesteadGameTests {
 		h.assertTrue(!WeatherManager.tryAddSnowLayer(level, h.absolutePos(new BlockPos(0, 1, 6)), cap), "no snow under a roof");
 		h.setBlock(open, Blocks.AIR);
 		h.setBlock(0, 3, 6, Blocks.AIR);
-		// Control row of farmland along z = 6 for the live accumulation check.
+		// Control row along z = 6 for the live accumulation check: hay bales (no_snow_accumulation). Not farmland: dry
+		// farmland turns back into dirt on random ticks, and snow then (correctly) settles on the dirt.
 		for (int x = 0; x < 7; x++) {
-			h.setBlock(x, 0, 6, Blocks.FARMLAND);
+			h.setBlock(x, 0, 6, Blocks.HAY_BLOCK);
 		}
 
 		// Live blizzard: keep accumulation inside the 7x7 test area and make it frequent enough to observe.
@@ -414,8 +421,10 @@ public class HomesteadGameTests {
 		ServerPlayer p = survivalPlayer(h, new Vec3(3.5, 1, 3.5));
 		long[] shelteredAt = {0};
 		WeatherManager.startNow(server, Front.Kind.BLIZZARD, 3000, 3);
+		// Snow only builds up above intensity 0.2 (reached ~90 ticks into the 450-tick ramp), in passes every 20 ticks:
+		// by tick 200 several passes have run at ~0.3-0.45 intensity, so the area check below is not timing-sensitive.
 		h.startSequence()
-				.thenIdle(100)
+				.thenIdle(200)
 				.thenExecute(() -> {
 					WeatherManager.PlayerWeather st = WeatherManager.playerState(p.getUUID());
 					h.assertTrue(st.blizzardExposure(), "player in the open counts as blizzard-exposed (" + st + ")");
@@ -431,7 +440,7 @@ public class HomesteadGameTests {
 								snowy++;
 							}
 						}
-						h.assertTrue(!h.getBlockState(new BlockPos(x, 1, 6)).is(Blocks.SNOW), "no snow on the farmland row at x=" + x);
+						h.assertTrue(!h.getBlockState(new BlockPos(x, 1, 6)).is(Blocks.SNOW), "no snow on the hay-bale row at x=" + x);
 					}
 					h.assertTrue(snowy > 0, "snow accumulated on open ground around the player (" + snowy + " columns)");
 					hut(h);
@@ -453,6 +462,7 @@ public class HomesteadGameTests {
 				.thenExecute(() -> {
 					cfg.snowAccumulationRadius = oldRadius;
 					cfg.snowAccumulationAttemptsPerSecond = oldAttempts;
+					rules.set(GameRules.MAX_SNOW_ACCUMULATION_HEIGHT, oldVanillaSnow, server);
 					server.getPlayerList().remove(p);
 					fillBiome(h, 7, oldBiome);
 				})

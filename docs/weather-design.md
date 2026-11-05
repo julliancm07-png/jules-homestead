@@ -17,7 +17,7 @@ No Fabric mod at any Minecraft version provides gameplay blizzards/storms (see `
 | Cold exposure | Exposed during a blizzard: extra Thermoo temperature loss per tick, scaled by intensity, through Thermoo's `environment` source so Frostiful resistances (fur armour, etc.) apply. | Integration |
 | Travel | Exposed during a front: movement-speed modifier (blizzard −25%×intensity, storm −10%×intensity), removed when sheltered. Horses/boats unaffected. | Simplified |
 | Visibility | Client: dense fog when exposed in a blizzard (`fogStrength` config), extra snow particles; Immersive Storms adds its own snowy/sandy fog under thunder. | Visual |
-| World changes | Default: **snow-layer accumulation** on exposed natural ground near players during blizzards (max 2 layers, never on farmland/crops/paths/player blocks list). Crop damage, block breaking, fire: **off by default** and not implemented beyond config stubs. | Conservative |
+| World changes | Default: **snow-layer accumulation** on exposed natural ground near players during blizzards (max 2 layers; homestead-core never adds layers on the `homesteadcore:no_snow_accumulation` list: farmland, crops, paths, rails, hay, carpets, beds, fences, walls, slabs, stairs, glass, trapdoors, campfires and cooktops. Vanilla snowfall still lays its usual single layer on full blocks such as hay; set the vanilla game rule `max_snow_accumulation_height` to 0 to stop that too). Crop damage, block breaking, fire: **off by default** and not implemented beyond config stubs. | Conservative |
 
 ## Protection
 * **Buildings**: any roofed space whose windward side is closed counts as shelter.

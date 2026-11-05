@@ -1,4 +1,4 @@
-# Status (2026-11-05)
+# Status (2026-11-05, version 1.0.0)
 
 Legend: **R** researched · **I** implemented · **C** compiled · **T** runtime-tested in the cloud · **L** awaiting local verification on Jules' PC.
 "T" names exactly what the test showed; cloud tests use a headless server and a software-rendered client (Mesa llvmpipe under Xvfb, no sound, no player input).
@@ -30,7 +30,8 @@ Legend: **R** researched · **I** implemented · **C** compiled · **T** runtime
 | Refrigerator preserves only while powered (real Spoiled) | T | GameTest `refrigeratorPreservesOnlyWhilePowered` (chest control spoils; warm fridge spoils; powered fridge doesn't) |
 | Electric range: FD heat-source LIT gate, oven pause on outage, residual heat | T | GameTest `electricRangeOvenAndCooktop`; FD tag gating verified in FD source |
 | Space heater power + demand + light + warm radius | T | GameTest `spaceHeaterRunsOnPowerAndDemand` |
-| Weather advancements for quests (witness_front, caught_in_blizzard, safe_and_warm after 60 s sheltered) | T | the two weather-exposure GameTests (10/10 GameTests pass, repeated runs) |
+| Weather advancements for quests (witness_front, caught_in_blizzard, safe_and_warm after 60 s sheltered) | T | the two weather-exposure GameTests (10/10 GameTests pass in 10 consecutive runs, also under load) |
+| Electric Oven screen (walnut/cream appliance area) | T (renders) | `showcase-range.png` |
 | Spoiled dedicated-server cache workaround | T | GameTest control chest spoils only with the fix |
 | Serene Seasons singleplayer recursion fix | T | Client smoke test crashed without it (StackOverflowError) and passes with it |
 
@@ -39,7 +40,7 @@ Legend: **R** researched · **I** implemented · **C** compiled · **T** runtime
 |---|---|---|
 | Configs (seasons, temperature, spoilage, MCA, homestead) | T (load) / L (balance) | parsed by mods in the server boot; `check_content.py` |
 | Pack data module (seasonal crop tags, EP controller removal) | T | registry dump: EP weather/time controller recipes absent |
-| Quest book: 9 chapters, 104 quests, 85 auto-detected | T (load + references) / L (play-through) | FTB log "Loaded 1 chapter groups, 9 chapters, 104 quests" (server and integrated server); `check_content.py` 0 errors |
+| Quest book: 9 chapters, 104 quests, 85 auto-detected (incl. town-power energy task) | T (load + references) / L (play-through; filling the Task Screen with energy) | FTB log "Loaded 1 chapter groups, 9 chapters, 104 quests" (server and integrated server); `check_content.py` 0 errors |
 | Residents (MCA), market, requests | T (load) / L | |
 | Create (optional, Create Fly) | R · L | dependency-checked only; excluded from the cloud boots |
 
@@ -60,10 +61,18 @@ Legend: **R** researched · **I** implemented · **C** compiled · **T** runtime
 * Wilder Wild: removed (registry-load race with Terralith). See docs/compatibility.md.
 * CurseForge API and site are blocked by this environment's egress proxy (HTTP 403). CurseForge facts came from WebFetch and the CFWidget mirror (marked secondary).
 
-## Finish-up plan
-1. ~~Spatial GUI~~ — done: added (client-only mod, works alongside Recolourful Containers), verified in the showcase run.
-2. ~~Re-run showcase~~ — done: IPN slot icons gone; Camera Overhaul config applied.
-3. ~~GameTests for slowdown, snow build-up, weather advancements~~ — done (10 GameTests).
-4. Optional quest: town power via FTB's `tech_reborn_energy` task.
-5. Release pass: bump to 1.0.0, run the full pipeline (resolve → validate → build_local → quests → check_content → package → mrpack_install → server_test → client normal/blizzard/showcase/title), counts consistent across README/STATUS.
-6. Delivery: get the `.mrpack` to Jules (a GitHub release asset or a committed `dist/` file; ask first).
+## 1.0.0 release pass (2026-11-05)
+Pipeline run on the final build:
+1. `build_local`: GameTests 10/10.
+2. `resolve`: 158 files.
+3. `validate`: 137 mod jars, 0 errors.
+4. `build_quests`: 104 quests.
+5. `check_content`: 0 errors.
+6. `package`: `JulesHomestead-1.0.0.mrpack`, 156 downloads + 2 local, 6726 KiB.
+7. `server_test`: booted in 39 s; FTB loaded 104 quests.
+8. Client scenarios **normal / blizzard / showcase / title: all PASS**, 260 mods. After the oven-screen restyle, the showcase was re-run and passed again.
+
+## Next (after Jules' local test)
+1. Run `docs/test-checklist.md` on the real PC and feed back the results.
+2. Balance pass (energy, spoilage, cold) from play-testing.
+3. Appliance models and the turbine rotor (see known-limitations).
