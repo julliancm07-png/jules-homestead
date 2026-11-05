@@ -1,0 +1,333 @@
+{
+  "id": "4300F665BAF88D9D",
+  "group": "",
+  "order_index": 7,
+  "filename": "08_established_community",
+  "icon": {
+    "id": "minecraft:bell",
+    "count": 1
+  },
+  "default_quest_shape": "",
+  "default_hide_dependency_lines": false,
+  "quests": [
+    {
+      "id": "5B7B9B554B147430",
+      "x": 0.0,
+      "y": 0.0,
+      "dependencies": [
+        "59221EE2AB41787E"
+      ],
+      "tasks": [
+        {
+          "id": "1B4EDA16603C7CB3",
+          "type": "advancement",
+          "advancement": "mca:noble",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "5B5E1683BEA2F621",
+          "type": "item",
+          "item": {
+            "id": "minecraft:emerald",
+            "count": 1
+          },
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": "3AF76736989EBDE8",
+      "x": 2.0,
+      "y": -2.0,
+      "icon": {
+        "id": "minecraft:bread",
+        "count": 1
+      },
+      "dependencies": [
+        "5B7B9B554B147430"
+      ],
+      "tasks": [
+        {
+          "id": "3829CE91BBBC7D71",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "4F3DF010C5E9C962",
+          "type": "item",
+          "item": {
+            "id": "farmersdelight:wheat_dough",
+            "count": 1
+          },
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": "018E93FD0CED6DBB",
+      "x": 2.0,
+      "y": 0.0,
+      "icon": {
+        "id": "minecraft:cake",
+        "count": 1
+      },
+      "dependencies": [
+        "5B7B9B554B147430"
+      ],
+      "tasks": [
+        {
+          "id": "6FA93C6DEBFBAF4F",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "27E9840412CE235B",
+          "type": "item",
+          "item": {
+            "id": "minecraft:emerald",
+            "count": 1
+          },
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": "4E5023048A98B9BD",
+      "x": 2.0,
+      "y": 2.0,
+      "icon": {
+        "id": "minecraft:bell",
+        "count": 1
+      },
+      "dependencies": [
+        "5B7B9B554B147430"
+      ],
+      "tasks": [
+        {
+          "id": "33440FD87CCA0488",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "4EB6A6B55D4890B4",
+          "type": "item",
+          "item": {
+            "id": "minecraft:emerald",
+            "count": 1
+          },
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": "22DD49996432D6F7",
+      "x": 4.0,
+      "y": -2.0,
+      "optional": true,
+      "dependencies": [
+        "018E93FD0CED6DBB"
+      ],
+      "tasks": [
+        {
+          "id": "20BA67AD1C326DA3",
+          "type": "advancement",
+          "advancement": "mca:marriage",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "14472EDED58D4F08",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "0EADCD0C7D602722",
+      "x": 4.0,
+      "y": 0.0,
+      "dependencies": [
+        "3AF76736989EBDE8",
+        "018E93FD0CED6DBB",
+        "4E5023048A98B9BD"
+      ],
+      "tasks": [
+        {
+          "id": "5EC4B9DDE1C71B00",
+          "type": "advancement",
+          "advancement": "mca:mayor",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "52D9604B19F31D23",
+          "type": "item",
+          "item": {
+            "id": "minecraft:emerald",
+            "count": 1
+          },
+          "count": 12
+        },
+        {
+          "id": "7E319A57ACF921CF",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    },
+    {
+      "id": "0899720CE0A49AA9",
+      "x": 6.0,
+      "y": -1.0,
+      "dependencies": [
+        "0EADCD0C7D602722"
+      ],
+      "tasks": [
+        {
+          "id": "6CDD0DE264836E43",
+          "type": "item",
+          "item": {
+            "id": "energizedpower:advanced_battery_box",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "494B146F4AF3B9C1",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "274826221A96EE94",
+      "x": 6.0,
+      "y": 1.0,
+      "dependencies": [
+        "0EADCD0C7D602722"
+      ],
+      "tasks": [
+        {
+          "id": "6C5EBA05166D5850",
+          "type": "item",
+          "item": {
+            "id": "farmersdelight:potato_crate",
+            "count": 1
+          },
+          "count": 4
+        },
+        {
+          "id": "55A7301855870624",
+          "type": "item",
+          "item": {
+            "id": "farmersdelight:carrot_crate",
+            "count": 1
+          },
+          "count": 4
+        },
+        {
+          "id": "274ED3F2FB7A3E03",
+          "type": "item",
+          "item": {
+            "id": "farmersdelight:rice_bale",
+            "count": 1
+          },
+          "count": 4
+        },
+        {
+          "id": "25961E719D5F5ED2",
+          "type": "item",
+          "item": {
+            "id": "farmersdelight:onion_crate",
+            "count": 1
+          },
+          "count": 4
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2CDEBB381466876D",
+          "type": "item",
+          "item": {
+            "id": "minecraft:emerald",
+            "count": 1
+          },
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": "004D98D8AAFF65E8",
+      "x": 8.0,
+      "y": -1.0,
+      "icon": {
+        "id": "waystones:andesite_waystone",
+        "count": 1
+      },
+      "dependencies": [
+        "0899720CE0A49AA9"
+      ],
+      "tasks": [
+        {
+          "id": "104436532D3E3994",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "74182C3F5451EEA6",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "619A430C14C66B19",
+      "x": 8.0,
+      "y": 1.0,
+      "icon": {
+        "id": "minecraft:golden_helmet",
+        "count": 1
+      },
+      "preset": "goal",
+      "dependencies": [
+        "274826221A96EE94"
+      ],
+      "tasks": [
+        {
+          "id": "2A7C393EAFD0D4E3",
+          "type": "advancement",
+          "advancement": "mca:monarch",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "79D26E3EF61D69AD",
+          "type": "item",
+          "item": {
+            "id": "minecraft:emerald",
+            "count": 1
+          },
+          "count": 20
+        },
+        {
+          "id": "0B50D50BCB08AEC0",
+          "type": "xp",
+          "xp": 400
+        }
+      ]
+    }
+  ],
+  "quest_links": [],
+  "images": []
+}

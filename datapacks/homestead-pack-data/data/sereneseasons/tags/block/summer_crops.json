@@ -26,10 +26,6 @@
       "required": false
     },
     {
-      "id": "ubesdelight:lemongrass_crop",
-      "required": false
-    },
-    {
       "id": "ubesdelight:lemongrass_stalk_crop",
       "required": false
     },
@@ -55,6 +51,10 @@
     },
     {
       "id": "rusticdelight:coffee",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:tomatoes_on_rope",
       "required": false
     }
   ]

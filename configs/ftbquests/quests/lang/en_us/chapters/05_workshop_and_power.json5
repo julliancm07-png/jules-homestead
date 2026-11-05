@@ -1,0 +1,62 @@
+{
+  "chapter.57BFE2BF7CC71730.title": "Workshop & Power",
+  "chapter.57BFE2BF7CC71730.chapter_subtitle": [
+    "Renewable electricity: solar, water and wind, batteries and hidden wiring."
+  ],
+  "quest.6C9CBDE32EA5602C.title": "How Power Works Here",
+  "quest.6C9CBDE32EA5602C.quest_desc": [
+    "Every machine in this pack uses one kind of energy, measured in E (Team Reborn Energy). Energized Power provides solar panels, batteries, cables and machines. Homestead Core adds wind, water and household appliances.",
+    "",
+    "Solar follows daylight and loses most of its output under rain, thunder and at night.",
+    "A water wheel only turns in FLOWING water: 3 E/t for each flowing side. Still water and ice give nothing.",
+    "A wind turbine needs open sky and space around it, and does best high up. It generates from 3 m/s of wind, reaches full output (12 E/t) at 12 m/s, and shuts down above 25 m/s to protect itself.",
+    "",
+    "Batteries carry you through nights and storms. Appliances accept power from every side, so you can hide cables behind walls and under floors."
+  ],
+  "task.3F54997173BCB431.title": "Got it",
+  "quest.4D951074C939DE8E.title": "Tin Country",
+  "quest.4D951074C939DE8E.quest_desc": [
+    "Tin ore generates underground like copper. Smelt it into tin ingots."
+  ],
+  "quest.79BDC1E24E2FD187.title": "Hammer Time",
+  "quest.79BDC1E24E2FD187.quest_desc": [
+    "Hammer ingots into plates at the crafting table (the hammer takes damage)."
+  ],
+  "task.1CF36608B08B3870.title": "Craft a hammer",
+  "quest.3736EF8540144B57.title": "Plates and Wire",
+  "quest.217C5FC82106D869.title": "Basic Circuits",
+  "quest.2F144FBF4B32A61F.title": "Machine Frame",
+  "quest.439B6CF97CF2AC90.title": "Sunlight",
+  "quest.439B6CF97CF2AC90.quest_desc": [
+    "Small but free. Several Tier I panels add up."
+  ],
+  "quest.40928C6F8F2827F9.title": "Running Water",
+  "quest.40928C6F8F2827F9.quest_desc": [
+    "Place it beside a stream or a water channel with real flow. Sneak-use it to see how many sides are getting flow."
+  ],
+  "quest.3A033A91B6A5AB0E.title": "Coal Engine",
+  "quest.3A033A91B6A5AB0E.quest_desc": [
+    "Burns furnace fuel. A dependable backup when it's dark and calm."
+  ],
+  "quest.243ECE1A8B7891E7.title": "First Spark",
+  "quest.243ECE1A8B7891E7.quest_desc": [
+    "A battery box stores 65,536 E. Connect your generator to it, then the battery to your machines."
+  ],
+  "quest.582EEB8064385410.title": "Hidden Wiring",
+  "quest.582EEB8064385410.quest_desc": [
+    "Tin cable carries 128 E/t and copper 1,024 E/t. Run cables through a one-block cavity inside a wall or under the floor and cover them; appliances take power from their back and bottom."
+  ],
+  "quest.370AEA12AD9D69A3.title": "Wind Turbine",
+  "quest.370AEA12AD9D69A3.quest_desc": [
+    "Put it on a hill or a tower with plenty of air around it. Sneak-use it to read wind speed, output and exposure.",
+    "Storms raise the wind, which offsets their effect on solar. In extreme gusts the turbine shuts down, so pair it with batteries."
+  ],
+  "quest.71EBC7A5E5823D0E.title": "Measure Twice",
+  "quest.587D1F8E78F6A825.title": "More Sun",
+  "quest.62B0E4442871E783.title": "Off the Grid",
+  "quest.62B0E4442871E783.quest_desc": [
+    "A winter night with a fridge, a heater and a few lamps needs roughly 170,000 E. That's about three battery boxes charged by day.",
+    "Mixing generators is the reliable answer: sun by day, wind in storms, water all year until it freezes."
+  ],
+  "task.73774ECE73779A1C.title": "Tick when the lights stay on through a night and a storm"
+}

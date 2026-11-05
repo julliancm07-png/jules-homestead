@@ -1,0 +1,356 @@
+{
+  "id": "423DA8E0E9639625",
+  "group": "",
+  "order_index": 2,
+  "filename": "03_weather_wise",
+  "icon": {
+    "id": "homesteadcore:barometer",
+    "count": 1
+  },
+  "default_quest_shape": "",
+  "default_hide_dependency_lines": false,
+  "quests": [
+    {
+      "id": "18F63CD151510129",
+      "x": 0.0,
+      "y": 0.0,
+      "icon": {
+        "id": "minecraft:lightning_rod",
+        "count": 1
+      },
+      "preset": "info",
+      "dependencies": [
+        "07B1E75474678B7C"
+      ],
+      "tasks": [
+        {
+          "id": "61A11546590864A2",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "35CA19792D9E640C",
+          "type": "xp",
+          "xp": 20
+        }
+      ]
+    },
+    {
+      "id": "7FAA1D0B1D745207",
+      "x": 2.0,
+      "y": 0.0,
+      "dependencies": [
+        "18F63CD151510129"
+      ],
+      "tasks": [
+        {
+          "id": "159AD4F8D938C3F4",
+          "type": "item",
+          "item": {
+            "id": "homesteadcore:barometer",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "11A09A70CB640536",
+          "type": "item",
+          "item": {
+            "id": "minecraft:copper_ingot",
+            "count": 1
+          },
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "402AF94CAA1D81A3",
+      "x": 4.0,
+      "y": -1.0,
+      "dependencies": [
+        "7FAA1D0B1D745207"
+      ],
+      "tasks": [
+        {
+          "id": "4313B2A6DD101B1A",
+          "type": "advancement",
+          "advancement": "frostiful:adventure/craft_any_fur_armor",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "0FCB5CBBAA95F246",
+          "type": "item",
+          "item": {
+            "id": "minecraft:leather",
+            "count": 1
+          },
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "111EF6B21AD9B943",
+      "x": 4.0,
+      "y": 1.0,
+      "dependencies": [
+        "7FAA1D0B1D745207"
+      ],
+      "tasks": [
+        {
+          "id": "28840DB35D9B499A",
+          "type": "advancement",
+          "advancement": "frostiful:adventure/add_log_to_campfire",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "1C858828E5CF6BC3",
+          "type": "item",
+          "item": {
+            "id": "minecraft:charcoal",
+            "count": 1
+          },
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": "69CE9488F7916F74",
+      "x": 6.0,
+      "y": 0.0,
+      "dependencies": [
+        "402AF94CAA1D81A3",
+        "111EF6B21AD9B943"
+      ],
+      "tasks": [
+        {
+          "id": "413B44DB1579BC55",
+          "type": "advancement",
+          "advancement": "homesteadcore:weather/witness_front",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "45E99AD73076F47D",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "6DA76D317FBB18C8",
+      "x": 8.0,
+      "y": -1.0,
+      "optional": true,
+      "dependencies": [
+        "69CE9488F7916F74"
+      ],
+      "tasks": [
+        {
+          "id": "5E7AE9DDD3B57154",
+          "type": "advancement",
+          "advancement": "homesteadcore:weather/caught_in_blizzard",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "208EC1498668601E",
+          "type": "item",
+          "item": {
+            "id": "minecraft:cooked_beef",
+            "count": 1
+          },
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "766B2D32E386DA6E",
+      "x": 8.0,
+      "y": 1.0,
+      "dependencies": [
+        "69CE9488F7916F74"
+      ],
+      "tasks": [
+        {
+          "id": "0BFB3A367525931F",
+          "type": "advancement",
+          "advancement": "homesteadcore:weather/safe_and_warm",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "710A2E5712ABE06F",
+          "type": "item",
+          "item": {
+            "id": "minecraft:emerald",
+            "count": 1
+          },
+          "count": 3
+        },
+        {
+          "id": "6CB117D7BA51D593",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    },
+    {
+      "id": "28040E658C220AD0",
+      "x": 2.0,
+      "y": 2.0,
+      "dependencies": [
+        "7FAA1D0B1D745207"
+      ],
+      "tasks": [
+        {
+          "id": "19AFD6B1AD3DFA98",
+          "type": "item",
+          "item": {
+            "id": "minecraft:barrel",
+            "count": 1
+          },
+          "count": 4
+        }
+      ],
+      "rewards": [
+        {
+          "id": "37E007E6B413C085",
+          "type": "item",
+          "item": {
+            "id": "farmersdelight:potato_crate",
+            "count": 1
+          },
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "258234875978E3EC",
+      "x": 4.0,
+      "y": 3.0,
+      "dependencies": [
+        "28040E658C220AD0"
+      ],
+      "tasks": [
+        {
+          "id": "4412613EB3D137B4",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "077A8850286855AF",
+          "type": "item",
+          "item": {
+            "id": "minecraft:glass",
+            "count": 1
+          },
+          "count": 16
+        }
+      ]
+    },
+    {
+      "id": "4DB8CAF38AC43410",
+      "x": 6.0,
+      "y": 3.0,
+      "optional": true,
+      "dependencies": [
+        "28040E658C220AD0"
+      ],
+      "tasks": [
+        {
+          "id": "04D7FDE18E3E0092",
+          "type": "item",
+          "item": {
+            "id": "scorchful:sun_hat",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "33E46E24A96D3132",
+          "type": "item",
+          "item": {
+            "id": "scorchful:water_skin",
+            "count": 1
+          },
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "71C12FE93D05E2E2",
+      "x": 10.0,
+      "y": -1.0,
+      "optional": true,
+      "dependencies": [
+        "6DA76D317FBB18C8"
+      ],
+      "tasks": [
+        {
+          "id": "37DC3B0DCF1C6AE4",
+          "type": "advancement",
+          "advancement": "frostiful:adventure/obtain_ice_skates",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "07F58B228438C8CF",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "298BC269A1DFEDBE",
+      "x": 10.0,
+      "y": 1.0,
+      "icon": {
+        "id": "frostiful:fur_chestplate",
+        "count": 1
+      },
+      "preset": "goal",
+      "dependencies": [
+        "766B2D32E386DA6E",
+        "258234875978E3EC"
+      ],
+      "tasks": [
+        {
+          "id": "4064ED660844F95B",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "358EB937F5CC63F9",
+          "type": "item",
+          "item": {
+            "id": "minecraft:emerald",
+            "count": 1
+          },
+          "count": 5
+        },
+        {
+          "id": "05B823165C131307",
+          "type": "xp",
+          "xp": 120
+        }
+      ]
+    }
+  ],
+  "quest_links": [],
+  "images": []
+}

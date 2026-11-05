@@ -1,0 +1,436 @@
+{
+  "id": "30B33F4EA1FC7FA8",
+  "group": "",
+  "order_index": 6,
+  "filename": "07_neighbours_and_market",
+  "icon": {
+    "id": "farmingforblockheads:market",
+    "count": 1
+  },
+  "default_quest_shape": "",
+  "default_hide_dependency_lines": false,
+  "quests": [
+    {
+      "id": "0445EE409408AD07",
+      "x": 0.0,
+      "y": 0.0,
+      "icon": {
+        "id": "mca:blueprint",
+        "count": 1
+      },
+      "preset": "info",
+      "dependencies": [
+        "2B9A4BB4235D8398"
+      ],
+      "tasks": [
+        {
+          "id": "56664A1EAC83681F",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "7500927DA6994333",
+          "type": "xp",
+          "xp": 20
+        }
+      ]
+    },
+    {
+      "id": "1494108F3E4FE6C7",
+      "x": 2.0,
+      "y": 0.0,
+      "dependencies": [
+        "0445EE409408AD07"
+      ],
+      "tasks": [
+        {
+          "id": "7A02622C740F9DD3",
+          "type": "item",
+          "item": {
+            "id": "mca:blueprint",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "3320405A134A7BF1",
+          "type": "item",
+          "item": {
+            "id": "minecraft:paper",
+            "count": 1
+          },
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": "2ACB4D2FB99B8007",
+      "x": 4.0,
+      "y": -1.0,
+      "dependencies": [
+        "1494108F3E4FE6C7"
+      ],
+      "tasks": [
+        {
+          "id": "6D35DDF097376B96",
+          "type": "advancement",
+          "advancement": "mca:friend",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "5D69749ACDC231BD",
+          "type": "item",
+          "item": {
+            "id": "mca:bouquet",
+            "count": 1
+          },
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "52B47A6BCAE565BD",
+      "x": 4.0,
+      "y": 1.0,
+      "icon": {
+        "id": "minecraft:red_bed",
+        "count": 1
+      },
+      "dependencies": [
+        "1494108F3E4FE6C7"
+      ],
+      "tasks": [
+        {
+          "id": "02A41CD89BF07BFB",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "33152FC30BB20916",
+          "type": "item",
+          "item": {
+            "id": "minecraft:emerald",
+            "count": 1
+          },
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "6B2F50D2158544AD",
+      "x": 6.0,
+      "y": -1.0,
+      "dependencies": [
+        "2ACB4D2FB99B8007"
+      ],
+      "tasks": [
+        {
+          "id": "04BF215105328529",
+          "type": "item",
+          "item": {
+            "id": "farmingforblockheads:market",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "3FB84F62521932AE",
+          "type": "item",
+          "item": {
+            "id": "minecraft:emerald",
+            "count": 1
+          },
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "27678F6D64A7FA5F",
+      "x": 6.0,
+      "y": 1.0,
+      "dependencies": [
+        "52B47A6BCAE565BD"
+      ],
+      "tasks": [
+        {
+          "id": "162B02258506BEB6",
+          "type": "item",
+          "item": {
+            "id": "farmingforblockheads:shipping_bin",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "642A3BC0DA15DBE1",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "59221EE2AB41787E",
+      "x": 8.0,
+      "y": 0.0,
+      "dependencies": [
+        "6B2F50D2158544AD",
+        "27678F6D64A7FA5F"
+      ],
+      "tasks": [
+        {
+          "id": "573C7A3D679F706F",
+          "type": "advancement",
+          "advancement": "mca:merchant",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "4B4544BAA4BC4F61",
+          "type": "item",
+          "item": {
+            "id": "minecraft:emerald",
+            "count": 1
+          },
+          "count": 6
+        },
+        {
+          "id": "64E3CFFFDFB84324",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "53BF84832FCDD018",
+      "x": 10.0,
+      "y": -2.0,
+      "icon": {
+        "id": "minecraft:bread",
+        "count": 1
+      },
+      "can_repeat": true,
+      "repeat_cooldown": 1200,
+      "dependencies": [
+        "59221EE2AB41787E"
+      ],
+      "tasks": [
+        {
+          "id": "576AA8D9B5C7E6B3",
+          "type": "item",
+          "item": {
+            "id": "minecraft:bread",
+            "count": 1
+          },
+          "count": 32,
+          "consume_items": true
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6FCF17301FF4B498",
+          "type": "item",
+          "item": {
+            "id": "minecraft:emerald",
+            "count": 1
+          },
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "363B1E32DBBE612A",
+      "x": 10.0,
+      "y": -1.0,
+      "icon": {
+        "id": "minecraft:charcoal",
+        "count": 1
+      },
+      "can_repeat": true,
+      "repeat_cooldown": 1200,
+      "dependencies": [
+        "59221EE2AB41787E"
+      ],
+      "tasks": [
+        {
+          "id": "51E585FF56D21214",
+          "type": "item",
+          "item": {
+            "id": "minecraft:charcoal",
+            "count": 1
+          },
+          "count": 32,
+          "consume_items": true
+        }
+      ],
+      "rewards": [
+        {
+          "id": "7C67636641C46E19",
+          "type": "item",
+          "item": {
+            "id": "minecraft:emerald",
+            "count": 1
+          },
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "66658BC626BB2A8F",
+      "x": 10.0,
+      "y": 0.0,
+      "icon": {
+        "id": "farmersdelight:cabbage_crate",
+        "count": 1
+      },
+      "can_repeat": true,
+      "repeat_cooldown": 1200,
+      "dependencies": [
+        "59221EE2AB41787E"
+      ],
+      "tasks": [
+        {
+          "id": "2C669B492A8F675C",
+          "type": "item",
+          "item": {
+            "id": "farmersdelight:cabbage_crate",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": true
+        },
+        {
+          "id": "6EA4F041287313D1",
+          "type": "item",
+          "item": {
+            "id": "farmersdelight:carrot_crate",
+            "count": 1
+          },
+          "count": 2,
+          "consume_items": true
+        }
+      ],
+      "rewards": [
+        {
+          "id": "37353283501ADC86",
+          "type": "item",
+          "item": {
+            "id": "minecraft:emerald",
+            "count": 1
+          },
+          "count": 6
+        }
+      ]
+    },
+    {
+      "id": "61B8467B91D3162C",
+      "x": 10.0,
+      "y": 1.0,
+      "icon": {
+        "id": "minecraft:white_wool",
+        "count": 1
+      },
+      "can_repeat": true,
+      "repeat_cooldown": 1200,
+      "dependencies": [
+        "59221EE2AB41787E"
+      ],
+      "tasks": [
+        {
+          "id": "582E9229DC8B8F60",
+          "type": "item",
+          "item": {
+            "id": "minecraft:white_wool",
+            "count": 1
+          },
+          "count": 16,
+          "consume_items": true
+        }
+      ],
+      "rewards": [
+        {
+          "id": "58008BF4AAF0F61E",
+          "type": "item",
+          "item": {
+            "id": "minecraft:emerald",
+            "count": 1
+          },
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "32009813169BC651",
+      "x": 10.0,
+      "y": 2.0,
+      "icon": {
+        "id": "farmersdelight:vegetable_soup",
+        "count": 1
+      },
+      "can_repeat": true,
+      "repeat_cooldown": 1200,
+      "dependencies": [
+        "59221EE2AB41787E"
+      ],
+      "tasks": [
+        {
+          "id": "6D6CC7ECEF64BED3",
+          "type": "item",
+          "item": {
+            "id": "farmersdelight:vegetable_soup",
+            "count": 1
+          },
+          "count": 6,
+          "consume_items": true
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2FC0F187C29C4137",
+          "type": "item",
+          "item": {
+            "id": "minecraft:emerald",
+            "count": 1
+          },
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": "0A6DF3419C4DC22B",
+      "x": 12.0,
+      "y": 0.0,
+      "optional": true,
+      "dependencies": [
+        "59221EE2AB41787E"
+      ],
+      "tasks": [
+        {
+          "id": "7BEBD3D140EECE9C",
+          "type": "advancement",
+          "advancement": "mca:chores",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "5F413C908636E3A2",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    }
+  ],
+  "quest_links": [],
+  "images": []
+}

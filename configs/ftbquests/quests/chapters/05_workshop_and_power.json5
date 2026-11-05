@@ -1,0 +1,444 @@
+{
+  "id": "57BFE2BF7CC71730",
+  "group": "",
+  "order_index": 4,
+  "filename": "05_workshop_and_power",
+  "icon": {
+    "id": "energizedpower:solar_panel_1",
+    "count": 1
+  },
+  "default_quest_shape": "",
+  "default_hide_dependency_lines": false,
+  "quests": [
+    {
+      "id": "6C9CBDE32EA5602C",
+      "x": 0.0,
+      "y": 0.0,
+      "icon": {
+        "id": "energizedpower:energy_analyzer",
+        "count": 1
+      },
+      "preset": "info",
+      "dependencies": [
+        "13C134EF069F0169"
+      ],
+      "tasks": [
+        {
+          "id": "3F54997173BCB431",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6D1936F9B9A31673",
+          "type": "xp",
+          "xp": 20
+        }
+      ]
+    },
+    {
+      "id": "4D951074C939DE8E",
+      "x": 2.0,
+      "y": -1.0,
+      "dependencies": [
+        "6C9CBDE32EA5602C"
+      ],
+      "tasks": [
+        {
+          "id": "7F257A52A352DF99",
+          "type": "item",
+          "item": {
+            "id": "energizedpower:raw_tin",
+            "count": 1
+          },
+          "count": 16
+        }
+      ],
+      "rewards": [
+        {
+          "id": "5679E5E9BE159979",
+          "type": "item",
+          "item": {
+            "id": "minecraft:torch",
+            "count": 1
+          },
+          "count": 16
+        }
+      ]
+    },
+    {
+      "id": "79BDC1E24E2FD187",
+      "x": 2.0,
+      "y": 1.0,
+      "dependencies": [
+        "6C9CBDE32EA5602C"
+      ],
+      "tasks": [
+        {
+          "id": "1CF36608B08B3870",
+          "type": "advancement",
+          "advancement": "energizedpower:main/basics/hammer",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "56575CC2B4B5A698",
+          "type": "xp",
+          "xp": 30
+        }
+      ]
+    },
+    {
+      "id": "3736EF8540144B57",
+      "x": 4.0,
+      "y": 0.0,
+      "dependencies": [
+        "4D951074C939DE8E",
+        "79BDC1E24E2FD187"
+      ],
+      "tasks": [
+        {
+          "id": "22BA931AA5577B7A",
+          "type": "item",
+          "item": {
+            "id": "energizedpower:iron_plate",
+            "count": 1
+          },
+          "count": 8
+        },
+        {
+          "id": "487AAAEA0D068B38",
+          "type": "item",
+          "item": {
+            "id": "energizedpower:copper_wire",
+            "count": 1
+          },
+          "count": 8
+        }
+      ],
+      "rewards": [
+        {
+          "id": "3805AF8C483898FD",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "217C5FC82106D869",
+      "x": 6.0,
+      "y": -1.0,
+      "dependencies": [
+        "3736EF8540144B57"
+      ],
+      "tasks": [
+        {
+          "id": "2A7F5940B96E7BCB",
+          "type": "item",
+          "item": {
+            "id": "energizedpower:basic_circuit",
+            "count": 1
+          },
+          "count": 3
+        }
+      ],
+      "rewards": [
+        {
+          "id": "0AB543D03DD3164F",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "2F144FBF4B32A61F",
+      "x": 6.0,
+      "y": 1.0,
+      "dependencies": [
+        "3736EF8540144B57"
+      ],
+      "tasks": [
+        {
+          "id": "787EFA0E76B1873D",
+          "type": "item",
+          "item": {
+            "id": "energizedpower:basic_machine_frame",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "20E612D268133EA6",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "439B6CF97CF2AC90",
+      "x": 8.0,
+      "y": -2.0,
+      "dependencies": [
+        "217C5FC82106D869"
+      ],
+      "tasks": [
+        {
+          "id": "4C8C2288FE995EF3",
+          "type": "item",
+          "item": {
+            "id": "energizedpower:solar_panel_1",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "40054AA0FE7DF579",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "40928C6F8F2827F9",
+      "x": 8.0,
+      "y": 0.0,
+      "dependencies": [
+        "3736EF8540144B57"
+      ],
+      "tasks": [
+        {
+          "id": "1CA5AC731377FEE4",
+          "type": "item",
+          "item": {
+            "id": "homesteadcore:water_wheel",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "7C47059485A9E207",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "3A033A91B6A5AB0E",
+      "x": 8.0,
+      "y": 2.0,
+      "dependencies": [
+        "2F144FBF4B32A61F"
+      ],
+      "tasks": [
+        {
+          "id": "28B0C3DD98D82929",
+          "type": "item",
+          "item": {
+            "id": "energizedpower:coal_engine",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "43BA6014CAC32151",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "243ECE1A8B7891E7",
+      "x": 10.0,
+      "y": 0.0,
+      "dependencies": [
+        "439B6CF97CF2AC90",
+        "40928C6F8F2827F9",
+        "3A033A91B6A5AB0E"
+      ],
+      "dependency_requirement": "one_completed",
+      "tasks": [
+        {
+          "id": "7DFCE461D5EE5060",
+          "type": "item",
+          "item": {
+            "id": "energizedpower:battery_box",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "7BA150A0B91D1C72",
+          "type": "item",
+          "item": {
+            "id": "energizedpower:tin_cable",
+            "count": 1
+          },
+          "count": 16
+        }
+      ]
+    },
+    {
+      "id": "582EEB8064385410",
+      "x": 12.0,
+      "y": -1.0,
+      "dependencies": [
+        "243ECE1A8B7891E7"
+      ],
+      "tasks": [
+        {
+          "id": "409F6CBDEC9E6171",
+          "type": "item",
+          "item": {
+            "id": "energizedpower:copper_cable",
+            "count": 1
+          },
+          "count": 16
+        }
+      ],
+      "rewards": [
+        {
+          "id": "1FD484168BC418F2",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "370AEA12AD9D69A3",
+      "x": 12.0,
+      "y": 1.0,
+      "dependencies": [
+        "243ECE1A8B7891E7"
+      ],
+      "tasks": [
+        {
+          "id": "3AA92B1005F2EA11",
+          "type": "item",
+          "item": {
+            "id": "homesteadcore:wind_turbine",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2BA83CE7D3EE1E27",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "71EBC7A5E5823D0E",
+      "x": 14.0,
+      "y": -1.0,
+      "optional": true,
+      "dependencies": [
+        "582EEB8064385410"
+      ],
+      "tasks": [
+        {
+          "id": "0D5BC98AE1A826FF",
+          "type": "item",
+          "item": {
+            "id": "energizedpower:energy_analyzer",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2A00230DFB5E52D2",
+          "type": "xp",
+          "xp": 30
+        }
+      ]
+    },
+    {
+      "id": "587D1F8E78F6A825",
+      "x": 14.0,
+      "y": 1.0,
+      "dependencies": [
+        "370AEA12AD9D69A3"
+      ],
+      "tasks": [
+        {
+          "id": "53311743B43D6FA6",
+          "type": "item",
+          "item": {
+            "id": "energizedpower:solar_panel_2",
+            "count": 1
+          },
+          "count": 2
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2FB3AEB1368B204B",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "62B0E4442871E783",
+      "x": 16.0,
+      "y": 0.0,
+      "icon": {
+        "id": "energizedpower:battery_box",
+        "count": 1
+      },
+      "preset": "goal",
+      "dependencies": [
+        "587D1F8E78F6A825",
+        "582EEB8064385410"
+      ],
+      "tasks": [
+        {
+          "id": "567122F519A1306F",
+          "type": "item",
+          "item": {
+            "id": "energizedpower:battery_box",
+            "count": 1
+          },
+          "count": 3
+        },
+        {
+          "id": "73774ECE73779A1C",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "12A64D536E4C3EBA",
+          "type": "item",
+          "item": {
+            "id": "minecraft:emerald",
+            "count": 1
+          },
+          "count": 6
+        },
+        {
+          "id": "12AB7FED114823D4",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    }
+  ],
+  "quest_links": [],
+  "images": []
+}

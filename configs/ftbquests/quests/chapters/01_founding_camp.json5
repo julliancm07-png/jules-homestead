@@ -1,0 +1,382 @@
+{
+  "id": "46CD274FDB934233",
+  "group": "",
+  "order_index": 0,
+  "filename": "01_founding_camp",
+  "icon": {
+    "id": "minecraft:campfire",
+    "count": 1
+  },
+  "default_quest_shape": "",
+  "default_hide_dependency_lines": false,
+  "quests": [
+    {
+      "id": "627D38DAF6F67A7C",
+      "x": 0.0,
+      "y": 0.0,
+      "icon": {
+        "id": "sereneseasons:calendar",
+        "count": 1
+      },
+      "preset": "info",
+      "tasks": [
+        {
+          "id": "72BAACE43F3360D7",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "4F5EDA4C6839908D",
+          "type": "item",
+          "item": {
+            "id": "minecraft:bread",
+            "count": 1
+          },
+          "count": 6
+        }
+      ]
+    },
+    {
+      "id": "6B95B183E5F93738",
+      "x": 2.0,
+      "y": -1.0,
+      "dependencies": [
+        "627D38DAF6F67A7C"
+      ],
+      "tasks": [
+        {
+          "id": "2552B49B996F1600",
+          "type": "item",
+          "item": {
+            "id": "minecraft:crafting_table",
+            "count": 1
+          },
+          "count": 1
+        },
+        {
+          "id": "797B58A0EAC66139",
+          "type": "item",
+          "item": {
+            "id": "minecraft:stick",
+            "count": 1
+          },
+          "count": 8
+        }
+      ],
+      "rewards": [
+        {
+          "id": "7A28EB39C14D9F38",
+          "type": "item",
+          "item": {
+            "id": "minecraft:apple",
+            "count": 1
+          },
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "49DD35F73D3D6DD8",
+      "x": 4.0,
+      "y": -1.0,
+      "dependencies": [
+        "6B95B183E5F93738"
+      ],
+      "tasks": [
+        {
+          "id": "72F2DBEECB80CA51",
+          "type": "item",
+          "item": {
+            "id": "minecraft:chest",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2BE358D714071614",
+          "type": "item",
+          "item": {
+            "id": "minecraft:torch",
+            "count": 1
+          },
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": "32CEFAA9499A9C6F",
+      "x": 2.0,
+      "y": 1.0,
+      "dependencies": [
+        "627D38DAF6F67A7C"
+      ],
+      "tasks": [
+        {
+          "id": "442D852AB36327EB",
+          "type": "item",
+          "item": {
+            "id": "minecraft:campfire",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "01AF1511731A4AB5",
+          "type": "item",
+          "item": {
+            "id": "minecraft:cooked_cod",
+            "count": 1
+          },
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "1E22C713C6D39952",
+      "x": 4.0,
+      "y": 1.0,
+      "dependencies": [
+        "32CEFAA9499A9C6F"
+      ],
+      "tasks": [
+        {
+          "id": "527B078E5BEFF3FE",
+          "type": "advancement",
+          "advancement": "frostiful:adventure/warm_by_light",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "1338F8F0582F33DA",
+          "type": "xp",
+          "xp": 30
+        }
+      ]
+    },
+    {
+      "id": "43A7C8ED98737081",
+      "x": 6.0,
+      "y": 0.0,
+      "dependencies": [
+        "49DD35F73D3D6DD8",
+        "1E22C713C6D39952"
+      ],
+      "tasks": [
+        {
+          "id": "2A18627112C6702C",
+          "type": "advancement",
+          "advancement": "minecraft:adventure/sleep_in_bed",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2945C81E521C20EB",
+          "type": "item",
+          "item": {
+            "id": "minecraft:white_wool",
+            "count": 1
+          },
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "4DCB5F67BC423338",
+      "x": 6.0,
+      "y": -2.0,
+      "dependencies": [
+        "49DD35F73D3D6DD8"
+      ],
+      "tasks": [
+        {
+          "id": "2B6887DB45BF7644",
+          "type": "advancement",
+          "advancement": "minecraft:story/mine_stone",
+          "criterion": ""
+        },
+        {
+          "id": "551555CA934055AF",
+          "type": "item",
+          "item": {
+            "id": "minecraft:furnace",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "04DC9989613A74E1",
+          "type": "item",
+          "item": {
+            "id": "minecraft:coal",
+            "count": 1
+          },
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": "70BF5B25471BB83A",
+      "x": 8.0,
+      "y": -2.0,
+      "dependencies": [
+        "4DCB5F67BC423338"
+      ],
+      "tasks": [
+        {
+          "id": "79C1F7CE979CA6FA",
+          "type": "advancement",
+          "advancement": "minecraft:story/smelt_iron",
+          "criterion": ""
+        },
+        {
+          "id": "05793E334550FE8B",
+          "type": "item",
+          "item": {
+            "id": "minecraft:iron_ingot",
+            "count": 1
+          },
+          "count": 12
+        }
+      ],
+      "rewards": [
+        {
+          "id": "63092E02C9DA020C",
+          "type": "xp",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "id": "0DDC827551F4A16D",
+      "x": 8.0,
+      "y": 0.0,
+      "dependencies": [
+        "4DCB5F67BC423338"
+      ],
+      "tasks": [
+        {
+          "id": "5CDBF10500A46910",
+          "type": "advancement",
+          "advancement": "farmersdelight:main/craft_knife",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "4476EEC9860B3978",
+          "type": "item",
+          "item": {
+            "id": "farmersdelight:rope",
+            "count": 1
+          },
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": "1E6B58C584662B7B",
+      "x": 6.0,
+      "y": 2.0,
+      "dependencies": [
+        "43A7C8ED98737081"
+      ],
+      "tasks": [
+        {
+          "id": "6B6B9F1B4DFCF40A",
+          "type": "item",
+          "item": {
+            "id": "sereneseasons:calendar",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2502D6F70402FD75",
+          "type": "item",
+          "item": {
+            "id": "minecraft:pumpkin_seeds",
+            "count": 1
+          },
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "7BBF127AFC8C0B35",
+      "x": 8.0,
+      "y": 2.0,
+      "optional": true,
+      "dependencies": [
+        "1E6B58C584662B7B"
+      ],
+      "tasks": [
+        {
+          "id": "5271AA0579DA18CA",
+          "type": "item",
+          "item": {
+            "id": "scorchful:water_skin",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "23E2E3D0993CD529",
+          "type": "xp",
+          "xp": 30
+        }
+      ]
+    },
+    {
+      "id": "07B1E75474678B7C",
+      "x": 10.0,
+      "y": 0.0,
+      "icon": {
+        "id": "minecraft:campfire",
+        "count": 1
+      },
+      "preset": "goal",
+      "dependencies": [
+        "70BF5B25471BB83A",
+        "0DDC827551F4A16D",
+        "1E6B58C584662B7B"
+      ],
+      "tasks": [
+        {
+          "id": "0E719B2A45671809",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "6DDE7029E9D11F70",
+          "type": "item",
+          "item": {
+            "id": "minecraft:emerald",
+            "count": 1
+          },
+          "count": 3
+        },
+        {
+          "id": "3E7B17514E2722FC",
+          "type": "xp",
+          "xp": 80
+        }
+      ]
+    }
+  ],
+  "quest_links": [],
+  "images": []
+}

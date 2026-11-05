@@ -1,0 +1,298 @@
+{
+  "id": "2F1D17F4FD835718",
+  "group": "",
+  "order_index": 5,
+  "filename": "06_modern_kitchen",
+  "icon": {
+    "id": "homesteadcore:electric_range",
+    "count": 1
+  },
+  "default_quest_shape": "",
+  "default_hide_dependency_lines": false,
+  "quests": [
+    {
+      "id": "70B9A1AA67955A79",
+      "x": 0.0,
+      "y": 0.0,
+      "dependencies": [
+        "243ECE1A8B7891E7"
+      ],
+      "tasks": [
+        {
+          "id": "1B4ABD88B3E7EA3B",
+          "type": "item",
+          "item": {
+            "id": "energizedpower:powered_lamp",
+            "count": 1
+          },
+          "count": 4
+        }
+      ],
+      "rewards": [
+        {
+          "id": "71EC5941AC9CD7DA",
+          "type": "xp",
+          "xp": 30
+        }
+      ]
+    },
+    {
+      "id": "1FE041A17F7C452C",
+      "x": 2.0,
+      "y": -1.0,
+      "dependencies": [
+        "70B9A1AA67955A79"
+      ],
+      "tasks": [
+        {
+          "id": "34AA4B10CE352FF0",
+          "type": "item",
+          "item": {
+            "id": "homesteadcore:refrigerator",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "7A924BE12FFDB6B7",
+          "type": "item",
+          "item": {
+            "id": "minecraft:cooked_salmon",
+            "count": 1
+          },
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "4D83090F951BF47A",
+      "x": 2.0,
+      "y": 1.0,
+      "dependencies": [
+        "70B9A1AA67955A79"
+      ],
+      "tasks": [
+        {
+          "id": "352A99960071D650",
+          "type": "item",
+          "item": {
+            "id": "homesteadcore:electric_range",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "79074BA6D9B2B77D",
+          "type": "item",
+          "item": {
+            "id": "farmersdelight:tomato_sauce",
+            "count": 1
+          },
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "562FEEB138FF0CFC",
+      "x": 4.0,
+      "y": 1.0,
+      "dependencies": [
+        "4D83090F951BF47A"
+      ],
+      "tasks": [
+        {
+          "id": "0F5E2864CB6AC7D0",
+          "type": "item",
+          "item": {
+            "id": "farmersdelight:pasta_with_meatballs",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "64CE9C3EA2E322D0",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "5BA0C4E8ECB559C1",
+      "x": 4.0,
+      "y": -1.0,
+      "dependencies": [
+        "1FE041A17F7C452C"
+      ],
+      "tasks": [
+        {
+          "id": "1113A64DD4D817CE",
+          "type": "item",
+          "item": {
+            "id": "homesteadcore:space_heater",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "19D6559125C7A94F",
+          "type": "item",
+          "item": {
+            "id": "minecraft:white_carpet",
+            "count": 1
+          },
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "2FCCC68D122EDC0C",
+      "x": 6.0,
+      "y": 0.0,
+      "dependencies": [
+        "562FEEB138FF0CFC"
+      ],
+      "tasks": [
+        {
+          "id": "1585EFA47F157B9A",
+          "type": "item",
+          "item": {
+            "id": "energizedpower:powered_furnace",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "3C295F77569BE725",
+          "type": "xp",
+          "xp": 40
+        }
+      ]
+    },
+    {
+      "id": "683BEA029F5FBBF2",
+      "x": 6.0,
+      "y": -2.0,
+      "icon": {
+        "id": "mcwfurnitures:oak_kitchen_cabinet",
+        "count": 1
+      },
+      "dependencies": [
+        "5BA0C4E8ECB559C1"
+      ],
+      "tasks": [
+        {
+          "id": "15CC432C1096DCBC",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "5A3F2F40FFFF9CFB",
+          "type": "item",
+          "item": {
+            "id": "minecraft:emerald",
+            "count": 1
+          },
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "07B7B004BC29DB4E",
+      "x": 6.0,
+      "y": 2.0,
+      "icon": {
+        "id": "minecraft:redstone_torch",
+        "count": 1
+      },
+      "preset": "info",
+      "dependencies": [
+        "2FCCC68D122EDC0C"
+      ],
+      "tasks": [
+        {
+          "id": "753F25802BC8188F",
+          "type": "checkmark"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "5E7EADBCDEB0B86B",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "3C0513DC45A8B421",
+      "x": 8.0,
+      "y": 0.0,
+      "icon": {
+        "id": "farmersdelight:roast_chicken_block",
+        "count": 1
+      },
+      "preset": "goal",
+      "dependencies": [
+        "683BEA029F5FBBF2",
+        "07B7B004BC29DB4E"
+      ],
+      "tasks": [
+        {
+          "id": "303E4E3436A08B89",
+          "type": "item",
+          "item": {
+            "id": "farmersdelight:roast_chicken_block",
+            "count": 1
+          },
+          "count": 1
+        },
+        {
+          "id": "548C677AE6ABDDCF",
+          "type": "item",
+          "item": {
+            "id": "farmersdelight:honey_glazed_ham_block",
+            "count": 1
+          },
+          "count": 1
+        },
+        {
+          "id": "03C8175EF4D1C02D",
+          "type": "item",
+          "item": {
+            "id": "farmersdelight:shepherds_pie_block",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "14B04656FC2E82A1",
+          "type": "item",
+          "item": {
+            "id": "minecraft:emerald",
+            "count": 1
+          },
+          "count": 8
+        },
+        {
+          "id": "21345499AAB2105C",
+          "type": "xp",
+          "xp": 200
+        }
+      ]
+    }
+  ],
+  "quest_links": [],
+  "images": []
+}

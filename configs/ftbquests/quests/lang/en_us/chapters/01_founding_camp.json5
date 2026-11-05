@@ -1,0 +1,65 @@
+{
+  "chapter.46CD274FDB934233.title": "Founding Camp",
+  "chapter.46CD274FDB934233.chapter_subtitle": [
+    "Make it through the first nights, then start thinking about the seasons."
+  ],
+  "quest.627D38DAF6F67A7C.title": "Welcome, Jules",
+  "quest.627D38DAF6F67A7C.quest_subtitle": "How this homestead works",
+  "quest.627D38DAF6F67A7C.quest_desc": [
+    "This world rewards preparation. Four seasons turn the year, and every few days a severe front rolls in: a storm, or, where it is cold enough to snow, a blizzard.",
+    "",
+    "You start with nothing. Build a camp, then a home and fields. Later you'll add a workshop, renewable power and a modern kitchen. In time, residents will settle and your camp will grow into a town.",
+    "",
+    "Pin a quest (the pin icon) to keep it on your HUD tracker. Quests marked [Manual] are building milestones you tick off yourself."
+  ],
+  "task.72BAACE43F3360D7.title": "Read this, then tick",
+  "quest.6B95B183E5F93738.title": "Timber",
+  "quest.6B95B183E5F93738.quest_desc": [
+    "Any wood will do. Chop the base of a trunk with an axe and the whole tree comes down (Falling Tree).",
+    "Hold sneak while chopping to take a single log."
+  ],
+  "quest.49DD35F73D3D6DD8.title": "A Place for Things",
+  "quest.49DD35F73D3D6DD8.quest_desc": [
+    "Chests keep things safe, but food in them slowly spoils.",
+    "A barrel is a cool cellar: food in it spoils at half the rate."
+  ],
+  "quest.32CEFAA9499A9C6F.title": "First Fire",
+  "quest.32CEFAA9499A9C6F.quest_desc": [
+    "A campfire cooks food and keeps you warm. Light warms you too: stand where it's well lit when you feel the cold.",
+    "Add a log to a lit campfire to get the Warmth effect for a while."
+  ],
+  "quest.1E22C713C6D39952.title": "Feeling the Cold",
+  "quest.1E22C713C6D39952.quest_desc": [
+    "Your body temperature shows next to the hotbar. Cold biomes, winter, wet clothes and night all pull it down.",
+    "Shivering burns hunger. Freezing hurts. Light, fire, fur clothing and a roof all help."
+  ],
+  "task.527B078E5BEFF3FE.title": "Warm up by a light source",
+  "quest.43A7C8ED98737081.title": "A Bed for the Night",
+  "task.2A18627112C6702C.title": "Sleep in a bed",
+  "quest.4DCB5F67BC423338.title": "Stone Age",
+  "task.2B6887DB45BF7644.title": "Mine stone",
+  "quest.70BF5B25471BB83A.title": "Iron and Embers",
+  "quest.70BF5B25471BB83A.quest_desc": [
+    "Iron unlocks better tools, buckets and the Farmer's Delight cooking pot."
+  ],
+  "task.79C1F7CE979CA6FA.title": "Smelt iron",
+  "quest.0DDC827551F4A16D.title": "A Proper Knife",
+  "quest.0DDC827551F4A16D.quest_desc": [
+    "Knives harvest straw from tall grass and wheat, and cut ingredients on a cutting board."
+  ],
+  "task.5CDBF10500A46910.title": "Craft a knife",
+  "quest.1E6B58C584662B7B.title": "Reading the Seasons",
+  "quest.1E6B58C584662B7B.quest_desc": [
+    "The season shows on your HUD. Each season has three sub-seasons of six days.",
+    "Crops only grow in their seasons; seed tooltips show which. Winter snows over temperate land, and that's when blizzards strike."
+  ],
+  "quest.7BBF127AFC8C0B35.title": "Water on the Go",
+  "quest.7BBF127AFC8C0B35.quest_desc": [
+    "In hot places you sweat and need to drink. A water skin carries several drinks. Rain or a swim also cools you down."
+  ],
+  "quest.07B1E75474678B7C.title": "The Camp Is Made",
+  "quest.07B1E75474678B7C.quest_desc": [
+    "You have fire, food, iron and a bed. Next, a home with fields around it."
+  ],
+  "task.0E719B2A45671809.title": "Tick when your camp has fire, bed, storage and a roof"
+}

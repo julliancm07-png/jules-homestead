@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:powder_snow_bucket"
+    },
+    "title": {
+      "translate": "advancements.homesteadcore.caught_in_blizzard.title"
+    },
+    "description": {
+      "translate": "advancements.homesteadcore.caught_in_blizzard.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "award": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "homesteadcore:weather/witness_front"
+}

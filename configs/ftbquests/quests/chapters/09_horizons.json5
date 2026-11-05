@@ -1,0 +1,257 @@
+{
+  "id": "7685B299DD5527CF",
+  "group": "",
+  "order_index": 8,
+  "filename": "09_horizons",
+  "icon": {
+    "id": "naturescompass:naturescompass",
+    "count": 1
+  },
+  "default_quest_shape": "",
+  "default_hide_dependency_lines": false,
+  "quests": [
+    {
+      "id": "58924D38BE06E191",
+      "x": 0.0,
+      "y": 0.0,
+      "dependencies": [
+        "07B1E75474678B7C"
+      ],
+      "tasks": [
+        {
+          "id": "022870F810A60537",
+          "type": "item",
+          "item": {
+            "id": "naturescompass:naturescompass",
+            "count": 1
+          },
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "id": "031B23DE4D8D698B",
+          "type": "item",
+          "item": {
+            "id": "minecraft:bread",
+            "count": 1
+          },
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": "678B70EC72F24A66",
+      "x": 2.0,
+      "y": -1.0,
+      "dependencies": [
+        "58924D38BE06E191"
+      ],
+      "tasks": [
+        {
+          "id": "7C45CCC9268126C9",
+          "type": "structure",
+          "structure": "#minecraft:village"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "5DC40B96F1A86F9A",
+          "type": "item",
+          "item": {
+            "id": "minecraft:emerald",
+            "count": 1
+          },
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "437AAE011D2C07B0",
+      "x": 2.0,
+      "y": 1.0,
+      "dependencies": [
+        "58924D38BE06E191"
+      ],
+      "tasks": [
+        {
+          "id": "7F423F20E12B505E",
+          "type": "biome",
+          "biome": "terralith:alpine_highlands"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "68C54710534C2E8E",
+          "type": "xp",
+          "xp": 60
+        }
+      ]
+    },
+    {
+      "id": "6E7E6C2D3E5B8942",
+      "x": 4.0,
+      "y": 1.0,
+      "dependencies": [
+        "437AAE011D2C07B0"
+      ],
+      "tasks": [
+        {
+          "id": "78DDAFC909A07916",
+          "type": "biome",
+          "biome": "minecraft:snowy_plains"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "23E2A46D3D972AD5",
+          "type": "item",
+          "item": {
+            "id": "minecraft:cooked_beef",
+            "count": 1
+          },
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "7CAEF1E40BFF19E3",
+      "x": 6.0,
+      "y": 1.0,
+      "optional": true,
+      "dependencies": [
+        "6E7E6C2D3E5B8942"
+      ],
+      "tasks": [
+        {
+          "id": "20D0665730441E80",
+          "type": "advancement",
+          "advancement": "frostiful:adventure/find_frostologer_castle",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "56495F1A88C0DCB9",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "7CA99ED55B3F870C",
+      "x": 4.0,
+      "y": -1.0,
+      "optional": true,
+      "dependencies": [
+        "678B70EC72F24A66"
+      ],
+      "tasks": [
+        {
+          "id": "716A853CAB9F6D4F",
+          "type": "structure",
+          "structure": "bettermineshafts:mineshaft_oak"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "732B2ADD26EF5834",
+          "type": "item",
+          "item": {
+            "id": "minecraft:torch",
+            "count": 1
+          },
+          "count": 32
+        }
+      ]
+    },
+    {
+      "id": "37499760CD1A3D76",
+      "x": 6.0,
+      "y": -1.0,
+      "dependencies": [
+        "678B70EC72F24A66"
+      ],
+      "tasks": [
+        {
+          "id": "5A404385A88AF003",
+          "type": "advancement",
+          "advancement": "minecraft:story/mine_diamond",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "0DDCF063C22AF528",
+          "type": "xp",
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "id": "24758630999C6D56",
+      "x": 8.0,
+      "y": -1.0,
+      "optional": true,
+      "dependencies": [
+        "37499760CD1A3D76"
+      ],
+      "tasks": [
+        {
+          "id": "263724F94B74D084",
+          "type": "advancement",
+          "advancement": "minecraft:story/enter_the_nether",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "5384CD3FCA27BDBF",
+          "type": "xp",
+          "xp": 150
+        }
+      ]
+    },
+    {
+      "id": "74D993A59BD923C4",
+      "x": 8.0,
+      "y": 1.0,
+      "icon": {
+        "id": "minecraft:filled_map",
+        "count": 1
+      },
+      "preset": "goal",
+      "dependencies": [
+        "7CAEF1E40BFF19E3",
+        "37499760CD1A3D76"
+      ],
+      "dependency_requirement": "one_completed",
+      "tasks": [
+        {
+          "id": "6584AA8FDCCDB155",
+          "type": "advancement",
+          "advancement": "minecraft:adventure/adventuring_time",
+          "criterion": ""
+        }
+      ],
+      "rewards": [
+        {
+          "id": "2CC1D6D2BCD21BAB",
+          "type": "item",
+          "item": {
+            "id": "minecraft:emerald",
+            "count": 1
+          },
+          "count": 16
+        },
+        {
+          "id": "2D12E09B0C0B2135",
+          "type": "xp",
+          "xp": 500
+        }
+      ]
+    }
+  ],
+  "quest_links": [],
+  "images": []
+}

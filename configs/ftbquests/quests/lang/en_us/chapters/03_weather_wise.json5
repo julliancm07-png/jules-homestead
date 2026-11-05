@@ -1,0 +1,63 @@
+{
+  "chapter.423DA8E0E9639625.title": "Weather Wise",
+  "chapter.423DA8E0E9639625.chapter_subtitle": [
+    "Storms and blizzards: forecasts, clothing, shelter and warmth."
+  ],
+  "quest.18F63CD151510129.title": "About Severe Fronts",
+  "quest.18F63CD151510129.quest_desc": [
+    "Every few in-game days a severe front arrives. It brings rain and thunder, plus strong, gusting wind.",
+    "Where it snows (cold biomes, or anywhere temperate in winter) the front becomes a blizzard. Out in the open you lose heat fast, you walk slower and you can barely see.",
+    "",
+    "Shelter: a roof over your head (glass counts) AND a wall on the windward side within about 8 blocks. A doorway facing into the wind is not shelter.",
+    "Fronts never break your blocks. They can pile up to two layers of snow on open ground."
+  ],
+  "task.61A11546590864A2.title": "Got it",
+  "quest.7FAA1D0B1D745207.title": "Read the Barometer",
+  "quest.7FAA1D0B1D745207.quest_desc": [
+    "Use a barometer to read the forecast: when the next front arrives, what kind it is and how strong (the strength is an estimate).",
+    "Placed barometers give a redstone signal while a front is active or less than two minutes away. Use it to close shutters or start heaters automatically.",
+    "Warnings are also announced a day ahead and again just before arrival."
+  ],
+  "quest.402AF94CAA1D81A3.title": "Dress for Winter",
+  "quest.402AF94CAA1D81A3.quest_desc": [
+    "Wolves, polar bears and ocelots drop fur tufts. Fur armour gives frost resistance, which also reduces blizzard cold."
+  ],
+  "task.4313B2A6DD101B1A.title": "Craft any fur armour",
+  "quest.111EF6B21AD9B943.title": "Keep the Fire Fed",
+  "task.28840DB35D9B499A.title": "Add a log to a campfire",
+  "quest.69CE9488F7916F74.title": "Here It Comes",
+  "quest.69CE9488F7916F74.quest_desc": [
+    "Wait for a forecast front. Watch the wind, the rain or snow, and how your temperature behaves inside and out."
+  ],
+  "task.413B44DB1579BC55.title": "Experience a front",
+  "quest.6DA76D317FBB18C8.title": "Caught Out",
+  "quest.6DA76D317FBB18C8.quest_desc": [
+    "It happens to everyone. Get under a roof, out of the wind, and next to light or fire."
+  ],
+  "task.5E7AE9DDD3B57154.title": "Be exposed in a blizzard",
+  "quest.766B2D32E386DA6E.title": "Safe and Warm",
+  "quest.766B2D32E386DA6E.quest_desc": [
+    "Spend a full minute sheltered while a blizzard rages at your location."
+  ],
+  "task.0BFB3A367525931F.title": "Stay sheltered through a blizzard",
+  "quest.28040E658C220AD0.title": "Root Cellar",
+  "quest.28040E658C220AD0.quest_desc": [
+    "Barrels keep food at half the spoilage rate. Golden foods, honey and dried kelp never spoil.",
+    "Later, a powered refrigerator stops spoilage completely."
+  ],
+  "quest.258234875978E3EC.title": "[Manual] A Greenhouse",
+  "quest.258234875978E3EC.quest_desc": [
+    "Crops under a glass roof keep growing out of season. Glass also counts as a roof for blizzard shelter.",
+    "",
+    "This is a building milestone. FTB Quests cannot reliably judge architecture, so tick the checkbox yourself when you are happy with it."
+  ],
+  "task.4412613EB3D137B4.title": "Tick when crops grow under glass in the wrong season",
+  "quest.4DB8CAF38AC43410.title": "Summer Heat",
+  "quest.4DB8CAF38AC43410.quest_desc": [
+    "Deserts and summer days can overheat you. A sun hat and plenty of water help. Desert storms bring sandstorms."
+  ],
+  "quest.71C12FE93D05E2E2.title": "Ice Skates",
+  "task.37DC3B0DCF1C6AE4.title": "Obtain ice skates",
+  "quest.298BC269A1DFEDBE.title": "Prepared for Winter",
+  "task.4064ED660844F95B.title": "Tick when you have fur clothing, a stocked cellar, firewood and a sheltered home"
+}

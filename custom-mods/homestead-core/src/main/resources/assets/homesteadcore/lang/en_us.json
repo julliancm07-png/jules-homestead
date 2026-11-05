@@ -33,5 +33,13 @@
   "homesteadcore.status.fridge.retaining": "no power — staying cold for %s more seconds",
   "homesteadcore.status.fridge.warm": "WARM — food is spoiling",
   "homesteadcore.status.range": "Electric range %s. Stored %s / %s E",
-  "homesteadcore.status.heater": "Space heater %s. Stored %s / %s E"
+  "homesteadcore.status.heater": "Space heater %s. Stored %s / %s E",
+  "advancements.homesteadcore.root.title": "Homestead Weather",
+  "advancements.homesteadcore.root.description": "Read the sky: fronts are coming.",
+  "advancements.homesteadcore.witness_front.title": "Here It Comes",
+  "advancements.homesteadcore.witness_front.description": "Experience a storm or cold front.",
+  "advancements.homesteadcore.caught_in_blizzard.title": "Caught Out",
+  "advancements.homesteadcore.caught_in_blizzard.description": "Be exposed in a blizzard.",
+  "advancements.homesteadcore.safe_and_warm.title": "Safe and Warm",
+  "advancements.homesteadcore.safe_and_warm.description": "Spend a minute sheltered while a blizzard rages outside."
 }

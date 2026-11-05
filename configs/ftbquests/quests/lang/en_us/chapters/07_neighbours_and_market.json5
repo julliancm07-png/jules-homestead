@@ -1,0 +1,60 @@
+{
+  "chapter.30B33F4EA1FC7FA8.title": "Neighbours & Market",
+  "chapter.30B33F4EA1FC7FA8.chapter_subtitle": [
+    "Residents arrive. Trade, take on requests, and earn your place."
+  ],
+  "quest.0445EE409408AD07.title": "About Residents",
+  "quest.0445EE409408AD07.quest_desc": [
+    "Villagers here are people. They have names, moods, families and professions, and they remember how you treat them.",
+    "Your homestead can become a village: once you have at least 3 recognised buildings and villagers living in them, it counts as one.",
+    "A Blueprint shows which buildings the village recognises and what each building type needs.",
+    "",
+    "Chores: you can ask a resident to farm, chop, fish or hunt. Hunting can kill nearby animals, including your livestock, so only assign it far from your pens.",
+    "Optional AI conversations are off, and nothing in the pack needs an online service."
+  ],
+  "task.56664A1EAC83681F.title": "Got it",
+  "quest.1494108F3E4FE6C7.title": "A Blueprint for a Town",
+  "quest.2ACB4D2FB99B8007.title": "Making Friends",
+  "quest.2ACB4D2FB99B8007.quest_desc": [
+    "Chat, give gifts that suit their personality, and say hello every day."
+  ],
+  "task.6D35DDF097376B96.title": "Befriend a resident",
+  "quest.52B47A6BCAE565BD.title": "[Manual] A Home for a Resident",
+  "quest.52B47A6BCAE565BD.quest_desc": [
+    "Build a small house with a bed, a door and light. Check the Blueprint until it shows up as a recognised building.",
+    "",
+    "This is a building milestone. FTB Quests cannot reliably judge architecture, so tick the checkbox yourself when you are happy with it."
+  ],
+  "quest.6B2F50D2158544AD.title": "Market Day",
+  "quest.6B2F50D2158544AD.quest_desc": [
+    "The market sells seeds, saplings and animals for emeralds. It's a good way to get crops that don't grow wild near you."
+  ],
+  "quest.27678F6D64A7FA5F.title": "Shipping Bin",
+  "quest.27678F6D64A7FA5F.quest_desc": [
+    "Put surplus produce in the bin to sell it. Fields that feed the town also earn money."
+  ],
+  "quest.59221EE2AB41787E.title": "Merchant",
+  "quest.59221EE2AB41787E.quest_desc": [
+    "Your standing rises with the village's buildings and how well its people like you."
+  ],
+  "task.573C7A3D679F706F.title": "Reach the Merchant rank",
+  "quest.53BF84832FCDD018.title": "Request: Bread for the Bakery",
+  "quest.53BF84832FCDD018.quest_desc": [
+    "The village is short of bread. Deliver 32 loaves. (Repeatable once a day.)"
+  ],
+  "quest.363B1E32DBBE612A.title": "Request: Winter Fuel",
+  "quest.363B1E32DBBE612A.quest_desc": [
+    "Cold is coming and the hearths need feeding. Deliver 32 charcoal. (Repeatable once a day.)"
+  ],
+  "quest.66658BC626BB2A8F.title": "Request: Vegetable Crates",
+  "quest.61B8467B91D3162C.title": "Request: Wool for Blankets",
+  "quest.32009813169BC651.title": "Request: Soup Kitchen",
+  "quest.32009813169BC651.quest_desc": [
+    "Hot soup for residents caught out in the last blizzard."
+  ],
+  "quest.0A6DF3419C4DC22B.title": "Many Hands",
+  "quest.0A6DF3419C4DC22B.quest_desc": [
+    "Residents can farm or chop wood for you. Remember that hunting means livestock."
+  ],
+  "task.7BEBD3D140EECE9C.title": "Assign a chore"
+}

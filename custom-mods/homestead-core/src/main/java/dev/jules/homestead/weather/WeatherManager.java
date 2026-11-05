@@ -267,9 +267,44 @@ public final class WeatherManager {
 			}
 			PLAYER_STATE.put(p.getUUID(), state);
 			applySlowdown(p, state, cfg);
+			awardWeatherAdvancements(server, p, state);
 			if (ServerPlayNetworking.canSend(p, WeatherPayload.TYPE)) {
 				ServerPlayNetworking.send(p, WeatherPayload.of(d, state, windSpeed(server, now, p.getBlockY(), overworld.getSeaLevel())));
 			}
+		}
+	}
+
+	/** Ticks (in 10-tick steps) each player has spent sheltered during an active blizzard. */
+	private static final Map<UUID, Integer> SHELTERED_STEPS = new HashMap<>();
+
+	/**
+	 * Quest hooks: grants homesteadcore:weather/* advancements (criterion "award", trigger minecraft:impossible).
+	 * witness_front — experienced any front with precipitation; caught_in_blizzard — exposed in a blizzard;
+	 * safe_and_warm — 60 s sheltered while a blizzard is active at your position.
+	 */
+	private static void awardWeatherAdvancements(MinecraftServer server, ServerPlayer p, PlayerWeather s) {
+		if (s.intensity() <= 0 || s.precipitation() == Biome.Precipitation.NONE) {
+			SHELTERED_STEPS.remove(p.getUUID());
+			return;
+		}
+		award(server, p, "weather/witness_front");
+		if (s.precipitation() == Biome.Precipitation.SNOW) {
+			if (s.exposed()) {
+				award(server, p, "weather/caught_in_blizzard");
+				SHELTERED_STEPS.remove(p.getUUID());
+			} else {
+				int steps = SHELTERED_STEPS.merge(p.getUUID(), 1, Integer::sum);
+				if (steps >= 120) {
+					award(server, p, "weather/safe_and_warm");
+				}
+			}
+		}
+	}
+
+	private static void award(MinecraftServer server, ServerPlayer p, String path) {
+		var holder = server.getAdvancements().get(HomesteadCore.id(path));
+		if (holder != null && !p.getAdvancements().getOrStartProgress(holder).isDone()) {
+			p.getAdvancements().award(holder, "award");
 		}
 	}
 
@@ -308,6 +343,7 @@ public final class WeatherManager {
 
 	public static void forget(UUID id) {
 		PLAYER_STATE.remove(id);
+		SHELTERED_STEPS.remove(id);
 	}
 
 	// ------------------------------------------------------------------ snow accumulation (only world change)
