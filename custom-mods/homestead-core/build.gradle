@@ -10,6 +10,7 @@ repositories {
 }
 
 loom {
+	accessWidenerPath = file("src/main/resources/homesteadcore.accesswidener")
 	splitEnvironmentSourceSets()
 	mods {
 		"homesteadcore" {

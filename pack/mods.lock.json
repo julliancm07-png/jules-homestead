@@ -7,7 +7,7 @@
   "loader_version": "0.20.1",
   "summary": "A grounded homestead-to-town survival pack: seasons, storms and blizzards, renewable power for real appliances, residents and a hand-written quest book."
  },
- "resolved_at": "2026-11-05T03:25:44+00:00",
+ "resolved_at": "2026-11-05T03:37:48+00:00",
  "sources": [
   "https://api.modrinth.com/v2",
   "https://maven.ftb.dev/releases"
@@ -3575,13 +3575,13 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "eXts2L7r",
+     "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
     },
     {
      "version_id": null,
-     "project_id": "P7dR8mSH",
+     "project_id": "eXts2L7r",
      "file_name": null,
      "dependency_type": "required"
     }
@@ -3982,15 +3982,15 @@
     },
     {
      "version_id": null,
-     "project_id": "9aNz8Zqn",
-     "file_name": null,
-     "dependency_type": "embedded"
-    },
-    {
-     "version_id": null,
      "project_id": "JBjInUXM",
      "file_name": null,
      "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "9aNz8Zqn",
+     "file_name": null,
+     "dependency_type": "embedded"
     }
    ],
    "group": "visual",
@@ -4856,12 +4856,6 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "9s6osm5g",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
      "project_id": "9eGKb6K1",
      "file_name": null,
      "dependency_type": "optional"
@@ -4869,6 +4863,12 @@
     {
      "version_id": null,
      "project_id": "mOgUt4GM",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "9s6osm5g",
      "file_name": null,
      "dependency_type": "optional"
     }
@@ -5563,13 +5563,19 @@
     },
     {
      "version_id": null,
+     "project_id": "nfn13YXA",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
      "project_id": "HnD1GX6e",
      "file_name": null,
      "dependency_type": "optional"
     },
     {
      "version_id": null,
-     "project_id": "u6dRKJwZ",
+     "project_id": "vRYk0bv7",
      "file_name": null,
      "dependency_type": "optional"
     },
@@ -5587,43 +5593,13 @@
     },
     {
      "version_id": null,
-     "project_id": "XaT8sLP6",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
-     "project_id": "ohNO6lps",
-     "file_name": null,
-     "dependency_type": "required"
-    },
-    {
-     "version_id": null,
-     "project_id": "vRYk0bv7",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
      "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
     },
     {
      "version_id": null,
-     "project_id": "tagwiZkJ",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
-     "project_id": "jtmvUHXj",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
-     "project_id": "nfn13YXA",
+     "project_id": "XaT8sLP6",
      "file_name": null,
      "dependency_type": "optional"
     },
@@ -5635,7 +5611,31 @@
     },
     {
      "version_id": null,
+     "project_id": "u6dRKJwZ",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "ohNO6lps",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "tagwiZkJ",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
      "project_id": "SaCpeal4",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "jtmvUHXj",
      "file_name": null,
      "dependency_type": "optional"
     }
@@ -5759,13 +5759,13 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "P7dR8mSH",
+     "project_id": "9s6osm5g",
      "file_name": null,
      "dependency_type": "required"
     },
     {
      "version_id": null,
-     "project_id": "9s6osm5g",
+     "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
     }
@@ -6272,6 +6272,12 @@
    "dependencies": [
     {
      "version_id": null,
+     "project_id": "mOgUt4GM",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
      "project_id": "1vrSzlao",
      "file_name": null,
      "dependency_type": "required"
@@ -6281,12 +6287,6 @@
      "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
-    },
-    {
-     "version_id": null,
-     "project_id": "mOgUt4GM",
-     "file_name": null,
-     "dependency_type": "optional"
     },
     {
      "version_id": null,

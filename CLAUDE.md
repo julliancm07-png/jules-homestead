@@ -31,7 +31,22 @@ export JAVA_HOME=/opt/jdk25 PATH=/opt/jdk25/bin:$PATH          # cloud: Temurin 
 python3 -I tools/resolve.py                                      # manifest.toml -> mods.lock.json (Modrinth/FTB maven)
 python3 -I tools/validate.py                                     # lockfile, deps, sides, configs, datapack, quests
 (cd custom-mods/homestead-core && ./gradlew build)               # add --init-script ../../tools/ci/central-mirror.init.gradle in cloud
-python3 -I tools/package.py                                      # build/JulesHomestead-<ver>.mrpack + server pack
-python3 -I tools/server_test.py                                  # headless dedicated-server boot with server-side mods
+python3 -I tools/build_quests.py                                 # quests/book.py -> configs/ftbquests/quests (JSON5)
+python3 -I tools/check_content.py                                # quest/recipe/tag refs vs research/data/registry-dump-26.1.2.json
+python3 -I tools/package.py                                      # build/dist/JulesHomestead-<ver>.mrpack (+ server file list)
+python3 -I tools/server_test.py [--cmd "homestead debug dump"]   # headless dedicated-server boot with server-side mods
+python3 -I tools/client_smoke_test.py [--scenario blizzard]      # full client: Xvfb + Mesa llvmpipe + portablemc
+python3 -I tools/inventory.py                                    # regenerate docs/mod-inventory.md
 ```
+
+## Gotchas learned (2026-11-05)
+- Modrinth metadata is not authoritative: always run validate.py (jar fabric.mod.json). Found: GlitchCore (SS), Fusion server-side (Rechiseled).
+- Modrinth maven: pin by VERSION ID, not version number (number is ambiguous across loaders).
+- repo.maven.apache.org returns 429 in the cloud proxy -> use `--init-script tools/ci/central-mirror.init.gradle`.
+- FTB Quests 26.1.2.9 uses JSON5 + lang files; `advancement` tasks REQUIRE `criterion` (may be ""). Validate by booting the server and reading "Loaded ... quests".
+- `canSeeSky` = sky light (lags block changes, passes through glass). Use heightmaps for shelter.
+- GameTest areas are encased in barriers (use `skyAccess = true`; keep rays inside the area).
+- Upstream bugs patched in homestead-core: Serene Seasons client recursion (singleplayer crash), Spoiled server recipe cache.
+- Wilder Wild removed (FrozenLib CME during parallel registry load with Terralith).
+- Serene Seasons force-clears thunder in seasons with thunder range -1 -> winter thunder window set in configs.
 Keep STATUS.md and CHANGELOG.md current at the end of every work session.

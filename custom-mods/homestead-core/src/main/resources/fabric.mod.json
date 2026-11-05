@@ -13,8 +13,10 @@
 		"client": ["dev.jules.homestead.client.HomesteadCoreClient"]
 	},
 	"mixins": [
+		"homesteadcore.compat.mixins.json",
 		{ "config": "homesteadcore.client.mixins.json", "environment": "client" }
 	],
+	"accessWidener": "homesteadcore.accesswidener",
 	"depends": {
 		"fabricloader": ">=0.20.1",
 		"minecraft": "~26.1.2",

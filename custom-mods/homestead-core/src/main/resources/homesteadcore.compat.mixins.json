@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "dev.jules.homestead.mixin",
+	"plugin": "dev.jules.homestead.mixin.CompatMixinPlugin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"SereneSeasonsRecursionFixMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
