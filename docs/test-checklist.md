@@ -55,7 +55,7 @@ Use a **separate test world**. Tick each box; if something fails, note what you 
 - [ ] Rewards claim correctly, and none of them hand out machines.
 
 ## 7. Screens & visuals
-- [ ] Title screen: the village panorama turns slowly, with the "Homestead Edition" banner and a homestead splash.
+- [ ] Title screen: oak-plank buttons over the village panorama turns slowly, with the "Homestead Edition" banner and a homestead splash.
 - [ ] **Spatial GUI**: press E. The inventory appears as a panel beside your character in third person, and clicking and dragging items works normally.
   - [ ] A chest, a crafting table and the Electric Oven open the same way.
   - [ ] The quest book and the pause menu stay flat.

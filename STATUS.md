@@ -1,4 +1,4 @@
-# Status (2026-11-05, version 1.0.0)
+# Status (2026-11-05, version 1.1.0)
 
 Legend: **R** researched · **I** implemented · **C** compiled · **T** runtime-tested in the cloud · **L** awaiting local verification on Jules' PC.
 "T" names exactly what the test showed; cloud tests use a headless server and a software-rendered client (Mesa llvmpipe under Xvfb, no sound, no player input).
@@ -7,11 +7,11 @@ Legend: **R** researched · **I** implemented · **C** compiled · **T** runtime
 | Item | State | Evidence |
 |---|---|---|
 | Platform choice (26.1.2 / Loader 0.20.1 / Java 25) | R | research/version-decision.md |
-| Pinned lockfile (158 files: 135 third-party mods, 2 local, 17 resource packs, 4 shaders; IDs + hashes + licences) | T | `tools/resolve.py`; hashes re-verified by `validate.py` and `mrpack_install.py` |
+| Pinned lockfile (241 files: 206 third-party mods, 2 local, 29 resource packs, 4 shaders; IDs + hashes + licences) | T | `tools/resolve.py`; hashes re-verified by `validate.py` and `mrpack_install.py` |
 | Jar-level dependency resolution (client-all, client-core, server) | T | `tools/validate.py`: 0 errors |
-| Dedicated server boots + generates world (96 server mods + 2 local) | T | `tools/server_test.py`: 3/3 clean boots, ~40 s |
-| `.mrpack` builds; launcher-style install verifies every file | T | `tools/package.py`, `tools/mrpack_install.py` (156 downloads + 2 bundled local mods + overrides) |
-| **Full client** (260 mods incl. nested libraries) launches, renders, joins singleplayer, 90 s without crash | T | `tools/client_smoke_test.py --scenario normal` → PASS; `docs/screenshots/client-smoke-normal.png` (world rendered behind MCA's first-join screen) |
+| Dedicated server boots + generates world (144 server mods + 2 local) | T | `tools/server_test.py`: boots in ~60 s, spawn preparation 9.5–10 s (1.0: 20.9 s) |
+| `.mrpack` builds; launcher-style install verifies every file | T | `tools/package.py`, `tools/mrpack_install.py` (239 downloads + 2 bundled local mods + overrides) |
+| **Full client** (395 mods incl. nested libraries) launches, renders, joins singleplayer, 90 s without crash | T | `tools/client_smoke_test.py --scenario normal` → PASS; `docs/screenshots/client-smoke-normal.png` (world rendered behind MCA's first-join screen) |
 | Prism import (real launcher UI, optional-mod dialog, untrusted-URL prompt) | L | Prism behaviour verified from source only |
 | Real GPU rendering, shaders, Distant Horizons, sound, keybind conflicts, FPS | L | docs/test-checklist.md |
 
@@ -40,7 +40,7 @@ Legend: **R** researched · **I** implemented · **C** compiled · **T** runtime
 |---|---|---|
 | Configs (seasons, temperature, spoilage, MCA, homestead) | T (load) / L (balance) | parsed by mods in the server boot; `check_content.py` |
 | Pack data module (seasonal crop tags, EP controller removal) | T | registry dump: EP weather/time controller recipes absent |
-| Quest book: 9 chapters, 104 quests, 85 auto-detected (incl. town-power energy task) | T (load + references) / L (play-through; filling the Task Screen with energy) | FTB log "Loaded 1 chapter groups, 9 chapters, 104 quests" (server and integrated server); `check_content.py` 0 errors |
+| Quest book: 9 chapters, 110 quests, 92 auto-detected (incl. town-power energy task) | T (load + references) / L (play-through; filling the Task Screen with energy) | FTB log "Loaded 1 chapter groups, 9 chapters, 110 quests" (server and integrated server); `check_content.py` 0 errors |
 | Residents (MCA), market, requests | T (load) / L | |
 | Create (optional, Create Fly) | R · L | dependency-checked only; excluded from the cloud boots |
 
@@ -74,49 +74,39 @@ Pipeline run on the final build:
 
 Delivered: `dist/JulesHomestead-1.0.0.mrpack` (committed; SHA-256 in `dist/SHA256SUMS`).
 
+## 1.1.0 polish release (2026-11-05)
+Jules asked for more mods and resource packs, optimization, nicer themed menus, smooth animations and immersive
+nights. Research: `research/2026-11-05-polish-1.1-candidates.md`. Details: CHANGELOG.md.
+
+| Item | State | Evidence |
+|---|---|---|
+| +45 mods / +10 resource packs (decor, living world, YUNG's set, ambience, QoL) | T (load) / L (feel) | 395 mods load; validate 0 errors |
+| Optimization (C2ME, Ksyxis, LMD, Particle Core + 1.1 perf set) | T | server spawn preparation 20.9 s → 9.5 s; ModernFix and LightspeedRE tried and removed (both crashed on world load) |
+| Smooth animations (FWA, Smooth Swapping, Smooth Scroll, Chunks Fade In, A Good Place, ItemPhysic Lite, Smooth Steps) | T (load, A Good Place pack active) / L (motion) | screenshots can't show motion |
+| Immersive nights (Spawn Animations, FA Emissive, shader night presets via YOSBR) | T (load, presets shipped) / L (shaders on GPU) | `showcase-village-night.png` |
+| **Night sky fix** (Immersive Storms clobbered the day/night timeline; also in 1.0.0) | T | before: bright blue sky at 18000 with and without Dramatic Skys; after: dark starry sky (`showcase-village-night.png`) |
+| Homestead GUI menus (below Recolourful) | T (renders) / L (taste) | `title-screen.png`, `showcase-hud.png`, `showcase-inventory.png` |
+| RRLS hides only in-game reloads | T | white start-up progress bar gone from screenshots |
+| YOSBR default options + built-in default pack list | T | client log: all packs incl. `a_good_place:default_animations` active |
+| Quests 110 (+6), Fitted Kitchen auto | T (load + references) / L | FTB log 110 quests (server and integrated server) |
+| Evening cabin scene (Adorn kitchen, appliances, hearth, holiday tree) | T | `showcase-decor.png` |
+
+### 1.1.0 release pass
+1. `build_local`: GameTests 10/10.
+2. `resolve`: 241 files.
+3. `validate`: 208 mod jars, 0 errors, no resource-pack format warnings.
+4. `build_quests`: 110 quests.
+5. `check_content`: 0 errors.
+6. `package`: `JulesHomestead-1.1.0.mrpack`, 239 downloads + 2 local, 6746 KiB.
+7. `server_test`: booted in 60 s, spawn preparation 9.5 s; FTB loaded 110 quests.
+8. Client scenarios **normal / blizzard / showcase / title: all PASS**, 395 mods. Screenshots read: village (day and
+   night), evening cabin, HUD, inventory, crafting, Electric Oven, quest book, Jade, blizzard, title screen.
+
+Delivered: `dist/JulesHomestead-1.1.0.mrpack` (committed; SHA-256 in `dist/SHA256SUMS`). 1.0.0 is replaced (its night
+sky bug is fixed here).
+
 ## Next (after Jules' local test)
-1. Run `docs/test-checklist.md` on the real PC and feed back the results.
+1. Import `dist/JulesHomestead-1.1.0.mrpack` as a new instance and run `docs/test-checklist.md` on the real PC and feed back the results.
 2. Balance pass (energy, spoilage, cold) from play-testing.
 3. Appliance models and the turbine rotor (see known-limitations).
 
-## 1.1 polish: IN PROGRESS (checkpoint 2026-11-05)
-Jules asked for: (1) more mods and resource packs that improve the experience; (2) optimization; (3) nicer, themed
-menus (resource packs are fine); "push it to the max". Research: `research/2026-11-05-polish-1.1-candidates.md`.
-
-**Done (not yet released; `dist/` still holds the tested 1.0.0):**
-* Manifest:
-  * +45 mods: Adorn, Beautify, Macaw's Holidays, Comforts, This Rocks, Fish of Thieves, the YUNG's set, Particular,
-    Soft Imprints, Sounds, perf/stability mods and others;
-  * +10 resource packs.
-* Resolve and validate: 223 files, 192 mod jars, 0 errors.
-* `validate.py` now checks each resource pack's format. Rule: 26.1 ignores a legacy `supported_formats` range above 64
-  (verified in the client log: Shelviety was dropped, so it was replaced by Renewed Bookshelf).
-* ModernFix-mVUS was tried and removed. It broke resource reloading ("zip file closed"), then the integrated server
-  crashed with Xaero's "Registry is not frozen yet!". Without it, the normal scenario passes.
-* YOSBR: default options now ship as `config/yosbr/options.txt`, so updates never overwrite a player's settings.
-  Verified: all packs active in the client.
-* `configs/particular-common.toml`: falling leaves off (Falling Leaves owns them).
-* Quests: 110 (+6), 92 auto, 18 manual:
-  * new: Bedroll, Pond Life, Flower Cows, Put Your Feet Up, Festive Season, Lost Places;
-  * Fitted Kitchen is now auto (Adorn advancements).
-  * check_content: 0 errors against the refreshed registry dump (server boot, 276 mods).
-* Server boot passes (70 s; spawn prepare 20.9 s); `coolrain` set client-only.
-* Client: normal PASS and showcase PASS (110 quests loaded).
-
-**Next, in order:**
-1. Re-run showcase with the reworked decor showroom and the diagnostic shot `dbg-spectator-hud`. Identify the white
-   loading-style bar seen in the spectator/HUD-off village shot (new in 1.1; only one resource reload in the log, at
-   start-up).
-2. Optimization:
-   * measure C2ME (`c2me-fabric`) against the spawn-prepare baseline of 20.9 s;
-   * consider Fast Item Frames / Fast Paintings, Let Me Despawn (`lmd`), language-reload;
-   * document optional Java flags.
-3. Themed menus:
-   * candidate packs: `homestead-gui` ("cozy GUI and HUD themed around natural woods and stones"), `cozy-wooden-ui`,
-     `menu-buttons-of-stone`, `dark-coffe-gui`, `better-title-screens`. Check each against Recolourful Containers and
-     Spatial GUI;
-   * and/or generate walnut buttons, menu background and separators in Homestead Resources (`tools/gen_resources.py`).
-4. Release pass 1.1.0:
-   * GameTests, server, client normal/blizzard/showcase/title, read screenshots;
-   * docs (inventory, visuals, INSTALL, limitations, CHANGELOG);
-   * refresh `dist/`.
