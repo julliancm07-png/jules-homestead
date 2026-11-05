@@ -12,7 +12,7 @@ Distribution: Modrinth-hosted files are referenced by Modrinth CDN URL; FTB file
 | Mod | Version (Modrinth version ID) | MC / loaders | Sides C/S | License | Purpose / notes | Requires |
 |---|---|---|---|---|---|---|
 | [Fabric API](https://modrinth.com/mod/fabric-api) | 0.155.3+26.1.2 (`3dM0X6ou`) | 26.1, 26.1.1, 26.1.2 / fabric | ✓/✓ | Apache-2.0 | Fabric API. |  |
-| `homestead-pack-data` (datapacks/homestead-pack-data) | 1.0.0 (local build) | 26.1.2 / fabric | ✓/✓ | MIT (bundled) | Custom data module: Serene Seasons tags for Farmer's Delight/Ube's/Rustic crops, removes EP weather & time controllers. |  |
+| `homestead-pack-data` (datapacks/homestead-pack-data) | 1.1.0 (local build) | 26.1.2 / fabric | ✓/✓ | MIT (bundled) | Custom data module: Serene Seasons tags for Farmer's Delight/Ube's/Rustic crops, removes EP weather & time controllers. |  |
 | [Mod Menu](https://modrinth.com/mod/modmenu) | 18.0.2 (`ZJ6YTrMY`) | 26.1, 26.1.1, 26.1.2 / fabric, quilt | ✓/✗ | MIT | In-game mod list and config entry points. | fabric-api, placeholder-api |
 | [Your Options Shall Be Respected (YOSBR)](https://modrinth.com/mod/yosbr) | 0.1.2 (`KMOzdYko`) | 26.1, 26.1.1, 26.1.2 / fabric, quilt | ✓/✗ | LGPL-3.0-only | Default options without overwriting a player's own options.txt on update. |  |
 
@@ -104,7 +104,7 @@ Distribution: Modrinth-hosted files are referenced by Modrinth CDN URL; FTB file
 | Mod | Version (Modrinth version ID) | MC / loaders | Sides C/S | License | Purpose / notes | Requires |
 |---|---|---|---|---|---|---|
 | [Energized Power](https://modrinth.com/mod/energized-power) | 3.0.7+26.1.x-fabric (`8athtrg0`) | 26.1, 26.1.1, 26.1.2 / fabric | ✓/✓ | MIT | Electrical backbone on TR Energy: solar I-IV, coal engine, battery boxes, cables, powered lamp/furnace, crusher. | fabric-api |
-| `homestead-core` (custom-mods/homestead-core) | 1.0.0 (local build) | 26.1.2 / fabric | ✓/✓ | MIT (bundled) | Custom: severe fronts (storm/blizzard), shelter/exposure, forecast, wind turbine, water wheel, refrigerator, electric range, space heater. | fabric-api |
+| `homestead-core` (custom-mods/homestead-core) | 1.1.0 (local build) | 26.1.2 / fabric | ✓/✓ | MIT (bundled) | Custom: severe fronts (storm/blizzard), shelter/exposure, forecast, wind turbine, water wheel, refrigerator, electric range, space heater. | fabric-api |
 
 ## town
 

@@ -88,9 +88,21 @@ Subtle Effects (sparks, smoke, snoring Z's, dust; each effect toggleable; replac
 Shaders draw their own sky (Dramatic Skys then has no effect) and may override blizzard fog.
 
 ## Verified in the cloud client (software GL)
-* All packs and mods load together (260 mods including libraries); every resource pack is active.
-* Screenshots: `showcase-questbook.png` (walnut theme), `showcase-jade.png` (walnut Jade tooltip), `showcase-inventory.png`, `showcase-crafting.png`, `showcase-range.png` (Spatial GUI panels; the IPN auto-refill icons are gone), `showcase-village.png`, `client-smoke-blizzard.png` (blizzard fog and snow), `title-screen.png`.
-* Cosmetic: EMF logs that it ignores a few block-entity models (chest, bed, banner), so Fresh Animations Objects won't animate those.
+* All packs and mods load together (395 mods including libraries in 1.1.0); every enabled resource pack is active,
+  including A Good Place's built-in animation pack.
+* Screenshots (1.1.0 showcase run):
+  * `showcase-village.png` and `showcase-village-night.png`: day and midnight over a village. The night sky is dark
+    with stars once the Immersive Storms fix is in (before it, the sky stayed daytime blue).
+  * `showcase-decor.png`: the lantern-lit evening cabin (Adorn kitchen, Electric Oven, fridge, sofa, hearth, Macaw's
+    Holidays tree).
+  * `showcase-hud.png`: Homestead GUI's stone hotbar.
+  * `showcase-inventory.png`, `showcase-crafting.png`, `showcase-range.png`: Spatial GUI panels with Recolourful
+    containers, wooden Homestead GUI buttons on mod widgets, and our Electric Oven.
+  * `showcase-questbook.png` (walnut theme), `showcase-jade.png` (walnut Jade tooltip), `client-smoke-blizzard.png`
+    (blizzard fog and snow), `title-screen.png`.
+* Cosmetic: EMF logs that it ignores a few block-entity models (chest, bed, banner), so Fresh Animations Objects won't
+  animate those. Homestead GUI logs an error for an optional hotbar variant it can't evaluate (harmless).
+* Animations can't be judged from still screenshots: they load without errors, but the feel needs your PC.
 
 ## Awaiting Jules' check on a real GPU
-Overall look and colours, Dramatic Skys skies, shaders, comfort of Camera Overhaul, readability of the walnut quest book at your GUI scale, and how Spatial GUI feels in everyday play (mouse tracking on the panel, shaders behind it).
+Overall look and colours, Dramatic Skys skies (day and night), the new menus and animations, shader night presets (aurora, nebulae), comfort of Camera Overhaul, readability of the walnut quest book at your GUI scale, and how Spatial GUI feels in everyday play (mouse tracking on the panel, shaders behind it).

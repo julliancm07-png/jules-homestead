@@ -44,6 +44,20 @@ animations and immersive nights. Research: `research/2026-11-05-polish-1.1-candi
 - New: Bedroll, Pond Life, Flower Cows, Put Your Feet Up, Festive Season, Lost Places. Fitted Kitchen is now detected
   automatically (Adorn advancements). 92 quests complete automatically, 18 are tick-boxes.
 
+### Fixes
+- **Night sky** (also wrong in 1.0.0): the sky and horizon fog stayed bright daytime blue at night. Cause: Immersive
+  Storms (inside Scorchful) re-applied each biome's daytime colour after Minecraft's day/night timeline. homestead-core
+  1.1.0 skips that duplicate step (`ImmersiveStormsNightSkyFixMixin`); verified in the client at midnight.
+- **Start-up loading screen:** RRLS now only hides reloads you trigger in game (`config/rrls.toml`), so the first load
+  keeps the normal loading screen and a world can't open before its textures are ready (the cause of a white progress
+  bar in screenshots).
+- Homestead Resources restores the "Inventory" label on container screens (Homestead GUI blanks it).
+
+### homestead-core 1.1.0
+- `ImmersiveStormsNightSkyFixMixin` (see Fixes); applied only when Immersive Storms is installed.
+- Dev harness: `probe` (log the client's block state) and `pack on|off` steps; `client_smoke_test.py --script`.
+- GameTests: 10/10.
+
 ### Packaging and tooling
 - **YOSBR:** default options ship as `config/yosbr/options.txt` and are copied only when you have no `options.txt`, so
   updating never overwrites your settings.
