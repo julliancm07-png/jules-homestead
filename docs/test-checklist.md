@@ -54,7 +54,21 @@ Use a **separate test world**. Tick each box; if something fails, note what you 
 - [ ] Manual quests show "[Manual]" and a tick box.
 - [ ] Rewards claim correctly, and none of them hand out machines.
 
-## 7. Performance
+## 7. Screens & visuals
+- [ ] Title screen: the village panorama turns slowly, with the "Homestead Edition" banner and a homestead splash.
+- [ ] **Spatial GUI**: press E. The inventory appears as a panel beside your character in third person, and clicking and dragging items works normally.
+  - [ ] A chest, a crafting table and the Electric Oven open the same way.
+  - [ ] The quest book and the pause menu stay flat.
+  - [ ] Try *Mod Menu → Spatial GUI → View Mode → First Person* and keep whichever you prefer.
+- [ ] JEI: the item list next to the panel is still usable (search, click for recipes).
+- [ ] The quest book (walnut) and Jade tooltips (walnut) are readable at your GUI scale.
+- [ ] Shaders: switch between Complementary Reimagined, Photon, Mellow and MakeUp Ultra Fast (*Video Settings → Shader Packs*). For each one:
+  - [ ] no black screen or crash;
+  - [ ] Spatial GUI panels are still readable;
+  - [ ] note the FPS.
+- [ ] Without shaders, Dramatic Skys shows clouds and a sunset.
+
+## 8. Performance
 - [ ] Baseline preset (`docs/presets.md`): record FPS at the homestead during clear weather and in a severity-3 blizzard.
 - [ ] Memory: F3 shows heap use under about 80% of the allocation after 10 minutes.
 - [ ] Optional: Complementary Reimagined (cinematic) and Distant Horizons: record FPS and stability.

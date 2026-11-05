@@ -7,11 +7,11 @@ Legend: **R** researched · **I** implemented · **C** compiled · **T** runtime
 | Item | State | Evidence |
 |---|---|---|
 | Platform choice (26.1.2 / Loader 0.20.1 / Java 25) | R | research/version-decision.md |
-| Pinned lockfile (125 files, IDs + hashes + licenses) | T | `tools/resolve.py`; hashes re-verified by `validate.py` and `mrpack_install.py` |
+| Pinned lockfile (158 files: 135 third-party mods, 2 local, 17 resource packs, 4 shaders; IDs + hashes + licences) | T | `tools/resolve.py`; hashes re-verified by `validate.py` and `mrpack_install.py` |
 | Jar-level dependency resolution (client-all, client-core, server) | T | `tools/validate.py`: 0 errors |
-| Dedicated server boots + generates world (90 server mods) | T | `tools/server_test.py`: 3/3 clean boots, ~40 s |
-| `.mrpack` builds; launcher-style install verifies every file | T | `tools/package.py`, `tools/mrpack_install.py` (117 client files + overrides) |
-| **Full client** (238 mods incl. nested) launches, renders, joins singleplayer, 90 s without crash | T | `tools/client_smoke_test.py --scenario normal` → PASS; `docs/screenshots/client-smoke-normal.png` (world rendered behind MCA's first-join screen) |
+| Dedicated server boots + generates world (96 server mods + 2 local) | T | `tools/server_test.py`: 3/3 clean boots, ~40 s |
+| `.mrpack` builds; launcher-style install verifies every file | T | `tools/package.py`, `tools/mrpack_install.py` (156 downloads + 2 bundled local mods + overrides) |
+| **Full client** (260 mods incl. nested libraries) launches, renders, joins singleplayer, 90 s without crash | T | `tools/client_smoke_test.py --scenario normal` → PASS; `docs/screenshots/client-smoke-normal.png` (world rendered behind MCA's first-join screen) |
 | Prism import (real launcher UI, optional-mod dialog, untrusted-URL prompt) | L | Prism behaviour verified from source only |
 | Real GPU rendering, shaders, Distant Horizons, sound, keybind conflicts, FPS | L | docs/test-checklist.md |
 
@@ -22,14 +22,15 @@ Legend: **R** researched · **I** implemented · **C** compiled · **T** runtime
 | Forecast + warnings, barometer reading, commands | T (server console) / L (in-game UI) | `/homestead weather status/forecast/start/stop` in the full pack |
 | Shelter heuristic (heightmap roof incl. glass + upwind wall) | T | GameTest `shelterHeuristic` |
 | Blizzard cold via Thermoo source (frost-resistance reduction) | T (registration + maths) / L (felt in play) | GameTest `thermooSourcesRegistered` |
-| Slowdown, snow build-up | I/C · L | code paths run during console-started fronts; no assertion yet |
+| Slowdown (storm and blizzard), shelter removes it | T | GameTests `stormSlowdownAndShelter`, `blizzardSlowdownSnowAndAdvancements` (survival test player; slowdown = config × intensity) |
+| Snow build-up (cap, farmland/roof exclusions, live accumulation around an exposed player) | T | GameTest `blizzardSlowdownSnowAndAdvancements` |
 | Blizzard fog + snow particles (client) | T (runs under software GL) / L (looks right) | see the blizzard smoke test below |
 | Wind turbine output under storm wind | T | GameTest (turbine generated energy during a front) |
 | Water wheel needs flowing water | T | GameTest `waterWheelNeedsFlowingWater` |
 | Refrigerator preserves only while powered (real Spoiled) | T | GameTest `refrigeratorPreservesOnlyWhilePowered` (chest control spoils; warm fridge spoils; powered fridge doesn't) |
 | Electric range: FD heat-source LIT gate, oven pause on outage, residual heat | T | GameTest `electricRangeOvenAndCooktop`; FD tag gating verified in FD source |
 | Space heater power + demand + light + warm radius | T | GameTest `spaceHeaterRunsOnPowerAndDemand` |
-| Weather advancements for quests | I/C · L | awarded by the server tick; not yet asserted |
+| Weather advancements for quests (witness_front, caught_in_blizzard, safe_and_warm after 60 s sheltered) | T | the two weather-exposure GameTests (10/10 GameTests pass, repeated runs) |
 | Spoiled dedicated-server cache workaround | T | GameTest control chest spoils only with the fix |
 | Serene Seasons singleplayer recursion fix | T | Client smoke test crashed without it (StackOverflowError) and passes with it |
 
@@ -50,18 +51,19 @@ Legend: **R** researched · **I** implemented · **C** compiled · **T** runtime
 | Walnut Jade theme as default | T | `docs/screenshots/showcase-jade.png` |
 | 16 curated resource packs active (incl. Recolourful Containers, Dramatic Skys) | T (all loaded) / L (look on real GPU) | client log "Reloading ResourceManager" lists every pack |
 | Structure data packs (Structory, Towers, Explorify), Gardener's Dream, Snow Under Trees | T (load, server + client) / L (exploration feel) | server boot + client showcase |
-| Immersion mods (Subtle Effects, Ambient Environment, Wakes, Camera Overhaul tuned, Legendary Tooltips, RRLS, Overflowing Bars, Nuit) | T (load) / L (feel) | 259 mods loaded, showcase PASS |
+| Immersion mods (Subtle Effects, Ambient Environment, Wakes, Camera Overhaul tuned, Legendary Tooltips, RRLS, Overflowing Bars, Nuit) | T (load) / L (feel) | 260 mods loaded, showcase PASS; Camera Overhaul re-saved our tuned values unchanged |
+| **Spatial GUI** (3D inventory/container panels; Jules' pick) | T (renders with Recolourful, JEI, our oven screen) / L (feel, shaders) | `showcase-inventory.png`, `showcase-crafting.png`, `showcase-range.png`; quest book stays flat |
 | Optional shaders: Complementary Reimagined, Photon, Mellow, MakeUp UF | R · L | need a real GPU |
-| IPN auto-refill icons removed from slots | I · L | config `AutoRefillSettings` (format verified in libIPN source) |
+| IPN auto-refill icons removed from slots | T | showcase screenshots show no slot icons |
 
 ## Removed / blocked
 * Wilder Wild: removed (registry-load race with Terralith). See docs/compatibility.md.
 * CurseForge API and site are blocked by this environment's egress proxy (HTTP 403). CurseForge facts came from WebFetch and the CFWidget mirror (marked secondary).
 
-## Finish-up plan (next session, in order)
-1. **Spacial GUI** (Jules likes its look): identify the Modrinth project, check its 26.1.2 build, licence and requirements, compare it with Recolourful Containers (pick one or order them), add it, then check the `showcase` inventory screenshot.
-2. Re-run the `showcase` scenario: confirm the IPN slot icons are gone and Camera Overhaul's tuned config applies.
-3. Close the I/C gaps: GameTests for slowdown, snow build-up and the weather advancements.
+## Finish-up plan
+1. ~~Spatial GUI~~ — done: added (client-only mod, works alongside Recolourful Containers), verified in the showcase run.
+2. ~~Re-run showcase~~ — done: IPN slot icons gone; Camera Overhaul config applied.
+3. ~~GameTests for slowdown, snow build-up, weather advancements~~ — done (10 GameTests).
 4. Optional quest: town power via FTB's `tech_reborn_energy` task.
-5. Release pass: bump to 1.0.0, run the full pipeline (resolve → validate → build_local → quests → check_content → package → mrpack_install → server_test → client normal/blizzard/showcase/title), make counts consistent across README/STATUS (mods, files), and finish test-checklist entries for visuals and shaders.
+5. Release pass: bump to 1.0.0, run the full pipeline (resolve → validate → build_local → quests → check_content → package → mrpack_install → server_test → client normal/blizzard/showcase/title), counts consistent across README/STATUS.
 6. Delivery: get the `.mrpack` to Jules (a GitHub release asset or a committed `dist/` file; ask first).

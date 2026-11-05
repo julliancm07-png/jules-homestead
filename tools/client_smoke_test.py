@@ -11,7 +11,7 @@ or audio (no sound device in the cloud).
 --scenario blizzard : world spawn moved to a snowy biome and a severity-3 blizzard started before the client joins
 --scenario showcase : spawn at a village, morning, frozen time, peaceful; runs tools/showcase.script through the
                       dev harness (-Dhomesteadcore.dev.script): panorama capture + UI screenshots, then quits
-Usage: python3 -I tools/client_smoke_test.py [--scenario blizzard] [--settle 90] [--skip-install]
+Usage: python3 -I tools/client_smoke_test.py [--scenario blizzard] [--settle 90] [--skip-install] [--update-panorama]
 Requires: Xvfb, ImageMagick `import`, portablemc (pip), Java 25 at /opt/jdk25 (or HOMESTEAD_JAVA).
 """
 import argparse
@@ -75,6 +75,8 @@ def main():
     ap.add_argument("--scenario", default="normal", choices=["normal", "blizzard", "showcase", "title"])
     ap.add_argument("--settle", type=int, default=90)
     ap.add_argument("--skip-install", action="store_true")
+    ap.add_argument("--update-panorama", action="store_true",
+                    help="showcase: copy the captured title-screen panorama into resourcepacks/homestead-resources-src")
     a = ap.parse_args()
     mrpack = sorted((ROOT / "build" / "dist").glob("*.mrpack"))[-1]
     if not a.skip_install:
@@ -138,6 +140,8 @@ def main():
         pano = ROOT / "resourcepacks" / "homestead-resources-src" / "panorama"
         for f in sorted(shots.glob("*.png")) if shots.exists() else []:
             if f.name.startswith("panorama_"):
+                if not a.update_panorama:
+                    continue  # keep the committed panorama unless explicitly asked (avoids image churn in git)
                 pano.mkdir(parents=True, exist_ok=True)
                 shutil.copy(f, pano / f.name)
             else:

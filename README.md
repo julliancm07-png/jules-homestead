@@ -3,7 +3,7 @@
 A Fabric modpack for **Minecraft 26.1.2**. Found a homestead, then grow it into a town. Seasons turn the year and severe fronts bring storms and **blizzards** that really matter. **Renewable electricity** runs household appliances, residents move in, and a hand-written quest book guides the way.
 
 * **Platform:** Minecraft 26.1.2 · Fabric Loader 0.20.1 · Fabric API 0.155.3 · Java 25 ([why](research/version-decision.md))
-* **Mods:** 136 pinned mods (`docs/mod-inventory.md`), plus the custom **homestead-core** mod and a pack data module
+* **Mods:** 135 pinned third-party mods (108 chosen + 27 dependencies; `docs/mod-inventory.md`), plus the custom **homestead-core** mod and a pack data module; 17 resource packs and 4 optional shaders
 * **Quests:** 9 chapters, 104 quests (85 auto-detected, 19 labelled manual building milestones)
 * **Install:** [docs/INSTALL.md](docs/INSTALL.md) (Windows + Prism Launcher, `.mrpack`)
 * **Status:** [STATUS.md](STATUS.md) · **Limitations:** [docs/known-limitations.md](docs/known-limitations.md) · **Local test plan:** [docs/test-checklist.md](docs/test-checklist.md)
@@ -20,7 +20,7 @@ A Fabric modpack for **Minecraft 26.1.2**. Found a homestead, then grow it into 
 | Town | MCA Reborn residents, building detection, ranks and taxes; Easy NPC; waystones |
 | World | Terralith + Tectonic, Towns & Towers, YUNG's structures, Friends & Foes |
 | Quality of life | JEI (only recipe viewer), Jade, Xaero's maps, backpacks, drawers, Tom's storage, Controlling, Mod Menu |
-| Atmosphere & screens | Own **Homestead Resources** pack (title panorama of the pack's world, Homestead Edition banner, splashes, walnut quest-book & Jade themes); 16 curated resource packs (Fresh Animations, Fancy Crops, Recolourful Containers, Dramatic Skys…); Subtle Effects, AmbientSounds, Sound Physics, Particle Rain, Immersive Storms; optional shaders (Complementary, Photon, Mellow, MakeUp). See [docs/visuals-and-immersion.md](docs/visuals-and-immersion.md) |
+| Atmosphere & screens | Own **Homestead Resources** pack (title panorama of the pack's world, Homestead Edition banner, splashes, walnut quest-book & Jade themes); 16 curated resource packs (Fresh Animations, Fancy Crops, Recolourful Containers, Dramatic Skys…); **Spatial GUI** 3D inventory panels; Subtle Effects, AmbientSounds, Sound Physics, Particle Rain, Immersive Storms; optional shaders (Complementary, Photon, Mellow, MakeUp). See [docs/visuals-and-immersion.md](docs/visuals-and-immersion.md) |
 
 ## Repository layout
 See [CLAUDE.md](CLAUDE.md). In short: `research/` (decisions and evidence), `docs/` (design, power plan, weather design, install, tests), `pack/` (manifest + lockfile), `configs/` (pack configs + FTB quests), `datapacks/` (pack data module), `quests/book.py` (quest source), `custom-mods/homestead-core/` (the custom mod), `tools/` (build and validation).

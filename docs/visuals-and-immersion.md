@@ -11,6 +11,24 @@ Goal (Jules, 2026-11-05): pleasant, immersive screens and a carefully chosen set
 | **Jade tooltips** | The "Homestead (walnut)" theme (walnut box, gold frame) matches the quest book. It's set as the default in `config/jade/jade.json`. |
 | **Item tooltips** | **Legendary Tooltips**: framed tooltips with item previews. |
 | **Containers** | **Recolourful Containers** (vanilla+ mode): wooden crafting area, themed anvil, enchanting and so on. |
+| **Inventory & containers in 3D** | **Spatial GUI**: the screen becomes a panel floating in the world beside your character, and the camera swings to third person. It works together with Recolourful Containers, which supplies the textures shown on the panel. See below. |
+
+## Spatial GUI (Jules' pick, 2026-11-05)
+[Spatial GUI](https://modrinth.com/mod/spatial-gui) 1.10.1, client-only, MIT licence. It needs YACL and Mod Menu, which the pack already has. It's a mod rather than a resource pack: it changes *where* screens are drawn, while Recolourful Containers changes *how they look*, so both are used.
+* **Shipped with the mod's own defaults**, which is the look on its Modrinth page:
+  * third-person view with your character turned towards the panel;
+  * a soft drop shadow and an open/close animation.
+* **3D screens:** the inventory, chests and every container (including the Electric Oven, backpacks and storage), plus books, lecterns, villager trading and JEI recipe pages.
+* **Flat screens:** the quest book, menus, MCA dialogues and the pause screen. Screenshot `showcase-questbook.png` confirms the quest book stays flat.
+* **Change it** in *Mod Menu → Spatial GUI*:
+  * **View Mode → First Person** gives a panel in front of you instead of third person. **Disable in First Person** keeps normal screens while you play in first person.
+  * **Enabled** off turns it off completely, back to flat screens.
+  * **Blur World Background** is experimental.
+  * Bind *Open Visual Editor* in *Controls* to drag the panel where you like it. You can also give different screens their own placement (the backtick key opens the profile picker).
+* **Known quirks:**
+  * JEI's item list and a few small mod buttons stay flat on screen around the panel; you can see this in the screenshots.
+  * The author marks the mod as early development: if a modded screen misbehaves, add its class name to *Disabled Screens*. Its *Seen Screens* list shows the names.
+* Screenshots: `showcase-inventory.png`, `showcase-crafting.png` (Recolourful's wooden crafting area on the panel), `showcase-range.png` (our Electric Oven).
 
 ## Resource packs (enabled by default, bottom → top)
 Better Leaves · Fresh Animations + Details + Objects (official extensions) · Fancy Crops (built for Farmer's Delight) · Simple Grass Flowers · Better Lanterns · Fresh Flower Pots · Clean Connected Glass (Continuity) · Animated Items · TheOne's Eating Animation · Even Better Enchants · Visual Armor Trims · Low On Fire · Recolourful Containers · Dramatic Skys (via Nuit) · **Homestead Resources** (top).
@@ -34,9 +52,9 @@ Subtle Effects (sparks, smoke, snoring Z's, dust; each effect toggleable; replac
 Shaders draw their own sky (Dramatic Skys then has no effect) and may override blizzard fog.
 
 ## Verified in the cloud client (software GL)
-* All packs and mods load together (259 mods including libraries); every resource pack is active.
-* Screenshots: `showcase-questbook.png` (walnut theme), `showcase-jade.png` (walnut Jade tooltip), `showcase-inventory.png` (Recolourful crafting area; the IPN auto-refill icons seen there are now turned off), `showcase-village.png`, `client-smoke-blizzard.png` (blizzard fog and snow), `title-screen.png`.
+* All packs and mods load together (260 mods including libraries); every resource pack is active.
+* Screenshots: `showcase-questbook.png` (walnut theme), `showcase-jade.png` (walnut Jade tooltip), `showcase-inventory.png`, `showcase-crafting.png`, `showcase-range.png` (Spatial GUI panels; the IPN auto-refill icons are gone), `showcase-village.png`, `client-smoke-blizzard.png` (blizzard fog and snow), `title-screen.png`.
 * Cosmetic: EMF logs that it ignores a few block-entity models (chest, bed, banner), so Fresh Animations Objects won't animate those.
 
 ## Awaiting Jules' check on a real GPU
-Overall look and colours, Dramatic Skys skies, shaders, comfort of Camera Overhaul, readability of the walnut quest book at your GUI scale.
+Overall look and colours, Dramatic Skys skies, shaders, comfort of Camera Overhaul, readability of the walnut quest book at your GUI scale, and how Spatial GUI feels in everyday play (mouse tracking on the panel, shaders behind it).
