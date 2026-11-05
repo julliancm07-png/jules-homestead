@@ -5,6 +5,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.Screenshot;
 import net.minecraft.client.gui.screens.inventory.InventoryScreen;
 import net.minecraft.client.server.IntegratedServer;
+import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.phys.BlockHitResult;
 
@@ -19,7 +20,9 @@ import java.util.Deque;
  * headless (Xvfb) client. Inert unless the JVM is started with -Dhomesteadcore.dev.script=&lt;file&gt;.
  *
  * Script lines: waitworld | wait N | server &lt;command&gt; | screenshot &lt;name&gt; | panorama | hud on|off |
- * screen inventory|close | look &lt;yaw&gt; &lt;pitch&gt; | use (right-click the block under the crosshair) | quit | # comment
+ * screen inventory|close | look &lt;yaw&gt; &lt;pitch&gt; | use (right-click the block under the crosshair) |
+ * probe &lt;dx&gt; &lt;dy&gt; &lt;dz&gt; (log the CLIENT's block state relative to the player) | pack on|off &lt;pack id&gt; |
+ * quit | # comment
  */
 public final class DevShowcase {
 	private static final Deque<String> STEPS = new ArrayDeque<>();
@@ -97,6 +100,22 @@ public final class DevShowcase {
 					String[] r = arg.split("\\s+");
 					mc.player.setYRot(Float.parseFloat(r[0]));
 					mc.player.setXRot(Float.parseFloat(r[1]));
+				}
+			}
+			case "probe" -> {
+				if (mc.player != null && mc.level != null) {
+					String[] r = arg.split("\\s+");
+					BlockPos pos = mc.player.blockPosition().offset(Integer.parseInt(r[0]), Integer.parseInt(r[1]), Integer.parseInt(r[2]));
+					HomesteadCore.LOG.warn("[dev] probe {} (client): {}", pos, mc.level.getBlockState(pos));
+				}
+			}
+			case "pack" -> {
+				String[] r = arg.split("\\s+", 2);
+				var repo = mc.getResourcePackRepository();
+				boolean changed = "off".equals(r[0]) ? repo.removePack(r[1]) : repo.addPack(r[1]);
+				HomesteadCore.LOG.warn("[dev] pack {} {}: changed={}", r[0], r[1], changed);
+				if (changed) {
+					mc.options.updateResourcePacks(repo);
 				}
 			}
 			case "quit" -> mc.stop();

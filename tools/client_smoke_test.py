@@ -75,6 +75,8 @@ def main():
     ap.add_argument("--scenario", default="normal", choices=["normal", "blizzard", "showcase", "title"])
     ap.add_argument("--settle", type=int, default=90)
     ap.add_argument("--skip-install", action="store_true")
+    ap.add_argument("--script", help="showcase world + this dev-harness script instead of tools/showcase.script; "
+                                     "screenshots go to build/debug-shots (diagnostics, never committed)")
     ap.add_argument("--update-panorama", action="store_true",
                     help="showcase: copy the captured title-screen panorama into resourcepacks/homestead-resources-src")
     a = ap.parse_args()
@@ -98,7 +100,8 @@ def main():
     cmd = ["portablemc", "--main-dir", str(ROOT / "build" / "pmc"), "start", "--mc-dir", str(INST), "fabric:26.1.2:0.20.1",
            "--jvm", JAVA, "--jvm-arg=-Xmx6G", "-u", "JulesTest", "--join-world", "HomesteadTest", "--resolution", "1280x720"]
     if a.scenario in ("showcase", "title"):
-        cmd.insert(cmd.index("-u"), f"--jvm-arg=-Dhomesteadcore.dev.script={ROOT / 'tools' / (a.scenario + '.script')}")
+        script = pathlib.Path(a.script).resolve() if a.script else ROOT / "tools" / (a.scenario + ".script")
+        cmd.insert(cmd.index("-u"), f"--jvm-arg=-Dhomesteadcore.dev.script={script}")
     if a.scenario == "title":
         i = cmd.index("--join-world")
         del cmd[i:i + 2]
@@ -136,7 +139,8 @@ def main():
     text = latest.read_text(errors="replace") if latest.exists() else ""
     if a.scenario in ("showcase", "title"):
         shots = INST / "screenshots"
-        dest = ROOT / "docs" / "screenshots"
+        dest = ROOT / "build" / "debug-shots" if a.script else ROOT / "docs" / "screenshots"
+        dest.mkdir(parents=True, exist_ok=True)
         pano = ROOT / "resourcepacks" / "homestead-resources-src" / "panorama"
         for f in sorted(shots.glob("*.png")) if shots.exists() else []:
             if f.name.startswith("panorama_"):

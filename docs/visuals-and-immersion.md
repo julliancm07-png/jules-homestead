@@ -6,7 +6,7 @@ Goal (Jules, 2026-11-05): pleasant, immersive screens and a carefully chosen set
 | Screen | What changed |
 |---|---|
 | **Title screen** | A 360° **panorama of the pack's own world** (a village at morning), captured in-game with vanilla's panorama renderer through the dev harness. A "**Homestead Edition**" banner under the logo in original pixel lettering. **Homestead splash texts** ("Check the barometer!", "Glass counts as a roof!", "Hello, Jules!" …). |
-| **Loading screen** | `darkMojangStudiosBackground:true` gives a calm dark loading screen instead of bright red. **RRLS** reloads resource packs in the background. |
+| **Loading screen** | `darkMojangStudiosBackground:true` gives a calm dark loading screen instead of bright red. **RRLS** reloads resource packs in the background when you change them in game (`config/rrls.toml`: `hideOverlays = "RELOADING"`). The first load at start-up keeps the normal loading screen, so a world can't open before its textures are ready. |
 | **Quest book** | A warm **walnut** theme with cream text and gold highlights. The *Weather Wise* chapter uses a frosty slate background; the *Power* and *Kitchen* chapters use a warm ember background (FTB Quests theme selectors on chapter tags). |
 | **Jade tooltips** | The "Homestead (walnut)" theme (walnut box, gold frame) matches the quest book. It's set as the default in `config/jade/jade.json`. |
 | **Item tooltips** | **Legendary Tooltips**: framed tooltips with item previews. |
