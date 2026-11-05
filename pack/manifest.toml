@@ -443,6 +443,10 @@ slug = "cameraoverhaul"
 group = "visual"
 purpose = "Gentle camera roll/sway for first-person immersion (tuned down in configs; can be disabled)."
 [[mod]]
+slug = "spatial-gui"
+group = "visual"
+purpose = "Inventory and container screens drawn as a 3D panel in the world (camera swings to third person, player faces the panel). Client-only; needs YACL + Mod Menu (already in the pack)."
+[[mod]]
 slug = "legendary-tooltips"
 group = "visual"
 purpose = "Framed, readable item tooltips with item previews (pleasant screens)."

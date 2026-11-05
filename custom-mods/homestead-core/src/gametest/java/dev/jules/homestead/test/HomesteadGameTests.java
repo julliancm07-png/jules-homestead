@@ -1,6 +1,7 @@
 package dev.jules.homestead.test;
 
 import com.github.thedeathlycow.thermoo.api.core.v2.registry.ThermooRegistries;
+import com.mojang.authlib.GameProfile;
 import com.github.thedeathlycow.thermoo.api.core.v2.source.TemperatureSource;
 import com.mojang.serialization.DataResult;
 import dev.jules.homestead.block.entity.ElectricRangeBlockEntity;
@@ -22,20 +23,31 @@ import net.minecraft.core.Direction;
 import net.minecraft.gametest.framework.GameTestHelper;
 import net.minecraft.nbt.NbtOps;
 import net.minecraft.nbt.Tag;
+import net.minecraft.network.Connection;
+import net.minecraft.network.protocol.PacketFlow;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.network.CommonListenerCookie;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.decoration.ArmorStand;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.LightLayer;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ChestBlock;
+import net.minecraft.world.level.block.SnowLayerBlock;
 import net.minecraft.world.level.block.entity.ChestBlockEntity;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.phys.Vec3;
+import io.netty.channel.embedded.EmbeddedChannel;
 import team.reborn.energy.api.EnergyStorage;
+
+import java.util.UUID;
 
 /**
  * Runtime tests executed on a real dedicated-server GameTest instance with Thermoo, Cardinal Components, Spoiled and
@@ -259,5 +271,191 @@ public class HomesteadGameTests {
 		h.assertValueEqual(ThermooCompat.blizzardChange(sheltered), 0, "sheltered => no blizzard cold");
 		h.assertValueEqual(ThermooCompat.blizzardChange(rain), 0, "rain storm => no blizzard cold");
 		h.succeed();
+	}
+
+	// ------------------------------------------------------------------ weather-exposure helpers
+
+	/** Survival test player (vanilla's mock player is always creative, which our slowdown deliberately ignores). */
+	private static ServerPlayer survivalPlayer(GameTestHelper h, Vec3 rel) {
+		MinecraftServer server = h.getLevel().getServer();
+		CommonListenerCookie cookie = CommonListenerCookie.createInitial(new GameProfile(UUID.randomUUID(), "weather-test"), false);
+		ServerPlayer p = new ServerPlayer(server, h.getLevel(), cookie.gameProfile(), cookie.clientInformation());
+		Connection connection = new Connection(PacketFlow.SERVERBOUND);
+		new EmbeddedChannel(connection);
+		server.getPlayerList().placeNewPlayer(connection, p, cookie);
+		p.setGameMode(GameType.SURVIVAL);
+		p.setInvulnerable(true); // Thermoo cold must not kill the test player during the blizzard
+		p.snapTo(h.absoluteVec(rel));
+		return p;
+	}
+
+	/**
+	 * Runs /fillbiome over the test area plus one 4-block biome cell of margin and returns the old biome. The margin
+	 * matters: Level#getBiome uses the fuzzed (zoomed) biome lookup, so blocks near an edge can read the neighbouring cell.
+	 */
+	private static String fillBiome(GameTestHelper h, int size, String biome) {
+		BlockPos a = h.absolutePos(new BlockPos(-4, -4, -4));
+		BlockPos b = h.absolutePos(new BlockPos(size + 3, 12, size + 3));
+		String old = h.getLevel().getBiome(h.absolutePos(new BlockPos(size / 2, 1, size / 2))).getRegisteredName();
+		MinecraftServer server = h.getLevel().getServer();
+		server.getCommands().performPrefixedCommand(server.createCommandSourceStack().withSuppressedOutput(),
+				String.format("fillbiome %d %d %d %d %d %d %s", Math.min(a.getX(), b.getX()), Math.min(a.getY(), b.getY()), Math.min(a.getZ(), b.getZ()),
+						Math.max(a.getX(), b.getX()), Math.max(a.getY(), b.getY()), Math.max(a.getZ(), b.getZ()), biome));
+		return old;
+	}
+
+	/** 5x5 hut (outer x/z 1..5, walls y 1..3, roof y 4) around a player standing at (3, 1, 3): sheltered from any wind. */
+	private static void hut(GameTestHelper h) {
+		for (int x = 1; x <= 5; x++) {
+			for (int z = 1; z <= 5; z++) {
+				h.setBlock(x, 4, z, Blocks.OAK_PLANKS);
+				if (x == 1 || x == 5 || z == 1 || z == 5) {
+					for (int y = 1; y <= 3; y++) {
+						h.setBlock(x, y, z, Blocks.OAK_PLANKS);
+					}
+				}
+			}
+		}
+	}
+
+	private static boolean hasAdvancement(ServerPlayer p, String path) {
+		var holder = p.level().getServer().getAdvancements().get(dev.jules.homestead.HomesteadCore.id(path));
+		return holder != null && p.getAdvancements().getOrStartProgress(holder).isDone();
+	}
+
+	private static double slowdown(ServerPlayer p) {
+		AttributeModifier m = p.getAttribute(Attributes.MOVEMENT_SPEED).getModifier(WeatherManager.SLOWDOWN_ID);
+		return m == null ? 0 : m.amount();
+	}
+
+	/**
+	 * Establishes (own batch, so no other test's front interferes): an exposed survival player in a rain storm is slowed
+	 * by exactly stormSlowdown × intensity and earns weather/witness_front but not caught_in_blizzard; shelter
+	 * (roof + walls) removes the slowdown; ending the front clears it and vanilla thunder.
+	 */
+	@GameTest(environment = "homesteadcore:storm_front", skyAccess = true, maxTicks = 1200)
+	public void stormSlowdownAndShelter(GameTestHelper h) {
+		MinecraftServer server = h.getLevel().getServer();
+		floor(h, 7);
+		String oldBiome = fillBiome(h, 7, "minecraft:plains");
+		ServerPlayer p = survivalPlayer(h, new Vec3(3.5, 1, 3.5));
+		h.assertValueEqual(Exposure.precipitationAt(h.getLevel(), p.blockPosition()), Biome.Precipitation.RAIN, "precondition: it rains here");
+		WeatherManager.startNow(server, Front.Kind.STORM, 2000, 2);
+		h.startSequence()
+				.thenIdle(40)
+				.thenExecute(() -> {
+					WeatherManager.PlayerWeather st = WeatherManager.playerState(p.getUUID());
+					h.assertTrue(st.stormExposure(), "player in the open counts as storm-exposed (" + st + ")");
+					double expected = -HomesteadConfig.get().weather.stormSlowdown * st.intensity();
+					h.assertTrue(expected < 0 && Math.abs(slowdown(p) - expected) < 1e-6, "storm slowdown = stormSlowdown x intensity (" + slowdown(p) + " vs " + expected + ")");
+					h.assertTrue(hasAdvancement(p, "weather/witness_front"), "witness_front awarded");
+					h.assertTrue(!hasAdvancement(p, "weather/caught_in_blizzard"), "rain storm does not award caught_in_blizzard");
+					hut(h);
+				})
+				.thenIdle(20)
+				.thenExecute(() -> {
+					h.assertTrue(!WeatherManager.playerState(p.getUUID()).exposed(), "inside the hut the player is sheltered");
+					h.assertValueEqual(slowdown(p), 0.0, "shelter removes the slowdown");
+					h.assertTrue(WeatherManager.stopNow(server), "stop accepted");
+				})
+				.thenWaitUntil(() -> h.assertTrue(WeatherManager.data(server).current() == null, "front ended"))
+				.thenIdle(20)
+				.thenExecute(() -> {
+					h.assertValueEqual(slowdown(p), 0.0, "no slowdown after the front");
+					h.assertTrue(!server.getWeatherData().isThundering(), "vanilla thunder cleared");
+					server.getPlayerList().remove(p);
+					fillBiome(h, 7, oldBiome);
+				})
+				.thenSucceed();
+	}
+
+	/**
+	 * Establishes (own batch): snow build-up rules (open natural ground gains layers up to the cap; no snow under a
+	 * roof or on no_snow_accumulation blocks such as farmland), live blizzard accumulation around an exposed player,
+	 * blizzard slowdown = blizzardSlowdown × intensity, the caught_in_blizzard advancement, and safe_and_warm after
+	 * 60 s sheltered during the blizzard.
+	 */
+	@GameTest(environment = "homesteadcore:blizzard_front", skyAccess = true, maxTicks = 3000)
+	public void blizzardSlowdownSnowAndAdvancements(GameTestHelper h) {
+		MinecraftServer server = h.getLevel().getServer();
+		ServerLevel level = h.getLevel();
+		HomesteadConfig.Weather cfg = HomesteadConfig.get().weather;
+		int oldRadius = cfg.snowAccumulationRadius;
+		int oldAttempts = cfg.snowAccumulationAttemptsPerSecond;
+		floor(h, 7);
+		String oldBiome = fillBiome(h, 7, "minecraft:snowy_plains");
+		h.assertValueEqual(Exposure.precipitationAt(level, h.absolutePos(new BlockPos(3, 1, 3))), Biome.Precipitation.SNOW, "precondition: it snows here");
+
+		// Deterministic rules first (no front needed).
+		BlockPos open = new BlockPos(0, 1, 0);
+		int cap = cfg.snowAccumulationMaxLayers;
+		for (int i = 1; i <= cap; i++) {
+			BlockPos abs = h.absolutePos(open);
+			h.assertTrue(WeatherManager.tryAddSnowLayer(level, abs, cap), "layer " + i + " added on open stone (precip "
+					+ Exposure.precipitationAt(level, abs) + ", open " + Exposure.openToSky(level, abs) + ", at " + level.getBlockState(abs)
+					+ ", below " + level.getBlockState(abs.below()) + ", survive " + Blocks.SNOW.defaultBlockState().canSurvive(level, abs) + ")");
+		}
+		h.assertValueEqual(h.getBlockState(open).getValue(SnowLayerBlock.LAYERS), cap, "layers stop at the configured cap");
+		h.assertTrue(!WeatherManager.tryAddSnowLayer(level, h.absolutePos(open), cap), "no layer beyond the cap");
+		h.setBlock(6, 0, 0, Blocks.FARMLAND);
+		h.assertTrue(!WeatherManager.tryAddSnowLayer(level, h.absolutePos(new BlockPos(6, 1, 0)), cap), "farmland never gets snow (no_snow_accumulation)");
+		h.setBlock(0, 3, 6, Blocks.OAK_PLANKS);
+		h.assertTrue(!WeatherManager.tryAddSnowLayer(level, h.absolutePos(new BlockPos(0, 1, 6)), cap), "no snow under a roof");
+		h.setBlock(open, Blocks.AIR);
+		h.setBlock(0, 3, 6, Blocks.AIR);
+		// Control row of farmland along z = 6 for the live accumulation check.
+		for (int x = 0; x < 7; x++) {
+			h.setBlock(x, 0, 6, Blocks.FARMLAND);
+		}
+
+		// Live blizzard: keep accumulation inside the 7x7 test area and make it frequent enough to observe.
+		cfg.snowAccumulationRadius = 3;
+		cfg.snowAccumulationAttemptsPerSecond = 40;
+		ServerPlayer p = survivalPlayer(h, new Vec3(3.5, 1, 3.5));
+		long[] shelteredAt = {0};
+		WeatherManager.startNow(server, Front.Kind.BLIZZARD, 3000, 3);
+		h.startSequence()
+				.thenIdle(100)
+				.thenExecute(() -> {
+					WeatherManager.PlayerWeather st = WeatherManager.playerState(p.getUUID());
+					h.assertTrue(st.blizzardExposure(), "player in the open counts as blizzard-exposed (" + st + ")");
+					double expected = -cfg.blizzardSlowdown * st.intensity();
+					h.assertTrue(expected < 0 && Math.abs(slowdown(p) - expected) < 1e-6, "blizzard slowdown = blizzardSlowdown x intensity (" + slowdown(p) + " vs " + expected + ")");
+					h.assertTrue(hasAdvancement(p, "weather/witness_front"), "witness_front awarded");
+					h.assertTrue(hasAdvancement(p, "weather/caught_in_blizzard"), "caught_in_blizzard awarded");
+					h.assertTrue(!hasAdvancement(p, "weather/safe_and_warm"), "safe_and_warm not yet");
+					int snowy = 0;
+					for (int x = 0; x < 7; x++) {
+						for (int z = 0; z < 6; z++) {
+							if (h.getBlockState(new BlockPos(x, 1, z)).is(Blocks.SNOW)) {
+								snowy++;
+							}
+						}
+						h.assertTrue(!h.getBlockState(new BlockPos(x, 1, 6)).is(Blocks.SNOW), "no snow on the farmland row at x=" + x);
+					}
+					h.assertTrue(snowy > 0, "snow accumulated on open ground around the player (" + snowy + " columns)");
+					hut(h);
+					shelteredAt[0] = level.getGameTime();
+				})
+				.thenIdle(20)
+				.thenExecute(() -> {
+					h.assertTrue(!WeatherManager.playerState(p.getUUID()).exposed(), "inside the hut the player is sheltered");
+					h.assertValueEqual(slowdown(p), 0.0, "shelter removes the blizzard slowdown");
+				})
+				// 120 sheltered 10-tick steps = 60 s
+				.thenWaitUntil(() -> h.assertTrue(hasAdvancement(p, "weather/safe_and_warm"), "safe_and_warm after 60 s sheltered"))
+				.thenExecute(() -> {
+					long waited = level.getGameTime() - shelteredAt[0];
+					h.assertTrue(waited >= 1180, "safe_and_warm needed ~60 s of shelter, not less (" + waited + " ticks)");
+				})
+				.thenExecute(() -> h.assertTrue(WeatherManager.stopNow(server), "stop accepted"))
+				.thenWaitUntil(() -> h.assertTrue(WeatherManager.data(server).current() == null, "front ended"))
+				.thenExecute(() -> {
+					cfg.snowAccumulationRadius = oldRadius;
+					cfg.snowAccumulationAttemptsPerSecond = oldAttempts;
+					server.getPlayerList().remove(p);
+					fillBiome(h, 7, oldBiome);
+				})
+				.thenSucceed();
 	}
 }

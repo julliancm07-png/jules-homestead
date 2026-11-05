@@ -20,9 +20,30 @@ wait 60
 screenshot showcase-jade
 look 225 0
 screen inventory
-wait 40
+wait 60
 screenshot showcase-inventory
 screen close
+wait 40
+# a real container (crafting table) and our own appliance screen (electric range), opened like a right-click
+server execute as JulesTest at @s run tp @s ~ ~ ~ 0 0
+server execute as JulesTest at @s run setblock ~ ~ ~2 minecraft:crafting_table
+wait 10
+look 0 30
+wait 10
+use
+wait 60
+screenshot showcase-crafting
+screen close
+wait 20
+server execute as JulesTest at @s run setblock ~ ~ ~2 homesteadcore:electric_range
+wait 10
+use
+wait 60
+screenshot showcase-range
+screen close
+wait 20
+server execute as JulesTest at @s run setblock ~ ~ ~2 minecraft:air
+look 225 0
 wait 20
 server execute as JulesTest run ftbquests open_book
 wait 120

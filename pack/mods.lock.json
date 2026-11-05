@@ -7,7 +7,7 @@
   "loader_version": "0.20.1",
   "summary": "A grounded homestead-to-town survival pack: seasons, storms and blizzards, renewable power for real appliances, residents and a hand-written quest book."
  },
- "resolved_at": "2026-11-05T04:00:26+00:00",
+ "resolved_at": "2026-11-05T04:25:13+00:00",
  "sources": [
   "https://api.modrinth.com/v2",
   "https://maven.ftb.dev/releases"
@@ -141,13 +141,13 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "P7dR8mSH",
+     "project_id": "OsZiaDHq",
      "file_name": null,
      "dependency_type": "required"
     },
     {
      "version_id": null,
-     "project_id": "OsZiaDHq",
+     "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
     }
@@ -425,9 +425,9 @@
    "side_override": null,
    "explicit": false,
    "required_by": [
-    "thermoo",
     "frostiful",
-    "scorchful"
+    "scorchful",
+    "thermoo"
    ]
   },
   {
@@ -509,14 +509,14 @@
    "side_override": null,
    "explicit": false,
    "required_by": [
+    "cameraoverhaul",
+    "cristel-lib",
+    "fallingleaves",
     "moreculling",
     "rustic-delight",
-    "cristel-lib",
-    "yungs-better-mineshafts",
     "yungs-better-dungeons",
-    "yungs-better-strongholds",
-    "fallingleaves",
-    "cameraoverhaul"
+    "yungs-better-mineshafts",
+    "yungs-better-strongholds"
    ]
   },
   {
@@ -600,13 +600,13 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "fuuu3xnx",
+     "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
     },
     {
      "version_id": null,
-     "project_id": "P7dR8mSH",
+     "project_id": "fuuu3xnx",
      "file_name": null,
      "dependency_type": "required"
     }
@@ -987,15 +987,15 @@
     },
     {
      "version_id": null,
-     "project_id": "mOgUt4GM",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
      "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "mOgUt4GM",
+     "file_name": null,
+     "dependency_type": "optional"
     }
    ],
    "group": "performance",
@@ -1039,18 +1039,6 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "ngLoLP1P",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
-     "project_id": "uTGjf7vA",
-     "file_name": null,
-     "dependency_type": "required"
-    },
-    {
-     "version_id": null,
      "project_id": "2RKFTmiB",
      "file_name": null,
      "dependency_type": "optional"
@@ -1058,6 +1046,18 @@
     {
      "version_id": null,
      "project_id": "Epm6R3P2",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "ngLoLP1P",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "uTGjf7vA",
      "file_name": null,
      "dependency_type": "required"
     }
@@ -1103,15 +1103,15 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "ngLoLP1P",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
      "project_id": "Epm6R3P2",
      "file_name": null,
      "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "ngLoLP1P",
+     "file_name": null,
+     "dependency_type": "optional"
     }
    ],
    "group": "library",
@@ -1157,13 +1157,13 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "ngLoLP1P",
+     "project_id": "2RKFTmiB",
      "file_name": null,
      "dependency_type": "optional"
     },
     {
      "version_id": null,
-     "project_id": "2RKFTmiB",
+     "project_id": "ngLoLP1P",
      "file_name": null,
      "dependency_type": "optional"
     }
@@ -1174,8 +1174,8 @@
    "side_override": null,
    "explicit": false,
    "required_by": [
-    "easy-npc-config-ui",
-    "easy-npc"
+    "easy-npc",
+    "easy-npc-config-ui"
    ]
   },
   {
@@ -1593,86 +1593,87 @@
    "side_override": null,
    "explicit": true,
    "required_by": [
-    "entityculling",
-    "dynamic-fps",
-    "modmenu",
-    "serene-seasons",
-    "glitchcore",
-    "thermoo",
-    "thermoo-patches",
-    "yacl",
-    "frostiful",
-    "scorchful",
-    "forge-config-api-port",
-    "particle-rain",
-    "spoiled",
-    "crops-love-rain",
-    "farmers-delight-refabricated",
-    "ubes-delight",
-    "rustic-delight",
-    "balm",
-    "farming-for-blockheads",
-    "rightclickharvest",
-    "jamlib",
+    "3dskinlayers",
+    "ambient-environment",
+    "ambientsounds",
     "appleskin",
-    "macaws-furniture",
-    "macaws-doors",
-    "macaws-windows",
-    "macaws-roofs",
-    "macaws-lights-and-lamps",
-    "macaws-paths-and-pavings",
-    "macaws-paintings",
+    "balm",
+    "continuity",
+    "controlling",
+    "creativecore",
+    "cristel-lib",
+    "crops-love-rain",
+    "dynamic-fps",
+    "enchantment-descriptions",
+    "energized-power",
+    "entityculling",
+    "fallingleaves",
+    "farmers-delight-refabricated",
+    "farming-for-blockheads",
+    "first-person-model",
+    "forge-config-api-port",
+    "friends-and-foes",
+    "frostiful",
     "fusion-connected-textures",
+    "fzzy-config",
+    "glitchcore",
+    "iceberg",
+    "inventory-profiles-next",
+    "jade",
+    "jamlib",
+    "lambdynamiclights",
+    "legendary-tooltips",
+    "libipn",
+    "lithostitched",
+    "macaws-doors",
+    "macaws-furniture",
+    "macaws-lights-and-lamps",
+    "macaws-paintings",
+    "macaws-paths-and-pavings",
+    "macaws-roofs",
+    "macaws-windows",
+    "mezzconfig",
+    "minecraft-comes-alive-reborn",
+    "modmenu",
+    "mouse-tweaks",
+    "not-enough-animations",
+    "nuit",
+    "overflowing-bars",
+    "particle-rain",
+    "presence-footsteps",
+    "prickle",
+    "prism-lib",
+    "puzzles-lib",
+    "rechiseled",
+    "resourceful-lib",
+    "rightclickharvest",
+    "rustic-delight",
+    "scorchful",
+    "searchables",
+    "serene-seasons",
+    "shogi",
+    "snow-under-trees",
+    "spatial-gui",
+    "spoiled",
+    "storagedrawers",
+    "subtle-effects",
     "supermartijn642s-config-lib",
     "supermartijn642s-core-lib",
-    "rechiseled",
-    "energized-power",
-    "minecraft-comes-alive-reborn",
-    "lithostitched",
     "tectonic",
-    "cristel-lib",
-    "yungs-api",
-    "yungs-better-mineshafts",
-    "yungs-better-dungeons",
-    "yungs-better-strongholds",
-    "snow-under-trees",
-    "friends-and-foes",
-    "resourceful-lib",
-    "mezzconfig",
-    "jade",
+    "thermoo",
+    "thermoo-patches",
+    "travelersbackpack",
+    "ubes-delight",
+    "wakes",
+    "waystones",
     "xaeros-minimap",
     "xaeros-world-map",
-    "waystones",
-    "shogi",
-    "travelersbackpack",
-    "storagedrawers",
-    "libipn",
-    "inventory-profiles-next",
-    "mouse-tweaks",
-    "searchables",
-    "controlling",
-    "enchantment-descriptions",
-    "prickle",
-    "zoomify",
-    "ambientsounds",
-    "creativecore",
-    "presence-footsteps",
-    "fallingleaves",
-    "subtle-effects",
-    "fzzy-config",
-    "ambient-environment",
-    "wakes",
-    "iceberg",
-    "legendary-tooltips",
-    "prism-lib",
-    "overflowing-bars",
-    "puzzles-lib",
-    "nuit",
-    "lambdynamiclights",
-    "first-person-model",
-    "not-enough-animations",
-    "3dskinlayers",
-    "continuity"
+    "yacl",
+    "yungs-api",
+    "yungs-better-dungeons",
+    "yungs-better-mineshafts",
+    "yungs-better-strongholds",
+    "zoomify"
    ]
   },
   {
@@ -1759,10 +1760,10 @@
    "side_override": null,
    "explicit": false,
    "required_by": [
-    "libipn",
+    "fzzy-config",
     "inventory-profiles-next",
-    "zoomify",
-    "fzzy-config"
+    "libipn",
+    "zoomify"
    ]
   },
   {
@@ -1860,13 +1861,13 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "P7dR8mSH",
+     "project_id": "9s6osm5g",
      "file_name": null,
      "dependency_type": "optional"
     },
     {
      "version_id": null,
-     "project_id": "9s6osm5g",
+     "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "optional"
     },
@@ -1919,6 +1920,12 @@
    "dependencies": [
     {
      "version_id": null,
+     "project_id": "5VolwT6c",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
      "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
@@ -1926,12 +1933,6 @@
     {
      "version_id": null,
      "project_id": "u6dRKJwZ",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
-     "project_id": "5VolwT6c",
      "file_name": null,
      "dependency_type": "optional"
     }
@@ -1944,8 +1945,8 @@
    "required_by": [
     "delight-lib",
     "more-delight",
-    "ubes-delight",
-    "rustic-delight"
+    "rustic-delight",
+    "ubes-delight"
    ]
   },
   {
@@ -2076,13 +2077,13 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "P7dR8mSH",
+     "project_id": "MPCX6s5C",
      "file_name": null,
      "dependency_type": "required"
     },
     {
      "version_id": null,
-     "project_id": "MPCX6s5C",
+     "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
     }
@@ -2129,15 +2130,15 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "mOgUt4GM",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
      "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "mOgUt4GM",
+     "file_name": null,
+     "dependency_type": "optional"
     }
    ],
    "group": "library",
@@ -2146,13 +2147,13 @@
    "side_override": null,
    "explicit": false,
    "required_by": [
-    "seasonhud-fabric",
-    "spoiled",
     "crops-love-rain",
-    "snow-under-trees",
-    "travelersbackpack",
     "overflowing-bars",
-    "puzzles-lib"
+    "puzzles-lib",
+    "seasonhud-fabric",
+    "snow-under-trees",
+    "spoiled",
+    "travelersbackpack"
    ]
   },
   {
@@ -2197,13 +2198,13 @@
     },
     {
      "version_id": null,
-     "project_id": "P7dR8mSH",
+     "project_id": "G1hIVOrD",
      "file_name": null,
      "dependency_type": "required"
     },
     {
      "version_id": null,
-     "project_id": "G1hIVOrD",
+     "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
     },
@@ -2263,18 +2264,6 @@
     },
     {
      "version_id": null,
-     "project_id": "SZQ5qcdn",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
-     "project_id": "P7dR8mSH",
-     "file_name": null,
-     "dependency_type": "required"
-    },
-    {
-     "version_id": null,
      "project_id": "9TbXlAut",
      "file_name": null,
      "dependency_type": "required"
@@ -2284,6 +2273,18 @@
      "project_id": "K01OU20C",
      "file_name": null,
      "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "SZQ5qcdn",
+     "file_name": null,
+     "dependency_type": "optional"
     },
     {
      "version_id": null,
@@ -2520,13 +2521,13 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "P7dR8mSH",
+     "project_id": "Ha28R6CL",
      "file_name": null,
      "dependency_type": "required"
     },
     {
      "version_id": null,
-     "project_id": "Ha28R6CL",
+     "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
     }
@@ -2802,12 +2803,6 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "onSQdWhM",
-     "file_name": null,
-     "dependency_type": "required"
-    },
-    {
-     "version_id": null,
      "project_id": "Ha28R6CL",
      "file_name": null,
      "dependency_type": "required"
@@ -2823,6 +2818,12 @@
      "project_id": "mOgUt4GM",
      "file_name": null,
      "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "onSQdWhM",
+     "file_name": null,
+     "dependency_type": "required"
     }
    ],
    "group": "qol",
@@ -3018,15 +3019,15 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "BOHUKqOz",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
      "project_id": "7tEfOcA7",
      "file_name": null,
      "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "BOHUKqOz",
+     "file_name": null,
+     "dependency_type": "optional"
     }
    ],
    "group": "qol",
@@ -3113,15 +3114,15 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "PxQSWIcD",
-     "file_name": null,
-     "dependency_type": "incompatible"
-    },
-    {
-     "version_id": null,
      "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "PxQSWIcD",
+     "file_name": null,
+     "dependency_type": "incompatible"
     },
     {
      "version_id": null,
@@ -3172,6 +3173,12 @@
    "dependencies": [
     {
      "version_id": null,
+     "project_id": "1OE8wbN0",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
      "project_id": "5faXoLqX",
      "file_name": null,
      "dependency_type": "required"
@@ -3179,12 +3186,6 @@
     {
      "version_id": null,
      "project_id": "P7dR8mSH",
-     "file_name": null,
-     "dependency_type": "required"
-    },
-    {
-     "version_id": null,
-     "project_id": "1OE8wbN0",
      "file_name": null,
      "dependency_type": "required"
     }
@@ -3231,13 +3232,13 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "P7dR8mSH",
+     "project_id": "Ha28R6CL",
      "file_name": null,
      "dependency_type": "required"
     },
     {
      "version_id": null,
-     "project_id": "Ha28R6CL",
+     "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
     }
@@ -3338,8 +3339,8 @@
    "side_override": null,
    "explicit": false,
    "required_by": [
-    "terralith",
-    "tectonic"
+    "tectonic",
+    "terralith"
    ]
   },
   {
@@ -3975,7 +3976,9 @@
    "optional": false,
    "side_override": null,
    "explicit": true,
-   "required_by": []
+   "required_by": [
+    "spatial-gui"
+   ]
   },
   {
    "slug": "more-delight",
@@ -4012,13 +4015,13 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "rmDY6fYt",
+     "project_id": "7vxePowz",
      "file_name": null,
      "dependency_type": "required"
     },
     {
      "version_id": null,
-     "project_id": "7vxePowz",
+     "project_id": "rmDY6fYt",
      "file_name": null,
      "dependency_type": "required"
     }
@@ -4302,12 +4305,6 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "ohNO6lps",
-     "file_name": null,
-     "dependency_type": "required"
-    },
-    {
-     "version_id": null,
      "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
@@ -4315,6 +4312,12 @@
     {
      "version_id": null,
      "project_id": "QAGBst4M",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "ohNO6lps",
      "file_name": null,
      "dependency_type": "required"
     }
@@ -4361,15 +4364,15 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "P7dR8mSH",
-     "file_name": null,
-     "dependency_type": "required"
-    },
-    {
-     "version_id": null,
      "project_id": "9ZhzxPJ0",
      "file_name": null,
      "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
     },
     {
      "version_id": null,
@@ -4466,9 +4469,9 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "P7dR8mSH",
+     "project_id": "9aNz8Zqn",
      "file_name": null,
-     "dependency_type": "required"
+     "dependency_type": "embedded"
     },
     {
      "version_id": null,
@@ -4478,9 +4481,9 @@
     },
     {
      "version_id": null,
-     "project_id": "9aNz8Zqn",
+     "project_id": "P7dR8mSH",
      "file_name": null,
-     "dependency_type": "embedded"
+     "dependency_type": "required"
     }
    ],
    "group": "visual",
@@ -4623,13 +4626,13 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "ohNO6lps",
+     "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
     },
     {
      "version_id": null,
-     "project_id": "P7dR8mSH",
+     "project_id": "ohNO6lps",
      "file_name": null,
      "dependency_type": "required"
     }
@@ -4679,25 +4682,25 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "p19vrgc2",
-     "file_name": null,
-     "dependency_type": "required"
-    },
-    {
-     "version_id": null,
      "project_id": "LN9BxssP",
      "file_name": null,
      "dependency_type": "required"
     },
     {
      "version_id": null,
-     "project_id": "rOUBggPv",
+     "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
     },
     {
      "version_id": null,
-     "project_id": "P7dR8mSH",
+     "project_id": "p19vrgc2",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "rOUBggPv",
      "file_name": null,
      "dependency_type": "required"
     }
@@ -4742,6 +4745,12 @@
    "dependencies": [
     {
      "version_id": null,
+     "project_id": "AANobbMI",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
      "project_id": "PtjYWJkn",
      "file_name": null,
      "dependency_type": "optional"
@@ -4751,12 +4760,6 @@
      "project_id": "YL57xq9U",
      "file_name": null,
      "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
-     "project_id": "AANobbMI",
-     "file_name": null,
-     "dependency_type": "required"
     }
    ],
    "group": "performance",
@@ -4920,13 +4923,13 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "P7dR8mSH",
+     "project_id": "IYY9Siz8",
      "file_name": null,
      "dependency_type": "required"
     },
     {
      "version_id": null,
-     "project_id": "IYY9Siz8",
+     "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
     }
@@ -5021,13 +5024,13 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "9s6osm5g",
+     "project_id": "7vxePowz",
      "file_name": null,
      "dependency_type": "required"
     },
     {
      "version_id": null,
-     "project_id": "7vxePowz",
+     "project_id": "9s6osm5g",
      "file_name": null,
      "dependency_type": "required"
     },
@@ -5081,27 +5084,9 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "Ae6qoBj3",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
      "project_id": "1eAoo2KR",
      "file_name": null,
      "dependency_type": "required"
-    },
-    {
-     "version_id": null,
-     "project_id": "K01OU20C",
-     "file_name": null,
-     "dependency_type": "required"
-    },
-    {
-     "version_id": null,
-     "project_id": "TYRF9nUy",
-     "file_name": null,
-     "dependency_type": "optional"
     },
     {
      "version_id": null,
@@ -5111,9 +5096,21 @@
     },
     {
      "version_id": null,
-     "project_id": "qWDh3G0p",
+     "project_id": "Ae6qoBj3",
      "file_name": null,
      "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "K01OU20C",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
     },
     {
      "version_id": null,
@@ -5123,15 +5120,21 @@
     },
     {
      "version_id": null,
+     "project_id": "TYRF9nUy",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
      "project_id": "mOgUt4GM",
      "file_name": null,
      "dependency_type": "optional"
     },
     {
      "version_id": null,
-     "project_id": "P7dR8mSH",
+     "project_id": "qWDh3G0p",
      "file_name": null,
-     "dependency_type": "required"
+     "dependency_type": "optional"
     }
    ],
    "group": "weather",
@@ -5229,25 +5232,25 @@
     },
     {
      "version_id": null,
-     "project_id": "ohNO6lps",
-     "file_name": null,
-     "dependency_type": "required"
-    },
-    {
-     "version_id": null,
-     "project_id": "JkSi2Fzx",
+     "project_id": "5aaWibi9",
      "file_name": null,
      "dependency_type": "optional"
     },
     {
      "version_id": null,
-     "project_id": "j3xSC4PA",
+     "project_id": "64FYdx5z",
      "file_name": null,
      "dependency_type": "optional"
     },
     {
      "version_id": null,
      "project_id": "C255PPUX",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "JkSi2Fzx",
      "file_name": null,
      "dependency_type": "optional"
     },
@@ -5265,7 +5268,13 @@
     },
     {
      "version_id": null,
-     "project_id": "5aaWibi9",
+     "project_id": "j3xSC4PA",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "jtmvUHXj",
      "file_name": null,
      "dependency_type": "optional"
     },
@@ -5277,15 +5286,9 @@
     },
     {
      "version_id": null,
-     "project_id": "64FYdx5z",
+     "project_id": "ohNO6lps",
      "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
-     "project_id": "jtmvUHXj",
-     "file_name": null,
-     "dependency_type": "optional"
+     "dependency_type": "required"
     }
    ],
    "group": "weather",
@@ -5518,9 +5521,9 @@
    "side_override": null,
    "explicit": true,
    "required_by": [
-    "sodium-extra",
+    "iris",
     "reeses-sodium-options",
-    "iris"
+    "sodium-extra"
    ]
   },
   {
@@ -5556,15 +5559,15 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "Bh37bMuy",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
      "project_id": "AANobbMI",
      "file_name": null,
      "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "Bh37bMuy",
+     "file_name": null,
+     "dependency_type": "optional"
     },
     {
      "version_id": null,
@@ -5628,19 +5631,78 @@
     },
     {
      "version_id": null,
-     "project_id": "mOgUt4GM",
+     "project_id": "9s6osm5g",
      "file_name": null,
      "dependency_type": "optional"
     },
     {
      "version_id": null,
-     "project_id": "9s6osm5g",
+     "project_id": "mOgUt4GM",
      "file_name": null,
      "dependency_type": "optional"
     }
    ],
    "group": "visual",
    "purpose": "Reverb/occlusion — storms sound muffled indoors.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": []
+  },
+  {
+   "slug": "spatial-gui",
+   "title": "Spatial GUI",
+   "kind": "mod",
+   "source": "modrinth",
+   "project_id": "zLBn2IE4",
+   "version_id": "MF4iKnLw",
+   "version_number": "1.10.1-fabric+26.1.x",
+   "version_type": "release",
+   "date_published": "2026-11-03T23:46:44.010936Z",
+   "game_versions": [
+    "26.1.2",
+    "26.1.1",
+    "26.1"
+   ],
+   "loaders": [
+    "fabric"
+   ],
+   "filename": "spatial-gui-1.10.1+26.1.2-fabric.jar",
+   "url": "https://cdn.modrinth.com/data/zLBn2IE4/versions/MF4iKnLw/spatial-gui-1.10.1%2B26.1.2-fabric.jar",
+   "size": 734882,
+   "hashes": {
+    "sha1": "b9b90da1d66fcbd3e015a54c962e351b8541ef2d",
+    "sha512": "bb436f64ff6b13d7758bad769419326414347eacb6b5e6c34ac357dc47f5c4eb83a67b39a2a1177e7cff7a881ea9c1bfbdbc30970de75cba70301a02d31ac7bd"
+   },
+   "client_side": "required",
+   "server_side": "unsupported",
+   "license": "MIT",
+   "license_url": null,
+   "source_url": "https://github.com/tastytrash/Spatial-GUI",
+   "issues_url": "https://github.com/tastytrash/Spatial-GUI/issues",
+   "page": "https://modrinth.com/mod/spatial-gui",
+   "dependencies": [
+    {
+     "version_id": null,
+     "project_id": "1eAoo2KR",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "mOgUt4GM",
+     "file_name": null,
+     "dependency_type": "required"
+    }
+   ],
+   "group": "visual",
+   "purpose": "Inventory and container screens drawn as a 3D panel in the world (camera swings to third person, player faces the panel). Client-only; needs YACL + Mod Menu (already in the pack).",
    "optional": false,
    "side_override": null,
    "explicit": true,
@@ -5679,6 +5741,12 @@
    "dependencies": [
     {
      "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
      "project_id": "ohNO6lps",
      "file_name": null,
      "dependency_type": "required"
@@ -5688,12 +5756,6 @@
      "project_id": "u6dRKJwZ",
      "file_name": null,
      "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
-     "project_id": "P7dR8mSH",
-     "file_name": null,
-     "dependency_type": "required"
     }
    ],
    "group": "food",
@@ -6207,13 +6269,13 @@
     },
     {
      "version_id": null,
-     "project_id": "xGdtZczs",
+     "project_id": "TYRF9nUy",
      "file_name": null,
      "dependency_type": "optional"
     },
     {
      "version_id": null,
-     "project_id": "TYRF9nUy",
+     "project_id": "xGdtZczs",
      "file_name": null,
      "dependency_type": "optional"
     }
@@ -6224,9 +6286,9 @@
    "side_override": null,
    "explicit": true,
    "required_by": [
-    "thermoo-patches",
     "frostiful",
-    "scorchful"
+    "scorchful",
+    "thermoo-patches"
    ]
   },
   {
@@ -6265,7 +6327,25 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "j3xSC4PA",
+     "project_id": "1eAoo2KR",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "9TbXlAut",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "POQ2i9zu",
      "file_name": null,
      "dependency_type": "optional"
     },
@@ -6283,7 +6363,7 @@
     },
     {
      "version_id": null,
-     "project_id": "POQ2i9zu",
+     "project_id": "j3xSC4PA",
      "file_name": null,
      "dependency_type": "optional"
     },
@@ -6292,24 +6372,6 @@
      "project_id": "tnTEDxIj",
      "file_name": null,
      "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
-     "project_id": "P7dR8mSH",
-     "file_name": null,
-     "dependency_type": "required"
-    },
-    {
-     "version_id": null,
-     "project_id": "1eAoo2KR",
-     "file_name": null,
-     "dependency_type": "required"
-    },
-    {
-     "version_id": null,
-     "project_id": "9TbXlAut",
-     "file_name": null,
-     "dependency_type": "required"
     }
    ],
    "group": "weather",
@@ -6372,13 +6434,13 @@
     },
     {
      "version_id": null,
-     "project_id": "u6dRKJwZ",
+     "project_id": "fRiHVvU7",
      "file_name": null,
      "dependency_type": "optional"
     },
     {
      "version_id": null,
-     "project_id": "fRiHVvU7",
+     "project_id": "nfn13YXA",
      "file_name": null,
      "dependency_type": "optional"
     },
@@ -6390,7 +6452,7 @@
     },
     {
      "version_id": null,
-     "project_id": "nfn13YXA",
+     "project_id": "u6dRKJwZ",
      "file_name": null,
      "dependency_type": "optional"
     }
@@ -6486,13 +6548,7 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "yBW8D80W",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
-     "project_id": "nfn13YXA",
+     "project_id": "DMu0oBKf",
      "file_name": null,
      "dependency_type": "optional"
     },
@@ -6504,27 +6560,15 @@
     },
     {
      "version_id": null,
-     "project_id": "vRYk0bv7",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
-     "project_id": "yn9u3ypm",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
-     "project_id": "DMu0oBKf",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
      "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "SaCpeal4",
+     "file_name": null,
+     "dependency_type": "optional"
     },
     {
      "version_id": null,
@@ -6540,7 +6584,13 @@
     },
     {
      "version_id": null,
-     "project_id": "u6dRKJwZ",
+     "project_id": "jtmvUHXj",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "nfn13YXA",
      "file_name": null,
      "dependency_type": "optional"
     },
@@ -6558,13 +6608,25 @@
     },
     {
      "version_id": null,
-     "project_id": "SaCpeal4",
+     "project_id": "u6dRKJwZ",
      "file_name": null,
      "dependency_type": "optional"
     },
     {
      "version_id": null,
-     "project_id": "jtmvUHXj",
+     "project_id": "vRYk0bv7",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "yBW8D80W",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "yn9u3ypm",
      "file_name": null,
      "dependency_type": "optional"
     }
@@ -6611,6 +6673,12 @@
    "dependencies": [
     {
      "version_id": null,
+     "project_id": "5VolwT6c",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
      "project_id": "7vxePowz",
      "file_name": null,
      "dependency_type": "required"
@@ -6629,19 +6697,13 @@
     },
     {
      "version_id": null,
-     "project_id": "5VolwT6c",
+     "project_id": "mOgUt4GM",
      "file_name": null,
      "dependency_type": "optional"
     },
     {
      "version_id": null,
      "project_id": "u6dRKJwZ",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
-     "project_id": "mOgUt4GM",
      "file_name": null,
      "dependency_type": "optional"
     }
@@ -6688,15 +6750,15 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "YL57xq9U",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
      "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "YL57xq9U",
+     "file_name": null,
+     "dependency_type": "optional"
     },
     {
      "version_id": null,
@@ -6751,6 +6813,12 @@
    "dependencies": [
     {
      "version_id": null,
+     "project_id": "MBAkmtvl",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
      "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
@@ -6758,12 +6826,6 @@
     {
      "version_id": null,
      "project_id": "bi4iCmsw",
-     "file_name": null,
-     "dependency_type": "required"
-    },
-    {
-     "version_id": null,
-     "project_id": "MBAkmtvl",
      "file_name": null,
      "dependency_type": "required"
     }
@@ -6811,15 +6873,15 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "gF3BGWvG",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
      "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "gF3BGWvG",
+     "file_name": null,
+     "dependency_type": "optional"
     }
    ],
    "group": "qol",
@@ -6929,9 +6991,10 @@
    "side_override": null,
    "explicit": false,
    "required_by": [
-    "thermoo-patches",
     "frostiful",
     "scorchful",
+    "spatial-gui",
+    "thermoo-patches",
     "zoomify"
    ]
   },
@@ -6980,8 +7043,8 @@
    "side_override": null,
    "explicit": false,
    "required_by": [
-    "yungs-better-mineshafts",
     "yungs-better-dungeons",
+    "yungs-better-mineshafts",
     "yungs-better-strongholds"
    ]
   },
@@ -7019,13 +7082,13 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "mOgUt4GM",
+     "project_id": "9s6osm5g",
      "file_name": null,
-     "dependency_type": "optional"
+     "dependency_type": "required"
     },
     {
      "version_id": null,
-     "project_id": "9s6osm5g",
+     "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
     },
@@ -7037,9 +7100,9 @@
     },
     {
      "version_id": null,
-     "project_id": "P7dR8mSH",
+     "project_id": "mOgUt4GM",
      "file_name": null,
-     "dependency_type": "required"
+     "dependency_type": "optional"
     }
    ],
    "group": "world",
@@ -7089,6 +7152,12 @@
     },
     {
      "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
      "project_id": "Ua7DFN59",
      "file_name": null,
      "dependency_type": "required"
@@ -7098,12 +7167,6 @@
      "project_id": "mOgUt4GM",
      "file_name": null,
      "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
-     "project_id": "P7dR8mSH",
-     "file_name": null,
-     "dependency_type": "required"
     }
    ],
    "group": "world",
@@ -7153,6 +7216,12 @@
     },
     {
      "version_id": null,
+     "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
      "project_id": "Ua7DFN59",
      "file_name": null,
      "dependency_type": "required"
@@ -7162,12 +7231,6 @@
      "project_id": "mOgUt4GM",
      "file_name": null,
      "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
-     "project_id": "P7dR8mSH",
-     "file_name": null,
-     "dependency_type": "required"
     }
    ],
    "group": "world",
@@ -7213,13 +7276,19 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "mOgUt4GM",
+     "project_id": "1eAoo2KR",
      "file_name": null,
-     "dependency_type": "optional"
+     "dependency_type": "required"
     },
     {
      "version_id": null,
      "project_id": "1vrSzlao",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "Ha28R6CL",
      "file_name": null,
      "dependency_type": "required"
     },
@@ -7231,15 +7300,9 @@
     },
     {
      "version_id": null,
-     "project_id": "1eAoo2KR",
+     "project_id": "mOgUt4GM",
      "file_name": null,
-     "dependency_type": "required"
-    },
-    {
-     "version_id": null,
-     "project_id": "Ha28R6CL",
-     "file_name": null,
-     "dependency_type": "required"
+     "dependency_type": "optional"
     }
    ],
    "group": "qol",

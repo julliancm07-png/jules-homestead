@@ -197,6 +197,9 @@ def main():
             elif src == "local":
                 r.add_local(m)
     files = sorted(r.entries.values(), key=lambda e: (e["kind"], e["slug"]))
+    for e in files:  # Modrinth returns dependency lists in arbitrary order; sort so re-resolving doesn't churn the lockfile
+        e["dependencies"] = sorted(e["dependencies"], key=lambda d: (d.get("project_id") or "", d.get("dependency_type") or ""))
+        e["required_by"] = sorted(e["required_by"])
     out = {
         "pack": man["pack"], "resolved_at": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
         "sources": [API, FTB_MAVEN], "warnings": r.warnings, "files": files,

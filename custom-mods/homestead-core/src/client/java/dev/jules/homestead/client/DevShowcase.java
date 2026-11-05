@@ -5,6 +5,8 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.Screenshot;
 import net.minecraft.client.gui.screens.inventory.InventoryScreen;
 import net.minecraft.client.server.IntegratedServer;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.phys.BlockHitResult;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -17,7 +19,7 @@ import java.util.Deque;
  * headless (Xvfb) client. Inert unless the JVM is started with -Dhomesteadcore.dev.script=&lt;file&gt;.
  *
  * Script lines: waitworld | wait N | server &lt;command&gt; | screenshot &lt;name&gt; | panorama | hud on|off |
- * screen inventory|close | look &lt;yaw&gt; &lt;pitch&gt; | quit | # comment
+ * screen inventory|close | look &lt;yaw&gt; &lt;pitch&gt; | use (right-click the block under the crosshair) | quit | # comment
  */
 public final class DevShowcase {
 	private static final Deque<String> STEPS = new ArrayDeque<>();
@@ -74,7 +76,22 @@ public final class DevShowcase {
 					c -> HomesteadCore.LOG.warn("[dev] screenshot {}: {}", arg, c.getString()));
 			case "panorama" -> HomesteadCore.LOG.warn("[dev] panorama: {}", mc.grabPanoramixScreenshot(mc.gameDirectory).getString());
 			case "hud" -> mc.options.hideGui = !"on".equals(arg);
-			case "screen" -> mc.setScreen("inventory".equals(arg) && mc.player != null ? new InventoryScreen(mc.player) : null);
+			case "screen" -> {
+				if ("inventory".equals(arg) && mc.player != null) {
+					mc.setScreen(new InventoryScreen(mc.player));
+				} else if (mc.player != null && mc.player.containerMenu != mc.player.inventoryMenu) {
+					mc.player.closeContainer(); // also tells the server the container menu closed
+				} else {
+					mc.setScreen(null);
+				}
+			}
+			case "use" -> {
+				if (mc.player != null && mc.gameMode != null && mc.hitResult instanceof BlockHitResult hit) {
+					HomesteadCore.LOG.warn("[dev] use {}: {}", hit.getBlockPos(), mc.gameMode.useItemOn(mc.player, InteractionHand.MAIN_HAND, hit));
+				} else {
+					HomesteadCore.LOG.warn("[dev] use: no block under the crosshair");
+				}
+			}
 			case "look" -> {
 				if (mc.player != null) {
 					String[] r = arg.split("\\s+");

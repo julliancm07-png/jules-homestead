@@ -1,8 +1,8 @@
 # Mod Inventory (generated)
 
-Generated from `pack/mods.lock.json` (resolved 2026-11-05T04:00:26+00:00). Do not edit by hand: run `python3 -I tools/inventory.py`.
+Generated from `pack/mods.lock.json` (resolved 2026-11-05T04:25:13+00:00). Do not edit by hand: run `python3 -I tools/inventory.py`.
 
-Target: Minecraft 26.1.2, Fabric Loader 0.20.1. 136 mods, 17 resource packs, 4 shader packs.
+Target: Minecraft 26.1.2, Fabric Loader 0.20.1. 137 mods, 17 resource packs, 4 shader packs.
 
 Side legend: **C** client, **S** dedicated server; ✓ required, ○ optional (mrpack), ✗ not installed there.
 Distribution: Modrinth-hosted files are referenced by Modrinth CDN URL; FTB files by FTB's official maven URL; only the pack's own MIT modules are bundled.
@@ -163,6 +163,7 @@ Distribution: Modrinth-hosted files are referenced by Modrinth CDN URL; FTB file
 | [Presence Footsteps](https://modrinth.com/mod/presence-footsteps) | 1.13.3+26.1 (`wpMVyDNf`) | 26.1, 26.1.1, 26.1.1-rc-1, 26.1.2, 26.1.2-rc-1 / fabric, quilt | ✓/✗ | Polyform-Shield-1.0 | Footstep sounds. | fabric-api |
 | [Remove Reloading Screen](https://modrinth.com/mod/rrls) | 5.2.6+mc26.1 (`J8aRjeWe`) **beta** | 26.1, 26.1.1, 26.1.2 / fabric, neoforge | ✓/✗ | OSL-3.0 | Resource reloads happen in the background instead of a blocking full-screen overlay. |  |
 | [Sound Physics Remastered](https://modrinth.com/mod/sound-physics-remastered) | fabric-1.5.2+26.1.2 (`Acwz0QbP`) **beta** | 26.1, 26.1.1, 26.1.2 / fabric, quilt | ✓/✓ | GPL-3.0-only | Reverb/occlusion — storms sound muffled indoors. |  |
+| [Spatial GUI](https://modrinth.com/mod/spatial-gui) | 1.10.1-fabric+26.1.x (`MF4iKnLw`) | 26.1.2, 26.1.1, 26.1 / fabric | ✓/✗ | MIT | Inventory and container screens drawn as a 3D panel in the world (camera swings to third person, player faces the panel). Client-only; needs YACL + Mod Menu (already in the pack). | fabric-api, modmenu, yacl |
 | [Subtle Effects](https://modrinth.com/mod/subtle-effects) | 1.15.1 (`SaXeAq2M`) | 26.1.2 / fabric | ✓/✓ | All-Rights-Reserved | Ambient detail: fire sparks, better smoke, snoring Z's, dust clouds, glowing dust; every effect toggleable. Replaces Visuality. | fabric-api, fzzy-config |
 | [Wakes](https://modrinth.com/mod/wakes) | 0.6.0+26.1 (`p2RaO0z1`) **beta** | 26.1, 26.1.1, 26.1.2 / fabric | ✓/✗ | GPL-3.0-only | Boat and swimming wakes/splashes on water. | fabric-api |
 
@@ -187,20 +188,20 @@ Distribution: Modrinth-hosted files are referenced by Modrinth CDN URL; FTB file
 | [Balm](https://modrinth.com/mod/balm) | 26.1.2.15+fabric-26.1.2 (`GsjBKPJs`) | 26.1.2 / fabric | ✓/✓ | All-Rights-Reserved | Dependency of farming-for-blockheads, waystones | fabric-api |
 | [Better Lanterns](https://modrinth.com/resourcepack/better-lanterns) | 1.3.2-mc26.1 (`wfM00H4G`) | 26.1, 26.1.1, 26.1.2 / minecraft | ✓/✗ | All-Rights-Reserved | 3D lanterns and chains. |  |
 | [Motschen's Better Leaves](https://modrinth.com/resourcepack/better-leaves) | 9.6 (`w4ReEpuG`) | 26.1, 26.1.1, 26.1.2 / minecraft | ✓/✗ | MIT | Bushier vanilla leaves. |  |
-| [Cardinal Components API](https://modrinth.com/mod/cardinal-components-api) | 8.0.1 (`d78LiKJ8`) | 26.1, 26.1.1, 26.1.2 / fabric, quilt | ✓/✓ | MIT | Dependency of thermoo, frostiful, scorchful |  |
+| [Cardinal Components API](https://modrinth.com/mod/cardinal-components-api) | 8.0.1 (`d78LiKJ8`) | 26.1, 26.1.1, 26.1.2 / fabric, quilt | ✓/✓ | MIT | Dependency of frostiful, scorchful, thermoo |  |
 | [Clean Connected Glass](https://modrinth.com/resourcepack/clean-connected-glass) | 0.0.2 (`gN2DnGei`) | 26.1, 26.1.1, 26.1.2 / minecraft | ✓/✗ | CC-BY-NC-SA-4.0 | Connected glass without streaks (via Continuity) — windows and greenhouses. |  |
-| [Cloth Config API](https://modrinth.com/mod/cloth-config) | 26.1.154+fabric (`GFM8zh9J`) | 26.1, 26.1.1, 26.1.2 / fabric | ✓/✓ | LGPL-3.0-only | Dependency of moreculling, rustic-delight, cristel-lib, yungs-better-mineshafts… |  |
+| [Cloth Config API](https://modrinth.com/mod/cloth-config) | 26.1.154+fabric (`GFM8zh9J`) | 26.1, 26.1.1, 26.1.2 / fabric | ✓/✓ | LGPL-3.0-only | Dependency of cameraoverhaul, cristel-lib, fallingleaves, moreculling… |  |
 | [Complementary Shaders - Reimagined](https://modrinth.com/shader/complementary-reimagined) | r5.9.3 (`Bqen1mJX`) | 26.1, 26.1.1, 26.1.2 / iris, optifine | ○/✗ | Custom | Optional 'Cinematic' preset shader (vanilla-faithful). Off by default. |  |
 | [CreativeCore](https://modrinth.com/mod/creativecore) | 2.14.16 (`atlpYjof`) | 26.1.2 / fabric | ✓/✓ | LGPL-3.0-only | Dependency of ambientsounds | fabric-api |
 | [Cristel Lib](https://modrinth.com/mod/cristel-lib) | fabric-26.1.2-3.1.13 (`JDTs3eQM`) | 26.1, 26.1.1, 26.1.2 / fabric, quilt | ✓/✓ | CC-BY-NC-ND-4.0 | Dependency of towns-and-towers | cloth-config, fabric-api |
 | [Delight Lib](https://modrinth.com/mod/delight-lib) | 26.05.18-26.1-fabric (`tPYOmX52`) | 26.1, 26.1.1, 26.1.2 / fabric | ✓/✓ | MIT | Dependency of more-delight | farmers-delight-refabricated |
 | [Dramatic Skys](https://modrinth.com/resourcepack/dramatic-skys) | 1.5.3.36.6 (`4MZQy9nc`) | 26.1, 26.1.1, 26.1.2 / minecraft | ✓/✗ | All-Rights-Reserved | HD skies with realistic clouds (needs Nuit). Baseline without shaders. |  |
 | [Easy NPC: Config UI](https://modrinth.com/mod/easy-npc-config-ui) | 7.18.0 (`u3httvO2`) | 26.1.2 / fabric, quilt | ✓/✓ | MIT | Dependency of easy-npc | easy-npc-core |
-| [Easy NPC: Core](https://modrinth.com/mod/easy-npc-core) | 7.18.0 (`uB3Xp6jk`) | 26.1.2 / fabric, quilt | ✓/✓ | MIT | Dependency of easy-npc-config-ui, easy-npc |  |
+| [Easy NPC: Core](https://modrinth.com/mod/easy-npc-core) | 7.18.0 (`uB3Xp6jk`) | 26.1.2 / fabric, quilt | ✓/✓ | MIT | Dependency of easy-npc, easy-npc-config-ui |  |
 | [Even Better Enchants](https://modrinth.com/resourcepack/even-better-enchants) | 3-1.21.5 (`scd0ojNG`) | 26.1, 26.1.1, 26.1.2 / minecraft | ✓/✗ | Apache-2.0 | Distinct enchanted book textures (vanilla item models, no CIT mod needed on 26.1). |  |
-| [Fabric Language Kotlin](https://modrinth.com/mod/fabric-language-kotlin) | 1.14.2+kotlin.2.4.21 (`SKW1BTL3`) | 26.1, 26.1.1, 26.1.2 / fabric | ✓/✓ | Apache-2.0 | Dependency of libipn, inventory-profiles-next, zoomify, fzzy-config |  |
+| [Fabric Language Kotlin](https://modrinth.com/mod/fabric-language-kotlin) | 1.14.2+kotlin.2.4.21 (`SKW1BTL3`) | 26.1, 26.1.1, 26.1.2 / fabric | ✓/✓ | Apache-2.0 | Dependency of fzzy-config, inventory-profiles-next, libipn, zoomify |  |
 | [(Bee's) Fancy Crops](https://modrinth.com/resourcepack/fancy-crops) | 1.3 (`ZJEBZjg6`) | 26.1, 26.1.1, 26.1.2 / minecraft | ✓/✗ | All-Rights-Reserved | Prettier crops; built to work with Farmer's Delight. |  |
-| [Forge Config API Port](https://modrinth.com/mod/forge-config-api-port) | 26.1.5 (`jUe0ucoE`) | 26.1, 26.1.1, 26.1.2 / fabric | ✓/✓ | MPL-2.0 | Dependency of seasonhud-fabric, spoiled, crops-love-rain, snow-under-trees… | fabric-api |
+| [Forge Config API Port](https://modrinth.com/mod/forge-config-api-port) | 26.1.5 (`jUe0ucoE`) | 26.1, 26.1.1, 26.1.2 / fabric | ✓/✓ | MPL-2.0 | Dependency of crops-love-rain, overflowing-bars, puzzles-lib, seasonhud-fabric… | fabric-api |
 | [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations) | 1.11.2 (`xfE3qfr5`) | 26.1, 26.1.1, 26.1.2 / minecraft | ✓/✗ | See-Terms-of-Use-in-Description | Vanilla-style mob animations. |  |
 | [Fresh Animations: Details](https://modrinth.com/resourcepack/fresh-animations-details) | 2.4.0 (`XM8VyQLk`) | 26.1, 26.1.1, 26.1.2 / minecraft | ✓/✗ | All-Rights-Reserved | Official Fresh Animations extension: extra mob details. |  |
 | [Fresh Animations: Objects](https://modrinth.com/resourcepack/fresh-animations-objects) | 2.1.2 (`AIGgXNdl`) | 26.1, 26.1.1, 26.1.2 / minecraft | ✓/✗ | All-Rights-Reserved | Official Fresh Animations extension: animates non-mob entities. |  |
@@ -211,7 +212,7 @@ Distribution: Modrinth-hosted files are referenced by Modrinth CDN URL; FTB file
 | [Iceberg](https://modrinth.com/mod/iceberg) | 1.4.1.2 (`UujfCDsB`) | 26.1, 26.1.1, 26.1.2 / fabric | ✓/✓ | CC-BY-NC-ND-4.0 | Dependency of legendary-tooltips | fabric-api |
 | [JamLib](https://modrinth.com/mod/jamlib) | 2.3.1+26.1.x (`eeYK2UkC`) | 26.1, 26.1.1, 26.1.2 / fabric, quilt | ✓/✓ | MIT | Dependency of rightclickharvest | fabric-api |
 | [libIPN](https://modrinth.com/mod/libipn) | fabric-26.1-6.9.0 (`94nbGWNs`) | 26.1, 26.1.1, 26.1.2 / fabric | ✓/✗ | AGPL-3.0-or-later | Dependency of inventory-profiles-next | fabric-api, fabric-language-kotlin |
-| [Lithostitched](https://modrinth.com/mod/lithostitched) | 1.8.1-fabric-26.1 (`o908EP07`) | 26.1, 26.1.1, 26.1.2 / fabric | ✓/✓ | MIT | Dependency of terralith, tectonic | fabric-api |
+| [Lithostitched](https://modrinth.com/mod/lithostitched) | 1.8.1-fabric-26.1 (`o908EP07`) | 26.1, 26.1.1, 26.1.2 / fabric | ✓/✓ | MIT | Dependency of tectonic, terralith | fabric-api |
 | [Low On Fire](https://modrinth.com/resourcepack/low-on-fire) | 26.3 (`yQdcUfnr`) | 26.1, 26.1.1, 26.1.2 / minecraft | ✓/✗ | All-Rights-Reserved | Lower first-person fire overlay. |  |
 | [MakeUp - Ultra Fast](https://modrinth.com/shader/makeup-ultra-fast-shaders) | 9.6 (`t4YRxQug`) | 26.1, 26.1.1, 26.1.2 / iris, optifine | ○/✗ | LGPL-3.0-or-later | Optional lightweight shader for lower-end GPUs. |  |
 | [Mellow](https://modrinth.com/shader/mellow) | 3.5 (`DmXr7SxM`) | 26.1, 26.1.1, 26.1.2 / iris, optifine | ○/✗ | MIT | Optional painterly, cozy and light shader (MIT). |  |
@@ -231,8 +232,8 @@ Distribution: Modrinth-hosted files are referenced by Modrinth CDN URL; FTB file
 | [SuperMartijn642's Core Lib](https://modrinth.com/mod/supermartijn642s-core-lib) | 1.1.26b-fabric-mc26.1 (`t3hsg8GL`) | 26.1, 26.1.1, 26.1.2 / fabric, quilt | ✓/✓ | All-Rights-Reserved | Dependency of rechiseled | fabric-api |
 | [Theone's Eating Animation Pack](https://modrinth.com/resourcepack/theones-eating-animation-pack) | 1.0 (`laDCvp3K`) | 26.1, 26.1.1, 26.1.2 / minecraft | ✓/✗ | All-Rights-Reserved | Eating/drinking animations for food (no mod needed). |  |
 | [Visual: Armor Trims](https://modrinth.com/resourcepack/visual-armor-trims) | 4.2 (`Qt949MJE`) | 26.1, 26.1.1, 26.1.2 / minecraft | ✓/✗ | CC-BY-SA-4.0 | Armour trims visible on inventory icons. |  |
-| [YetAnotherConfigLib (YACL)](https://modrinth.com/mod/yacl) | 3.9.7+26.1-fabric (`IODousKT`) | 26.1, 26.1.1, 26.1.2 / fabric | ✓/✓ | LGPL-3.0-or-later | Dependency of thermoo-patches, frostiful, scorchful, zoomify | fabric-api |
-| [YUNG's API](https://modrinth.com/mod/yungs-api) | 26.1.2-Fabric-6.1.3 (`lmLenYfY`) | 26.1.1, 26.1.2 / fabric | ✓/✓ | LGPL-3.0-only | Dependency of yungs-better-mineshafts, yungs-better-dungeons, yungs-better-strongholds | fabric-api |
+| [YetAnotherConfigLib (YACL)](https://modrinth.com/mod/yacl) | 3.9.7+26.1-fabric (`IODousKT`) | 26.1, 26.1.1, 26.1.2 / fabric | ✓/✓ | LGPL-3.0-or-later | Dependency of frostiful, scorchful, spatial-gui, thermoo-patches… | fabric-api |
+| [YUNG's API](https://modrinth.com/mod/yungs-api) | 26.1.2-Fabric-6.1.3 (`lmLenYfY`) | 26.1.1, 26.1.2 / fabric | ✓/✓ | LGPL-3.0-only | Dependency of yungs-better-dungeons, yungs-better-mineshafts, yungs-better-strongholds | fabric-api |
 
 ## Hashes
 
