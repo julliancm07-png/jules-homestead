@@ -225,6 +225,12 @@ source = "local"
 group = "power"
 purpose = "Custom: severe fronts (storm/blizzard), shelter/exposure, forecast, wind turbine, water wheel, refrigerator, electric range, space heater."
 [[mod]]
+slug = "homestead-pack-data"
+source = "local"
+path = "datapacks/homestead-pack-data"
+group = "core"
+purpose = "Custom data module: Serene Seasons tags for Farmer's Delight/Ube's/Rustic crops, removes EP weather & time controllers."
+[[mod]]
 slug = "create-fly"
 group = "optional-create"
 optional = true
@@ -285,10 +291,9 @@ purpose = "OWNER of overworld biomes (vanilla-block biomes, lush forests, rivers
 slug = "tectonic"
 group = "world"
 purpose = "Terrain shape (mountains, rivers) — designed to pair with Terralith."
-[[mod]]
-slug = "wilder-wild"
-group = "world"
-purpose = "Atmosphere: fireflies, falling leaves, new trees/critters; known-compatible with Terralith."
+# REMOVED 2026-11-05: wilder-wild 4.2.9-mc26.1 — intermittent ConcurrentModificationException in FrozenLib
+# FrozenBiomeParameters.findBorderParameters during 26.1 parallel registry loading with Terralith's
+# terralith:all_skylands parameter list ("Failed to load registries", world cannot load). See docs/compatibility.md.
 [[mod]]
 slug = "towns-and-towers"
 group = "world"

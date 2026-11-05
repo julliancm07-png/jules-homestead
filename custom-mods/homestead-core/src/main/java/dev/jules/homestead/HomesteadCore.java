@@ -50,7 +50,10 @@ public final class HomesteadCore implements ModInitializer {
 			}
 		});
 		ServerPlayConnectionEvents.DISCONNECT.register((handler, server) -> WeatherManager.forget(handler.getPlayer().getUUID()));
-		CommandRegistrationCallback.EVENT.register((dispatcher, ctx, selection) -> WeatherCommands.register(dispatcher));
+		CommandRegistrationCallback.EVENT.register((dispatcher, ctx, selection) -> {
+			WeatherCommands.register(dispatcher);
+			dev.jules.homestead.weather.DebugCommands.register(dispatcher);
+		});
 		CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register(out -> {
 			for (Item item : ModBlocks.ITEMS) {
 				out.accept(new ItemStack(item), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);

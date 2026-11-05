@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "farmersdelight:cabbage_seeds",
+      "required": false
+    },
+    {
+      "id": "ubesdelight:garlic",
+      "required": false
+    }
+  ]
+}

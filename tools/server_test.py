@@ -69,13 +69,6 @@ def main():
             shutil.copytree(src, OUT / sub)
     if not a.keep_world:
         shutil.rmtree(OUT / "world", ignore_errors=True)
-    if (ROOT / "datapacks").exists():
-        dp = OUT / "world" / "datapacks"
-        dp.mkdir(parents=True, exist_ok=True)
-        for d in (ROOT / "datapacks").iterdir():
-            if d.is_dir():
-                shutil.rmtree(dp / d.name, ignore_errors=True)
-                shutil.copytree(d, dp / d.name)
     (OUT / "eula.txt").write_text("eula=true\n")
     (OUT / "server.properties").write_text("online-mode=false\nserver-port=25599\nspawn-protection=0\nmotd=Jules Homestead server test\nlevel-seed=julesHomestead\nview-distance=6\nsimulation-distance=6\nsync-chunk-writes=false\n")
     print(f"server set: {len(included)} mods; skipped client-only: {', '.join(skipped)}", flush=True)

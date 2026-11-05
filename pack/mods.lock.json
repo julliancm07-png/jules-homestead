@@ -7,7 +7,7 @@
   "loader_version": "0.20.1",
   "summary": "A grounded homestead-to-town survival pack: seasons, storms and blizzards, renewable power for real appliances, residents and a hand-written quest book."
  },
- "resolved_at": "2026-11-05T02:33:02+00:00",
+ "resolved_at": "2026-11-05T03:13:49+00:00",
  "sources": [
   "https://api.modrinth.com/v2",
   "https://maven.ftb.dev/releases"
@@ -1438,8 +1438,8 @@
     "serene-seasons",
     "glitchcore",
     "thermoo",
-    "yacl",
     "thermoo-patches",
+    "yacl",
     "frostiful",
     "scorchful",
     "forge-config-api-port",
@@ -1469,8 +1469,6 @@
     "minecraft-comes-alive-reborn",
     "lithostitched",
     "tectonic",
-    "wilder-wild",
-    "frozenlib",
     "cristel-lib",
     "yungs-api",
     "yungs-better-mineshafts",
@@ -2139,68 +2137,6 @@
    "required_by": []
   },
   {
-   "slug": "frozenlib",
-   "title": "FrozenLib",
-   "kind": "mod",
-   "source": "modrinth",
-   "project_id": "9KawNmQc",
-   "version_id": "JjJtEhgO",
-   "version_number": "2.4.4-mc26.1",
-   "version_type": "release",
-   "date_published": "2026-05-01T16:35:12.638926Z",
-   "game_versions": [
-    "26.1",
-    "26.1.1",
-    "26.1.2"
-   ],
-   "loaders": [
-    "fabric",
-    "quilt"
-   ],
-   "filename": "FrozenLib-2.4.4-mc26.1.jar",
-   "url": "https://cdn.modrinth.com/data/9KawNmQc/versions/JjJtEhgO/FrozenLib-2.4.4-mc26.1.jar",
-   "size": 1702808,
-   "hashes": {
-    "sha1": "3a466168181a79e473ae1c4ca98c581780a45f3a",
-    "sha512": "3da515511d49f50dbb66f6fc4c013c2712b5f697747636cfb90ed83b260b0d628c3355d72b614f2ff4342b3c7b32aa4f6f6245ccd2245b4a6cc605dff39b9612"
-   },
-   "client_side": "required",
-   "server_side": "required",
-   "license": "GPL-3.0-only",
-   "license_url": null,
-   "source_url": "https://github.com/FrozenBlock/FrozenLib",
-   "issues_url": "https://github.com/FrozenBlock/FrozenLib/issues",
-   "page": "https://modrinth.com/mod/frozenlib",
-   "dependencies": [
-    {
-     "version_id": null,
-     "project_id": "9s6osm5g",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
-     "project_id": "mOgUt4GM",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
-     "project_id": "P7dR8mSH",
-     "file_name": null,
-     "dependency_type": "required"
-    }
-   ],
-   "group": "library",
-   "purpose": "Dependency.",
-   "optional": false,
-   "side_override": null,
-   "explicit": false,
-   "required_by": [
-    "wilder-wild"
-   ]
-  },
-  {
    "slug": "ftb-library-fabric",
    "title": "ftb-library-fabric",
    "kind": "mod",
@@ -2441,6 +2377,29 @@
    "required_by": [],
    "dependencies": [],
    "path": "custom-mods/homestead-core"
+  },
+  {
+   "slug": "homestead-pack-data",
+   "title": "homestead-pack-data",
+   "kind": "mod",
+   "source": "local",
+   "project_id": null,
+   "version_id": null,
+   "version_number": null,
+   "filename": null,
+   "url": null,
+   "hashes": {},
+   "client_side": "required",
+   "server_side": "required",
+   "license": "MIT",
+   "group": "core",
+   "purpose": "Custom data module: Serene Seasons tags for Farmer's Delight/Ube's/Rustic crops, removes EP weather & time controllers.",
+   "optional": false,
+   "side_override": null,
+   "explicit": true,
+   "required_by": [],
+   "dependencies": [],
+   "path": "datapacks/homestead-pack-data"
   },
   {
    "slug": "immediatelyfast",
@@ -2835,15 +2794,15 @@
     },
     {
      "version_id": null,
-     "project_id": "reCfnRvJ",
-     "file_name": null,
-     "dependency_type": "incompatible"
-    },
-    {
-     "version_id": null,
      "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "reCfnRvJ",
+     "file_name": null,
+     "dependency_type": "incompatible"
     }
    ],
    "group": "visual",
@@ -4023,15 +3982,15 @@
     },
     {
      "version_id": null,
-     "project_id": "JBjInUXM",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
      "project_id": "9aNz8Zqn",
      "file_name": null,
      "dependency_type": "embedded"
+    },
+    {
+     "version_id": null,
+     "project_id": "JBjInUXM",
+     "file_name": null,
+     "dependency_type": "optional"
     }
    ],
    "group": "visual",
@@ -4417,18 +4376,6 @@
     },
     {
      "version_id": null,
-     "project_id": "1eAoo2KR",
-     "file_name": null,
-     "dependency_type": "required"
-    },
-    {
-     "version_id": null,
-     "project_id": "K01OU20C",
-     "file_name": null,
-     "dependency_type": "required"
-    },
-    {
-     "version_id": null,
      "project_id": "TYRF9nUy",
      "file_name": null,
      "dependency_type": "optional"
@@ -4453,6 +4400,12 @@
     },
     {
      "version_id": null,
+     "project_id": "1eAoo2KR",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
      "project_id": "mOgUt4GM",
      "file_name": null,
      "dependency_type": "optional"
@@ -4460,6 +4413,12 @@
     {
      "version_id": null,
      "project_id": "P7dR8mSH",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "K01OU20C",
      "file_name": null,
      "dependency_type": "required"
     }
@@ -4553,9 +4512,15 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "C255PPUX",
+     "project_id": "1bokaNcj",
      "file_name": null,
      "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "ohNO6lps",
+     "file_name": null,
+     "dependency_type": "required"
     },
     {
      "version_id": null,
@@ -4566,6 +4531,12 @@
     {
      "version_id": null,
      "project_id": "j3xSC4PA",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "C255PPUX",
      "file_name": null,
      "dependency_type": "optional"
     },
@@ -4583,25 +4554,13 @@
     },
     {
      "version_id": null,
-     "project_id": "lfHFW1mp",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
-     "project_id": "1bokaNcj",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
-     "project_id": "ohNO6lps",
-     "file_name": null,
-     "dependency_type": "required"
-    },
-    {
-     "version_id": null,
      "project_id": "5aaWibi9",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "lfHFW1mp",
      "file_name": null,
      "dependency_type": "optional"
     },
@@ -4954,7 +4913,7 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "P7dR8mSH",
+     "project_id": "ohNO6lps",
      "file_name": null,
      "dependency_type": "required"
     },
@@ -4966,7 +4925,7 @@
     },
     {
      "version_id": null,
-     "project_id": "ohNO6lps",
+     "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
     }
@@ -5377,13 +5336,25 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "tnTEDxIj",
+     "project_id": "j3xSC4PA",
      "file_name": null,
      "dependency_type": "optional"
     },
     {
      "version_id": null,
-     "project_id": "j3xSC4PA",
+     "project_id": "POQ2i9zu",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "9TbXlAut",
+     "file_name": null,
+     "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "tnTEDxIj",
      "file_name": null,
      "dependency_type": "optional"
     },
@@ -5401,7 +5372,7 @@
     },
     {
      "version_id": null,
-     "project_id": "9TbXlAut",
+     "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
     },
@@ -5410,18 +5381,6 @@
      "project_id": "1eAoo2KR",
      "file_name": null,
      "dependency_type": "required"
-    },
-    {
-     "version_id": null,
-     "project_id": "P7dR8mSH",
-     "file_name": null,
-     "dependency_type": "required"
-    },
-    {
-     "version_id": null,
-     "project_id": "POQ2i9zu",
-     "file_name": null,
-     "dependency_type": "optional"
     }
    ],
    "group": "weather",
@@ -5723,12 +5682,6 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "7vxePowz",
-     "file_name": null,
-     "dependency_type": "required"
-    },
-    {
-     "version_id": null,
      "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
@@ -5750,6 +5703,12 @@
      "project_id": "u6dRKJwZ",
      "file_name": null,
      "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
+     "project_id": "7vxePowz",
+     "file_name": null,
+     "dependency_type": "required"
     },
     {
      "version_id": null,
@@ -5800,13 +5759,13 @@
    "dependencies": [
     {
      "version_id": null,
-     "project_id": "9s6osm5g",
+     "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
     },
     {
      "version_id": null,
-     "project_id": "P7dR8mSH",
+     "project_id": "9s6osm5g",
      "file_name": null,
      "dependency_type": "required"
     }
@@ -5870,84 +5829,6 @@
    ],
    "group": "qol",
    "purpose": "Town-to-outpost travel network (craftable mid-game).",
-   "optional": false,
-   "side_override": null,
-   "explicit": true,
-   "required_by": []
-  },
-  {
-   "slug": "wilder-wild",
-   "title": "Wilder Wild",
-   "kind": "mod",
-   "source": "modrinth",
-   "project_id": "AtHRJSUW",
-   "version_id": "QluBtU4i",
-   "version_number": "4.2.9-mc26.1",
-   "version_type": "release",
-   "date_published": "2026-05-01T19:07:51.684620Z",
-   "game_versions": [
-    "26.1",
-    "26.1.1",
-    "26.1.2"
-   ],
-   "loaders": [
-    "fabric",
-    "quilt"
-   ],
-   "filename": "WilderWild-4.2.9-mc26.1.jar",
-   "url": "https://cdn.modrinth.com/data/AtHRJSUW/versions/QluBtU4i/WilderWild-4.2.9-mc26.1.jar",
-   "size": 31808826,
-   "hashes": {
-    "sha1": "2b0410f1a1e8c982549ac32a233e88af3d87d84b",
-    "sha512": "b01eaa21cc39d1bb84d061300413f25e8bfc5450ad3da708f6a8397be385f945b763d350934df87bdab88eae3ff610db6ce70c90ffd71c03a97fca0dab5e0af8"
-   },
-   "client_side": "required",
-   "server_side": "required",
-   "license": "LicenseRef-FrozenBlock-Modding-Oasis-License",
-   "license_url": "https://raw.githubusercontent.com/FrozenBlock/Licenses/refs/heads/master/FBMO-LICENSE-v1.0.md",
-   "source_url": "https://github.com/FrozenBlock/WilderWild",
-   "issues_url": "https://github.com/FrozenBlock/WilderWild/issues",
-   "page": "https://modrinth.com/mod/wilder-wild",
-   "dependencies": [
-    {
-     "version_id": null,
-     "project_id": "P7dR8mSH",
-     "file_name": null,
-     "dependency_type": "required"
-    },
-    {
-     "version_id": null,
-     "project_id": "9r4ZkgSN",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
-     "project_id": "9s6osm5g",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
-     "project_id": "9xTQM0ci",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
-     "project_id": "9KawNmQc",
-     "file_name": null,
-     "dependency_type": "required"
-    },
-    {
-     "version_id": null,
-     "project_id": "mOgUt4GM",
-     "file_name": null,
-     "dependency_type": "optional"
-    }
-   ],
-   "group": "world",
-   "purpose": "Atmosphere: fireflies, falling leaves, new trees/critters; known-compatible with Terralith.",
    "optional": false,
    "side_override": null,
    "explicit": true,
@@ -6273,15 +6154,15 @@
     },
     {
      "version_id": null,
-     "project_id": "mOgUt4GM",
-     "file_name": null,
-     "dependency_type": "optional"
-    },
-    {
-     "version_id": null,
      "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
+    },
+    {
+     "version_id": null,
+     "project_id": "mOgUt4GM",
+     "file_name": null,
+     "dependency_type": "optional"
     }
    ],
    "group": "world",
@@ -6337,13 +6218,13 @@
     },
     {
      "version_id": null,
-     "project_id": "Ua7DFN59",
+     "project_id": "P7dR8mSH",
      "file_name": null,
      "dependency_type": "required"
     },
     {
      "version_id": null,
-     "project_id": "P7dR8mSH",
+     "project_id": "Ua7DFN59",
      "file_name": null,
      "dependency_type": "required"
     }
@@ -6403,6 +6284,12 @@
     },
     {
      "version_id": null,
+     "project_id": "mOgUt4GM",
+     "file_name": null,
+     "dependency_type": "optional"
+    },
+    {
+     "version_id": null,
      "project_id": "1eAoo2KR",
      "file_name": null,
      "dependency_type": "required"
@@ -6412,12 +6299,6 @@
      "project_id": "Ha28R6CL",
      "file_name": null,
      "dependency_type": "required"
-    },
-    {
-     "version_id": null,
-     "project_id": "mOgUt4GM",
-     "file_name": null,
-     "dependency_type": "optional"
     }
    ],
    "group": "qol",

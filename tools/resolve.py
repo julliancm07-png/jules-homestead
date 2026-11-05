@@ -175,7 +175,7 @@ class Resolver:
             "client_side": "required", "server_side": "required", "license": "MIT",
             "group": m.get("group"), "purpose": m.get("purpose"), "optional": False,
             "side_override": m.get("side"), "explicit": True, "required_by": [], "dependencies": [],
-            "path": f"custom-mods/{m['slug']}",
+            "path": m.get("path", f"custom-mods/{m['slug']}"),
         }
 
 

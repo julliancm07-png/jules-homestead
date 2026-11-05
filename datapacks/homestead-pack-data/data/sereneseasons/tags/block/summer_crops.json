@@ -1,0 +1,61 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "farmersdelight:budding_tomatoes",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:tomatoes",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:rice",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:rice_panicles",
+      "required": false
+    },
+    {
+      "id": "ubesdelight:ginger_crop",
+      "required": false
+    },
+    {
+      "id": "ubesdelight:ube_crop",
+      "required": false
+    },
+    {
+      "id": "ubesdelight:lemongrass_crop",
+      "required": false
+    },
+    {
+      "id": "ubesdelight:lemongrass_stalk_crop",
+      "required": false
+    },
+    {
+      "id": "ubesdelight:lemongrass_leaf_crop",
+      "required": false
+    },
+    {
+      "id": "rusticdelight:bell_peppers",
+      "required": false
+    },
+    {
+      "id": "rusticdelight:dark_bell_peppers",
+      "required": false
+    },
+    {
+      "id": "rusticdelight:pale_bell_peppers",
+      "required": false
+    },
+    {
+      "id": "rusticdelight:cotton",
+      "required": false
+    },
+    {
+      "id": "rusticdelight:coffee",
+      "required": false
+    }
+  ]
+}

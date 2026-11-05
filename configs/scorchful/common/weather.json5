@@ -1,0 +1,18 @@
+{
+	// When enabled, sand piles will accumulate on the ground during sandstorms.
+	enableSandPileAccumulation: false,
+	// Sets the maximum height of sand piles that can accumulate during sand storms. Maximum value is 8.
+	sandPileAccumulationHeight: 1,
+	// How much to multiply the total speed of entities on the surface by during Sandstorms. Negative values provide slowness, positive values provide speed.
+	sandstormSlownessAmountPercent: -0.3,
+	// How much to multiply the total follow range of entities on the surface by during Sandstorms. Negative values decrease follow range, positive values increase it.
+	sandstormFollowRangeReductionPercent: -0.5,
+	// When enabled, Breezes will naturally spawn on the surface during sandstorms and blizzards. Note that they will spawn regardless of whether it is day or night.
+	enableBreezesInSandstorms: false,
+	// When enabled, Sandstorms will choke the player causing them to suffocate
+	enableSuffocatingSandstorms: false,
+	// When enabled, sandstorm suffocation will only apply during Thunderstorms
+	requireThunderStormsForSuffocation: true,
+	// Multiplies the damage caused by suffocating in a sandstorm
+	suffocatingDamageMultiplier: 1.0
+}

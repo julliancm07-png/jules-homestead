@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "farmersdelight:tomato_seeds",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:rice",
+      "required": false
+    },
+    {
+      "id": "ubesdelight:ginger",
+      "required": false
+    },
+    {
+      "id": "ubesdelight:ube",
+      "required": false
+    },
+    {
+      "id": "rusticdelight:bell_pepper_seeds",
+      "required": false
+    },
+    {
+      "id": "rusticdelight:cotton_seeds",
+      "required": false
+    },
+    {
+      "id": "rusticdelight:coffee_beans",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "farmersdelight:cabbages",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:onions",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:rice",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:rice_panicles",
+      "required": false
+    },
+    {
+      "id": "ubesdelight:lemongrass_crop",
+      "required": false
+    },
+    {
+      "id": "ubesdelight:lemongrass_stalk_crop",
+      "required": false
+    },
+    {
+      "id": "ubesdelight:lemongrass_leaf_crop",
+      "required": false
+    },
+    {
+      "id": "rusticdelight:coffee",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "farmersdelight:cabbages",
+      "required": false
+    },
+    {
+      "id": "ubesdelight:garlic_crop",
+      "required": false
+    }
+  ]
+}
