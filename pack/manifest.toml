@@ -1,0 +1,448 @@
+# Jules' Homestead — human-edited mod manifest.
+# tools/resolve.py turns this into pack/mods.lock.json (exact version IDs, hashes, deps, sides, licenses).
+# Fields: slug (Modrinth slug) | source ("modrinth" default, "ftb-maven", "local") | version (exact version_number pin; omit → newest
+# release for the target, recorded in the lockfile) | side override ("client"/"server"/"both") | optional (mrpack env optional)
+# | group | purpose.
+
+[pack]
+name = "Jules' Homestead"
+version = "0.1.0"
+minecraft = "26.1.2"
+loader = "fabric"
+loader_version = "0.20.1"
+summary = "A grounded homestead-to-town survival pack: seasons, storms and blizzards, renewable power for real appliances, residents and a hand-written quest book."
+
+# ---------------------------------------------------------------- core & performance
+[[mod]]
+slug = "fabric-api"
+group = "core"
+purpose = "Fabric API."
+[[mod]]
+slug = "sodium"
+group = "performance"
+purpose = "Renderer (client baseline)."
+[[mod]]
+slug = "sodium-extra"
+group = "performance"
+purpose = "Extra Sodium video options (fog, particles, animations)."
+[[mod]]
+slug = "reeses-sodium-options"
+group = "performance"
+purpose = "Readable tabbed video settings."
+[[mod]]
+slug = "lithium"
+group = "performance"
+purpose = "Server/tick optimisation."
+[[mod]]
+slug = "ferrite-core"
+group = "performance"
+purpose = "Memory reduction."
+[[mod]]
+slug = "immediatelyfast"
+group = "performance"
+purpose = "Immediate-mode rendering speedups (HUD, text, entities)."
+[[mod]]
+slug = "entityculling"
+group = "performance"
+purpose = "Skip rendering hidden (block-)entities — important with furnished houses."
+[[mod]]
+slug = "moreculling"
+group = "performance"
+purpose = "Extra block culling (leaves etc.)."
+[[mod]]
+slug = "dynamic-fps"
+group = "performance"
+purpose = "Throttle FPS when unfocused/idle."
+[[mod]]
+slug = "krypton"
+group = "performance"
+purpose = "Network stack optimisation."
+[[mod]]
+slug = "modmenu"
+group = "core"
+purpose = "In-game mod list and config entry points."
+[[mod]]
+slug = "iris"
+group = "visual-optional"
+purpose = "Shader loader. Installed but shaders OFF by default (optional preset)."
+[[mod]]
+slug = "distanthorizons"
+group = "visual-optional"
+optional = true
+purpose = "Optional long-distance terrain LOD. Off by default (performance cost)."
+
+# ---------------------------------------------------------------- seasons, temperature, weather, spoilage
+[[mod]]
+slug = "serene-seasons"
+group = "weather"
+purpose = "OWNER of seasons: seasonal biome temperature, crop fertility, winter snow."
+[[mod]]
+slug = "glitchcore"
+group = "library"
+purpose = "Required by Serene Seasons' jar (not declared in Modrinth metadata; found by tools/validate.py)."
+[[mod]]
+slug = "thermoo"
+group = "weather"
+purpose = "OWNER of body temperature (API). homestead-core feeds blizzard cold and heater warmth through it."
+[[mod]]
+slug = "thermoo-patches"
+group = "weather"
+purpose = "Verified Thermoo<->Serene Seasons bridge (bundled serene-seasons patch)."
+[[mod]]
+slug = "frostiful"
+group = "weather"
+purpose = "Cold content: freezing, fur armour, warmth from light/fire. (26.1.x build is labelled beta upstream.)"
+[[mod]]
+slug = "scorchful"
+group = "weather"
+purpose = "Heat + thirst in hot conditions; bundles Immersive Storms (snow/sand fog in thunderstorms, client)."
+[[mod]]
+slug = "seasonhud-fabric"
+group = "weather"
+purpose = "Season indicator on the HUD/minimap."
+[[mod]]
+slug = "particle-rain"
+group = "visual"
+purpose = "Particle rain/snow visuals (client). Compatible with Immersive Storms per its docs."
+[[mod]]
+slug = "spoiled"
+group = "food"
+purpose = "OWNER of food spoilage. Slow defaults; homestead-core fridge preserves while powered."
+[[mod]]
+slug = "crops-love-rain"
+group = "food"
+purpose = "Crops grow faster in rain — weather matters to farms."
+
+# ---------------------------------------------------------------- farming & cooking
+[[mod]]
+slug = "farmers-delight-refabricated"
+group = "food"
+purpose = "Cooking backbone: cooking pot, skillet, cutting board, stove, meals, rice/tomato/cabbage/onion."
+[[mod]]
+slug = "more-delight"
+group = "food"
+purpose = "Extra Farmer's Delight meals and ingredients."
+[[mod]]
+slug = "ubes-delight"
+group = "food"
+purpose = "Additional crops (ube, garlic, ginger, lemongrass) and dishes using Farmer's Delight tags."
+[[mod]]
+slug = "rustic-delight"
+group = "food"
+purpose = "Bell peppers, coffee, cotton; Farmer's Delight style dishes."
+[[mod]]
+slug = "storage-delight"
+group = "food"
+purpose = "Kitchen cabinets/drawers matching Farmer's Delight."
+[[mod]]
+slug = "crate-delight"
+group = "food"
+purpose = "Crop crates for compact produce storage."
+[[mod]]
+slug = "farming-for-blockheads"
+group = "food"
+purpose = "Market (buy seeds/saplings/animals), shipping bin (sell produce), sprinklers (irrigation), feeding trough."
+[[mod]]
+slug = "rightclickharvest"
+group = "food"
+purpose = "Right-click to harvest and replant crops."
+[[mod]]
+slug = "animal_feeding_trough"
+group = "food"
+purpose = "Livestock feeding troughs (animal husbandry automation without industry)."
+[[mod]]
+slug = "appleskin"
+group = "food"
+purpose = "Hunger/saturation preview."
+
+# ---------------------------------------------------------------- building & furniture
+[[mod]]
+slug = "macaws-furniture"
+group = "build"
+purpose = "Primary furniture set (kitchens, bedrooms, offices)."
+[[mod]]
+slug = "macaws-doors"
+group = "build"
+purpose = "Doors."
+[[mod]]
+slug = "macaws-windows"
+group = "build"
+purpose = "Windows, curtains, blinds."
+[[mod]]
+slug = "macaws-roofs"
+group = "build"
+purpose = "Roofs."
+[[mod]]
+slug = "macaws-lights-and-lamps"
+group = "build"
+purpose = "Decorative (unpowered) lamps — early lighting alternative."
+[[mod]]
+slug = "macaws-trapdoors"
+group = "build"
+purpose = "Trapdoors."
+[[mod]]
+slug = "macaws-fences-and-walls"
+group = "build"
+purpose = "Fences and walls."
+[[mod]]
+slug = "macaws-bridges"
+group = "build"
+purpose = "Bridges."
+[[mod]]
+slug = "macaws-paths-and-pavings"
+group = "build"
+purpose = "Paths and pavings for town streets."
+[[mod]]
+slug = "macaws-paintings"
+group = "build"
+purpose = "Paintings."
+[[mod]]
+slug = "macaws-stairs"
+group = "build"
+purpose = "Stairs and balconies."
+[[mod]]
+slug = "rechiseled"
+group = "build"
+purpose = "Chisel block variants (single chisel system)."
+[[mod]]
+slug = "fusion-connected-textures"
+group = "library"
+side = "both"
+purpose = "Connected-texture library required by Rechiseled's jar on BOTH sides (Modrinth marks it client-only)."
+[[mod]]
+slug = "effortless-building"
+group = "build"
+purpose = "Mirror/array/line building tools."
+
+# ---------------------------------------------------------------- machines & power
+[[mod]]
+slug = "energized-power"
+group = "power"
+purpose = "Electrical backbone on TR Energy: solar I-IV, coal engine, battery boxes, cables, powered lamp/furnace, crusher."
+[[mod]]
+slug = "homestead-core"
+source = "local"
+group = "power"
+purpose = "Custom: severe fronts (storm/blizzard), shelter/exposure, forecast, wind turbine, water wheel, refrigerator, electric range, space heater."
+[[mod]]
+slug = "create-fly"
+group = "optional-create"
+optional = true
+purpose = "OPTIONAL Create (community Fabric port). Mechanical only; not electricity. Off unless chosen at import."
+
+# ---------------------------------------------------------------- residents, NPCs, quests
+[[mod]]
+slug = "minecraft-comes-alive-reborn"
+group = "town"
+purpose = "Residents with families, moods, professions, building detection, taxes. AI chat disabled by default."
+[[mod]]
+slug = "easy-npc"
+group = "town"
+purpose = "Hand-placed town NPCs (mentor/mayor) with dialog and trades."
+[[mod]]
+slug = "easynpc-x-ftb-quests-compat"
+group = "town"
+purpose = "Lets Easy NPC dialog actions open/complete FTB quests."
+[[mod]]
+slug = "ftb-library-fabric"
+source = "ftb-maven"
+artifact = "dev.ftb.mods:ftb-library-fabric"
+version = "26.1.2.11"
+group = "quests"
+purpose = "FTB Quests dependency (official FTB maven, All Rights Reserved — referenced, not re-hosted)."
+[[mod]]
+slug = "ftb-teams-fabric"
+source = "ftb-maven"
+artifact = "dev.ftb.mods:ftb-teams-fabric"
+version = "26.1.2.5"
+group = "quests"
+purpose = "FTB Quests dependency."
+[[mod]]
+slug = "ftb-quests-fabric"
+source = "ftb-maven"
+artifact = "dev.ftb.mods:ftb-quests-fabric"
+version = "26.1.2.9"
+group = "quests"
+purpose = "Quest book UI, pinned-quest HUD tracker, rewards. Content authored in quests/."
+[[mod]]
+slug = "ftb-xmod-compat-fabric"
+source = "ftb-maven"
+artifact = "dev.ftb.mods:ftb-xmod-compat-fabric"
+version = "26.1.2.5"
+group = "quests"
+purpose = "FTB <-> JEI integration (quest bookmarks/recipes)."
+[[mod]]
+slug = "better-advancements"
+group = "quests"
+purpose = "Readable advancement screen."
+
+# ---------------------------------------------------------------- world
+[[mod]]
+slug = "terralith"
+group = "world"
+purpose = "OWNER of overworld biomes (vanilla-block biomes, lush forests, rivers)."
+[[mod]]
+slug = "tectonic"
+group = "world"
+purpose = "Terrain shape (mountains, rivers) — designed to pair with Terralith."
+[[mod]]
+slug = "wilder-wild"
+group = "world"
+purpose = "Atmosphere: fireflies, falling leaves, new trees/critters; known-compatible with Terralith."
+[[mod]]
+slug = "towns-and-towers"
+group = "world"
+purpose = "Varied villages/outposts worth exploring (not a finished town to move into)."
+[[mod]]
+slug = "yungs-better-mineshafts"
+group = "world"
+purpose = "Exploration."
+[[mod]]
+slug = "yungs-better-dungeons"
+group = "world"
+purpose = "Exploration."
+[[mod]]
+slug = "yungs-better-strongholds"
+group = "world"
+purpose = "Exploration."
+[[mod]]
+slug = "friends-and-foes"
+group = "world"
+purpose = "Vanilla-style mobs (moobloom, beekeeper villagers, copper golem helpers)."
+[[mod]]
+slug = "natures-compass"
+group = "world"
+purpose = "Find biomes for specific crops/resources."
+
+# ---------------------------------------------------------------- quality of life
+[[mod]]
+slug = "jei"
+group = "qol"
+purpose = "THE single recipe viewer."
+[[mod]]
+slug = "jade"
+group = "qol"
+purpose = "Block/entity tooltip (shows appliance power state)."
+[[mod]]
+slug = "xaeros-minimap"
+group = "qol"
+purpose = "Minimap."
+[[mod]]
+slug = "xaeros-world-map"
+group = "qol"
+purpose = "World map."
+[[mod]]
+slug = "waystones"
+group = "qol"
+purpose = "Town-to-outpost travel network (craftable mid-game)."
+[[mod]]
+slug = "travelersbackpack"
+group = "qol"
+purpose = "Backpacks for expeditions."
+[[mod]]
+slug = "storagedrawers"
+group = "qol"
+purpose = "Pantry/workshop drawers."
+[[mod]]
+slug = "toms-storage"
+group = "qol"
+purpose = "Simple storage terminal (late)."
+[[mod]]
+slug = "inventory-profiles-next"
+group = "qol"
+purpose = "Inventory sorting."
+[[mod]]
+slug = "mouse-tweaks"
+group = "qol"
+purpose = "Mouse inventory handling."
+[[mod]]
+slug = "carry-on"
+group = "qol"
+purpose = "Pick up chests/animals while moving house."
+[[mod]]
+slug = "controlling"
+group = "qol"
+purpose = "Searchable keybinds + conflict view."
+[[mod]]
+slug = "shulkerboxtooltip"
+group = "qol"
+purpose = "Container previews."
+[[mod]]
+slug = "enchantment-descriptions"
+group = "qol"
+purpose = "Enchantment tooltips."
+[[mod]]
+slug = "zoomify"
+group = "qol"
+purpose = "Zoom key."
+[[mod]]
+slug = "fallingtree"
+group = "qol"
+purpose = "Fell whole trees (less chore, configurable)."
+
+# ---------------------------------------------------------------- ambience & first-person immersion (client)
+[[mod]]
+slug = "ambientsounds"
+group = "visual"
+purpose = "Biome/time/weather ambience."
+[[mod]]
+slug = "sound-physics-remastered"
+group = "visual"
+purpose = "Reverb/occlusion — storms sound muffled indoors."
+[[mod]]
+slug = "presence-footsteps"
+group = "visual"
+purpose = "Footstep sounds."
+[[mod]]
+slug = "fallingleaves"
+group = "visual"
+purpose = "Leaf particles."
+[[mod]]
+slug = "visuality"
+group = "visual"
+purpose = "Small ambient particles."
+[[mod]]
+slug = "lambdynamiclights"
+group = "visual"
+purpose = "Held-torch dynamic light."
+[[mod]]
+slug = "first-person-model"
+group = "visual"
+purpose = "See your body in first person."
+[[mod]]
+slug = "3dskinlayers"
+group = "visual"
+purpose = "3D skin layers."
+[[mod]]
+slug = "not-enough-animations"
+group = "visual"
+purpose = "First/third-person animation polish."
+[[mod]]
+slug = "continuity"
+group = "visual"
+purpose = "Connected textures (glass in houses/greenhouses)."
+[[mod]]
+slug = "entitytexturefeatures"
+group = "visual"
+purpose = "Required by Fresh Animations."
+[[mod]]
+slug = "entity-model-features"
+group = "visual"
+purpose = "Required by Fresh Animations."
+
+# ---------------------------------------------------------------- resource packs & shaders (client, optional)
+[[resourcepack]]
+slug = "fresh-animations"
+purpose = "Vanilla-style mob animations (enabled by default)."
+[[resourcepack]]
+slug = "better-leaves"
+purpose = "Bushier vanilla leaves (enabled by default)."
+
+[[shader]]
+slug = "complementary-reimagined"
+optional = true
+purpose = "Optional 'Cinematic' preset shader (vanilla-faithful). Off by default."
+[[shader]]
+slug = "makeup-ultra-fast-shaders"
+optional = true
+purpose = "Optional lightweight shader for lower-end GPUs."
